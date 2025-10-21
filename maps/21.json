@@ -1,0 +1,1526 @@
+{
+    "Config": {
+        "page_title": "Suite 21",
+        "page_header": "Suite 21 Power",
+        "background_img": "img/21.png",
+        "data_url": "https://observe.ajrich.co.uk/api/data.php",
+        "enable_periodic_update": true,
+        "fixed_canvas_size": false,
+        "canvas_width": 1800,
+        "canvas_height": 900
+    },
+    "Sensors": [
+        {
+            "name": "Rack 1 Feed A",
+            "position_x": 92,
+            "position_y": 370,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 2,
+                "line_color": "black"
+            },
+            "data": {
+                "header": null,
+                "value": "localhost.ports[0].ifInOctets_rate",
+                "value_math": "*8/1000",
+                "value_float_num": 2,
+                "unit": "kbps",
+                "type": "data",
+                "url": "localhost.ports[0].graph.graph_full_url",
+                "image": "localhost.ports[0].graph.graph_full_url"
+            }
+        },
+        {
+            "name": "Rack 1 Feed B",
+            "position_x": 92,
+            "position_y": 420,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 2,
+                "line_color": "black"
+            },
+            "data": {
+                "header": null,
+                "value": "localhost.ports[0].ifOutOctets_rate",
+                "value_math": "*8/1000",
+                "value_float_num": 2,
+                "unit": "kbps",
+                "type": "data",
+                "url": "localhost.ports[0].graph.graph_full_url",
+                "image": "localhost.ports[0].graph.graph_full_url"
+            }
+        },
+        {
+            "name": "Rack 2 Feed A",
+            "position_x": 166,
+            "position_y": 370,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 2,
+                "line_color": "black"
+            },
+            "data": {
+                "header": null,
+                "value": "1",
+                "value_math": null,
+                "value_float_num": null,
+                "unit": "A",
+                "type": "power_amps",
+                "url": "https://example.com",
+                "image": "img/21.png"
+            }
+        },
+        {
+            "name": "Rack 2 Feed B",
+            "position_x": 166,
+            "position_y": 420,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 2,
+                "line_color": "black"
+            },
+            "data": {
+                "header": null,
+                "value": "0.1",
+                "value_math": null,
+                "value_float_num": null,
+                "unit": "A",
+                "type": "power_amps",
+                "url": "https://example.com",
+                "image": "img/21.png"
+            }
+        },
+        {
+            "name": "Rack 3 Feed A",
+            "position_x": 240,
+            "position_y": 370,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 2,
+                "line_color": "black"
+            },
+            "data": {
+                "header": null,
+                "value": "1",
+                "value_math": null,
+                "value_float_num": null,
+                "unit": "A",
+                "type": "power_amps",
+                "url": "https://example.com",
+                "image": "img/21.png"
+            }
+        },
+        {
+            "name": "Rack 3 Feed B",
+            "position_x": 240,
+            "position_y": 420,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 2,
+                "line_color": "black"
+            },
+            "data": {
+                "header": null,
+                "value": "0.1",
+                "value_math": null,
+                "value_float_num": null,
+                "unit": "A",
+                "type": "power_amps",
+                "url": "https://example.com",
+                "image": "img/21.png"
+            }
+        },
+        {
+            "name": "Rack 4 Feed A",
+            "position_x": 313,
+            "position_y": 370,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 2,
+                "line_color": "black"
+            },
+            "data": {
+                "header": null,
+                "value": "1",
+                "value_math": null,
+                "value_float_num": null,
+                "unit": "A",
+                "type": "power_amps",
+                "url": "https://example.com",
+                "image": "img/21.png"
+            }
+        },
+        {
+            "name": "Rack 4 Feed B",
+            "position_x": 313,
+            "position_y": 420,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 2,
+                "line_color": "black"
+            },
+            "data": {
+                "header": null,
+                "value": "0.1",
+                "value_math": null,
+                "value_float_num": null,
+                "unit": "A",
+                "type": "power_amps",
+                "url": "https://example.com",
+                "image": "img/21.png"
+            }
+        },
+        {
+            "name": "Rack 5 Feed A",
+            "position_x": 387,
+            "position_y": 370,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 2,
+                "line_color": "black"
+            },
+            "data": {
+                "header": null,
+                "value": "1",
+                "value_math": null,
+                "value_float_num": null,
+                "unit": "A",
+                "type": "power_amps",
+                "url": "https://example.com",
+                "image": "img/21.png"
+            }
+        },
+        {
+            "name": "Rack 5 Feed B",
+            "position_x": 387,
+            "position_y": 420,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 2,
+                "line_color": "black"
+            },
+            "data": {
+                "header": null,
+                "value": "0.1",
+                "value_math": null,
+                "value_float_num": null,
+                "unit": "A",
+                "type": "power_amps",
+                "url": "https://example.com",
+                "image": "img/21.png"
+            }
+        },
+        {
+            "name": "Rack 6 Feed A",
+            "position_x": 460,
+            "position_y": 370,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 2,
+                "line_color": "black"
+            },
+            "data": {
+                "header": null,
+                "value": "1",
+                "value_math": null,
+                "value_float_num": null,
+                "unit": "A",
+                "type": "power_amps",
+                "url": "https://example.com",
+                "image": "img/21.png"
+            }
+        },
+        {
+            "name": "Rack 6 Feed B",
+            "position_x": 460,
+            "position_y": 420,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 2,
+                "line_color": "black"
+            },
+            "data": {
+                "header": null,
+                "value": "0.1",
+                "value_math": null,
+                "value_float_num": null,
+                "unit": "A",
+                "type": "power_amps",
+                "url": "https://example.com",
+                "image": "img/21.png"
+            }
+        },
+        {
+            "name": "Rack 7 Feed A",
+            "position_x": 534,
+            "position_y": 370,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 2,
+                "line_color": "black"
+            },
+            "data": {
+                "header": null,
+                "value": "1",
+                "value_math": null,
+                "value_float_num": null,
+                "unit": "A",
+                "type": "power_amps",
+                "url": "https://example.com",
+                "image": "img/21.png"
+            }
+        },
+        {
+            "name": "Rack 7 Feed B",
+            "position_x": 534,
+            "position_y": 420,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 2,
+                "line_color": "black"
+            },
+            "data": {
+                "header": null,
+                "value": "0.1",
+                "value_math": null,
+                "value_float_num": null,
+                "unit": "A",
+                "type": "power_amps",
+                "url": "https://example.com",
+                "image": "img/21.png"
+            }
+        },
+        {
+            "name": "Rack 8 Feed A",
+            "position_x": 608,
+            "position_y": 370,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 2,
+                "line_color": "black"
+            },
+            "data": {
+                "header": null,
+                "value": "1",
+                "value_math": null,
+                "value_float_num": null,
+                "unit": "A",
+                "type": "power_amps",
+                "url": "https://example.com",
+                "image": "img/21.png"
+            }
+        },
+        {
+            "name": "Rack 8 Feed B",
+            "position_x": 608,
+            "position_y": 420,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 2,
+                "line_color": "black"
+            },
+            "data": {
+                "header": null,
+                "value": "0.1",
+                "value_math": null,
+                "value_float_num": null,
+                "unit": "A",
+                "type": "power_amps",
+                "url": "https://example.com",
+                "image": "img/21.png"
+            }
+        },
+        {
+            "name": "Rack 9 Feed A",
+            "position_x": 681,
+            "position_y": 370,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 2,
+                "line_color": "black"
+            },
+            "data": {
+                "header": null,
+                "value": "1",
+                "value_math": null,
+                "value_float_num": null,
+                "unit": "A",
+                "type": "power_amps",
+                "url": "https://example.com",
+                "image": "img/21.png"
+            }
+        },
+        {
+            "name": "Rack 9 Feed B",
+            "position_x": 681,
+            "position_y": 420,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 2,
+                "line_color": "black"
+            },
+            "data": {
+                "header": null,
+                "value": "0.1",
+                "value_math": null,
+                "value_float_num": null,
+                "unit": "A",
+                "type": "power_amps",
+                "url": "https://example.com",
+                "image": "img/21.png"
+            }
+        },
+        {
+            "name": "Rack 10 Feed A",
+            "position_x": 900,
+            "position_y": 370,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 2,
+                "line_color": "black"
+            },
+            "data": {
+                "header": null,
+                "value": "1",
+                "value_math": null,
+                "value_float_num": null,
+                "unit": "A",
+                "type": "power_amps",
+                "url": "https://example.com",
+                "image": "img/21.png"
+            }
+        },
+        {
+            "name": "Rack 10 Feed B",
+            "position_x": 900,
+            "position_y": 420,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 2,
+                "line_color": "black"
+            },
+            "data": {
+                "header": null,
+                "value": "0.1",
+                "value_math": null,
+                "value_float_num": null,
+                "unit": "A",
+                "type": "power_amps",
+                "url": "https://example.com",
+                "image": "img/21.png"
+            }
+        },
+        {
+            "name": "Rack 11 Feed A",
+            "position_x": 974,
+            "position_y": 370,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 2,
+                "line_color": "black"
+            },
+            "data": {
+                "header": null,
+                "value": "1",
+                "value_math": null,
+                "value_float_num": null,
+                "unit": "A",
+                "type": "power_amps",
+                "url": "https://example.com",
+                "image": "img/21.png"
+            }
+        },
+        {
+            "name": "Rack 11 Feed B",
+            "position_x": 974,
+            "position_y": 420,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 2,
+                "line_color": "black"
+            },
+            "data": {
+                "header": null,
+                "value": "0.1",
+                "value_math": null,
+                "value_float_num": null,
+                "unit": "A",
+                "type": "power_amps",
+                "url": "https://example.com",
+                "image": "img/21.png"
+            }
+        },
+        {
+            "name": "Rack 12 Feed A",
+            "position_x": 1048,
+            "position_y": 370,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 2,
+                "line_color": "black"
+            },
+            "data": {
+                "header": null,
+                "value": "1",
+                "value_math": null,
+                "value_float_num": null,
+                "unit": "A",
+                "type": "power_amps",
+                "url": "https://example.com",
+                "image": "img/21.png"
+            }
+        },
+        {
+            "name": "Rack 12 Feed B",
+            "position_x": 1048,
+            "position_y": 420,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 2,
+                "line_color": "black"
+            },
+            "data": {
+                "header": null,
+                "value": "0.1",
+                "value_math": null,
+                "value_float_num": null,
+                "unit": "A",
+                "type": "power_amps",
+                "url": "https://example.com",
+                "image": "img/21.png"
+            }
+        },
+        {
+            "name": "Rack 13 Feed A",
+            "position_x": 1120,
+            "position_y": 370,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 2,
+                "line_color": "black"
+            },
+            "data": {
+                "header": null,
+                "value": "1",
+                "value_math": null,
+                "value_float_num": null,
+                "unit": "A",
+                "type": "power_amps",
+                "url": "https://example.com",
+                "image": "img/21.png"
+            }
+        },
+        {
+            "name": "Rack 13 Feed B",
+            "position_x": 1120,
+            "position_y": 420,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 2,
+                "line_color": "black"
+            },
+            "data": {
+                "header": null,
+                "value": "0.1",
+                "value_math": null,
+                "value_float_num": null,
+                "unit": "A",
+                "type": "power_amps",
+                "url": "https://example.com",
+                "image": "img/21.png"
+            }
+        },
+        {
+            "name": "Rack 14 Feed A",
+            "position_x": 1193,
+            "position_y": 370,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 2,
+                "line_color": "black"
+            },
+            "data": {
+                "header": null,
+                "value": "1",
+                "value_math": null,
+                "value_float_num": null,
+                "unit": "A",
+                "type": "power_amps",
+                "url": "https://example.com",
+                "image": "img/21.png"
+            }
+        },
+        {
+            "name": "Rack 14 Feed B",
+            "position_x": 1193,
+            "position_y": 420,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 2,
+                "line_color": "black"
+            },
+            "data": {
+                "header": null,
+                "value": "0.1",
+                "value_math": null,
+                "value_float_num": null,
+                "unit": "A",
+                "type": "power_amps",
+                "url": "https://example.com",
+                "image": "img/21.png"
+            }
+        },
+        {
+            "name": "Rack 15 Feed A",
+            "position_x": 1268,
+            "position_y": 370,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 2,
+                "line_color": "black"
+            },
+            "data": {
+                "header": null,
+                "value": "1",
+                "value_math": null,
+                "value_float_num": null,
+                "unit": "A",
+                "type": "power_amps",
+                "url": "https://example.com",
+                "image": "img/21.png"
+            }
+        },
+        {
+            "name": "Rack 15 Feed B",
+            "position_x": 1268,
+            "position_y": 420,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 2,
+                "line_color": "black"
+            },
+            "data": {
+                "header": null,
+                "value": "0.1",
+                "value_math": null,
+                "value_float_num": null,
+                "unit": "A",
+                "type": "power_amps",
+                "url": "https://example.com",
+                "image": "img/21.png"
+            }
+        },
+        {
+            "name": "Rack 16 Feed A",
+            "position_x": 1341,
+            "position_y": 370,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 2,
+                "line_color": "black"
+            },
+            "data": {
+                "header": null,
+                "value": "1",
+                "value_math": null,
+                "value_float_num": null,
+                "unit": "A",
+                "type": "power_amps",
+                "url": "https://example.com",
+                "image": "img/21.png"
+            }
+        },
+        {
+            "name": "Rack 16 Feed B",
+            "position_x": 1341,
+            "position_y": 420,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 2,
+                "line_color": "black"
+            },
+            "data": {
+                "header": null,
+                "value": "0.1",
+                "value_math": null,
+                "value_float_num": null,
+                "unit": "A",
+                "type": "power_amps",
+                "url": "https://example.com",
+                "image": "img/21.png"
+            }
+        },
+        {
+            "name": "Rack 17 Feed A",
+            "position_x": 1415,
+            "position_y": 370,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 2,
+                "line_color": "black"
+            },
+            "data": {
+                "header": null,
+                "value": "1",
+                "value_math": null,
+                "value_float_num": null,
+                "unit": "A",
+                "type": "power_amps",
+                "url": "https://example.com",
+                "image": "img/21.png"
+            }
+        },
+        {
+            "name": "Rack 17 Feed B",
+            "position_x": 1415,
+            "position_y": 420,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 2,
+                "line_color": "black"
+            },
+            "data": {
+                "header": null,
+                "value": "0.1",
+                "value_math": null,
+                "value_float_num": null,
+                "unit": "A",
+                "type": "power_amps",
+                "url": "https://example.com",
+                "image": "img/21.png"
+            }
+        },
+        {
+            "name": "Rack 18 Feed A",
+            "position_x": 1488,
+            "position_y": 370,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 2,
+                "line_color": "black"
+            },
+            "data": {
+                "header": null,
+                "value": "1",
+                "value_math": null,
+                "value_float_num": null,
+                "unit": "A",
+                "type": "power_amps",
+                "url": "https://example.com",
+                "image": "img/21.png"
+            }
+        },
+        {
+            "name": "Rack 18 Feed B",
+            "position_x": 1488,
+            "position_y": 420,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 2,
+                "line_color": "black"
+            },
+            "data": {
+                "header": null,
+                "value": "0.1",
+                "value_math": null,
+                "value_float_num": null,
+                "unit": "A",
+                "type": "power_amps",
+                "url": "https://example.com",
+                "image": "img/21.png"
+            }
+        },
+        {
+            "name": "Rack 19 Feed A",
+            "position_x": 92,
+            "position_y": 125,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 2,
+                "line_color": "black"
+            },
+            "data": {
+                "header": null,
+                "value": "1",
+                "value_math": null,
+                "value_float_num": null,
+                "unit": "A",
+                "type": "power_amps",
+                "url": "https://example.com",
+                "image": "img/21.png"
+            }
+        },
+        {
+            "name": "Rack 19 Feed B",
+            "position_x": 92,
+            "position_y": 175,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 2,
+                "line_color": "black"
+            },
+            "data": {
+                "header": null,
+                "value": "0.1",
+                "value_math": null,
+                "value_float_num": null,
+                "unit": "A",
+                "type": "power_amps",
+                "url": "https://example.com",
+                "image": "img/21.png"
+            }
+        },
+        {
+            "name": "Rack 20 Feed A",
+            "position_x": 166,
+            "position_y": 125,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 2,
+                "line_color": "black"
+            },
+            "data": {
+                "header": null,
+                "value": "1",
+                "value_math": null,
+                "value_float_num": null,
+                "unit": "A",
+                "type": "power_amps",
+                "url": "https://example.com",
+                "image": "img/21.png"
+            }
+        },
+        {
+            "name": "Rack 20 Feed B",
+            "position_x": 166,
+            "position_y": 175,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 2,
+                "line_color": "black"
+            },
+            "data": {
+                "header": null,
+                "value": "0.1",
+                "value_math": null,
+                "value_float_num": null,
+                "unit": "A",
+                "type": "power_amps",
+                "url": "https://example.com",
+                "image": "img/21.png"
+            }
+        },
+        {
+            "name": "Rack 21 Feed A",
+            "position_x": 240,
+            "position_y": 125,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 2,
+                "line_color": "black"
+            },
+            "data": {
+                "header": null,
+                "value": "1",
+                "value_math": null,
+                "value_float_num": null,
+                "unit": "A",
+                "type": "power_amps",
+                "url": "https://example.com",
+                "image": "img/21.png"
+            }
+        },
+        {
+            "name": "Rack 21 Feed B",
+            "position_x": 240,
+            "position_y": 175,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 2,
+                "line_color": "black"
+            },
+            "data": {
+                "header": null,
+                "value": "0.1",
+                "value_math": null,
+                "value_float_num": null,
+                "unit": "A",
+                "type": "power_amps",
+                "url": "https://example.com",
+                "image": "img/21.png"
+            }
+        },
+        {
+            "name": "Rack 22 Feed A",
+            "position_x": 313,
+            "position_y": 125,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 2,
+                "line_color": "black"
+            },
+            "data": {
+                "header": null,
+                "value": "1",
+                "value_math": null,
+                "value_float_num": null,
+                "unit": "A",
+                "type": "power_amps",
+                "url": "https://example.com",
+                "image": "img/21.png"
+            }
+        },
+        {
+            "name": "Rack 22 Feed B",
+            "position_x": 313,
+            "position_y": 175,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 2,
+                "line_color": "black"
+            },
+            "data": {
+                "header": null,
+                "value": "0.1",
+                "value_math": null,
+                "value_float_num": null,
+                "unit": "A",
+                "type": "power_amps",
+                "url": "https://example.com",
+                "image": "img/21.png"
+            }
+        },
+        {
+            "name": "Rack 23 Feed A",
+            "position_x": 387,
+            "position_y": 125,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 2,
+                "line_color": "black"
+            },
+            "data": {
+                "header": null,
+                "value": "1",
+                "value_math": null,
+                "value_float_num": null,
+                "unit": "A",
+                "type": "power_amps",
+                "url": "https://example.com",
+                "image": "img/21.png"
+            }
+        },
+        {
+            "name": "Rack 23 Feed B",
+            "position_x": 387,
+            "position_y": 175,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 2,
+                "line_color": "black"
+            },
+            "data": {
+                "header": null,
+                "value": "0.1",
+                "value_math": null,
+                "value_float_num": null,
+                "unit": "A",
+                "type": "power_amps",
+                "url": "https://example.com",
+                "image": "img/21.png"
+            }
+        },
+        {
+            "name": "Rack 24 Feed A",
+            "position_x": 460,
+            "position_y": 125,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 2,
+                "line_color": "black"
+            },
+            "data": {
+                "header": null,
+                "value": "1",
+                "value_math": null,
+                "value_float_num": null,
+                "unit": "A",
+                "type": "power_amps",
+                "url": "https://example.com",
+                "image": "img/21.png"
+            }
+        },
+        {
+            "name": "Rack 24 Feed B",
+            "position_x": 460,
+            "position_y": 175,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 2,
+                "line_color": "black"
+            },
+            "data": {
+                "header": null,
+                "value": "0.1",
+                "value_math": null,
+                "value_float_num": null,
+                "unit": "A",
+                "type": "power_amps",
+                "url": "https://example.com",
+                "image": "img/21.png"
+            }
+        },
+        {
+            "name": "Rack 25 Feed A",
+            "position_x": 534,
+            "position_y": 125,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 2,
+                "line_color": "black"
+            },
+            "data": {
+                "header": null,
+                "value": "1",
+                "value_math": null,
+                "value_float_num": null,
+                "unit": "A",
+                "type": "power_amps",
+                "url": "https://example.com",
+                "image": "img/21.png"
+            }
+        },
+        {
+            "name": "Rack 25 Feed B",
+            "position_x": 534,
+            "position_y": 175,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 2,
+                "line_color": "black"
+            },
+            "data": {
+                "header": null,
+                "value": "0.1",
+                "value_math": null,
+                "value_float_num": null,
+                "unit": "A",
+                "type": "power_amps",
+                "url": "https://example.com",
+                "image": "img/21.png"
+            }
+        },
+        {
+            "name": "Rack 26 Feed A",
+            "position_x": 608,
+            "position_y": 125,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 2,
+                "line_color": "black"
+            },
+            "data": {
+                "header": null,
+                "value": "1",
+                "value_math": null,
+                "value_float_num": null,
+                "unit": "A",
+                "type": "power_amps",
+                "url": "https://example.com",
+                "image": "img/21.png"
+            }
+        },
+        {
+            "name": "Rack 26 Feed B",
+            "position_x": 608,
+            "position_y": 175,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 2,
+                "line_color": "black"
+            },
+            "data": {
+                "header": null,
+                "value": "0.1",
+                "value_math": null,
+                "value_float_num": null,
+                "unit": "A",
+                "type": "power_amps",
+                "url": "https://example.com",
+                "image": "img/21.png"
+            }
+        },
+        {
+            "name": "Rack 27 Feed A",
+            "position_x": 681,
+            "position_y": 125,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 2,
+                "line_color": "black"
+            },
+            "data": {
+                "header": null,
+                "value": "1",
+                "value_math": null,
+                "value_float_num": null,
+                "unit": "A",
+                "type": "power_amps",
+                "url": "https://example.com",
+                "image": "img/21.png"
+            }
+        },
+        {
+            "name": "Rack 27 Feed B",
+            "position_x": 681,
+            "position_y": 175,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 2,
+                "line_color": "black"
+            },
+            "data": {
+                "header": null,
+                "value": "0.1",
+                "value_math": null,
+                "value_float_num": null,
+                "unit": "A",
+                "type": "power_amps",
+                "url": "https://example.com",
+                "image": "img/21.png"
+            }
+        },
+        {
+            "name": "Rack 28 Feed A",
+            "position_x": 974,
+            "position_y": 125,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 2,
+                "line_color": "black"
+            },
+            "data": {
+                "header": null,
+                "value": "1",
+                "value_math": null,
+                "value_float_num": null,
+                "unit": "A",
+                "type": "power_amps",
+                "url": "https://example.com",
+                "image": "img/21.png"
+            }
+        },
+        {
+            "name": "Rack 28 Feed B",
+            "position_x": 974,
+            "position_y": 175,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 2,
+                "line_color": "black"
+            },
+            "data": {
+                "header": null,
+                "value": "0.1",
+                "value_math": null,
+                "value_float_num": null,
+                "unit": "A",
+                "type": "power_amps",
+                "url": "https://example.com",
+                "image": "img/21.png"
+            }
+        },
+        {
+            "name": "Rack 29 Feed A",
+            "position_x": 1048,
+            "position_y": 125,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 2,
+                "line_color": "black"
+            },
+            "data": {
+                "header": null,
+                "value": "1",
+                "value_math": null,
+                "value_float_num": null,
+                "unit": "A",
+                "type": "power_amps",
+                "url": "https://example.com",
+                "image": "img/21.png"
+            }
+        },
+        {
+            "name": "Rack 29 Feed B",
+            "position_x": 1048,
+            "position_y": 175,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 2,
+                "line_color": "black"
+            },
+            "data": {
+                "header": null,
+                "value": "0.1",
+                "value_math": null,
+                "value_float_num": null,
+                "unit": "A",
+                "type": "power_amps",
+                "url": "https://example.com",
+                "image": "img/21.png"
+            }
+        },
+        {
+            "name": "Rack 30 Feed A",
+            "position_x": 1120,
+            "position_y": 125,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 2,
+                "line_color": "black"
+            },
+            "data": {
+                "header": null,
+                "value": "1",
+                "value_math": null,
+                "value_float_num": null,
+                "unit": "A",
+                "type": "power_amps",
+                "url": "https://example.com",
+                "image": "img/21.png"
+            }
+        },
+        {
+            "name": "Rack 30 Feed B",
+            "position_x": 1120,
+            "position_y": 175,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 2,
+                "line_color": "black"
+            },
+            "data": {
+                "header": null,
+                "value": "0.1",
+                "value_math": null,
+                "value_float_num": null,
+                "unit": "A",
+                "type": "power_amps",
+                "url": "https://example.com",
+                "image": "img/21.png"
+            }
+        },
+        {
+            "name": "Rack 31 Feed A",
+            "position_x": 1193,
+            "position_y": 125,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 2,
+                "line_color": "black"
+            },
+            "data": {
+                "header": null,
+                "value": "1",
+                "value_math": null,
+                "value_float_num": null,
+                "unit": "A",
+                "type": "power_amps",
+                "url": "https://example.com",
+                "image": "img/21.png"
+            }
+        },
+        {
+            "name": "Rack 31 Feed B",
+            "position_x": 1193,
+            "position_y": 175,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 2,
+                "line_color": "black"
+            },
+            "data": {
+                "header": null,
+                "value": "0.1",
+                "value_math": null,
+                "value_float_num": null,
+                "unit": "A",
+                "type": "power_amps",
+                "url": "https://example.com",
+                "image": "img/21.png"
+            }
+        },
+        {
+            "name": "Rack 32 Feed A",
+            "position_x": 1268,
+            "position_y": 125,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 2,
+                "line_color": "black"
+            },
+            "data": {
+                "header": null,
+                "value": "1",
+                "value_math": null,
+                "value_float_num": null,
+                "unit": "A",
+                "type": "power_amps",
+                "url": "https://example.com",
+                "image": "img/21.png"
+            }
+        },
+        {
+            "name": "Rack 32 Feed B",
+            "position_x": 1268,
+            "position_y": 175,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 2,
+                "line_color": "black"
+            },
+            "data": {
+                "header": null,
+                "value": "0.1",
+                "value_math": null,
+                "value_float_num": null,
+                "unit": "A",
+                "type": "power_amps",
+                "url": "https://example.com",
+                "image": "img/21.png"
+            }
+        },
+        {
+            "name": "Rack 33 Feed A",
+            "position_x": 1341,
+            "position_y": 125,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 2,
+                "line_color": "black"
+            },
+            "data": {
+                "header": null,
+                "value": "1",
+                "value_math": null,
+                "value_float_num": null,
+                "unit": "A",
+                "type": "power_amps",
+                "url": "https://example.com",
+                "image": "img/21.png"
+            }
+        },
+        {
+            "name": "Rack 33 Feed B",
+            "position_x": 1341,
+            "position_y": 175,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 2,
+                "line_color": "black"
+            },
+            "data": {
+                "header": null,
+                "value": "0.1",
+                "value_math": null,
+                "value_float_num": null,
+                "unit": "A",
+                "type": "power_amps",
+                "url": "https://example.com",
+                "image": "img/21.png"
+            }
+        },
+        {
+            "name": "Rack 34 Feed A",
+            "position_x": 1415,
+            "position_y": 125,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 2,
+                "line_color": "black"
+            },
+            "data": {
+                "header": null,
+                "value": "0.1",
+                "value_math": null,
+                "value_float_num": null,
+                "unit": "A",
+                "type": "power_amps",
+                "url": "https://example.com",
+                "image": "img/21.png"
+            }
+        },
+        {
+            "name": "Rack 34 Feed B",
+            "position_x": 1415,
+            "position_y": 175,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 2,
+                "line_color": "black"
+            },
+            "data": {
+                "header": null,
+                "value": "0.1",
+                "value_math": null,
+                "value_float_num": null,
+                "unit": "A",
+                "type": "power_amps",
+                "url": "https://example.com",
+                "image": "img/21.png"
+            }
+        },
+        {
+            "name": "Rack 35 Feed A",
+            "position_x": 1488,
+            "position_y": 125,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 2,
+                "line_color": "black"
+            },
+            "data": {
+                "header": null,
+                "value": "0.1",
+                "value_math": null,
+                "value_float_num": null,
+                "unit": "A",
+                "type": "power_amps",
+                "url": "https://example.com",
+                "image": "img/21.png"
+            }
+        },
+        {
+            "name": "Rack 35 Feed B",
+            "position_x": 1488,
+            "position_y": 175,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 2,
+                "line_color": "black"
+            },
+            "data": {
+                "header": null,
+                "value": "0.1",
+                "value_math": null,
+                "value_float_num": null,
+                "unit": "A",
+                "type": "power_amps",
+                "url": "https://example.com",
+                "image": "img/21.png"
+            }
+        },
+        {
+            "name": "Wiring Rack Feed A",
+            "position_x": 900,
+            "position_y": 110,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 2,
+                "line_color": "black"
+            },
+            "data": {
+                "header": null,
+                "value": "0.1",
+                "value_math": null,
+                "value_float_num": null,
+                "unit": "A",
+                "type": "power_amps",
+                "url": "https://example.com",
+                "image": "img/21.png"
+            }
+        },
+        {
+            "name": "Wiring Rack Feed B",
+            "position_x": 900,
+            "position_y": 143,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 2,
+                "line_color": "black"
+            },
+            "data": {
+                "header": null,
+                "value": "0.1",
+                "value_math": null,
+                "value_float_num": null,
+                "unit": "A",
+                "type": "power_amps",
+                "url": "https://example.com",
+                "image": "img/21.png"
+            }
+        }
+    ]
+}
