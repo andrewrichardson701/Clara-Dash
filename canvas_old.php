@@ -6,27 +6,30 @@
 
 
 <script>
+
+    // ------------------------------------ //
+    // =      CONFIGURATION VARIABLES     = //
+    // ------------------------------------ //
+
+    var background_img = 'img/21.png';
+    var data_url = 'https://observe.ajrich.co.uk/api/data.php'; // json data url - api request or similar
+    var enable_periodic_update = true; // refresh the data every minute and reload the page after 30 minutes
+    var fixed_canvas_size = false; // this overwrites the canvas_width and canvas_height variables if set to false
+    var canvas_width = 1800;
+    var canvas_height = 900;
+
+
+    // ======================================================================
+    // ======================================================================
+    
+
     // ------------------------------------------------- //
     // =  USER INPUT ALLOWED IN THE layout() FUNCTION  = //
     // ------------------------------------------------- //
 
-    function loopDrawSensors() {
-        var sensors = map_json.Sensors;
-        sensors.forEach((sensor) => {
-            sensor.data.value = resolveArrayPath(json, sensor.data.value);
-            drawSensor(
-                ctx, // canvas
-                [sensor.position_x,sensor.position_y], // coordinates
-                [sensor.dimension_x,sensor.dimension_y], // dimensions
-                sensor.style, // style
-                sensor.data // data
-            );
-        });
-    }
-
     function racks1_9(json) {
         // rack 1
-        drawSensor(ctx, [92,370], [50,30], { lineWidth: 2, strokeStyle: 'black' }, {'header': null, 'value': json.localhost.ports[0].ifInOctets_rate, 'value_math': '*8/1000', 'value_float_num': 2, 'unit': 'kbps', 'type': 'data', 'url': json.localhost.ports[0].graph.graph_full_url, 'image': json.localhost.ports[0].graph.graph_full_url});
+        drawSensor(ctx, [92,370], [50,30], { lineWidth: 2, strokeStyle: 'black' }, {'header': null, 'value': (json.localhost.ports[0].ifInOctets_rate*8/1000).toFixed(2),   'unit': 'kbps', 'type': 'data', 'url': json.localhost.ports[0].graph.graph_full_url, 'image': json.localhost.ports[0].graph.graph_full_url});
         drawSensor(ctx, [92,420], [50,30], { lineWidth: 2, strokeStyle: 'black' }, {'header': null, 'value': (json.localhost.ports[0].ifOutOctets_rate*8/1000).toFixed(2),  'unit': 'kbps', 'type': 'data', 'url': json.localhost.ports[0].graph.graph_full_url, 'image': json.localhost.ports[0].graph.graph_full_url});
         // rack 2
         drawSensor(ctx, [166,370], [50,30], { lineWidth: 2, strokeStyle: 'black' }, {'header': null, 'value': '1',   'unit': 'A', 'type': 'power_amps', 'url': 'https://example.com', 'image': 'img/21.png'});
@@ -152,13 +155,12 @@
         // =     ADD CANVAS OBJECTS BELOW     = //
         // ------------------------------------ //
         // e.g. drawSensor(ctx, [681,420], [50,30], { lineWidth: 2, strokeStyle: 'black' }, {'header': null, 'value': '0.1', 'unit': 'A', 'type': 'power_amps', 'url': 'https://example.com', 'image': 'img/21.png'});
-
-        // racks1_9(json);
-        // racks10_18(json);
-        // racks19_27(json);
-        // racks28_35(json);
-        // wiring_rack(json);
-        loopDrawSensors();
+        
+        racks1_9(json);
+        racks10_18(json);
+        racks19_27(json);
+        racks28_35(json);
+        wiring_rack(json);
     }
 
 
@@ -206,20 +208,11 @@
     // =       DO NOT TOUCH ANY INFO BELOW        = //
     // -------------------------------------------- //
 
-    // ERROR IF A CONFIG WAS NOT LOADED
-    if (typeof map_file === 'undefined') {
-        document.getElementById('canvas-wrapper').innerText = "No config loaded.";
-        throw new FatalError("No config loaded.");
-    }
-
-    // INITIALISE THE JSON ARRAYS
-    var map_json = null;
-    var json     = null;
-    
     // SETUP THE CANVAS OBJECT
     var canvas = document.getElementById('canvas');
     var ctx = canvas.getContext("2d");
     var background = new Image();
+    background.src = background_img;
 
     // SET DEFAULT VALUES TO BE OVERWRITTEN LATER
     let interactiveBoxes = [];
@@ -227,55 +220,22 @@
     let hoverBox = null;
     let grid = { width:  0, height: 0 }
     var refresh_counter = 0;
-    var background_img = 'img/default.png'; // overwritten by map config
 
-    // CONVER THE CONFIG AND START THE BUILD
-    (async () => {
-        try {
-            // Load map JSON first
-            map_json = await getData(map_file);
-
-            // set the data_url
-            data_url = map_json.Config.data_url;
-
-            // Determine background from JSON (if available)
-            if (map_json && map_json.Config.background_img) {
-                background_img = map_json.Config.background_img; // background image from json
-            } 
-
-            // Set the background image - defaults to 'img/default.png' if none available
-            background.src = background_img; 
-
-            // Wait for image to load
-            background.onload = function() {
-                // Set canvas size
-                if (!map_json.Config.fixed_canvas_size) {
-                    // if not a fixed sizing, scale to background image
-                    canvas.height = canvas_height = background.height;
-                    canvas.width = canvas_width = background.width;
-                } else {
-                    // fixed sizing, get the sizing from the config
-                    canvas.height = canvas_height = map_json.Config.canvas_height
-                    canvas.width = canvas_width = map_json.Config.canvas_width;
-                }
-                // Build the canvas now that both JSON & background are ready
-                build();
-            };
-        } catch (err) {
-            console.error("Error loading map or background:", err);
+    // ONLOAD, BUILD THE CANVAS - THIS STARTS EVERYTHING
+    background.onload = function(){
+        // set the canvas size if fixed_canvas_size is not enabled;
+        if (!fixed_canvas_size) {
+            canvas.height = canvas_height = background.height;
+            canvas.width = canvas_width = background.width;
         }
-    })();
-
-    
+        build();
+    }
 
     // BUILD THE CANVAS - SEPERATED SO THAT IT CAN BE RE-RUN TO REFRESH DATA
     function build() {
         (async() => {
-            // get the map config
-            // map_json = await getData(map_file);
-            // get the data json
-            json     = await getData(data_url);
-
+            json = await getInputData();
+            
             draw(); // draw the canvas
             updateTimestamp(); // write the tiemstamp
             periodicUpdate(); // reload data periodically if enabled
@@ -289,53 +249,32 @@
     //          [681,420], 
     //          [50,30], 
     //          { lineWidth: 2, strokeStyle: 'black' }, 
-    //          {'header': null, 'value': '0.1', 'value_math': '*0.1', 'unit': 'A', 'type': 'power_amps', 'url': 'https://example.com', 'image': 'img/21.png'}
+    //          {'header': null, 'value': '0.1', 'unit': 'A', 'type': 'power_amps', 'url': 'https://example.com', 'image': 'img/21.png'}
     //  );
     function drawSensor(ctx, coordinates = [0,0], dimensions = [20,10], params = {}, data = {}) {
-        var fillText = ''; // default fillText to empty - this is for the prefix of the data
+        var fillText = '';
         var fillColor = 'white'; // default background color
 
         // Build text
         if (data.header) {
             fillText += data.header;
         }
-        // if there is a value set
         if (data.value) {
-            // store it outside of the array to stop overwriting existing data
-            var data_value = data.value; 
-
-            // check if there is a math calculation to do
-            if (data.value_math) {
-                // run the math
-                var mathed_data = applyMath(data_value, data.value_math);
-                // check it changed if not dont update
-                if (mathed_data !== data_value) { data_value = mathed_data; }
-                // check for any decimal places adjustments
-                if (data.value_float_num) {
-                    // adjust the float decimals 
-                    var floated_data = data_value.toFixed(data.value_float_num);
-                    // if there is change, update the value
-                    if (floated_data !== data_value) { data_value = floated_data; }
-                }
+            if (fillText.length > 0) {
+                fillText += ': ';
             }
+            fillText += data.value;
 
-            // Add the header to the data as a prefix
-            fillText += data_value;
-
-            // check for the data type to set thresholds for colouring
             if (data.type) {
-                var thold = thresholds(data_value, data.type);
-
-                if (data_value > thold.upper) { // set color if over upper threshold
-                    fillColor = thold.upper_color;
-                } else if (data_value < thold.lower) { // set color if under lower threshold
-                    fillColor = thold.lower_color;
-                } else { // set color to the ok_color - if none define, make it grey
-                    fillColor = thold.ok_color || 'grey';
+                var thold = thresholds(data.value, data.type);
+                if (data.value > thold.upper || data.value < thold.lower) {
+                    fillColor = 'red';
+                } else {
+                    fillColor = '#1ac44a'; // green
                 }
             }
         }
-        if (data.unit && data_value) {
+        if (data.unit) {
             fillText += data.unit;
         }
         if (data.url && data.image) {
@@ -383,18 +322,12 @@
 
     // THRESHOLDS - USED TO COLOUR THE SENSORS BASED ON DATA 
     function thresholds(data_in, type) {
-        var u_thold  = 0;
-        var l_thold  = 0;
-        var ok_color = '#1ac44a';
-        var u_color  = 'red';
-        var l_color  = 'red'
+        var u_thold = 0;
+        var l_thold = 0;
         switch (type) {
             case 'power_amps':
                 u_thold = 32;
                 l_thold = 0.5;
-                ok_color = '#1ac44a';
-                u_color = 'red';
-                l_color = 'red';
                 break;
             case 'power_kw':
                 u_thold = 32;
@@ -409,19 +342,13 @@
                 l_thold = 0;
         }
 
-        return {
-            'upper' : u_thold, 
-            'upper_color': u_color,
-            'lower': l_thold,
-            'lower_color': l_color,
-            'ok_color': ok_color
-        };
+        return {'upper' : u_thold, 'lower': l_thold};
     }
 
-    // FETCH A FILE
-    async function getData($file) {
+    // FETCH THE API DATA FOR THE PAGE
+    async function getInputData() {
         try {
-            const response = await fetch($file);
+            const response = await fetch(data_url);
             if (!response.ok) throw new Error('Network response was not ok');
             const data = await response.json();
             return data;
@@ -430,30 +357,10 @@
         }
     }
 
-    // TRANSLATE STRING TO ARRAY PATH
-    // e.g. var value = resolveArrayPath(json, "Sensors[0].data.value");
-    function resolveArrayPath(obj, path) {
-        if (typeof path !== "string") {
-            // If it's not a string (e.g. already a value), just return it as-is
-            return path;
-        }
-
-        return path
-            .split('.')
-            .reduce((acc, key) => {
-                const match = key.match(/^(\w+)\[(\d+)\]$/);
-                if (match) {
-                    return acc?.[match[1]]?.[parseInt(match[2])];
-                }
-                return acc?.[key];
-            }, obj);
-    }
-
     // PERIDOICALLY RE-RUN THE build() FUNCTION TO RE-LOAD THE CANVAS AND DATA
     // WILL ALSO REFRESH THE PAGE AFTER 30 MINS
     async function periodicUpdate() {
-        if (map_json.Config.enable_periodic_update) {  
-            console.log('Updated at: '+getDateTime());
+        if (enable_periodic_update) {  
             // refresh counter 
             await sleep(60000); // 1 minute sleep time before getting new data
 
@@ -464,8 +371,6 @@
                 window.location.reload();
             }
             build();
-        } else {
-            console.log('Refreshing disabled.');
         }
     }
 
@@ -494,19 +399,6 @@
         const year = pad(now.getFullYear() % 100); // Last 2 digits of year
 
         return `${hours}:${minutes}:${seconds} ${day}/${month}/${year}`;
-    }
-
-    // APPLY MATH DATA FROM JSON CONFIG FILE TO THE VALUE
-    function applyMath(value, mathStr) {
-        if (!mathStr) return value; // no math to apply
-
-        try {
-            const fn = new Function('x', `return x ${mathStr};`);
-            return fn(value);
-        } catch (err) {
-            console.error('Failed to apply math:', err);
-            return value;
-        }
     }
 
     // HANDLES THE MOVEMENT OF THE MOUSE OVER THE CANVAS

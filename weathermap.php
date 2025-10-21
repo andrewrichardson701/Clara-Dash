@@ -31,6 +31,6 @@ if (!$continue) {
 
 <?php
 
-include 'canvas_test.php';
+include 'canvas.php';
 
 ?>
