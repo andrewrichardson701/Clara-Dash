@@ -176,7 +176,7 @@
 
     function draw() {
         ctx.clearRect(0, 0, canvas_width, canvas_height);
-        ctx.drawImage(background,0,0);   
+        ctx.drawImage(background, background_x_pos, background_y_pos, background.width*background_x_scale, background.height*background_y_scale);   
 
         // Uncomment below to show a grid on the canvas
         // drawGrid(ctx, canvas_height, canvas_width);
@@ -228,6 +228,10 @@
     let grid = { width:  0, height: 0 }
     var refresh_counter = 0;
     var background_img = 'img/default.png'; // overwritten by map config
+    var background_x_pos = 0;
+    var background_y_pos = 0;
+    var background_x_scale = 1;
+    var background_y_scale = 1;
 
     // CONVER THE CONFIG AND START THE BUILD
     (async () => {
@@ -245,19 +249,83 @@
 
             // Set the background image - defaults to 'img/default.png' if none available
             background.src = background_img; 
+            
+            // If background scaling set in the config, apply it to the image
+            if (map_json.Config.background_scale) {
+                background_scale = map_json.Config.background_scale;
+                // check if the scale is an array
+                if (background_scale instanceof Array) {
+                    // check if there are 2 parameters (0,1)
+                    if (1 in background_scale) {
+                        background_x_scale = background_scale[0];
+                        background_y_scale = background_scale[1];
+                    } else {
+                        background_y_scale = background_y_scale = background_scale[0];
+                    }
+                } else {
+                    background_y_scale = background_y_scale = background_scale;
+                }
+
+                // check to make sure they are positive numbers (can be float)
+                if (!checkValidNumber(background_x_scale)) {
+                    console.log('Background scaling for the x axis is not a valid number. These can be any decimal above 0.');
+                    background_x_scale = 100;
+                }
+                if (!checkValidNumber(background_y_scale)) {
+                    console.log('Background scaling for the y axis is not a valid number. These can be any decimal above 0.');
+                    background_y_scale = 100;
+                }
+            }
+
+            // Set canvas size
+            if (!map_json.Config.fixed_canvas_size) {
+                // if not a fixed sizing, scale to background image (including the scaling)
+                canvas.height = canvas_height = background.height*background_y_scale;
+                canvas.width = canvas_width = background.width*background_x_scale;
+            } else {
+                // fixed sizing, get the sizing from the config
+                canvas.height = canvas_height = map_json.Config.canvas_height
+                canvas.width = canvas_width = map_json.Config.canvas_width;
+            }
+            
+            // check for background posititon in config, adjust anchor point (valid options: center/middle, left, right, top, bottom)
+            if (map_json.Config.background_anchor) {
+                var background_anchor = map_json.Config.background_anchor;
+                switch (background_anchor){
+                    case "middle":
+                    case "center":
+                        background_x_pos = (canvas.width - (background.width*background_x_scale))/2;
+                        background_y_pos = (canvas.height - (background.height*background_y_scale))/2;
+                        break;
+                    case "left":
+                        background_x_pos = 0;
+                        background_y_pos = (canvas.height - (background.height*background_y_scale))/2;
+                        break;
+                    case "right":
+                        background_x_pos = canvas.width - (background.width*background_x_scale);
+                        background_y_pos = (canvas.height - (background.height*background_y_scale))/2;
+                        break;
+                    case "top":
+                        background_x_pos = (canvas.width - (background.width*background_x_scale))/2;
+                        background_y_pos = 0;
+                        break;
+                    case "bottom":
+                        background_x_pos = (canvas.width - (background.width*background_x_scale))/2;
+                        background_y_pos = canvas.height - (background.height*background_y_scale);
+                        break;
+                    case "default":
+                    case "top-left":
+                        background_x_pos = 0;
+                        background_y_pos = 0;
+                    default:
+                        background_x_pos = 0;
+                        background_y_pos = 0;
+                }
+            }
 
             // Wait for image to load
             background.onload = function() {
-                // Set canvas size
-                if (!map_json.Config.fixed_canvas_size) {
-                    // if not a fixed sizing, scale to background image
-                    canvas.height = canvas_height = background.height;
-                    canvas.width = canvas_width = background.width;
-                } else {
-                    // fixed sizing, get the sizing from the config
-                    canvas.height = canvas_height = map_json.Config.canvas_height
-                    canvas.width = canvas_width = map_json.Config.canvas_width;
-                }
+                
                 // Build the canvas now that both JSON & background are ready
                 build();
             };
@@ -271,10 +339,8 @@
     // BUILD THE CANVAS - SEPERATED SO THAT IT CAN BE RE-RUN TO REFRESH DATA
     function build() {
         (async() => {
-            // get the map config
-            // map_json = await getData(map_file);
             // get the data json
-            json     = await getData(data_url);
+            json = await getData(data_url);
 
             draw(); // draw the canvas
             updateTimestamp(); // write the tiemstamp
@@ -494,6 +560,15 @@
         const year = pad(now.getFullYear() % 100); // Last 2 digits of year
 
         return `${hours}:${minutes}:${seconds} ${day}/${month}/${year}`;
+    }
+
+    // CHECK THE INPUT DATA IS A VALID POSITIVE NUMBER - CAN BE A FLOAT/DECIMAL
+
+    function checkValidNumber(n) {
+        if (typeof n !== "number" || isNaN(n)) {
+            return false;
+        }
+        return true;
     }
 
     // APPLY MATH DATA FROM JSON CONFIG FILE TO THE VALUE

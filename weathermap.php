@@ -31,6 +31,7 @@ if (!$continue) {
 
 <?php
 
+// add in the canvas to load the weathermap
 include 'canvas.php';
 
 ?>

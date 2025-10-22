@@ -1,0 +1,58 @@
+{
+    "Config": {
+        "page_title": "Template",
+        "page_header": "Suite Template Power Usage",
+        "background_img": "img/default.png",
+        "background_scale": [1, 1],
+        "background_anchor": "default",
+        "data_url": "https://url.example.com/api.php",
+        "enable_periodic_update": true,
+        "fixed_canvas_size": false,
+        "canvas_width": 1800,
+        "canvas_height": 900
+    },
+    "Sensors": [
+        {
+            "name": "Rack 1 Feed A",
+            "position_x": 92,
+            "position_y": 370,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 2,
+                "line_color": "black"
+            },
+            "data": {
+                "header": null,
+                "value": "localhost.ports[0].ifInOctets_rate",
+                "value_math": "*8/1000",
+                "value_float_num": 2,
+                "unit": "kbps",
+                "type": "data",
+                "url": "localhost.ports[0].graph.graph_full_url",
+                "image": "localhost.ports[0].graph.graph_full_url"
+            }
+        },
+        {
+            "name": "Rack 1 Feed B",
+            "position_x": 92,
+            "position_y": 420,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 2,
+                "line_color": "black"
+            },
+            "data": {
+                "header": null,
+                "value": "localhost.ports[0].ifOutOctets_rate",
+                "value_math": "*8/1000",
+                "value_float_num": 2,
+                "unit": "kbps",
+                "type": "data",
+                "url": "localhost.ports[0].graph.graph_full_url",
+                "image": "localhost.ports[0].graph.graph_full_url"
+            }
+        }
+    ]
+}
