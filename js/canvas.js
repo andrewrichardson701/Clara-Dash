@@ -8,11 +8,11 @@ function layout() {
     // =     ADD CANVAS OBJECTS BELOW     = //
     // ------------------------------------ //
     // e.g. 
-    // drawSensor(ctx, [681,420], [50,30], { lineWidth: 2, strokeStyle: 'black' }, {'header': null, 'value': '0.1', 'unit': 'A', 'type': 'power_amps', 'url': 'https://example.com', 'image': 'img/21.png'});
+    // drawNode(ctx, [681,420], [50,30], { lineWidth: 2, strokeStyle: 'black' }, {'header': null, 'value': '0.1', 'unit': 'A', 'type': 'power_amps', 'url': 'https://example.com', 'image': 'img/21.png'});
     // or 
-    // loopDrawSensors(); - this will loop through the config json file.
+    // loopDrawNodes(); - this will loop through the config json file.
 
-    loopDrawSensors();
+    loopDrawNodes();
 }
 
 
@@ -210,14 +210,14 @@ function build() {
 
 // DRAW SENSOR IN PRESET METHOD
 // e.g. 
-// drawSensor(
+// drawNode(
 //          ctx, 
 //          [681,420], 
 //          [50,30], 
 //          { lineWidth: 2, strokeStyle: 'black' }, 
 //          {'header': null, 'value': '0.1', 'value_math': '*0.1', 'unit': 'A', 'type': 'power_amps', 'url': 'https://example.com', 'image': 'img/21.png'}
 //  );
-function drawSensor(ctx, coordinates = [0,0], dimensions = [20,10], style = {}, data = {}) {
+function drawNode(ctx, coordinates = [0,0], dimensions = [20,10], style = {}, data = {}) {
     var fillText = ''; // default fillText to empty - this is for the prefix of the data
     var fillColor = 'white'; // default background color
 
@@ -300,19 +300,22 @@ function drawSensor(ctx, coordinates = [0,0], dimensions = [20,10], style = {}, 
 }
 
 // LOOP THROUGH THE JSON AND DRAW THE SENSORS
-function loopDrawSensors() {
-    var sensors = map_json.Sensors;
-    sensors.forEach((sensor) => {
-        sensor.data.value = resolveArrayPath(json, sensor.data.value) ?? null;
-        drawSensor(
+function loopDrawNodes() {
+    const nodes = map_json.Nodes;
+    // Loop over all nodes in the Nodes object
+    Object.values(nodes).forEach((node) => {
+        node.data.value = resolveArrayPath(json, node.data.value) ?? null;
+        
+        drawNode(
             ctx, // canvas
-            [sensor.position_x,sensor.position_y], // coordinates
-            [sensor.dimension_x,sensor.dimension_y], // dimensions
-            sensor.style, // style
-            sensor.data // data
+            [node.position_x, node.position_y], // coordinates
+            [node.dimension_x, node.dimension_y], // dimensions
+            node.style, // style
+            node.data // data
         );
     });
 }
+
 
 // DRAW A GRID OVERLY ON THE CANVAS. HELPFUL FOR SHOWING COORDINATES
 function drawGrid(ctx, canvasHeight = null, canvasWidth = null) {
@@ -384,7 +387,7 @@ async function getData($file) {
 }
 
 // TRANSLATE STRING TO ARRAY PATH
-// e.g. var value = resolveArrayPath(json, "Sensors[0].data.value");
+// e.g. var value = resolveArrayPath(json, "Nodes[0].data.value");
 function resolveArrayPath(obj, path) {
     if (typeof path !== "string") {
         // If it's not a string (e.g. already a value), just return it as-is

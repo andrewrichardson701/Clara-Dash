@@ -16,8 +16,8 @@
         "show_dimensions": true,
         "show_config": true
     },
-    "Sensors": [
-        {
+    "Nodes": {
+        "RACK1-A": {
             "name": "Rack 1 Feed A",
             "position_x": 100,
             "position_y": 100,
@@ -41,7 +41,7 @@
                 "image": "localhost.ports[0].graph.graph_full_url"
             }
         },
-        {
+        "RACK1-B": {
             "name": "Rack 1 Feed B",
             "position_x": 200,
             "position_y": 200,
@@ -65,5 +65,37 @@
                 "image": "localhost.ports[0].graph.graph_full_url"
             }
         }
-    ]
+    },
+    "Links": {
+        "RACK1-A_RACK1-B": {
+            "nodes": [ 
+                {"node": "RACK-1-FEED-A", "anchor": "S", "offset": 10},
+                {"node": "RACK-1-FEED-B", "anchor": "W", "offset": 10}
+            ],
+            "label": "bits",
+            "width": 3,
+            "data": [
+                {
+                "header": null,
+                "value": "localhost.ports[0].ifInOctets_rate",
+                "value_math": "*8/1000",
+                "value_float_num": 2,
+                "unit": "kbps",
+                "type": "data",
+                "url": "localhost.ports[0].graph.graph_full_url",
+                "image": "localhost.ports[0].graph.graph_full_url"
+                },
+                {
+                "header": null,
+                "value": "localhost.ports[0].ifInOctets_rate",
+                "value_math": "*8/1000",
+                "value_float_num": 2,
+                "unit": "kbps",
+                "type": "data",
+                "url": "localhost.ports[0].graph.graph_full_url",
+                "image": "localhost.ports[0].graph.graph_full_url"
+                }
+            ]
+        }
+    }
 }
