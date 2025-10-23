@@ -83,6 +83,7 @@ var background_y_scale = 1;
     try {
         // Wait for the JSON config
         await loadMapJSON();
+        updatePageConfigSettings();
         setupBackgroundScaling();
         setupCanvas();
         setupBackgroundAnchor();
@@ -157,7 +158,6 @@ function setupCanvas() {
         canvas.height = canvas_height = map_json.Config.canvas_height;
         canvas.width = canvas_width = map_json.Config.canvas_width;
     }
-    toggleVisibileItems();
 }
 
 // SET THE ANCHOR POINT OF THE BACKGROUND IMAGE BASED ON background_img_anchor IN CONFIG
@@ -538,17 +538,23 @@ function bestTextColor(bgColor) {
 }
 
 // TOGGLE VISIBILITY OF CONFIG ITEMS
-function toggleVisibileItems() {
+function updatePageConfigSettings() {
     const config = map_json.Config;
     document.getElementById('coords').hidden     = !config.show_coordinates;
     document.getElementById('timestamp').hidden  = !config.show_timestamp;
     document.getElementById('dimensions').hidden = !config.show_dimensions;
     document.getElementById('config').hidden     = !config.show_config;
 
+    if (config.page_title) document.title = config.page_title || "Untitled Map";
+    if (config.page_header && config.show_page_header) {
+        document.getElementById('page-header').innerText = config.page_header;
+        document.getElementById('page-header').hidden = false;
+    }
 
     if(config.show_config) {
         var pre = document.createElement('pre');
         pre.innerText = JSON.stringify(map_json, undefined, 2);
+        pre.setAttribute("style", "max-width:min-content");
 
         document.getElementById('config').innerHTML = "Config file: '"+map_file+"'";
         document.getElementById('config').appendChild(pre);

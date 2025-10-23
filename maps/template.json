@@ -10,6 +10,7 @@
         "fixed_canvas_size": true,
         "canvas_width": 400,
         "canvas_height": 300,
+        "show_page_header": true,
         "show_coordinates": true,
         "show_timestamp": true,
         "show_dimensions": true,

@@ -10,10 +10,11 @@
         "fixed_canvas_size": false,
         "canvas_width": 1800,
         "canvas_height": 900,
+        "show_page_header": true,
         "show_coordinates": true,
         "show_timestamp": true,
         "show_dimensions": true,
-        "show_config": false
+        "show_config": true
     },
     "Sensors": [
         {
