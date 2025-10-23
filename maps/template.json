@@ -3,24 +3,31 @@
         "page_title": "Template",
         "page_header": "Suite Template Power Usage",
         "background_img": "img/default.png",
-        "background_scale": [1, 1],
+        "background_scale": [0.5, 0.5],
         "background_anchor": "default",
-        "data_url": "https://url.example.com/api.php",
+        "data_url": "template_data.json",
         "enable_periodic_update": true,
-        "fixed_canvas_size": false,
-        "canvas_width": 1800,
-        "canvas_height": 900
+        "fixed_canvas_size": true,
+        "canvas_width": 400,
+        "canvas_height": 300,
+        "show_coordinates": true,
+        "show_timestamp": true,
+        "show_dimensions": true,
+        "show_config": true
     },
     "Sensors": [
         {
             "name": "Rack 1 Feed A",
-            "position_x": 92,
-            "position_y": 370,
+            "position_x": 100,
+            "position_y": 100,
             "dimension_x": 50,
             "dimension_y": 30,
             "style": {
                 "line_width": 2,
-                "line_color": "black"
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "blue"
             },
             "data": {
                 "header": null,
@@ -35,13 +42,16 @@
         },
         {
             "name": "Rack 1 Feed B",
-            "position_x": 92,
-            "position_y": 420,
-            "dimension_x": 50,
+            "position_x": 200,
+            "position_y": 200,
+            "dimension_x": 80,
             "dimension_y": 30,
             "style": {
                 "line_width": 2,
-                "line_color": "black"
+                "line_color": "black",
+                "font": "Arial",
+                "font_size": 12,
+                "font_color": "auto"
             },
             "data": {
                 "header": null,

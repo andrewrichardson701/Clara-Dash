@@ -157,6 +157,7 @@ function setupCanvas() {
         canvas.height = canvas_height = map_json.Config.canvas_height;
         canvas.width = canvas_width = map_json.Config.canvas_width;
     }
+    toggleVisibileItems();
 }
 
 // SET THE ANCHOR POINT OF THE BACKGROUND IMAGE BASED ON background_img_anchor IN CONFIG
@@ -201,7 +202,8 @@ function build() {
         json = await getData(data_url);
 
         draw(); // draw the canvas
-        updateTimestamp(); // write the tiemstamp
+        populateDimensions(); // update the canvas dimensions
+        updateTimestamp(); // write the timestamp
         periodicUpdate(); // reload data periodically if enabled
     })();
 }
@@ -215,7 +217,7 @@ function build() {
 //          { lineWidth: 2, strokeStyle: 'black' }, 
 //          {'header': null, 'value': '0.1', 'value_math': '*0.1', 'unit': 'A', 'type': 'power_amps', 'url': 'https://example.com', 'image': 'img/21.png'}
 //  );
-function drawSensor(ctx, coordinates = [0,0], dimensions = [20,10], params = {}, data = {}) {
+function drawSensor(ctx, coordinates = [0,0], dimensions = [20,10], style = {}, data = {}) {
     var fillText = ''; // default fillText to empty - this is for the prefix of the data
     var fillColor = 'white'; // default background color
 
@@ -272,16 +274,28 @@ function drawSensor(ctx, coordinates = [0,0], dimensions = [20,10], params = {},
 
     // Draw border
     ctx.beginPath();
-    ctx.lineWidth = params.lineWidth || 1;
-    ctx.strokeStyle = params.strokeStyle || 'black';
+    ctx.lineWidth = style.lineWidth || 1;
+    ctx.strokeStyle = style.lineColor || 'black';
     ctx.rect(coordinates[0], coordinates[1], dimensions[0], dimensions[1]);
     ctx.stroke();
 
     // Draw text
-    ctx.font = "12px Arial";
+    let fontSize = style.font_size || "auto"; // get the font size or default to auto
+    let fontFamily = style.font || "monospace";
+    let fontColor = style.font_color || "auto";
+    // check if the font size is 0 - automatically make it fit the box
+    if (fontSize === 0 || fontSize === "auto") {
+        var box = { x: coordinates[0], y: coordinates[1], width: dimensions[0], height: dimensions[1] };
+        fontSize = fitTextToBox(ctx, fillText, box, fontFamily);
+    }
+    ctx.font = `${fontSize}px ${fontFamily}`;
     ctx.textAlign = "center"; 
     ctx.textBaseline = "middle";
-    ctx.fillStyle = 'black'; // Text color
+    // check if font_color = "auto" and adjust based on the background color of the box
+    if (fontColor == "auto") {
+        fontColor = bestTextColor(fillColor); // pick best color based on background color - this can change so is important
+    }
+    ctx.fillStyle = fontColor || "black"; // Text color
     ctx.fillText(fillText, coordinates[0] + (dimensions[0] / 2), coordinates[1] + (dimensions[1] / 2));
 }
 
@@ -413,6 +427,13 @@ function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
 
+// POPULATE THE CANVUS DIMENSIONS
+function populateDimensions() {
+    var div = document.getElementById('dimensions');
+    var dimension_text = 'Dimensions: '+canvas_width+'px x '+canvas_height+'px';
+    div.innerText = dimension_text;
+}
+
 // UPDATE TIMESTAMP - IN A FUNCTION TO MAKE IT MORE READABLE
 function updateTimestamp() {
     document.getElementById('timestamp').innerText = 'Canvas generated: '+getDateTime();
@@ -435,6 +456,20 @@ function getDateTime() {
     return `${hours}:${minutes}:${seconds} ${day}/${month}/${year}`;
 }
 
+// CHECK IF THE TEXT FITS THE BOX AND SCALE THE FONT SIZE TO FIT
+function fitTextToBox(ctx, text, box, fontFamily) {
+  let fontSize = box.height; // start large
+  ctx.font = `${fontSize}px ${fontFamily}`;
+
+  // Measure and shrink until it fits (with 1px padding all round")
+  while (ctx.measureText(text).width > box.width-2 || fontSize > box.height-2) {
+    fontSize--;
+    ctx.font = `${fontSize}px ${fontFamily}`;
+  }
+  
+  return fontSize;
+}
+
 // CHECK THE INPUT DATA IS A VALID POSITIVE NUMBER - CAN BE A FLOAT/DECIMAL
 function checkValidNumber(n) {
     if (typeof n !== "number" || isNaN(n)) {
@@ -453,6 +488,70 @@ function applyMath(value, mathStr) {
     } catch (err) {
         console.error('Failed to apply math:', err);
         return value;
+    }
+}
+
+// CONVERTS CSS COLOR STRING TO RGB OBJECT {r, g, b}
+function parseColor(color) {
+    color = color.trim().toLowerCase();
+
+    // Hex format (#fff or #ffffff)
+    if (color[0] === "#") {
+        let hex = color.slice(1);
+        if (hex.length === 3) {
+            hex = hex.split("").map(h => h + h).join(""); // convert #abc => #aabbcc
+        }
+        const intVal = parseInt(hex, 16);
+        return {
+            r: (intVal >> 16) & 255,
+            g: (intVal >> 8) & 255,
+            b: intVal & 255
+        };
+    }
+
+    // RGB format: rgb(r,g,b)
+    const rgbMatch = color.match(/^rgb\((\d+),\s*(\d+),\s*(\d+)\)$/);
+    if (rgbMatch) {
+        return {
+            r: parseInt(rgbMatch[1]),
+            g: parseInt(rgbMatch[2]),
+            b: parseInt(rgbMatch[3])
+        };
+    }
+
+    // Named CSS color
+    const ctx = document.createElement("canvas").getContext("2d");
+    ctx.fillStyle = color;
+    ctx.fillRect(0, 0, 1, 1);
+    const data = ctx.getImageData(0, 0, 1, 1).data;
+    return { r: data[0], g: data[1], b: data[2] };
+}
+
+// PICK BEST TEXT COLOR - BLACK OR WHITE - TO BE USED ON DEFINED COLOUR
+function bestTextColor(bgColor) {
+    const { r, g, b } = parseColor(bgColor);
+
+    // Calculate perceived luminance
+    const luminance = (0.299 * r + 0.587 * g + 0.114 * b) / 255;
+
+    return luminance > 0.5 ? "black" : "white";
+}
+
+// TOGGLE VISIBILITY OF CONFIG ITEMS
+function toggleVisibileItems() {
+    const config = map_json.Config;
+    document.getElementById('coords').hidden     = !config.show_coordinates;
+    document.getElementById('timestamp').hidden  = !config.show_timestamp;
+    document.getElementById('dimensions').hidden = !config.show_dimensions;
+    document.getElementById('config').hidden     = !config.show_config;
+
+
+    if(config.show_config) {
+        var pre = document.createElement('pre');
+        pre.innerText = JSON.stringify(map_json, undefined, 2);
+
+        document.getElementById('config').innerHTML = "Config file: '"+map_file+"'";
+        document.getElementById('config').appendChild(pre);
     }
 }
 
