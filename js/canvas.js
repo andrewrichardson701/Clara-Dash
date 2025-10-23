@@ -265,7 +265,7 @@ function drawSensor(ctx, coordinates = [0,0], dimensions = [20,10], style = {}, 
         fillText += data.unit;
     }
     if (data.url && data.image) {
-        interactiveBoxes.push({'x': coordinates[0], 'y': coordinates[1], 'width': dimensions[0], 'height': dimensions[1], 'link': data.url, 'hoverImage': data.image});
+        interactiveBoxes.push({'x': coordinates[0], 'y': coordinates[1], 'width': dimensions[0], 'height': dimensions[1], 'link': resolveArrayPath(json, data.url), 'hoverImage': resolveArrayPath(json, data.image)});
     }
 
     // Fill background
