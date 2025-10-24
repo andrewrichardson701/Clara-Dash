@@ -34,4 +34,10 @@ if (!$continue) {
 // add in the canvas to load the weathermap
 include 'canvas.php';
 
+// Temporarily include the README
 ?>
+<div id="readme" style="font-family: monospace; background: rgba(255,255,255,0.8); padding: 4px; border: 1px solid #ccc; margin-top:10px">
+<?php
+include 'maps/map_README.md';
+?>
+</div>

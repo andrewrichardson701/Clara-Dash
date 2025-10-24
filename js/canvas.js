@@ -13,6 +13,7 @@ function layout() {
     // loopDrawNodes(); - this will loop through the config json file.
 
     loopDrawNodes();
+    loopDrawLinks()
 }
 
 
@@ -25,8 +26,9 @@ function draw() {
     ctx.clearRect(0, 0, canvas_width, canvas_height);
     ctx.drawImage(background, background_x_pos, background_y_pos, background.width*background_x_scale, background.height*background_y_scale);   
 
-    // Uncomment below to show a grid on the canvas
-    // drawGrid(ctx, canvas_height, canvas_width);
+    if (map_json.Config.show_grid) {
+        drawGrid(ctx, canvas_height, canvas_width);
+    }
 
     // draw to canvus
     layout();
@@ -316,6 +318,34 @@ function loopDrawNodes() {
     });
 }
 
+// LOOP THROUGH THE JSON AND DRAW THE LINKS
+function loopDrawLinks() {
+    const links = map_json.Links;
+    // Loop over all links in the Links object
+    Object.values(links).forEach((link) => {
+        link.data.value = resolveArrayPath(json, link.data.value) ?? null;
+        var node_a = link.nodes[0];
+        var node_a_config = map_json.Nodes[node_a.node];
+        var node_b = link.nodes[1];
+        var node_b_config = map_json.Nodes[node_b.node];
+        drawLinkArrow(
+            ctx, // canvas
+            getAnchorPoint(
+                [node_a_config.position_x, node_a_config.position_y], 
+                [node_a_config.dimension_x, node_a_config.dimension_y], 
+                node_a.anchor, 
+                node_a.offset
+            ), // start coordinates
+            getAnchorPoint(
+                [node_b_config.position_x, node_b_config.position_y], 
+                [node_b_config.dimension_x, node_b_config.dimension_y], 
+                node_b.anchor, 
+                node_b.offset
+            ), // end coordinates
+            link.style
+        );
+    });
+}
 
 // DRAW A GRID OVERLY ON THE CANVAS. HELPFUL FOR SHOWING COORDINATES
 function drawGrid(ctx, canvasHeight = null, canvasWidth = null) {
@@ -424,6 +454,104 @@ async function periodicUpdate() {
         console.log('Refreshing disabled.');
     }
 }
+
+// GET THE ANCHOR POINT OF A BOX BASED ON COMPASS DIRETIONS
+function getAnchorPoint(coords = [0, 0], dimensions = [0, 0], anchor = "C", offset = [0, 0]) {
+    let [x, y] = coords;
+    let [w, h] = dimensions;
+    let px = x, py = y;
+
+    switch(anchor) {
+        case 'N': px = x + w/2; py = y; break;          // North
+        case 'S': px = x + w/2; py = y + h; break;      // South
+        case 'E': px = x + w; py = y + h/2; break;      // East
+        case 'W': px = x; py = y + h/2; break;          // West
+        case 'NE': px = x + w; py = y; break;           // North-East
+        case 'NW': px = x; py = y; break;               // North-West
+        case 'SE': px = x + w; py = y + h; break;       // South-East
+        case 'SW': px = x; py = y + h; break;           // South-West
+        case 'C': px = x + w/2; py = y + h/2; break;    // Center
+        default: px = x + w/2; py = y + h/2;            // Center
+    }
+
+    // Apply offset if given as array [xOffset, yOffset]
+    if (Array.isArray(offset)) {
+        px += offset[0] || 0;
+        py += offset[1] || 0;
+    } else if (typeof offset === 'object') {  // fallback for {x, y} object
+        px += offset.x || 0;
+        py += offset.y || 0;
+    } else if (typeof offset === 'number') {  // optional: shorthand number applies to y
+        py += offset;
+    }
+
+    return { x: px, y: py };
+}
+
+// DRAW A LINK ARROW BASED ON FROM AND TO COORDINATES AND OTHER PARAMS
+function drawLinkArrow(ctx, start, end, style) {
+    const headLength = style.width * 2.5; // arrowhead size proportional to line width
+    const angle = Math.atan2(end.y - start.y, end.x - start.x);
+
+    // Draw a filled arrow (shaft + head) given shaft width and arrowhead size
+    const drawArrowShape = (shaftWidth, arrowHeadLength, fillColor, outline = false) => {
+        // Line end slightly overlapping arrowhead by 1px
+        const lineEnd = {
+            x: end.x - (arrowHeadLength - arrowHeadLength/7 ) * Math.cos(angle),
+            y: end.y - (arrowHeadLength - arrowHeadLength/7 ) * Math.sin(angle)
+        };
+
+        // Shaft as a filled rectangle
+        const perpX = Math.sin(angle) * shaftWidth / 2;
+        const perpY = -Math.cos(angle) * shaftWidth / 2;
+
+        ctx.fillStyle = fillColor;
+        ctx.beginPath();
+        ctx.moveTo(start.x - perpX, start.y - perpY);
+        ctx.lineTo(lineEnd.x - perpX, lineEnd.y - perpY);
+        ctx.lineTo(lineEnd.x + perpX, lineEnd.y + perpY);
+        ctx.lineTo(start.x + perpX, start.y + perpY);
+        ctx.closePath();
+        if (!outline) {
+            ctx.fill();
+        } else {
+            ctx.lineWidth = style.line_width || 1;
+            ctx.strokeStyle = style.line_wolor || 'black';
+            ctx.stroke();
+        }
+
+        // Arrowhead as filled triangle
+        ctx.beginPath();
+        ctx.moveTo(end.x, end.y);
+        ctx.lineTo(
+            end.x - arrowHeadLength * Math.cos(angle - Math.PI / 6),
+            end.y - arrowHeadLength * Math.sin(angle - Math.PI / 6)
+        );
+        ctx.lineTo(
+            end.x - arrowHeadLength * Math.cos(angle + Math.PI / 6),
+            end.y - arrowHeadLength * Math.sin(angle + Math.PI / 6)
+        );
+        ctx.closePath();
+        if (!outline) {
+            ctx.fill();
+        } else {
+            ctx.lineWidth = style.line_width || 1;
+            ctx.strokeStyle = style.line_wolor || 'black';
+            ctx.stroke();
+        }
+        
+    };
+
+    
+
+    // Draw main arrow on top
+    drawArrowShape(style.width, headLength, style.color);
+    // Draw outline first if specified
+    if (style.line_color && style.line_width > 0) {
+        drawArrowShape(style.width, headLength, style.color, true);
+    }
+}
+
 
 // SLEEP TIMER FOR USE IN periodicUpdate()
 function sleep(ms) {

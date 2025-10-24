@@ -10,6 +10,7 @@
         "fixed_canvas_size": true,
         "canvas_width": 400,
         "canvas_height": 300,
+        "show_grid": true,
         "show_page_header": true,
         "show_coordinates": true,
         "show_timestamp": true,
@@ -19,8 +20,8 @@
     "Nodes": {
         "RACK1-A": {
             "name": "Rack 1 Feed A",
-            "position_x": 100,
-            "position_y": 100,
+            "position_x": 200,
+            "position_y": 50,
             "dimension_x": 50,
             "dimension_y": 30,
             "style": {
@@ -69,11 +70,49 @@
     "Links": {
         "RACK1-A_RACK1-B": {
             "nodes": [ 
-                {"node": "RACK-1-FEED-A", "anchor": "S", "offset": 10},
-                {"node": "RACK-1-FEED-B", "anchor": "W", "offset": 10}
+                {"node": "RACK1-A", "anchor": "E", "offset": [0,0]},
+                {"node": "RACK1-B", "anchor": "E", "offset": [0,0]}
             ],
-            "label": "bits",
-            "width": 3,
+            "style": {
+                "color": "purple",
+                "width": 10,
+                "line_color": "black",
+                "line_width": 0
+            },
+            "data": [
+                {
+                    "header": null,
+                    "value": "localhost.ports[0].ifInOctets_rate",
+                    "value_math": "*8/1000",
+                    "value_float_num": 2,
+                    "unit": "kbps",
+                    "type": "data",
+                    "url": "localhost.ports[0].graph.graph_full_url",
+                    "image": "localhost.ports[0].graph.graph_full_url"
+                },
+                {
+                    "header": null,
+                    "value": "localhost.ports[0].ifInOctets_rate",
+                    "value_math": "*8/1000",
+                    "value_float_num": 2,
+                    "unit": "kbps",
+                    "type": "data",
+                    "url": "localhost.ports[0].graph.graph_full_url",
+                    "image": "localhost.ports[0].graph.graph_full_url"
+                }
+            ]
+        },
+        "RACK1-B_RACK1-A": {
+            "nodes": [ 
+                {"node": "RACK1-B", "anchor": "W", "offset": [0,0]},
+                {"node": "RACK1-A", "anchor": "W", "offset": [0,0]}
+            ],
+            "style": {
+                "color": "orange",
+                "width": 5,
+                "line_color": "black",
+                "line_width": 2
+            },
             "data": [
                 {
                 "header": null,

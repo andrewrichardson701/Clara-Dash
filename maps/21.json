@@ -10,6 +10,7 @@
         "fixed_canvas_size": false,
         "canvas_width": 1800,
         "canvas_height": 900,
+        "show_grid": false,
         "show_page_header": true,
         "show_coordinates": true,
         "show_timestamp": true,
@@ -18,28 +19,28 @@
     },
     "Nodes": {
         "RACK1-A": {
-    "name": "Rack 1 Feed A",
-    "position_x": 92,
-    "position_y": 370,
-    "dimension_x": 50,
-    "dimension_y": 30,
-    "style": {
-      "line_width": 2,
-      "line_color": "black",
-      "font": "Arial",
-      "font_size": 12,
-      "font_color": "red"
-    },
-    "data": {
-      "header": null,
-      "value": "localhost.ports[0].ifInOctets_rate",
-      "value_math": "*8/1000",
-      "value_float_num": 2,
-      "unit": "kbps",
-      "type": "data",
-      "url": "localhost.ports[0].graph.graph_full_url",
-      "image": "localhost.ports[0].graph.graph_full_url"
-    }
+            "name": "Rack 1 Feed A",
+            "position_x": 92,
+            "position_y": 370,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+            "line_width": 2,
+            "line_color": "black",
+            "font": "Arial",
+            "font_size": 12,
+            "font_color": "red"
+            },
+            "data": {
+            "header": null,
+            "value": "localhost.ports[0].ifInOctets_rate",
+            "value_math": "*8/1000",
+            "value_float_num": 2,
+            "unit": "kbps",
+            "type": "data",
+            "url": "localhost.ports[0].graph.graph_full_url",
+            "image": "localhost.ports[0].graph.graph_full_url"
+            }
         },
         "RACK1-B": {
             "name": "Rack 1 Feed B",
@@ -1393,12 +1394,85 @@
         }
     },
     "Links": {
-        "RACK1-A_RACK1-B": {
+        "RACK1-A_RACK19-B": {
             "nodes": [ 
-                {"node": "RACK1-A", "anchor": "S", "offset": 10},
-                {"node": "RACK1-B", "anchor": "W", "offset": 10}
+                {"node": "RACK1-A", "anchor": "N", "offset": [0,0]},
+                {"node": "RACK19-B", "anchor": "S", "offset": [0,0]}
             ],
-            "width": 3,
+            "style": {
+                "color": "red",
+                "width": 3,
+                "line_color": "black",
+                "line_width": 1
+            },
+            "data": [
+                {
+                "header": null,
+                "value": "localhost.ports[0].ifInOctets_rate",
+                "value_math": "*8/1000",
+                "value_float_num": 2,
+                "unit": "kbps",
+                "type": "data",
+                "url": "localhost.ports[0].graph.graph_full_url",
+                "image": "localhost.ports[0].graph.graph_full_url"
+                },
+                {
+                "header": null,
+                "value": "localhost.ports[0].ifInOctets_rate",
+                "value_math": "*8/1000",
+                "value_float_num": 2,
+                "unit": "kbps",
+                "type": "data",
+                "url": "localhost.ports[0].graph.graph_full_url",
+                "image": "localhost.ports[0].graph.graph_full_url"
+                }
+            ]
+        },
+        "RACK1-A_RACK20-B": {
+            "nodes": [ 
+                {"node": "RACK1-A", "anchor": "NE", "offset": [0,0]},
+                {"node": "RACK20-B", "anchor": "S", "offset": [0,0]}
+            ],
+            "style": {
+                "color": "red",
+                "width": 3,
+                "line_color": "black",
+                "line_width": 0
+            },
+            "data": [
+                {
+                "header": null,
+                "value": "localhost.ports[0].ifInOctets_rate",
+                "value_math": "*8/1000",
+                "value_float_num": 2,
+                "unit": "kbps",
+                "type": "data",
+                "url": "localhost.ports[0].graph.graph_full_url",
+                "image": "localhost.ports[0].graph.graph_full_url"
+                },
+                {
+                "header": null,
+                "value": "localhost.ports[0].ifInOctets_rate",
+                "value_math": "*8/1000",
+                "value_float_num": 2,
+                "unit": "kbps",
+                "type": "data",
+                "url": "localhost.ports[0].graph.graph_full_url",
+                "image": "localhost.ports[0].graph.graph_full_url"
+                }
+            ]
+        },
+        "RACK1-A_RACK21-B": {
+            "nodes": [ 
+                {"node": "RACK1-A", "anchor": "E", "offset": [0,0]},
+                {"node": "RACK21-B", "anchor": "S", "offset": [0,0]}
+            ],
+            "style": {
+                "color": "red",
+                "width": 3,
+                "line_color": "black",
+                "line_width": 0
+            },
             "data": [
                 {
                 "header": null,
