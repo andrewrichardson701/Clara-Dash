@@ -53,7 +53,9 @@ These setup the canvas settings, all of the nodes and all of the links between n
 		"show_coordinates": true,
 		"show_timestamp": true,	
 		"show_dimensions": true,
-		"show_config": true
+		"show_config": true,
+        "image_dimension_x": 400,
+        "image_dimension_y": 200
 	},
 	"Nodes": {
 		"RACK1-A": {
@@ -207,6 +209,8 @@ These setup the canvas settings, all of the nodes and all of the links between n
 		<li><strong>show_timestamp</strong> - Shows the canvas draw timestamp in the top right corner (true / false)</li>
 		<li><strong>show_dimensions</strong> - Shows the dimensions of the canvas below the canvas element (true / false)</li>
 		<li><strong>show_config</strong> - Shows the config file contents below the canvas (and dimensions if enabled) in a pre element (true / false)</li>
+        <li><strong>image_width</strong> - The width of the hover images, in pixels (default = 400) (e.g. 400 / 300 / 250)</li>
+        <li><strong>image_height</strong> - The height of the hover images, in pixels (default = 200) (e.g. 200 / 150 / 100)</li>
 	</ul>
 	<br>
 	<li><strong>"Nodes"</strong>: { ... } - Config for each node to be drawn on the canvas.</li>

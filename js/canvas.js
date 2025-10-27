@@ -35,11 +35,7 @@ function draw() {
 
     // Draw hover image for graphs
     if (hoverBox) {
-        const tooltip = new Image();
-        tooltip.src = hoverBox.hoverImage;
-        tooltip.onload = function () {
-            ctx.drawImage(tooltip, mouse.x + 10, mouse.y + 10, 400, 200); // size: 400x200
-        };
+        drawHoverTooltip(ctx, mouse, hoverBox.hoverImage, canvas, map_json.Config.image_width, map_json.Config.image_height);
     }
 }
 
@@ -796,6 +792,35 @@ function updatePageConfigSettings() {
         document.getElementById('config').innerHTML = "Config file: '"+map_file+"'";
         document.getElementById('config').appendChild(pre);
     }
+}
+
+// HANDLES THE DRAWING OF OVERLIB IMAGES ON HOVER
+// THE IMAGE WILL ALWAYS BE WITHING THE CANVAS BOUNDARIES
+function drawHoverTooltip(ctx, mouse, imageSrc, canvas, width = 400, height = 200, margin = 10) {
+    const tooltip = new Image();
+    tooltip.src = imageSrc;
+    tooltip.onload = function () {
+        let drawX = mouse.x + 10; // default: right
+        let drawY = mouse.y + 10; // default: below
+
+        // Horizontal adjustment
+        if (drawX + width + margin > canvas.width) {
+            drawX = mouse.x - width - 10; // flip left
+        }
+        if (drawX < margin) {
+            drawX = margin; // clamp to left edge
+        }
+
+        // Vertical adjustment
+        if (drawY + height + margin > canvas.height) {
+            drawY = mouse.y - height - 10; // flip above
+        }
+        if (drawY < margin) {
+            drawY = margin; // clamp to top
+        }
+
+        ctx.drawImage(tooltip, drawX, drawY, width, height);
+    };
 }
 
 // HANDLES THE MOVEMENT OF THE MOUSE OVER THE CANVAS

@@ -15,7 +15,9 @@
         "show_coordinates": true,
         "show_timestamp": true,
         "show_dimensions": true,
-        "show_config": true
+        "show_config": true,
+        "image_width": 400,
+        "image_height": 200
     },
     "Nodes": {
         "RACK1-A": {
@@ -2276,6 +2278,7 @@
         },
         "TEST": {
             "name": "Test",
+            "draw": false,
             "position_x": 800,
             "position_y": 600,
             "dimension_x": 200,

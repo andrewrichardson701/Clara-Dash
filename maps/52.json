@@ -15,7 +15,9 @@
         "show_coordinates": true,
         "show_timestamp": true,
         "show_dimensions": true,
-        "show_config": true
+        "show_config": true,
+        "image_width": 400,
+        "image_height": 200
     },
     "Nodes": {
         "RACKA1-A": {
