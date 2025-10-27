@@ -57,6 +57,7 @@ These setup the canvas settings, all of the nodes and all of the links between n
 	"Nodes": {
 		"RACK1-A": {
 			"name": "Rack 1 Feed A",
+			"draw" : true,
 			"position_x": 200,
 			"position_y": 50,
 			"dimension_x": 50,
@@ -81,6 +82,7 @@ These setup the canvas settings, all of the nodes and all of the links between n
 		},
 		"RACK1-B": {
 			"name": "Rack 1 Feed B",
+			"draw": true,
 			"position_x": 200,
 			"position_y": 200,
 			"dimension_x": 80,
@@ -110,6 +112,7 @@ These setup the canvas settings, all of the nodes and all of the links between n
 				{"node": "RACK1-A", "anchor": "E", "offset": [0,0]},
 				{"node": "RACK1-B", "anchor": "E", "offset": [0,0]}
 			],
+			"draw": true,
 			"style": {
 				"color": "purple",
 				"width": 10,
@@ -144,6 +147,7 @@ These setup the canvas settings, all of the nodes and all of the links between n
 				{"node": "RACK1-B", "anchor": "W", "offset": [0,0]},
 				{"node": "RACK1-A", "anchor": "W", "offset": [0,0]}
 			],
+			"draw": true,
 			"style": {
 				"color": "orange",
 				"width": 5,
@@ -209,6 +213,7 @@ These setup the canvas settings, all of the nodes and all of the links between n
 		<li><strong>[unique name]</strong>: { ... } - Each node needs to be an object (an array that allows arrays within it) that has a unique name before it (see <a href="#example-config">example</a>) to be referenced at a later date (e.g. "RACK1-POWERA": { ... })</li>
 		<ul>
 			<li><strong>name</strong> - A friendly readable name for the node (e.g. "Rack 1 Power feed A")</li>
+			<li><strong>draw</strong> - Toggle whether the node should be drawn on the canvas. if not included it will default to true. (true / false)</li>
 			<li><strong>position_x</strong> - The X coordinate of the node location (anchored from the top left of the node) (e.g. 200)</li>
 			<li><strong>position_y</strong> - The Y coordinate of the node location (anchored from the top left of the node) (e.g. 50)</li>
 			<li><strong>dimension_x</strong> - The X length (width) of the node to be drawn (e.g. 50)</li>
@@ -219,7 +224,7 @@ These setup the canvas settings, all of the nodes and all of the links between n
 				<li><strong>line_color</strong> - The color of the line to be drawn (e.g. "black" / "#32a836")</li>
 				<li><strong>font</strong> - The font family to be used for the inner text (e.g. "monospace" / "Arial")
 				<li><strong>font_size</strong> - The size of the font in pixels or "auto" to fit the text to the box dimensions (e.g. 12 / 16 / "auto")</li></li>
-				<li><strong>font_color</strong> - The color of the text to be drawn (e.g. "black" / "#32a836")</li>
+				<li><strong>font_color</strong> - The color of the text to be drawn (e.g. "black" / "#32a836" / "auto")</li>
 			</ul>
 			<li><strong>"data"</strong>: { ... } - All node data parameters (as an object - similar to the node 'unique_name' object)</li>
 			<ul>
@@ -250,6 +255,7 @@ These setup the canvas settings, all of the nodes and all of the links between n
 				{"<strong>node</strong>": "RACK1_A", "<strong>anchor</strong>": "E", "<strong>offset</strong>": [10, 20]},<br>
 				{"<strong>node</strong>": "RACK2_B", "<strong>anchor</strong>": "E", "<strong>offset</strong>": [0, 0]}</li>
 			</ul>
+			<li><strong>draw</strong> - Toggle whether the link should be drawn on the canvas. if not included it will default to true. (true / false)</li>
 			<li><strong>"style"</strong>: { ... } - All node styling parameters (as an object - similar to the node 'unique_name' object)</li>
 			<ul>
 				<li><strong>color</strong> - The inner color of the arrow to be drawn (e.g. "white" / "orange" / "#32a836")</li>
