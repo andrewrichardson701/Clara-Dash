@@ -7,6 +7,7 @@
 			<ul>
 				<li><a href="#example-config">Example Config</a></li>
 				<li><a href="#config-breakdown">Config Breakdown</a></li>
+				<li><a href="#value-math">Value Math</a></li>
 			</ul>
 		</li>
 	</ol>
@@ -278,3 +279,17 @@ These setup the canvas settings, all of the nodes and all of the links between n
 	</ul>
 </ol>
 </details>
+
+<h3>Value Math</h3>
+Math equations can be performed in the value fields for data (e.g. Nodes.RACK1-B.data.value or Links.RACK1-B_RACK1-A.data.value). This is extremely useful when trying to get an average or sum together the data in a collection of racks.
+
+This can be done in a number of ways:
+
+<ol>
+	<li>Simple performing the maths equation for static data:<br><strong>"2 + 5 - (4 * 6) / 2"</strong></li>
+	<li>Using the input data sources and performing the equation on these:<br><strong>"( localhost.ports[0].ifInOctets_rate + localhost.ports[0].ifInOctets_rate + localhost.ports[0].ifInOctets_rate + localhost.ports[0].ifInOctets_rate ) / 2"</strong></li>
+	<li>Using the NODE data, which calculates the NODE data output based on the value and value_math. Each node's data should be references in curly brackets "{NODE}":<br><strong>"( {RACK1-A} + {RACK1-B} + {RACK2-A} + {RACK2-B} ) / 2"</strong><br><br>
+	This means that instead of having something like this: <br>
+<strong>"( localhost.ports[0].ifInOctets_rate + localhost.ports[0].ifInOctets_rate + localhost.ports[0].ifInOctets_rate + localhost.ports[0].ifInOctets_rate ) / 2"</strong>,<br>
+you have something more readable, like this: <br>
+<strong>"( {RACK1-A} + {RACK1-B} + {RACK2-A} + {RACK2-B} ) / 2"</strong>.</li>
