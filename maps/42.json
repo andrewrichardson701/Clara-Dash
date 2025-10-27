@@ -57,13 +57,13 @@
             },
             "data": {
                 "header": null,
-                "value": "proxmox.sensors[0].sensor_value",
-                "value_math": null,
+                "value": "localhost.ports[1].ifInOctets_rate",
+                "value_math": "*8/1000",
                 "value_float_num": 1,
-                "unit": "°C",
-                "type": "temperature_sys",
-                "url": "proxmox.sensors[0].graph.graph_full_url",
-                "image": "proxmox.sensors[0].graph.graph_full_url"
+                "unit": "A",
+                "type": "power_amps",
+                "url": "localhost.ports[0].graph.graph_full_url",
+                "image": "localhost.ports[0].graph.graph_full_url"
             }
         },
         "RACKF2-A": {
@@ -105,13 +105,13 @@
             },
             "data": {
                 "header": null,
-                "value": "proxmox.sensors[0].sensor_value",
-                "value_math": null,
+                "value": "localhost.ports[1].ifInOctets_rate",
+                "value_math": "*8/1000",
                 "value_float_num": 1,
-                "unit": "°C",
-                "type": "temperature_sys",
-                "url": "proxmox.sensors[0].graph.graph_full_url",
-                "image": "proxmox.sensors[0].graph.graph_full_url"
+                "unit": "A",
+                "type": "power_amps",
+                "url": "localhost.ports[0].graph.graph_full_url",
+                "image": "localhost.ports[0].graph.graph_full_url"
             }
         },
         "RACKF3-A": {
@@ -153,13 +153,13 @@
             },
             "data": {
                 "header": null,
-                "value": "proxmox.sensors[0].sensor_value",
-                "value_math": null,
+                "value": "localhost.ports[1].ifInOctets_rate",
+                "value_math": "*8/1000",
                 "value_float_num": 1,
-                "unit": "°C",
-                "type": "temperature_sys",
-                "url": "proxmox.sensors[0].graph.graph_full_url",
-                "image": "proxmox.sensors[0].graph.graph_full_url"
+                "unit": "A",
+                "type": "power_amps",
+                "url": "localhost.ports[0].graph.graph_full_url",
+                "image": "localhost.ports[0].graph.graph_full_url"
             }
         },
         "RACKF4-A": {
@@ -201,13 +201,13 @@
             },
             "data": {
                 "header": null,
-                "value": "proxmox.sensors[0].sensor_value",
-                "value_math": null,
+                "value": "localhost.ports[1].ifInOctets_rate",
+                "value_math": "*8/1000",
                 "value_float_num": 1,
-                "unit": "°C",
-                "type": "temperature_sys",
-                "url": "proxmox.sensors[0].graph.graph_full_url",
-                "image": "proxmox.sensors[0].graph.graph_full_url"
+                "unit": "A",
+                "type": "power_amps",
+                "url": "localhost.ports[0].graph.graph_full_url",
+                "image": "localhost.ports[0].graph.graph_full_url"
             }
         },
         "RACKF5-A": {
@@ -249,13 +249,13 @@
             },
             "data": {
                 "header": null,
-                "value": "proxmox.sensors[0].sensor_value",
-                "value_math": null,
+                "value": "localhost.ports[1].ifInOctets_rate",
+                "value_math": "*8/1000",
                 "value_float_num": 1,
-                "unit": "°C",
-                "type": "temperature_sys",
-                "url": "proxmox.sensors[0].graph.graph_full_url",
-                "image": "proxmox.sensors[0].graph.graph_full_url"
+                "unit": "A",
+                "type": "power_amps",
+                "url": "localhost.ports[0].graph.graph_full_url",
+                "image": "localhost.ports[0].graph.graph_full_url"
             }
         },
         "RACKF6-A": {
@@ -297,13 +297,13 @@
             },
             "data": {
                 "header": null,
-                "value": "proxmox.sensors[0].sensor_value",
-                "value_math": null,
+                "value": "localhost.ports[1].ifInOctets_rate",
+                "value_math": "*8/1000",
                 "value_float_num": 1,
-                "unit": "°C",
-                "type": "temperature_sys",
-                "url": "proxmox.sensors[0].graph.graph_full_url",
-                "image": "proxmox.sensors[0].graph.graph_full_url"
+                "unit": "A",
+                "type": "power_amps",
+                "url": "localhost.ports[0].graph.graph_full_url",
+                "image": "localhost.ports[0].graph.graph_full_url"
             }
         },
         "RACKF7-A": {
@@ -345,13 +345,13 @@
             },
             "data": {
                 "header": null,
-                "value": "proxmox.sensors[0].sensor_value",
-                "value_math": null,
+                "value": "localhost.ports[1].ifInOctets_rate",
+                "value_math": "*8/1000",
                 "value_float_num": 1,
-                "unit": "°C",
-                "type": "temperature_sys",
-                "url": "proxmox.sensors[0].graph.graph_full_url",
-                "image": "proxmox.sensors[0].graph.graph_full_url"
+                "unit": "A",
+                "type": "power_amps",
+                "url": "localhost.ports[0].graph.graph_full_url",
+                "image": "localhost.ports[0].graph.graph_full_url"
             }
         },
         "RACKF8-A": {
@@ -393,13 +393,13 @@
             },
             "data": {
                 "header": null,
-                "value": "proxmox.sensors[0].sensor_value",
-                "value_math": null,
+                "value": "localhost.ports[1].ifInOctets_rate",
+                "value_math": "*8/1000",
                 "value_float_num": 1,
-                "unit": "°C",
-                "type": "temperature_sys",
-                "url": "proxmox.sensors[0].graph.graph_full_url",
-                "image": "proxmox.sensors[0].graph.graph_full_url"
+                "unit": "A",
+                "type": "power_amps",
+                "url": "localhost.ports[0].graph.graph_full_url",
+                "image": "localhost.ports[0].graph.graph_full_url"
             }
         },
         "RACKF9-A": {
@@ -441,13 +441,13 @@
             },
             "data": {
                 "header": null,
-                "value": "proxmox.sensors[0].sensor_value",
-                "value_math": null,
+                "value": "localhost.ports[1].ifInOctets_rate",
+                "value_math": "*8/1000",
                 "value_float_num": 1,
-                "unit": "°C",
-                "type": "temperature_sys",
-                "url": "proxmox.sensors[0].graph.graph_full_url",
-                "image": "proxmox.sensors[0].graph.graph_full_url"
+                "unit": "A",
+                "type": "power_amps",
+                "url": "localhost.ports[0].graph.graph_full_url",
+                "image": "localhost.ports[0].graph.graph_full_url"
             }
         },
         "RACKF10-A": {
@@ -489,13 +489,13 @@
             },
             "data": {
                 "header": null,
-                "value": "proxmox.sensors[0].sensor_value",
-                "value_math": null,
+                "value": "localhost.ports[1].ifInOctets_rate",
+                "value_math": "*8/1000",
                 "value_float_num": 1,
-                "unit": "°C",
-                "type": "temperature_sys",
-                "url": "proxmox.sensors[0].graph.graph_full_url",
-                "image": "proxmox.sensors[0].graph.graph_full_url"
+                "unit": "A",
+                "type": "power_amps",
+                "url": "localhost.ports[0].graph.graph_full_url",
+                "image": "localhost.ports[0].graph.graph_full_url"
             }
         },
         "RACKF11-A": {
@@ -537,13 +537,13 @@
             },
             "data": {
                 "header": null,
-                "value": "proxmox.sensors[0].sensor_value",
-                "value_math": null,
+                "value": "localhost.ports[1].ifInOctets_rate",
+                "value_math": "*8/1000",
                 "value_float_num": 1,
-                "unit": "°C",
-                "type": "temperature_sys",
-                "url": "proxmox.sensors[0].graph.graph_full_url",
-                "image": "proxmox.sensors[0].graph.graph_full_url"
+                "unit": "A",
+                "type": "power_amps",
+                "url": "localhost.ports[0].graph.graph_full_url",
+                "image": "localhost.ports[0].graph.graph_full_url"
             }
         },
         "RACK-PFF-A": {
@@ -585,13 +585,13 @@
             },
             "data": {
                 "header": null,
-                "value": "proxmox.sensors[0].sensor_value",
-                "value_math": null,
+                "value": "localhost.ports[1].ifInOctets_rate",
+                "value_math": "*8/1000",
                 "value_float_num": 1,
-                "unit": "°C",
-                "type": "temperature_sys",
-                "url": "proxmox.sensors[0].graph.graph_full_url",
-                "image": "proxmox.sensors[0].graph.graph_full_url"
+                "unit": "A",
+                "type": "power_amps",
+                "url": "localhost.ports[0].graph.graph_full_url",
+                "image": "localhost.ports[0].graph.graph_full_url"
             }
         },
         "RACKG1-A": {
@@ -633,13 +633,13 @@
             },
             "data": {
                 "header": null,
-                "value": "proxmox.sensors[0].sensor_value",
-                "value_math": null,
+                "value": "localhost.ports[1].ifInOctets_rate",
+                "value_math": "*8/1000",
                 "value_float_num": 1,
-                "unit": "°C",
-                "type": "temperature_sys",
-                "url": "proxmox.sensors[0].graph.graph_full_url",
-                "image": "proxmox.sensors[0].graph.graph_full_url"
+                "unit": "A",
+                "type": "power_amps",
+                "url": "localhost.ports[0].graph.graph_full_url",
+                "image": "localhost.ports[0].graph.graph_full_url"
             }
         },
         "RACKG2-A": {
@@ -681,13 +681,13 @@
             },
             "data": {
                 "header": null,
-                "value": "proxmox.sensors[0].sensor_value",
-                "value_math": null,
+                "value": "localhost.ports[1].ifInOctets_rate",
+                "value_math": "*8/1000",
                 "value_float_num": 1,
-                "unit": "°C",
-                "type": "temperature_sys",
-                "url": "proxmox.sensors[0].graph.graph_full_url",
-                "image": "proxmox.sensors[0].graph.graph_full_url"
+                "unit": "A",
+                "type": "power_amps",
+                "url": "localhost.ports[0].graph.graph_full_url",
+                "image": "localhost.ports[0].graph.graph_full_url"
             }
         },
         "RACKG3-A": {
@@ -729,13 +729,13 @@
             },
             "data": {
                 "header": null,
-                "value": "proxmox.sensors[0].sensor_value",
-                "value_math": null,
+                "value": "localhost.ports[1].ifInOctets_rate",
+                "value_math": "*8/1000",
                 "value_float_num": 1,
-                "unit": "°C",
-                "type": "temperature_sys",
-                "url": "proxmox.sensors[0].graph.graph_full_url",
-                "image": "proxmox.sensors[0].graph.graph_full_url"
+                "unit": "A",
+                "type": "power_amps",
+                "url": "localhost.ports[0].graph.graph_full_url",
+                "image": "localhost.ports[0].graph.graph_full_url"
             }
         },
         "RACKG4-A": {
@@ -777,13 +777,13 @@
             },
             "data": {
                 "header": null,
-                "value": "proxmox.sensors[0].sensor_value",
-                "value_math": null,
+                "value": "localhost.ports[1].ifInOctets_rate",
+                "value_math": "*8/1000",
                 "value_float_num": 1,
-                "unit": "°C",
-                "type": "temperature_sys",
-                "url": "proxmox.sensors[0].graph.graph_full_url",
-                "image": "proxmox.sensors[0].graph.graph_full_url"
+                "unit": "A",
+                "type": "power_amps",
+                "url": "localhost.ports[0].graph.graph_full_url",
+                "image": "localhost.ports[0].graph.graph_full_url"
             }
         },
         "RACKG5-A": {
@@ -825,13 +825,13 @@
             },
             "data": {
                 "header": null,
-                "value": "proxmox.sensors[0].sensor_value",
-                "value_math": null,
+                "value": "localhost.ports[1].ifInOctets_rate",
+                "value_math": "*8/1000",
                 "value_float_num": 1,
-                "unit": "°C",
-                "type": "temperature_sys",
-                "url": "proxmox.sensors[0].graph.graph_full_url",
-                "image": "proxmox.sensors[0].graph.graph_full_url"
+                "unit": "A",
+                "type": "power_amps",
+                "url": "localhost.ports[0].graph.graph_full_url",
+                "image": "localhost.ports[0].graph.graph_full_url"
             }
         },
         "RACKG6-A": {
@@ -873,13 +873,13 @@
             },
             "data": {
                 "header": null,
-                "value": "proxmox.sensors[0].sensor_value",
-                "value_math": null,
+                "value": "localhost.ports[1].ifInOctets_rate",
+                "value_math": "*8/1000",
                 "value_float_num": 1,
-                "unit": "°C",
-                "type": "temperature_sys",
-                "url": "proxmox.sensors[0].graph.graph_full_url",
-                "image": "proxmox.sensors[0].graph.graph_full_url"
+                "unit": "A",
+                "type": "power_amps",
+                "url": "localhost.ports[0].graph.graph_full_url",
+                "image": "localhost.ports[0].graph.graph_full_url"
             }
         },
         "RACKG7-A": {
@@ -921,13 +921,13 @@
             },
             "data": {
                 "header": null,
-                "value": "proxmox.sensors[0].sensor_value",
-                "value_math": null,
+                "value": "localhost.ports[1].ifInOctets_rate",
+                "value_math": "*8/1000",
                 "value_float_num": 1,
-                "unit": "°C",
-                "type": "temperature_sys",
-                "url": "proxmox.sensors[0].graph.graph_full_url",
-                "image": "proxmox.sensors[0].graph.graph_full_url"
+                "unit": "A",
+                "type": "power_amps",
+                "url": "localhost.ports[0].graph.graph_full_url",
+                "image": "localhost.ports[0].graph.graph_full_url"
             }
         },
         "RACKG8-A": {
@@ -969,13 +969,13 @@
             },
             "data": {
                 "header": null,
-                "value": "proxmox.sensors[0].sensor_value",
-                "value_math": null,
+                "value": "localhost.ports[1].ifInOctets_rate",
+                "value_math": "*8/1000",
                 "value_float_num": 1,
-                "unit": "°C",
-                "type": "temperature_sys",
-                "url": "proxmox.sensors[0].graph.graph_full_url",
-                "image": "proxmox.sensors[0].graph.graph_full_url"
+                "unit": "A",
+                "type": "power_amps",
+                "url": "localhost.ports[0].graph.graph_full_url",
+                "image": "localhost.ports[0].graph.graph_full_url"
             }
         },
         "RACKG9-A": {
@@ -1017,13 +1017,13 @@
             },
             "data": {
                 "header": null,
-                "value": "proxmox.sensors[0].sensor_value",
-                "value_math": null,
+                "value": "localhost.ports[1].ifInOctets_rate",
+                "value_math": "*8/1000",
                 "value_float_num": 1,
-                "unit": "°C",
-                "type": "temperature_sys",
-                "url": "proxmox.sensors[0].graph.graph_full_url",
-                "image": "proxmox.sensors[0].graph.graph_full_url"
+                "unit": "A",
+                "type": "power_amps",
+                "url": "localhost.ports[0].graph.graph_full_url",
+                "image": "localhost.ports[0].graph.graph_full_url"
             }
         },
         "RACKG10-A": {
@@ -1065,13 +1065,13 @@
             },
             "data": {
                 "header": null,
-                "value": "proxmox.sensors[0].sensor_value",
-                "value_math": null,
+                "value": "localhost.ports[1].ifInOctets_rate",
+                "value_math": "*8/1000",
                 "value_float_num": 1,
-                "unit": "°C",
-                "type": "temperature_sys",
-                "url": "proxmox.sensors[0].graph.graph_full_url",
-                "image": "proxmox.sensors[0].graph.graph_full_url"
+                "unit": "A",
+                "type": "power_amps",
+                "url": "localhost.ports[0].graph.graph_full_url",
+                "image": "localhost.ports[0].graph.graph_full_url"
             }
         },
         "RACKG11-A": {
@@ -1113,13 +1113,13 @@
             },
             "data": {
                 "header": null,
-                "value": "proxmox.sensors[0].sensor_value",
-                "value_math": null,
+                "value": "localhost.ports[1].ifInOctets_rate",
+                "value_math": "*8/1000",
                 "value_float_num": 1,
-                "unit": "°C",
-                "type": "temperature_sys",
-                "url": "proxmox.sensors[0].graph.graph_full_url",
-                "image": "proxmox.sensors[0].graph.graph_full_url"
+                "unit": "A",
+                "type": "power_amps",
+                "url": "localhost.ports[0].graph.graph_full_url",
+                "image": "localhost.ports[0].graph.graph_full_url"
             }
         },
         "RACK-PFG-A": {
@@ -1161,13 +1161,13 @@
             },
             "data": {
                 "header": null,
-                "value": "proxmox.sensors[0].sensor_value",
-                "value_math": null,
+                "value": "localhost.ports[1].ifInOctets_rate",
+                "value_math": "*8/1000",
                 "value_float_num": 1,
-                "unit": "°C",
-                "type": "temperature_sys",
-                "url": "proxmox.sensors[0].graph.graph_full_url",
-                "image": "proxmox.sensors[0].graph.graph_full_url"
+                "unit": "A",
+                "type": "power_amps",
+                "url": "localhost.ports[0].graph.graph_full_url",
+                "image": "localhost.ports[0].graph.graph_full_url"
             }
         },
         "RACKH1-A": {
@@ -1209,13 +1209,13 @@
             },
             "data": {
                 "header": null,
-                "value": "proxmox.sensors[0].sensor_value",
-                "value_math": null,
+                "value": "localhost.ports[1].ifInOctets_rate",
+                "value_math": "*8/1000",
                 "value_float_num": 1,
-                "unit": "°C",
-                "type": "temperature_sys",
-                "url": "proxmox.sensors[0].graph.graph_full_url",
-                "image": "proxmox.sensors[0].graph.graph_full_url"
+                "unit": "A",
+                "type": "power_amps",
+                "url": "localhost.ports[0].graph.graph_full_url",
+                "image": "localhost.ports[0].graph.graph_full_url"
             }
         },
         "RACKH2-A": {
@@ -1257,13 +1257,13 @@
             },
             "data": {
                 "header": null,
-                "value": "proxmox.sensors[0].sensor_value",
-                "value_math": null,
+                "value": "localhost.ports[1].ifInOctets_rate",
+                "value_math": "*8/1000",
                 "value_float_num": 1,
-                "unit": "°C",
-                "type": "temperature_sys",
-                "url": "proxmox.sensors[0].graph.graph_full_url",
-                "image": "proxmox.sensors[0].graph.graph_full_url"
+                "unit": "A",
+                "type": "power_amps",
+                "url": "localhost.ports[0].graph.graph_full_url",
+                "image": "localhost.ports[0].graph.graph_full_url"
             }
         },
         "RACKH3-A": {
@@ -1305,13 +1305,13 @@
             },
             "data": {
                 "header": null,
-                "value": "proxmox.sensors[0].sensor_value",
-                "value_math": null,
+                "value": "localhost.ports[1].ifInOctets_rate",
+                "value_math": "*8/1000",
                 "value_float_num": 1,
-                "unit": "°C",
-                "type": "temperature_sys",
-                "url": "proxmox.sensors[0].graph.graph_full_url",
-                "image": "proxmox.sensors[0].graph.graph_full_url"
+                "unit": "A",
+                "type": "power_amps",
+                "url": "localhost.ports[0].graph.graph_full_url",
+                "image": "localhost.ports[0].graph.graph_full_url"
             }
         },
         "RACKH4-A": {
@@ -1353,13 +1353,13 @@
             },
             "data": {
                 "header": null,
-                "value": "proxmox.sensors[0].sensor_value",
-                "value_math": null,
+                "value": "localhost.ports[1].ifInOctets_rate",
+                "value_math": "*8/1000",
                 "value_float_num": 1,
-                "unit": "°C",
-                "type": "temperature_sys",
-                "url": "proxmox.sensors[0].graph.graph_full_url",
-                "image": "proxmox.sensors[0].graph.graph_full_url"
+                "unit": "A",
+                "type": "power_amps",
+                "url": "localhost.ports[0].graph.graph_full_url",
+                "image": "localhost.ports[0].graph.graph_full_url"
             }
         },
         "RACKH5-A": {
@@ -1401,13 +1401,13 @@
             },
             "data": {
                 "header": null,
-                "value": "proxmox.sensors[0].sensor_value",
-                "value_math": null,
+                "value": "localhost.ports[1].ifInOctets_rate",
+                "value_math": "*8/1000",
                 "value_float_num": 1,
-                "unit": "°C",
-                "type": "temperature_sys",
-                "url": "proxmox.sensors[0].graph.graph_full_url",
-                "image": "proxmox.sensors[0].graph.graph_full_url"
+                "unit": "A",
+                "type": "power_amps",
+                "url": "localhost.ports[0].graph.graph_full_url",
+                "image": "localhost.ports[0].graph.graph_full_url"
             }
         },
         "RACKH6-A": {
@@ -1449,13 +1449,13 @@
             },
             "data": {
                 "header": null,
-                "value": "proxmox.sensors[0].sensor_value",
-                "value_math": null,
+                "value": "localhost.ports[1].ifInOctets_rate",
+                "value_math": "*8/1000",
                 "value_float_num": 1,
-                "unit": "°C",
-                "type": "temperature_sys",
-                "url": "proxmox.sensors[0].graph.graph_full_url",
-                "image": "proxmox.sensors[0].graph.graph_full_url"
+                "unit": "A",
+                "type": "power_amps",
+                "url": "localhost.ports[0].graph.graph_full_url",
+                "image": "localhost.ports[0].graph.graph_full_url"
             }
         },
         "RACKH7-A": {
@@ -1497,13 +1497,13 @@
             },
             "data": {
                 "header": null,
-                "value": "proxmox.sensors[0].sensor_value",
-                "value_math": null,
+                "value": "localhost.ports[1].ifInOctets_rate",
+                "value_math": "*8/1000",
                 "value_float_num": 1,
-                "unit": "°C",
-                "type": "temperature_sys",
-                "url": "proxmox.sensors[0].graph.graph_full_url",
-                "image": "proxmox.sensors[0].graph.graph_full_url"
+                "unit": "A",
+                "type": "power_amps",
+                "url": "localhost.ports[0].graph.graph_full_url",
+                "image": "localhost.ports[0].graph.graph_full_url"
             }
         },
         "RACKH8-A": {
@@ -1545,13 +1545,13 @@
             },
             "data": {
                 "header": null,
-                "value": "proxmox.sensors[0].sensor_value",
-                "value_math": null,
+                "value": "localhost.ports[1].ifInOctets_rate",
+                "value_math": "*8/1000",
                 "value_float_num": 1,
-                "unit": "°C",
-                "type": "temperature_sys",
-                "url": "proxmox.sensors[0].graph.graph_full_url",
-                "image": "proxmox.sensors[0].graph.graph_full_url"
+                "unit": "A",
+                "type": "power_amps",
+                "url": "localhost.ports[0].graph.graph_full_url",
+                "image": "localhost.ports[0].graph.graph_full_url"
             }
         },
         "RACKH9-A": {
@@ -1593,13 +1593,13 @@
             },
             "data": {
                 "header": null,
-                "value": "proxmox.sensors[0].sensor_value",
-                "value_math": null,
+                "value": "localhost.ports[1].ifInOctets_rate",
+                "value_math": "*8/1000",
                 "value_float_num": 1,
-                "unit": "°C",
-                "type": "temperature_sys",
-                "url": "proxmox.sensors[0].graph.graph_full_url",
-                "image": "proxmox.sensors[0].graph.graph_full_url"
+                "unit": "A",
+                "type": "power_amps",
+                "url": "localhost.ports[0].graph.graph_full_url",
+                "image": "localhost.ports[0].graph.graph_full_url"
             }
         },
         "RACKH10-A": {
@@ -1641,13 +1641,13 @@
             },
             "data": {
                 "header": null,
-                "value": "proxmox.sensors[0].sensor_value",
-                "value_math": null,
+                "value": "localhost.ports[1].ifInOctets_rate",
+                "value_math": "*8/1000",
                 "value_float_num": 1,
-                "unit": "°C",
-                "type": "temperature_sys",
-                "url": "proxmox.sensors[0].graph.graph_full_url",
-                "image": "proxmox.sensors[0].graph.graph_full_url"
+                "unit": "A",
+                "type": "power_amps",
+                "url": "localhost.ports[0].graph.graph_full_url",
+                "image": "localhost.ports[0].graph.graph_full_url"
             }
         },
         "RACKH11-A": {
@@ -1689,13 +1689,13 @@
             },
             "data": {
                 "header": null,
-                "value": "proxmox.sensors[0].sensor_value",
-                "value_math": null,
+                "value": "localhost.ports[1].ifInOctets_rate",
+                "value_math": "*8/1000",
                 "value_float_num": 1,
-                "unit": "°C",
-                "type": "temperature_sys",
-                "url": "proxmox.sensors[0].graph.graph_full_url",
-                "image": "proxmox.sensors[0].graph.graph_full_url"
+                "unit": "A",
+                "type": "power_amps",
+                "url": "localhost.ports[0].graph.graph_full_url",
+                "image": "localhost.ports[0].graph.graph_full_url"
             }
         },
         "RACKI1-A": {
@@ -1737,13 +1737,13 @@
             },
             "data": {
                 "header": null,
-                "value": "proxmox.sensors[0].sensor_value",
-                "value_math": null,
+                "value": "localhost.ports[1].ifInOctets_rate",
+                "value_math": "*8/1000",
                 "value_float_num": 1,
-                "unit": "°C",
-                "type": "temperature_sys",
-                "url": "proxmox.sensors[0].graph.graph_full_url",
-                "image": "proxmox.sensors[0].graph.graph_full_url"
+                "unit": "A",
+                "type": "power_amps",
+                "url": "localhost.ports[0].graph.graph_full_url",
+                "image": "localhost.ports[0].graph.graph_full_url"
             }
         },
         "RACKI2-A": {
@@ -1785,13 +1785,13 @@
             },
             "data": {
                 "header": null,
-                "value": "proxmox.sensors[0].sensor_value",
-                "value_math": null,
+                "value": "localhost.ports[1].ifInOctets_rate",
+                "value_math": "*8/1000",
                 "value_float_num": 1,
-                "unit": "°C",
-                "type": "temperature_sys",
-                "url": "proxmox.sensors[0].graph.graph_full_url",
-                "image": "proxmox.sensors[0].graph.graph_full_url"
+                "unit": "A",
+                "type": "power_amps",
+                "url": "localhost.ports[0].graph.graph_full_url",
+                "image": "localhost.ports[0].graph.graph_full_url"
             }
         },
         "RACKI3-A": {
@@ -1833,13 +1833,13 @@
             },
             "data": {
                 "header": null,
-                "value": "proxmox.sensors[0].sensor_value",
-                "value_math": null,
+                "value": "localhost.ports[1].ifInOctets_rate",
+                "value_math": "*8/1000",
                 "value_float_num": 1,
-                "unit": "°C",
-                "type": "temperature_sys",
-                "url": "proxmox.sensors[0].graph.graph_full_url",
-                "image": "proxmox.sensors[0].graph.graph_full_url"
+                "unit": "A",
+                "type": "power_amps",
+                "url": "localhost.ports[0].graph.graph_full_url",
+                "image": "localhost.ports[0].graph.graph_full_url"
             }
         },
         "RACKI4-A": {
@@ -1881,13 +1881,13 @@
             },
             "data": {
                 "header": null,
-                "value": "proxmox.sensors[0].sensor_value",
-                "value_math": null,
+                "value": "localhost.ports[1].ifInOctets_rate",
+                "value_math": "*8/1000",
                 "value_float_num": 1,
-                "unit": "°C",
-                "type": "temperature_sys",
-                "url": "proxmox.sensors[0].graph.graph_full_url",
-                "image": "proxmox.sensors[0].graph.graph_full_url"
+                "unit": "A",
+                "type": "power_amps",
+                "url": "localhost.ports[0].graph.graph_full_url",
+                "image": "localhost.ports[0].graph.graph_full_url"
             }
         },
         "RACKI5-A": {
@@ -1929,13 +1929,13 @@
             },
             "data": {
                 "header": null,
-                "value": "proxmox.sensors[0].sensor_value",
-                "value_math": null,
+                "value": "localhost.ports[1].ifInOctets_rate",
+                "value_math": "*8/1000",
                 "value_float_num": 1,
-                "unit": "°C",
-                "type": "temperature_sys",
-                "url": "proxmox.sensors[0].graph.graph_full_url",
-                "image": "proxmox.sensors[0].graph.graph_full_url"
+                "unit": "A",
+                "type": "power_amps",
+                "url": "localhost.ports[0].graph.graph_full_url",
+                "image": "localhost.ports[0].graph.graph_full_url"
             }
         },
         "RACKI6-A": {
@@ -1977,13 +1977,13 @@
             },
             "data": {
                 "header": null,
-                "value": "proxmox.sensors[0].sensor_value",
-                "value_math": null,
+                "value": "localhost.ports[1].ifInOctets_rate",
+                "value_math": "*8/1000",
                 "value_float_num": 1,
-                "unit": "°C",
-                "type": "temperature_sys",
-                "url": "proxmox.sensors[0].graph.graph_full_url",
-                "image": "proxmox.sensors[0].graph.graph_full_url"
+                "unit": "A",
+                "type": "power_amps",
+                "url": "localhost.ports[0].graph.graph_full_url",
+                "image": "localhost.ports[0].graph.graph_full_url"
             }
         },
         "RACKI7-A": {
@@ -2025,13 +2025,13 @@
             },
             "data": {
                 "header": null,
-                "value": "proxmox.sensors[0].sensor_value",
-                "value_math": null,
+                "value": "localhost.ports[1].ifInOctets_rate",
+                "value_math": "*8/1000",
                 "value_float_num": 1,
-                "unit": "°C",
-                "type": "temperature_sys",
-                "url": "proxmox.sensors[0].graph.graph_full_url",
-                "image": "proxmox.sensors[0].graph.graph_full_url"
+                "unit": "A",
+                "type": "power_amps",
+                "url": "localhost.ports[0].graph.graph_full_url",
+                "image": "localhost.ports[0].graph.graph_full_url"
             }
         },
         "RACKI8-A": {
@@ -2073,13 +2073,13 @@
             },
             "data": {
                 "header": null,
-                "value": "proxmox.sensors[0].sensor_value",
-                "value_math": null,
+                "value": "localhost.ports[1].ifInOctets_rate",
+                "value_math": "*8/1000",
                 "value_float_num": 1,
-                "unit": "°C",
-                "type": "temperature_sys",
-                "url": "proxmox.sensors[0].graph.graph_full_url",
-                "image": "proxmox.sensors[0].graph.graph_full_url"
+                "unit": "A",
+                "type": "power_amps",
+                "url": "localhost.ports[0].graph.graph_full_url",
+                "image": "localhost.ports[0].graph.graph_full_url"
             }
         },
         "RACKI9-A": {
@@ -2121,13 +2121,13 @@
             },
             "data": {
                 "header": null,
-                "value": "proxmox.sensors[0].sensor_value",
-                "value_math": null,
+                "value": "localhost.ports[1].ifInOctets_rate",
+                "value_math": "*8/1000",
                 "value_float_num": 1,
-                "unit": "°C",
-                "type": "temperature_sys",
-                "url": "proxmox.sensors[0].graph.graph_full_url",
-                "image": "proxmox.sensors[0].graph.graph_full_url"
+                "unit": "A",
+                "type": "power_amps",
+                "url": "localhost.ports[0].graph.graph_full_url",
+                "image": "localhost.ports[0].graph.graph_full_url"
             }
         },
         "RACKI10-A": {
@@ -2169,13 +2169,13 @@
             },
             "data": {
                 "header": null,
-                "value": "proxmox.sensors[0].sensor_value",
-                "value_math": null,
+                "value": "localhost.ports[1].ifInOctets_rate",
+                "value_math": "*8/1000",
                 "value_float_num": 1,
-                "unit": "°C",
-                "type": "temperature_sys",
-                "url": "proxmox.sensors[0].graph.graph_full_url",
-                "image": "proxmox.sensors[0].graph.graph_full_url"
+                "unit": "A",
+                "type": "power_amps",
+                "url": "localhost.ports[0].graph.graph_full_url",
+                "image": "localhost.ports[0].graph.graph_full_url"
             }
         },
         "RACKI11-A": {
@@ -2217,13 +2217,13 @@
             },
             "data": {
                 "header": null,
-                "value": "proxmox.sensors[0].sensor_value",
-                "value_math": null,
+                "value": "localhost.ports[1].ifInOctets_rate",
+                "value_math": "*8/1000",
                 "value_float_num": 1,
-                "unit": "°C",
-                "type": "temperature_sys",
-                "url": "proxmox.sensors[0].graph.graph_full_url",
-                "image": "proxmox.sensors[0].graph.graph_full_url"
+                "unit": "A",
+                "type": "power_amps",
+                "url": "localhost.ports[0].graph.graph_full_url",
+                "image": "localhost.ports[0].graph.graph_full_url"
             }
         },
         "TEMP-F1-COLD": {
