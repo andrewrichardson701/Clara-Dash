@@ -229,7 +229,7 @@ These setup the canvas settings, all of the nodes and all of the links between n
 			<li><strong>"data"</strong>: { ... } - All node data parameters (as an object - similar to the node 'unique_name' object)</li>
 			<ul>
 				<li><strong>header</strong> - Header text to be placed infront of the value in the node (e.g. "Power: " / "Traffic: " / null)</li>
-				<li><strong>value</strong> - The value to be written in the node. This can be an array key from the data_url or a fixed value (e.g. "localhost.ports[0].ifInOctets_rate" / 25)</li>
+				<li><strong>value</strong> - The value to be written in the node. This can be an array key from the data_url or a fixed value. Math functions are also possible here, to do equations and lookup other Node values. (e.g. "localhost.ports[0].ifInOctets_rate" / 25 / "{RACK1-B}" / "( {RACK1-B} + 2 - {RACK1-A} ) / 2" )</li>
 				<li><strong>value_math</strong> - Any math function to be applied to the data to make it readable (e.g. "*8/1000" / "*2" / "/10" / null)</li>
 				<li><strong>value_float_num</strong> - The decimal places to be kept if the value is a floating point (e.g. 2 would be 0.01 / 3 would be 0.001 / 4 would be 0.0001 etc)</li>
 				<li><strong>unit</strong> - Text to be displayed after the value on the node. Commonly the data unit (e.g. "kbps" / "A" / "kW" etc)</li>
@@ -266,7 +266,7 @@ These setup the canvas settings, all of the nodes and all of the links between n
 			<li><strong>"data"</strong>: { ... }, { ... } - All link data parameters. The more data arrays there are, the more nodes will be drawn along the arrow, equally spaced. (as an object - similar to the node 'unique_name' object)</li>
 			<ul>
 				<li><strong>header</strong> - Header text to be placed infront of the value in the node (e.g. "Power: " / "Traffic: " / null)</li>
-				<li><strong>value</strong> - The value to be written in the node. This can be an array key from the data_url or a fixed value (e.g. "localhost.ports[0].ifInOctets_rate" / 25)</li>
+				<li><strong>value</strong> - The value to be written in the node. This can be an array key from the data_url or a fixed value. Math functions are also possible here, to do equations and lookup other Node values. (e.g. "localhost.ports[0].ifInOctets_rate" / 25 / "{RACK1-B}" / "( {RACK1-B} + 2 - {RACK1-A} ) / 2" )</li>
 				<li><strong>value_math</strong> - Any math function to be applied to the data to make it readable (e.g. "*8/1000" / "*2" / "/10" / null)</li>
 				<li><strong>value_float_num</strong> - The decimal places to be kept if the value is a floating point (e.g. 2 would be 0.01 / 3 would be 0.001 / 4 would be 0.0001 etc)</li>
 				<li><strong>unit</strong> - Text to be displayed after the value on the node. Commonly the data unit (e.g. "kbps" / "A" / "kW" etc)</li>

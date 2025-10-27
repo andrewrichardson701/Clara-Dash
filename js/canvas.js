@@ -308,7 +308,7 @@ function loopDrawNodes() {
     Object.values(nodes).forEach((node) => {
         // check if node is enabled for drawing
         if (node.draw === true || node.draw === undefined) {
-            node.data.value = resolveArrayPath(json, node.data.value) ?? null;
+            node.data.value = evaluateExpression(json, node.data.value) ?? null;
             
             drawNode(
                 ctx, // canvas
@@ -328,7 +328,7 @@ function loopDrawLinks() {
     Object.values(links).forEach((link) => {
         // check if the link is enabled for drawing
         if (link.draw === true || link.draw === undefined) {
-            link.data.value = resolveArrayPath(json, link.data.value) ?? null;
+            link.data.value = evaluateExpression(json, link.data.value) ?? null;
             var node_a = link.nodes[0];
             var node_b = link.nodes[1];
     
@@ -397,6 +397,20 @@ function thresholds(data_in, type) {
     switch (type) {
         case 'power_amps':
             u_thold = 32;
+            l_thold = 0.5;
+            ok_color = '#1ac44a';
+            u_color = 'red';
+            l_color = 'red';
+            break;
+        case 'power_amps_feed':
+            u_thold = 1152;
+            l_thold = 0.5;
+            ok_color = '#1ac44a';
+            u_color = 'red';
+            l_color = 'red';
+            break;
+        case 'power_amps_total':
+            u_thold = 2305;
             l_thold = 0.5;
             ok_color = '#1ac44a';
             u_color = 'red';
@@ -654,6 +668,64 @@ function applyMath(value, mathStr) {
         console.error('Failed to apply math:', err);
         return value;
     }
+}
+
+// EVALUATE ANY MATH EXPRESSION IN A STRING
+function evaluateExpression(json, expression) {
+    if (typeof expression === "number") return expression;
+    if (typeof expression !== "string") return null;
+
+    // If it's just a number string
+    if (!isNaN(parseFloat(expression))) return parseFloat(expression);
+
+    // Replace any {NODE} references
+    let workingExpression = expression;
+    if (map_json && map_json.Nodes) {
+        workingExpression = resolveNodeReferences(json, expression);
+    }
+
+    // Replace object paths (e.g. localhost.ports[0].value)
+    const pathRegex = /[A-Za-z_$][\w$]*(?:\[\d+\])?(?:\.[A-Za-z_$][\w$]*(?:\[\d+\])?)*/g;
+
+    const replaced = workingExpression.replace(pathRegex, (match) => {
+        const value = resolveArrayPath(json, match);
+        if (value === undefined || value === null) return 0;
+        if (typeof value === "number") return value;
+        const parsed = parseFloat(value);
+        return isNaN(parsed) ? 0 : parsed;
+    });
+
+    try {
+        // eslint-disable-next-line no-new-func
+        return Function(`"use strict"; return (${replaced});`)();
+    } catch (err) {
+
+        return null;
+    }
+}
+
+// RESOLVE NODE NAMES IN THE VALUE, CALCULATING THE MATH TOO
+function resolveNodeReferences(json, expression) {
+    if (typeof expression !== "string" || !map_json?.Nodes) return expression;
+
+    return expression.replace(/\{([\w-]+)\}/g, (match, nodeName) => {
+        const node = map_json.Nodes?.[nodeName];
+        if (!node) {
+            return 0;
+        }
+
+        const valuePath = node.data?.value;
+        const mathExpr = node.data?.value_math ?? "";
+        const baseValue = resolveArrayPath(json, valuePath);
+
+        // Combine baseValue + value_math, e.g. "42*8/1000"
+        const combined = `${baseValue}${mathExpr}`;
+
+        // Recursively evaluate that subexpression
+        const evaluated = evaluateExpression(json, combined);
+
+        return (typeof evaluated === "number" && !isNaN(evaluated)) ? evaluated : 0;
+    });
 }
 
 // CONVERTS CSS COLOR STRING TO RGB OBJECT {r, g, b}
