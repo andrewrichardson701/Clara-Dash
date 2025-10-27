@@ -25,21 +25,21 @@
             "dimension_x": 50,
             "dimension_y": 30,
             "style": {
-            "line_width": 2,
-            "line_color": "black",
-            "font": "Arial",
-            "font_size": 12,
-            "font_color": "red"
+                "line_width": 2,
+                "line_color": "black",
+                "font": "Arial",
+                "font_size": 12,
+                "font_color": "red"
             },
             "data": {
-            "header": null,
-            "value": "localhost.ports[0].ifInOctets_rate",
-            "value_math": "*8/1000",
-            "value_float_num": 2,
-            "unit": "kbps",
-            "type": "data",
-            "url": "localhost.ports[0].graph.graph_full_url",
-            "image": "localhost.ports[0].graph.graph_full_url"
+                "header": null,
+                "value": "localhost.ports[0].ifInOctets_rate",
+                "value_math": "*8/1000",
+                "value_float_num": 2,
+                "unit": "kbps",
+                "type": "data",
+                "url": "localhost.ports[0].graph.graph_full_url",
+                "image": "localhost.ports[0].graph.graph_full_url"
             }
         },
         "RACK1-B": {

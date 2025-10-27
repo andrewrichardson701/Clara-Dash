@@ -20,6 +20,7 @@
     "Nodes": {
         "RACK1-A": {
             "name": "Rack 1 Feed A",
+            "draw": true,
             "position_x": 200,
             "position_y": 50,
             "dimension_x": 50,
@@ -44,6 +45,7 @@
         },
         "RACK1-B": {
             "name": "Rack 1 Feed B",
+            "draw": true,
             "position_x": 200,
             "position_y": 200,
             "dimension_x": 80,
@@ -73,6 +75,7 @@
                 {"node": "RACK1-A", "anchor": "E", "offset": [0,0]},
                 {"node": "RACK1-B", "anchor": "E", "offset": [0,0]}
             ],
+            "draw": true,
             "style": {
                 "color": "purple",
                 "width": 10,
@@ -107,6 +110,7 @@
                 {"node": "RACK1-B", "anchor": "W", "offset": [0,0]},
                 {"node": "RACK1-A", "anchor": "W", "offset": [0,0]}
             ],
+            "draw": true,
             "style": {
                 "color": "orange",
                 "width": 5,
