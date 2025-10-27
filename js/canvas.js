@@ -306,15 +306,18 @@ function loopDrawNodes() {
     const nodes = map_json.Nodes;
     // Loop over all nodes in the Nodes object
     Object.values(nodes).forEach((node) => {
-        node.data.value = resolveArrayPath(json, node.data.value) ?? null;
-        
-        drawNode(
-            ctx, // canvas
-            [node.position_x, node.position_y], // coordinates
-            [node.dimension_x, node.dimension_y], // dimensions
-            node.style, // style
-            node.data // data
-        );
+        // check if node is enabled for drawing
+        if (node.draw === true || node.draw === undefined) {
+            node.data.value = resolveArrayPath(json, node.data.value) ?? null;
+            
+            drawNode(
+                ctx, // canvas
+                [node.position_x, node.position_y], // coordinates
+                [node.dimension_x, node.dimension_y], // dimensions
+                node.style, // style
+                node.data // data
+            );
+        }
     });
 }
 
@@ -323,27 +326,44 @@ function loopDrawLinks() {
     const links = map_json.Links;
     // Loop over all links in the Links object
     Object.values(links).forEach((link) => {
-        link.data.value = resolveArrayPath(json, link.data.value) ?? null;
-        var node_a = link.nodes[0];
-        var node_a_config = map_json.Nodes[node_a.node];
-        var node_b = link.nodes[1];
-        var node_b_config = map_json.Nodes[node_b.node];
-        drawLinkArrow(
-            ctx, // canvas
-            getAnchorPoint(
-                [node_a_config.position_x, node_a_config.position_y], 
-                [node_a_config.dimension_x, node_a_config.dimension_y], 
-                node_a.anchor, 
-                node_a.offset
-            ), // start coordinates
-            getAnchorPoint(
-                [node_b_config.position_x, node_b_config.position_y], 
-                [node_b_config.dimension_x, node_b_config.dimension_y], 
-                node_b.anchor, 
-                node_b.offset
-            ), // end coordinates
-            link.style
-        );
+        // check if the link is enabled for drawing
+        if (link.draw === true || link.draw === undefined) {
+            link.data.value = resolveArrayPath(json, link.data.value) ?? null;
+            var node_a = link.nodes[0];
+            var node_b = link.nodes[1];
+    
+            var node_a_config = map_json.Nodes[node_a.node];
+            var node_b_config = map_json.Nodes[node_b.node];
+            
+            // check if the A end is drawn
+            if (node_a_config.draw === true || node_a_config.draw === undefined) {
+                // check if the B end is drawn
+                if (node_b_config.draw === true || node_b_config.draw === undefined) {
+                    drawLinkArrow(
+                        ctx, // canvas
+                        getAnchorPoint(
+                            [node_a_config.position_x, node_a_config.position_y], 
+                            [node_a_config.dimension_x, node_a_config.dimension_y], 
+                            node_a.anchor, 
+                            node_a.offset
+                        ), // start coordinates
+                        getAnchorPoint(
+                            [node_b_config.position_x, node_b_config.position_y], 
+                            [node_b_config.dimension_x, node_b_config.dimension_y], 
+                            node_b.anchor, 
+                            node_b.offset
+                        ), // end coordinates
+                        link.style
+                    );
+                } else {
+                    // debugging
+                    // console.log(node_b_config.name +' has not been enabled for drawing. Link not drawn.');
+                }
+            } else {
+                // debugging
+                // console.log(node_a_config.name +' has not been enabled for drawing. Link not drawn.');
+            }
+        }
     });
 }
 
@@ -390,6 +410,20 @@ function thresholds(data_in, type) {
             u_thold = 1000000;
             l_thold = 1;
             break;
+        case 'temperature_room':
+            u_thold = 26;
+            l_thold = 20;
+            ok_color = "aqua";
+            break;
+        case 'temperature_sys':
+            u_thold = 70;
+            l_thold = 0;
+            ok_color = "aqua";
+            break;
+        case 'humidity_room':
+            u_thold = 50;
+            l_thold = 20;
+            ok_color = "pink";
         default:
             u_told = 0;
             l_thold = 0;
@@ -713,9 +747,9 @@ function handleMouseMove(event) {
     canvas.style.cursor = hoverBox ? 'pointer' : 'default'; 
     draw(); // Re-render canvas
 
-    // show coordinates
-    coords_x = Math.floor(event.clientX - rect.left);
-    coords_y = Math.floor(event.clientY - rect.left);
+    // show coordinates (relative to canvas)
+    const coords_x = Math.floor(event.clientX - rect.left);
+    const coords_y = Math.floor(event.clientY - rect.top);
     document.getElementById('coords').innerText = `x: ${coords_x}, y: ${coords_y}`;
 }
 
