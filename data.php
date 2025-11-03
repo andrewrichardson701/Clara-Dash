@@ -6,33 +6,37 @@ $config = require $dir . '/config.php';
 require_once $dir . '/lib/DB.php';
 $db     = new DB($config['db']);
 
-// List of devices
-
-$device_list = [
-    'localhost',
-    'ar-fw',
-    'ar-sw',
-    'jumpbox',
-    'jumpcli',
-    'pi-hole1',
-    'plex',
-    'proxmox',
-    'todo',
-    'torrent',
-    'truenas',
-    'web'
-];
-
 $devices = [];
 
+// List of devices
+
+// $device_list = [
+//     'localhost',
+//     'ar-fw',
+//     'ar-sw',
+//     'jumpbox',
+//     'jumpcli',
+//     'pi-hole1',
+//     'plex',
+//     'proxmox',
+//     'todo',
+//     'torrent',
+//     'truenas',
+//     'web'
+// ];
+
 // for each device get the device_id
-foreach ($device_list as $device) {  
-    $device_info = getApiData(['action' => 'device', 'hostname' => $device]);
+// foreach ($device_list as $device) {  
+//     $device_info = getApiData(['action' => 'device', 'hostname' => $device]);
 
-    $devices[$device]['device'] = $device_info['device'];
+//     $devices[$device]['device'] = $device_info['device'];
+// }
+
+$device_list = getApiData(['action' => 'devices']);
+
+foreach ($device_list['devices'] as $device) {  
+    $devices[$device['hostname']]['device'] = $device;
 }
-
-
 
 foreach($devices as $device => $device_info) {
     $device_id = $device_info['device']['device_id'];

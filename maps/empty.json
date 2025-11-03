@@ -1,0 +1,28 @@
+{
+    "Config": {
+        "page_title": "Empty Map",
+        "page_header": "Empty Map",
+        "background_img": "img/default.png",
+        "background_scale": [0.5, 0.5],
+        "background_anchor": "default",
+        "data_url": "template_data.json",
+        "enable_periodic_update": true,
+        "fixed_canvas_size": true,
+        "canvas_width": 400,
+        "canvas_height": 300,
+        "show_grid": true,
+        "show_page_header": true,
+        "show_coordinates": true,
+        "show_timestamp": true,
+        "show_dimensions": true,
+        "show_config": true,
+        "image_width": 400,
+        "image_height": 200
+    },
+    "Nodes": {
+        
+    },
+    "Links": {
+        
+    }
+}

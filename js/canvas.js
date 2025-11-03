@@ -37,6 +37,9 @@ function draw() {
     if (hoverBox) {
         drawHoverTooltip(ctx, mouse, hoverBox.hoverImage, canvas, map_json.Config.image_width, map_json.Config.image_height);
     }
+
+    // check if anything was drawn to the canvas, if not, redraw or error if too long
+    checkCanvasPopulated();
 }
 
 
@@ -61,6 +64,10 @@ if (typeof map_file === 'undefined') {
 var canvas = document.getElementById('canvas');
 var ctx = canvas.getContext("2d");
 var background = new Image();
+
+// COUNTER FOR CANVAS ACTIONS
+var canvas_counter = 0;
+var redraw_counter = 0;
 
 // INITIALISE THE JSON ARRAYS
 var map_json = json = null;
@@ -155,6 +162,12 @@ function setupCanvas() {
         // fixed sizing, get the sizing from the config
         canvas.height = canvas_height = map_json.Config.canvas_height;
         canvas.width = canvas_width = map_json.Config.canvas_width;
+    }
+    if (canvas.width < 1) {
+        canvas.width = 400;
+    }
+    if (canvas.height < 1) {
+        canvas.height = 100;
     }
 }
 
@@ -269,6 +282,7 @@ function drawNode(ctx, coordinates = [0,0], dimensions = [20,10], style = {}, da
     // Fill background
     ctx.fillStyle = fillColor;
     ctx.fillRect(coordinates[0], coordinates[1], dimensions[0], dimensions[1]);
+    canvas_counter ++;
 
     // Draw border
     ctx.beginPath();
@@ -276,6 +290,7 @@ function drawNode(ctx, coordinates = [0,0], dimensions = [20,10], style = {}, da
     ctx.strokeStyle = style.lineColor || 'black';
     ctx.rect(coordinates[0], coordinates[1], dimensions[0], dimensions[1]);
     ctx.stroke();
+    canvas_counter ++;
 
     // Draw text
     let fontSize = style.font_size || "auto"; // get the font size or default to auto
@@ -295,6 +310,7 @@ function drawNode(ctx, coordinates = [0,0], dimensions = [20,10], style = {}, da
     }
     ctx.fillStyle = fontColor || "black"; // Text color
     ctx.fillText(fillText, coordinates[0] + (dimensions[0] / 2), coordinates[1] + (dimensions[1] / 2));
+    canvas_counter ++;
 }
 
 // LOOP THROUGH THE JSON AND DRAW THE SENSORS
@@ -558,10 +574,12 @@ function drawLinkArrow(ctx, start, end, style) {
         ctx.closePath();
         if (!outline) {
             ctx.fill();
+            canvas_counter ++;
         } else {
             ctx.lineWidth = style.line_width || 1;
             ctx.strokeStyle = style.line_wolor || 'black';
             ctx.stroke();
+            canvas_counter ++;
         }
 
         // Arrowhead as filled triangle
@@ -578,10 +596,12 @@ function drawLinkArrow(ctx, start, end, style) {
         ctx.closePath();
         if (!outline) {
             ctx.fill();
+            canvas_counter ++;
         } else {
             ctx.lineWidth = style.line_width || 1;
             ctx.strokeStyle = style.line_wolor || 'black';
             ctx.stroke();
+            canvas_counter ++;
         }
         
     };
@@ -791,6 +811,23 @@ function updatePageConfigSettings() {
 
         document.getElementById('config').innerHTML = "Config file: '"+map_file+"'";
         document.getElementById('config').appendChild(pre);
+    }
+}
+
+// CHECK IF ANYTHING WAS DRAWN TO THE CANVAS
+async function checkCanvasPopulated() {
+    if (canvas_counter == 0) {
+        if (redraw_counter < 2) {
+            redraw_counter++;
+            await sleep(1000);
+            draw();
+        } else {
+            alert('No objects have been drawn on the Canvas. Please check the JSON config file.');
+        }
+    } else {
+        if (canvas.width == 0 && canvas.height == 0) {
+            window.location.reload();
+        }
     }
 }
 
