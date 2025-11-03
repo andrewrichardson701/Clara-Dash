@@ -156,19 +156,22 @@ function setupBackgroundScaling() {
 function setupCanvas() {
     if (!map_json.Config.fixed_canvas_size) {
         // if not a fixed sizing, scale to background image (including the scaling)
-        canvas.height = canvas_height = background.height * background_y_scale;
-        canvas.width = canvas_width = background.width * background_x_scale;
+        canvas_height = background.height * background_y_scale;
+        canvas_width = background.width * background_x_scale;
     } else {
         // fixed sizing, get the sizing from the config
-        canvas.height = canvas_height = map_json.Config.canvas_height;
-        canvas.width = canvas_width = map_json.Config.canvas_width;
+        canvas_height = map_json.Config.canvas_height;
+        canvas_width = map_json.Config.canvas_width;
     }
-    if (canvas.width < 1) {
-        canvas.width = 400;
+    if (canvas_width < 1) {
+        canvas_width = 400;
     }
-    if (canvas.height < 1) {
-        canvas.height = 100;
+    if (canvas_height < 1) {
+        canvas_height = 100;
     }
+
+    canvas.height = canvas_height;
+    canvas.width = canvas_width;
 }
 
 // SET THE ANCHOR POINT OF THE BACKGROUND IMAGE BASED ON background_img_anchor IN CONFIG
