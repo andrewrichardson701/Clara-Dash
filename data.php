@@ -14,7 +14,7 @@ $device_list = [
     'ar-sw',
     'jumpbox',
     'jumpcli',
-    'pi-hole',
+    'pi-hole1',
     'plex',
     'proxmox',
     'todo',

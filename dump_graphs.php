@@ -12,15 +12,30 @@ $device_list = [
     'localhost',
     'ar-fw',
     'ar-sw',
+    'book',
+    'cacti',
+    'cloud',
+    'ex-ha',
+    'gitlab',
     'jumpbox',
     'jumpcli',
-    'pi-hole',
+    'kuma',
+    'lychee',
+    'paste',
+    'pi-hole1',
+    'pi-hole2',
     'plex',
+    'prism',
     'proxmox',
+    'pterodactyl',
+    'racktables',
+    'smokey',
+    'spike',
     'todo',
     'torrent',
     'truenas',
-    'web'
+    'web',
+    'wiki'
 ];
 
 $devices = [];
@@ -74,19 +89,23 @@ foreach($devices as $device => $device_info) {
 // print_r($devices);
 
 ?>
-<table>
-    <thead>
-        <tr>
-            <th>Device</th>
-            <th>Graph Type</th>
-            <th>Graph Name</th>
-            <th>Graph</th>
-            <th>Current Data</th>
-        </tr>
-    </thead>
-    <tbody>
+<h1>Dump of all Observium graphs.</h1><br>
 <?php
-foreach($devices as $device) {
+foreach($devices as $name => $device) {
+    ?>
+    <h2 style="cursor:pointer" onclick="toggleSection('<?php echo($name); ?>')"><?php echo($name); ?> <or id="icon-<?php echo($name); ?>">+</or></h2>
+    <table id="table-<?php echo($name); ?>" hidden >
+        <thead>
+            <tr>
+                <th>Device</th>
+                <th>Graph Type</th>
+                <th>Graph Name</th>
+                <th>Graph</th>
+                <th>Current Data</th>
+            </tr>
+        </thead>
+        <tbody>
+    <?php
     foreach ($device['ports'] as $i => $port) {
         // if ($device['ports'][$i]['ifInOctets_rate'] > 0 || $device['ports'][$i]['ifOutOctets_rate'] > 0){ 
             ?>
@@ -117,7 +136,25 @@ foreach($devices as $device) {
         <?php
         
     }
+    ?> 
+        </tbody>
+    </table>
+<?php
 }
 ?>
-    </tbody>
-</table>
+
+<script>
+    function toggleSection(device) {
+        var device_table = document.getElementById('table-'+device);
+        var icon = document.getElementById('icon-'+device);
+
+        if (device_table.hidden === true) {
+            device_table.hidden = false;
+            icon.innerText = "-";
+        } else {
+            device_table.hidden = true;
+            icon.innerText = "+";
+        }
+    }
+</script>
+    
