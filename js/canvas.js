@@ -26,6 +26,7 @@ function draw() {
     ctx.clearRect(0, 0, canvas_width, canvas_height);
     ctx.drawImage(background, background_x_pos, background_y_pos, background.width*background_x_scale, background.height*background_y_scale);   
 
+    // NOTE: map_json.Config is still used for static config properties
     if (map_json.Config.show_grid) {
         drawGrid(ctx, canvas_height, canvas_width);
     }
@@ -34,6 +35,7 @@ function draw() {
     layout();
 
     // Draw hover image for graphs
+    // NOTE: map_json.Config is still used for static config properties
     if (hoverBox) {
         drawHoverTooltip(ctx, mouse, hoverBox.hoverImage, canvas, map_json.Config.image_width, map_json.Config.image_height);
     }
@@ -72,6 +74,9 @@ var redraw_counter = 0;
 // INITIALISE THE JSON ARRAYS
 var map_json = json = null;
 
+// NEW GLOBAL VARIABLE FOR STORING RUNTIME CONFIG
+var stored_config = null;
+
 // SET DEFAULT VALUES TO BE OVERWRITTEN LATER
 let interactiveBoxes = [];
 let mouse = { x: 0, y: 0 };
@@ -88,6 +93,10 @@ var background_y_scale = 1;
     try {
         // Wait for the JSON config
         await loadMapJSON();
+        
+        // --- NEW: Copy map_json to stored_config for runtime modifications
+        stored_config = JSON.parse(JSON.stringify(map_json));
+        
         updatePageConfigSettings();
         setupBackgroundScaling();
         setupCanvas();
@@ -223,18 +232,12 @@ function build() {
 }
 
 // DRAW SENSOR IN PRESET METHOD
-// e.g. 
-// drawNode(
-//          ctx, 
-//          [681,420], 
-//          [50,30], 
-//          { lineWidth: 2, strokeStyle: 'black' }, 
-//          {'header': null, 'value': '0.1', 'value_math': '*0.1', 'unit': 'A', 'type': 'power_amps', 'url': 'https://example.com', 'image': 'img/21.png'}
-//  );
-function drawNode(ctx, coordinates = [0,0], dimensions = [20,10], style = {}, data = {}) {
-    var fillText = ''; // default fillText to empty - this is for the prefix of the data
-    var fillColor = 'white'; // default background color
-
+function drawNode(ctx, coordinates = [0,0], dimensions = [20,10], style = {}, data = {}, nodeKey = null) { // MODIFIED SIGNATURE
+    var fillText = ''; 
+    var fillColor = 'white'; 
+    var data_value = null; 
+    
+    // --- 1. BUILD TEXT & PROCESS DATA VALUE ---
     // Build text
     if (data.header) {
         fillText += data.header;
@@ -242,7 +245,7 @@ function drawNode(ctx, coordinates = [0,0], dimensions = [20,10], style = {}, da
     // if there is a value set
     if (data.value) {
         // store it outside of the array to stop overwriting existing data
-        var data_value = data.value; 
+        data_value = data.value; 
 
         // check if there is a math calculation to do
         if (data.value_math) {
@@ -261,8 +264,8 @@ function drawNode(ctx, coordinates = [0,0], dimensions = [20,10], style = {}, da
 
         // Add the header to the data as a prefix
         fillText += data_value;
-
-        // check for the data type to set thresholds for colouring
+        
+        // check for the data type to set thresholds for colouring (moved here to allow fillcolor to be determined before drawing)
         if (data.type) {
             var thold = thresholds(data_value, data.type);
 
@@ -275,36 +278,100 @@ function drawNode(ctx, coordinates = [0,0], dimensions = [20,10], style = {}, da
             }
         }
     }
-    if (data.unit && data_value) {
+    if (data.unit && data_value !== null) { // Only append unit if a value was processed
         fillText += data.unit;
     }
+
+    // --- 2. DETERMINE FONT AND BOX DIMENSIONS (NEW LOGIC) ---
+    let actualDimensions = [...dimensions]; // Local copy of dimensions
+    let actualFontSize;
+    let fontFamily = style.font || "monospace";
+    const textPadding = 10; // Padding around the text
+
+    // Determine font size
+    let configuredFontSize = style.font_size;
+    if (configuredFontSize === 0 || configuredFontSize === "auto") {
+        // If dimensions are fixed, use original fitTextToBox logic. 
+        // If dimensions are auto, default to 12px for initial measurement.
+        if (dimensions[0] === 'auto' || dimensions[1] === 'auto') {
+            actualFontSize = 12; // Default size for auto-sizing
+        } else {
+            // Use current dimensions to fit the text (original logic)
+            var box = { x: coordinates[0], y: coordinates[1], width: dimensions[0], height: dimensions[1] };
+            actualFontSize = fitTextToBox(ctx, fillText, box, fontFamily);
+        }
+    } else {
+        actualFontSize = configuredFontSize;
+    }
+    
+    // Set font for measurement
+    ctx.font = `${actualFontSize}px ${fontFamily}`;
+    
+    // Measure text
+    const textMetrics = ctx.measureText(fillText);
+    const textWidth = textMetrics.width;
+    // Note: Since textBaseline is "middle" and height is less trivial, 
+    // we use a simple 'font size' as an approximation of text height.
+    const textHeight = actualFontSize; 
+
+    // Adjust width if 'auto'
+    if (dimensions[0] === 'auto') {
+        actualDimensions[0] = textWidth + textPadding; 
+    }
+    // Adjust height if 'auto'
+    if (dimensions[1] === 'auto') {
+        actualDimensions[1] = textHeight + textPadding;
+    }
+
+    // If 'auto' font size was used but the auto dimensions are now too small, 
+    // we need to re-run the fitTextToBox logic (only if both are auto or fixed)
+    if ((configuredFontSize === 0 || configuredFontSize === "auto") && (dimensions[0] !== 'auto' && dimensions[1] !== 'auto')) {
+        var finalBox = { x: coordinates[0], y: coordinates[1], width: actualDimensions[0], height: actualDimensions[1] };
+        actualFontSize = fitTextToBox(ctx, fillText, finalBox, fontFamily);
+    }
+    
+    // Use the final calculated dimensions and font size
+    const finalWidth = actualDimensions[0];
+    const finalHeight = actualDimensions[1];
+
+
+    // --- NEW LOGIC: Store the final dimensions to stored_config ---
+    if (nodeKey && stored_config?.Nodes[nodeKey]) {
+        // Store the actual drawn dimensions for use by links (if originally 'auto')
+        stored_config.Nodes[nodeKey].dimension_x = finalWidth;
+        stored_config.Nodes[nodeKey].dimension_y = finalHeight;
+        
+        // Also store the final calculated font size for consistency if needed later
+        if (configuredFontSize === 0 || configuredFontSize === "auto") {
+             stored_config.Nodes[nodeKey].style.font_size = actualFontSize;
+        }
+        // Store final color
+        stored_config.Nodes[nodeKey].data.fillColor = fillColor;
+    }
+
+
+    // --- 3. DRAW BOX & INTERACTIVE INFO ---
     if (data.url && data.image) {
-        interactiveBoxes.push({'x': coordinates[0], 'y': coordinates[1], 'width': dimensions[0], 'height': dimensions[1], 'link': resolveArrayPath(json, data.url), 'hoverImage': resolveArrayPath(json, data.image)});
+        interactiveBoxes.push({'x': coordinates[0], 'y': coordinates[1], 'width': finalWidth, 'height': finalHeight, 'link': resolveArrayPath(json, data.url), 'hoverImage': resolveArrayPath(json, data.image)});
     }
 
     // Fill background
     ctx.fillStyle = fillColor;
-    ctx.fillRect(coordinates[0], coordinates[1], dimensions[0], dimensions[1]);
+    ctx.fillRect(coordinates[0], coordinates[1], finalWidth, finalHeight);
     canvas_counter ++;
 
     // Draw border
     ctx.beginPath();
     ctx.lineWidth = style.lineWidth || 1;
     ctx.strokeStyle = style.lineColor || 'black';
-    ctx.rect(coordinates[0], coordinates[1], dimensions[0], dimensions[1]);
+    ctx.rect(coordinates[0], coordinates[1], finalWidth, finalHeight);
     ctx.stroke();
     canvas_counter ++;
 
-    // Draw text
-    let fontSize = style.font_size || "auto"; // get the font size or default to auto
-    let fontFamily = style.font || "monospace";
+    // --- 4. DRAW TEXT ---
     let fontColor = style.font_color || "auto";
-    // check if the font size is 0 - automatically make it fit the box
-    if (fontSize === 0 || fontSize === "auto") {
-        var box = { x: coordinates[0], y: coordinates[1], width: dimensions[0], height: dimensions[1] };
-        fontSize = fitTextToBox(ctx, fillText, box, fontFamily);
-    }
-    ctx.font = `${fontSize}px ${fontFamily}`;
+    
+    ctx.font = `${actualFontSize}px ${fontFamily}`;
     ctx.textAlign = "center"; 
     ctx.textBaseline = "middle";
     // check if font_color = "auto" and adjust based on the background color of the box
@@ -312,15 +379,16 @@ function drawNode(ctx, coordinates = [0,0], dimensions = [20,10], style = {}, da
         fontColor = bestTextColor(fillColor); // pick best color based on background color - this can change so is important
     }
     ctx.fillStyle = fontColor || "black"; // Text color
-    ctx.fillText(fillText, coordinates[0] + (dimensions[0] / 2), coordinates[1] + (dimensions[1] / 2));
+    ctx.fillText(fillText, coordinates[0] + (finalWidth / 2), coordinates[1] + (finalHeight / 2));
     canvas_counter ++;
 }
 
 // LOOP THROUGH THE JSON AND DRAW THE SENSORS
 function loopDrawNodes() {
-    const nodes = map_json.Nodes;
+    const nodes = stored_config.Nodes; // <-- CHANGED: Use stored_config
     // Loop over all nodes in the Nodes object
-    Object.values(nodes).forEach((node) => {
+    Object.keys(nodes).forEach((nodeKey) => { // <-- CHANGED: Iterate over keys
+        const node = nodes[nodeKey]; // Get the node object
         // check if node is enabled for drawing
         if (node.draw === true || node.draw === undefined) {
             node.data.value = evaluateExpression(json, node.data.value) ?? null;
@@ -330,7 +398,8 @@ function loopDrawNodes() {
                 [node.position_x, node.position_y], // coordinates
                 [node.dimension_x, node.dimension_y], // dimensions
                 node.style, // style
-                node.data // data
+                node.data, // data
+                nodeKey // <-- NEW: Pass the node's key
             );
         }
     });
@@ -338,7 +407,7 @@ function loopDrawNodes() {
 
 // LOOP THROUGH THE JSON AND DRAW THE LINKS
 function loopDrawLinks() {
-    const links = map_json.Links;
+    const links = stored_config.Links; // <-- CHANGED: Use stored_config
     // Loop over all links in the Links object
     Object.values(links).forEach((link) => {
         // check if the link is enabled for drawing
@@ -347,8 +416,8 @@ function loopDrawLinks() {
             var node_a = link.nodes[0];
             var node_b = link.nodes[1];
     
-            var node_a_config = map_json.Nodes[node_a.node];
-            var node_b_config = map_json.Nodes[node_b.node];
+            var node_a_config = stored_config.Nodes[node_a.node]; // <-- CHANGED: Use stored_config
+            var node_b_config = stored_config.Nodes[node_b.node]; // <-- CHANGED: Use stored_config
             
             // check if the A end is drawn
             if (node_a_config.draw === true || node_a_config.draw === undefined) {
@@ -358,13 +427,13 @@ function loopDrawLinks() {
                         ctx, // canvas
                         getAnchorPoint(
                             [node_a_config.position_x, node_a_config.position_y], 
-                            [node_a_config.dimension_x, node_a_config.dimension_y], 
+                            [node_a_config.dimension_x, node_a_config.dimension_y], // Now guaranteed to be numeric
                             node_a.anchor, 
                             node_a.offset
                         ), // start coordinates
                         getAnchorPoint(
                             [node_b_config.position_x, node_b_config.position_y], 
-                            [node_b_config.dimension_x, node_b_config.dimension_y], 
+                            [node_b_config.dimension_x, node_b_config.dimension_y], // Now guaranteed to be numeric
                             node_b.anchor, 
                             node_b.offset
                         ), // end coordinates
