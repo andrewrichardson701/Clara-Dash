@@ -53,9 +53,7 @@ These setup the canvas settings, all of the nodes and all of the links between n
 		"show_coordinates": true,
 		"show_timestamp": true,	
 		"show_dimensions": true,
-		"show_config": true,
-        "image_dimension_x": 400,
-        "image_dimension_y": 200
+		"show_config": true
 	},
 	"Nodes": {
 		"RACK1-A": {
@@ -63,14 +61,15 @@ These setup the canvas settings, all of the nodes and all of the links between n
 			"draw" : true,
 			"position_x": 200,
 			"position_y": 50,
-			"dimension_x": 50,
-			"dimension_y": 30,
+			"dimension_x": "auto",
+			"dimension_y": "auto",
 			"style": {
 				"line_width": 2,
 				"line_color": "black",
 				"font": "monospace",
 				"font_size": "auto",
-				"font_color": "blue"
+				"font_color": "blue",
+                "padding": 5
 			},
 			"data": {
 				"header": null,
@@ -95,7 +94,8 @@ These setup the canvas settings, all of the nodes and all of the links between n
 				"line_color": "black",
 				"font": "Arial",
 				"font_size": 12,
-				"font_color": "auto"
+				"font_color": "auto",
+                "padding": 5
 			},
 			"data": {
 				"header": null,
@@ -120,7 +120,9 @@ These setup the canvas settings, all of the nodes and all of the links between n
 				"color": "purple",
 				"width": 10,
 				"line_color": "black",
-				"line_width": 0
+				"line_width": 0,
+                "line_two_way": true,
+                "line_direction": "converge"
 			},
 			"data": [
 				{
@@ -131,7 +133,8 @@ These setup the canvas settings, all of the nodes and all of the links between n
 					"unit": "kbps",
 					"type": "data",
 					"url": "localhost.ports[0].graph.graph_full_url",
-					"image": "localhost.ports[0].graph.graph_full_url"
+					"image": "localhost.ports[0].graph.graph_full_url",
+                    "draw": false
 				},
 				{
 					"header": null,
@@ -141,7 +144,8 @@ These setup the canvas settings, all of the nodes and all of the links between n
 					"unit": "kbps",
 					"type": "data",
 					"url": "localhost.ports[0].graph.graph_full_url",
-					"image": "localhost.ports[0].graph.graph_full_url"
+					"image": "localhost.ports[0].graph.graph_full_url",
+                    "draw": false
 				}
 			]
 		},
@@ -155,7 +159,9 @@ These setup the canvas settings, all of the nodes and all of the links between n
 				"color": "orange",
 				"width": 5,
 				"line_color": "black",
-				"line_width": 2
+				"line_width": 2,
+                "line_two_way": true,
+                "line_direction": "converge"
 			},
 			"data": [
 				{
@@ -166,7 +172,8 @@ These setup the canvas settings, all of the nodes and all of the links between n
 					"unit": "kbps",
 					"type": "data",
 					"url": "localhost.ports[0].graph.graph_full_url",
-					"image": "localhost.ports[0].graph.graph_full_url"
+					"image": "localhost.ports[0].graph.graph_full_url",
+                    "draw": true
 				},
 				{
 					"header": null,
@@ -176,7 +183,8 @@ These setup the canvas settings, all of the nodes and all of the links between n
 					"unit": "kbps",
 					"type": "data",
 					"url": "localhost.ports[0].graph.graph_full_url",
-					"image": "localhost.ports[0].graph.graph_full_url"
+					"image": "localhost.ports[0].graph.graph_full_url",
+                    "draw": true
 				}
 			]
 		}
@@ -209,8 +217,8 @@ These setup the canvas settings, all of the nodes and all of the links between n
 		<li><strong>show_timestamp</strong> - Shows the canvas draw timestamp in the top right corner (true / false)</li>
 		<li><strong>show_dimensions</strong> - Shows the dimensions of the canvas below the canvas element (true / false)</li>
 		<li><strong>show_config</strong> - Shows the config file contents below the canvas (and dimensions if enabled) in a pre element (true / false)</li>
-        <li><strong>image_width</strong> - The width of the hover images, in pixels (default = 400) (e.g. 400 / 300 / 250)</li>
-        <li><strong>image_height</strong> - The height of the hover images, in pixels (default = 200) (e.g. 200 / 150 / 100)</li>
+		<li><strong>image_width</strong> - The width of the hover images, in pixels (default = 400) (e.g. 400 / 300 / 250)</li>
+		<li><strong>image_height</strong> - The height of the hover images, in pixels (default = 200) (e.g. 200 / 150 / 100)</li>
 	</ul>
 	<br>
 	<li><strong>"Nodes"</strong>: { ... } - Config for each node to be drawn on the canvas.</li>
@@ -221,8 +229,8 @@ These setup the canvas settings, all of the nodes and all of the links between n
 			<li><strong>draw</strong> - Toggle whether the node should be drawn on the canvas. if not included it will default to true. (true / false)</li>
 			<li><strong>position_x</strong> - The X coordinate of the node location (anchored from the top left of the node) (e.g. 200)</li>
 			<li><strong>position_y</strong> - The Y coordinate of the node location (anchored from the top left of the node) (e.g. 50)</li>
-			<li><strong>dimension_x</strong> - The X length (width) of the node to be drawn (e.g. 50)</li>
-			<li><strong>dimension_y</strong> - The Y length (height) of the node to be drawn (e.g. 30)</li>
+			<li><strong>dimension_x</strong> - The X length (width) of the node to be drawn. This can be set to "auto" to allow the box to fit the text size. If the text size is also "auto", the text will become 12px (e.g. 50, "auto")</li>
+			<li><strong>dimension_y</strong> - The Y length (height) of the node to be drawn. This can be set to "auto" to allow the box to fit the text size. If the text size is also "auto", the text will become 12px (e.g. 30, "auto")</li>
 			<li><strong>"style"</strong>: { ... } - All node styling parameters (as an object - similar to the node 'unique_name' object)</li>
 			<ul>
 				<li><strong>line_width</strong> - The width of the line to be drawn (e.g. 2)</li>
@@ -230,6 +238,8 @@ These setup the canvas settings, all of the nodes and all of the links between n
 				<li><strong>font</strong> - The font family to be used for the inner text (e.g. "monospace" / "Arial")
 				<li><strong>font_size</strong> - The size of the font in pixels or "auto" to fit the text to the box dimensions (e.g. 12 / 16 / "auto")</li></li>
 				<li><strong>font_color</strong> - The color of the text to be drawn (e.g. "black" / "#32a836" / "auto")</li>
+                <li><strong>padding</strong> - The amount of pixels between the text and the box edge when dimension = "auto" (e.g. "2 / 5 / 10. default: 10)</li>
+                <li><strong>anchor</strong> - The anchor point of the node to be drawn, as compass points (e.g. "N / E / S / W / NE / SE / SW / NW / C". default = "NW")</li>
 			</ul>
 			<li><strong>"data"</strong>: { ... } - All node data parameters (as an object - similar to the node 'unique_name' object)</li>
 			<ul>
@@ -267,7 +277,19 @@ These setup the canvas settings, all of the nodes and all of the links between n
 				<li><strong>width</strong> - The width of the arrow to be drawn (e.g. 2 / 5 / 10)</li>
 				<li><strong>line_color</strong> - The color of the outer line to be drawn around the arrow (e.g. "black" / "#32a836")</li>
 				<li><strong>line_width</strong> - The width of the outer line to be drawn around the arrow (e.g. 2)</li>
+                <li><strong>line_two_way</strong> - Determine whether the line is one way, or two way (true / false)</li>
+                <li><strong>line_direction</strong> - Determine the direction of the link line(s) (e.g. "converge", "diverge", "reverse". default: converge)</li>
 			</ul>
+            <li><strong>"node_style"</strong>: { ... } - All node styling parameters (as an object - similar to the node 'unique_name' object)</li>
+            <ul>
+                <li><strong>line_width</strong> - The width of the line to be drawn (e.g. 2)</li>
+				<li><strong>line_color</strong> - The color of the line to be drawn (e.g. "black" / "#32a836")</li>
+				<li><strong>font</strong> - The font family to be used for the inner text (e.g. "monospace" / "Arial")
+				<li><strong>font_size</strong> - The size of the font in pixels or "auto" to fit the text to the box dimensions (e.g. 12 / 16 / "auto")</li></li>
+				<li><strong>font_color</strong> - The color of the text to be drawn (e.g. "black" / "#32a836" / "auto")</li>
+                <li><strong>padding</strong> - The amount of pixels between the text and the box edge when dimension = "auto" (e.g. "2 / 5 / 10. default: 10)</li>
+                <li><strong>anchor</strong> - The anchor point of the node to be drawn, as compass points (e.g. "N / E / S / W / NE / SE / SW / NW / C". default = "NW")</li>
+            </ul>
 			<li><strong>"data"</strong>: { ... }, { ... } - All link data parameters. The more data arrays there are, the more nodes will be drawn along the arrow, equally spaced. (as an object - similar to the node 'unique_name' object)</li>
 			<ul>
 				<li><strong>header</strong> - Header text to be placed infront of the value in the node (e.g. "Power: " / "Traffic: " / null)</li>
