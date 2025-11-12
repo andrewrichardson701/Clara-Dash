@@ -1,146 +1,155 @@
 {
-    "Config": {
-        "page_title": "Template",
-        "page_header": "Suite Template Power Usage",
-        "background_img": "img/default.png",
-        "background_scale": [0.5, 0.5],
-        "background_anchor": "default",
-        "data_url": "template_data.json",
-        "enable_periodic_update": true,
-        "fixed_canvas_size": true,
-        "canvas_width": 400,
-        "canvas_height": 300,
-        "show_grid": true,
-        "show_page_header": true,
-        "show_coordinates": true,
-        "show_timestamp": true,
-        "show_dimensions": true,
-        "show_config": true,
-        "image_width": 400,
-        "image_height": 200
-    },
-    "Nodes": {
-        "RACK1-A": {
-            "name": "Rack 1 Feed A",
-            "draw": true,
-            "position_x": 200,
-            "position_y": 50,
-            "dimension_x": 50,
-            "dimension_y": 30,
-            "style": {
-                "line_width": 2,
-                "line_color": "black",
-                "font": "monospace",
-                "font_size": "auto",
-                "font_color": "blue"
-            },
-            "data": {
-                "header": null,
-                "value": "localhost.ports[0].ifInOctets_rate",
-                "value_math": "*8/1000",
-                "value_float_num": 2,
-                "unit": "kbps",
-                "type": "data",
-                "url": "localhost.ports[0].graph.graph_full_url",
-                "image": "localhost.ports[0].graph.graph_full_url"
-            }
-        },
-        "RACK1-B": {
-            "name": "Rack 1 Feed B",
-            "draw": true,
-            "position_x": 200,
-            "position_y": 200,
-            "dimension_x": 80,
-            "dimension_y": 30,
-            "style": {
-                "line_width": 2,
-                "line_color": "black",
-                "font": "Arial",
-                "font_size": 12,
-                "font_color": "auto"
-            },
-            "data": {
-                "header": null,
-                "value": "localhost.ports[0].ifOutOctets_rate",
-                "value_math": "*8/1000",
-                "value_float_num": 2,
-                "unit": "kbps",
-                "type": "data",
-                "url": "localhost.ports[0].graph.graph_full_url",
-                "image": "localhost.ports[0].graph.graph_full_url"
-            }
-        }
-    },
-    "Links": {
-        "RACK1-A_RACK1-B": {
-            "nodes": [ 
-                {"node": "RACK1-A", "anchor": "E", "offset": [0,0]},
-                {"node": "RACK1-B", "anchor": "E", "offset": [0,0]}
-            ],
-            "draw": true,
-            "style": {
-                "color": "purple",
-                "width": 10,
-                "line_color": "black",
-                "line_width": 0
-            },
-            "data": [
-                {
-                    "header": null,
-                    "value": "localhost.ports[0].ifInOctets_rate",
-                    "value_math": "*8/1000",
-                    "value_float_num": 2,
-                    "unit": "kbps",
-                    "type": "data",
-                    "url": "localhost.ports[0].graph.graph_full_url",
-                    "image": "localhost.ports[0].graph.graph_full_url"
-                },
-                {
-                    "header": null,
-                    "value": "localhost.ports[0].ifInOctets_rate",
-                    "value_math": "*8/1000",
-                    "value_float_num": 2,
-                    "unit": "kbps",
-                    "type": "data",
-                    "url": "localhost.ports[0].graph.graph_full_url",
-                    "image": "localhost.ports[0].graph.graph_full_url"
-                }
-            ]
-        },
-        "RACK1-B_RACK1-A": {
-            "nodes": [ 
-                {"node": "RACK1-B", "anchor": "W", "offset": [0,0]},
-                {"node": "RACK1-A", "anchor": "W", "offset": [0,0]}
-            ],
-            "draw": true,
-            "style": {
-                "color": "orange",
-                "width": 5,
-                "line_color": "black",
-                "line_width": 2
-            },
-            "data": [
-                {
-                "header": null,
-                "value": "localhost.ports[0].ifInOctets_rate",
-                "value_math": "*8/1000",
-                "value_float_num": 2,
-                "unit": "kbps",
-                "type": "data",
-                "url": "localhost.ports[0].graph.graph_full_url",
-                "image": "localhost.ports[0].graph.graph_full_url"
-                },
-                {
-                "header": null,
-                "value": "localhost.ports[0].ifInOctets_rate",
-                "value_math": "*8/1000",
-                "value_float_num": 2,
-                "unit": "kbps",
-                "type": "data",
-                "url": "localhost.ports[0].graph.graph_full_url",
-                "image": "localhost.ports[0].graph.graph_full_url"
-                }
-            ]
-        }
-    }
+	"Config": {
+		"page_title": "Template",
+		"page_header": "Suite Template Power Usage",
+		"background_img": "img/default.png",
+		"background_scale": [0.5, 0.5],
+		"background_anchor": "default",
+		"data_url": "template_data.json",
+		"enable_periodic_update": true,
+		"fixed_canvas_size": true,
+		"canvas_width": 400,
+		"canvas_height": 300,
+		"show_grid" : false,
+		"show_page_header": true,
+		"show_coordinates": true,
+		"show_timestamp": true,	
+		"show_dimensions": true,
+		"show_config": true
+	},
+	"Nodes": {
+		"RACK1-A": {
+			"name": "Rack 1 Feed A",
+			"draw" : true,
+			"position_x": 200,
+			"position_y": 50,
+			"dimension_x": "auto",
+			"dimension_y": "auto",
+			"style": {
+                "color": "auto",
+				"line_width": 2,
+				"line_color": "black",
+				"font": "monospace",
+				"font_size": "auto",
+				"font_color": "blue",
+                "padding": 5
+			},
+			"data": {
+				"header": null,
+				"value": "localhost.ports[0].ifInOctets_rate",
+				"value_math": "*8/1000",
+				"value_float_num": 2,
+				"unit": "kbps",
+				"type": "data",
+				"url": "localhost.ports[0].graph.graph_full_url",
+				"image": "localhost.ports[0].graph.graph_full_url"
+			}
+		},
+		"RACK1-B": {
+			"name": "Rack 1 Feed B",
+			"draw": true,
+			"position_x": 200,
+			"position_y": 200,
+			"dimension_x": 80,
+			"dimension_y": 30,
+			"style": {
+				"line_width": 2,
+				"line_color": "black",
+				"font": "Arial",
+				"font_size": 12,
+				"font_color": "auto",
+                "padding": 5
+			},
+			"data": {
+				"header": null,
+				"value": "localhost.ports[0].ifOutOctets_rate",
+				"value_math": "*8/1000",
+				"value_float_num": 2,
+				"unit": "kbps",
+				"type": "data",
+				"url": "localhost.ports[0].graph.graph_full_url",
+				"image": "localhost.ports[0].graph.graph_full_url"
+			}
+		}
+	},
+	"Links": {
+		"RACK1-A_RACK1-B": {
+			"nodes": [
+				{"node": "RACK1-A", "anchor": "E", "offset": [0,0]},
+				{"node": "RACK1-B", "anchor": "E", "offset": [0,0]}
+			],
+			"draw": true,
+			"style": {
+				"color": "purple",
+				"width": 10,
+				"line_color": "black",
+				"line_width": 0,
+                "line_two_way": true,
+                "line_direction": "converge"
+			},
+			"data": [
+				{
+					"header": null,
+					"value": "localhost.ports[0].ifInOctets_rate",
+					"value_math": "*8/1000",
+					"value_float_num": 2,
+					"unit": "kbps",
+					"type": "data",
+					"url": "localhost.ports[0].graph.graph_full_url",
+					"image": "localhost.ports[0].graph.graph_full_url",
+                    "draw": false
+				},
+				{
+					"header": null,
+					"value": "localhost.ports[0].ifInOctets_rate",
+					"value_math": "*8/1000",
+					"value_float_num": 2,
+					"unit": "kbps",
+					"type": "data",
+					"url": "localhost.ports[0].graph.graph_full_url",
+					"image": "localhost.ports[0].graph.graph_full_url",
+                    "draw": false
+				}
+			]
+		},
+		"RACK1-B_RACK1-A": {
+			"nodes": [
+				{"node": "RACK1-B", "anchor": "W", "offset": [0,0]},
+				{"node": "RACK1-A", "anchor": "W", "offset": [0,0]}
+			],
+			"draw": true,
+			"style": {
+				"color": "orange",
+				"width": 5,
+				"line_color": "black",
+				"line_width": 2,
+                "line_two_way": true,
+                "line_direction": "converge"
+			},
+			"data": [
+				{
+					"header": null,
+					"value": "localhost.ports[0].ifInOctets_rate",
+					"value_math": "*8/1000",
+					"value_float_num": 2,
+					"unit": "kbps",
+					"type": "data",
+					"url": "localhost.ports[0].graph.graph_full_url",
+					"image": "localhost.ports[0].graph.graph_full_url",
+                    "draw": true
+				},
+				{
+					"header": null,
+					"value": "localhost.ports[0].ifInOctets_rate",
+					"value_math": "*8/1000",
+					"value_float_num": 2,
+					"unit": "kbps",
+					"type": "data",
+					"url": "localhost.ports[0].graph.graph_full_url",
+					"image": "localhost.ports[0].graph.graph_full_url",
+                    "draw": true
+				}
+			]
+		}
+	}
 }
