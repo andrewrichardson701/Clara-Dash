@@ -37,7 +37,23 @@ function draw() {
     // Draw hover image for graphs
     // NOTE: map_json.Config is still used for static config properties
     if (hoverBox) {
-        drawHoverTooltip(ctx, mouse, hoverBox.hoverImage, canvas, map_json.Config.image_width, map_json.Config.image_height);
+        // drawHoverTooltip(ctx, mouse, hoverBox.hoverImage, canvas, map_json.Config.image_width, map_json.Config.image_height);
+        drawHoverTooltip(
+            ctx,
+            mouse,
+            hoverBox.hoverImage,
+            canvas,
+            map_json.Config.image_width,
+            map_json.Config.image_height,
+            10,
+            hoverBox.name || "" // pass name for display
+        );
+    } 
+
+    // check and clear cache
+    if (!hoverBox && hoverCache.currentSrc) {
+        hoverCache.currentSrc = null;
+        hoverCache.image = null;
     }
 
     // check if anything was drawn to the canvas, if not, redraw or error if too long
@@ -77,6 +93,12 @@ var map_json = json = null;
 // NEW GLOBAL VARIABLE FOR STORING RUNTIME CONFIG
 var stored_config = null;
 
+// SET EMPTY CACHE
+let hoverCache = {
+    currentSrc: null,
+    image: null
+};
+
 // SET DEFAULT VALUES TO BE OVERWRITTEN LATER
 let interactiveBoxes = [];
 let mouse = { x: 0, y: 0 };
@@ -94,7 +116,7 @@ var background_y_scale = 1;
         // Wait for the JSON config
         await loadMapJSON();
         
-        // --- NEW: Copy map_json to stored_config for runtime modifications
+        // Copy map_json to stored_config for runtime modifications
         stored_config = JSON.parse(JSON.stringify(map_json));
         
         updatePageConfigSettings();
@@ -224,6 +246,9 @@ function build() {
         // get the data json
         json = await getData(data_url);
 
+        // Reset stored_config to a fresh deep copy of the original map_json.
+        stored_config = JSON.parse(JSON.stringify(map_json));
+
         draw(); // draw the canvas
         populateDimensions(); // update the canvas dimensions
         updateTimestamp(); // write the timestamp
@@ -232,18 +257,20 @@ function build() {
 }
 
 // DRAW SENSOR IN PRESET METHOD
-function drawNode(ctx, coordinates = [0,0], dimensions = [20,10], style = {}, data = {}, nodeKey = null) { // MODIFIED SIGNATURE
+function drawNode(ctx, coordinates = [0,0], dimensions = [20,10], style = {}, data = {}, nodeKey = null) { 
     var fillText = ''; 
-    var fillColor = 'white'; 
+    var fillColor = style.color || "auto"; 
     var data_value = null; 
+    const anchor = style.anchor || "NW";
     
-    // --- 1. BUILD TEXT & PROCESS DATA VALUE ---
+    // BUILD TEXT & PROCESS DATA VALUE 
     // Build text
     if (data.header) {
         fillText += data.header;
     }
     // if there is a value set
     if (data.value) {
+        data.value = evaluateExpression(json, data.value) ?? null;
         // store it outside of the array to stop overwriting existing data
         data_value = data.value; 
 
@@ -266,7 +293,7 @@ function drawNode(ctx, coordinates = [0,0], dimensions = [20,10], style = {}, da
         fillText += data_value;
         
         // check for the data type to set thresholds for colouring (moved here to allow fillcolor to be determined before drawing)
-        if (data.type) {
+        if (data.type && fillColor == "auto") {
             var thold = thresholds(data_value, data.type);
 
             if (data_value > thold.upper) { // set color if over upper threshold
@@ -282,11 +309,15 @@ function drawNode(ctx, coordinates = [0,0], dimensions = [20,10], style = {}, da
         fillText += data.unit;
     }
 
-    // --- 2. DETERMINE FONT AND BOX DIMENSIONS (NEW LOGIC) ---
+    if (fillColor == "auto") {
+        fillColor = "white";
+    }
+
+    // DETERMINE FONT AND BOX DIMENSIONS
     let actualDimensions = [...dimensions]; // Local copy of dimensions
     let actualFontSize;
     let fontFamily = style.font || "monospace";
-    const textPadding = 10; // Padding around the text
+    const textPadding = style.padding || 10; // Padding around the text
 
     // Determine font size
     let configuredFontSize = style.font_size;
@@ -334,8 +365,14 @@ function drawNode(ctx, coordinates = [0,0], dimensions = [20,10], style = {}, da
     const finalWidth = actualDimensions[0];
     const finalHeight = actualDimensions[1];
 
+    coordinates = getBoxStartFromAnchor(
+        { x: coordinates[0], y: coordinates[1] },
+        [finalWidth, finalHeight],
+        anchor,
+        style.offset || [0,0]
+    );
 
-    // --- NEW LOGIC: Store the final dimensions to stored_config ---
+    // Store the final dimensions to stored_config 
     if (nodeKey && stored_config?.Nodes[nodeKey]) {
         // Store the actual drawn dimensions for use by links (if originally 'auto')
         stored_config.Nodes[nodeKey].dimension_x = finalWidth;
@@ -349,10 +386,22 @@ function drawNode(ctx, coordinates = [0,0], dimensions = [20,10], style = {}, da
         stored_config.Nodes[nodeKey].data.fillColor = fillColor;
     }
 
-
-    // --- 3. DRAW BOX & INTERACTIVE INFO ---
-    if (data.url && data.image) {
-        interactiveBoxes.push({'x': coordinates[0], 'y': coordinates[1], 'width': finalWidth, 'height': finalHeight, 'link': resolveArrayPath(json, data.url), 'hoverImage': resolveArrayPath(json, data.image)});
+    var hoverName = '';
+    // DRAW BOX & INTERACTIVE INFO
+    if (data.url && data.image && stored_config?.Nodes[nodeKey]) {
+        if (stored_config.Nodes[nodeKey].name) {
+            hoverName = stored_config.Nodes[nodeKey].name;
+        }
+        hoverName += ' ('+nodeKey+')';
+        interactiveBoxes.push({
+            x: coordinates[0],
+            y: coordinates[1],
+            width: dimensions[0],
+            height: dimensions[1],
+            link: resolveArrayPath(json, data.url),
+            hoverImage: resolveArrayPath(json, data.image),
+            name: hoverName || null
+        });
     }
 
     // Fill background
@@ -368,7 +417,7 @@ function drawNode(ctx, coordinates = [0,0], dimensions = [20,10], style = {}, da
     ctx.stroke();
     canvas_counter ++;
 
-    // --- 4. DRAW TEXT ---
+    // DRAW TEXT 
     let fontColor = style.font_color || "auto";
     
     ctx.font = `${actualFontSize}px ${fontFamily}`;
@@ -385,29 +434,36 @@ function drawNode(ctx, coordinates = [0,0], dimensions = [20,10], style = {}, da
 
 // LOOP THROUGH THE JSON AND DRAW THE SENSORS
 function loopDrawNodes() {
-    const nodes = stored_config.Nodes; // <-- CHANGED: Use stored_config
+    const nodes = stored_config.Nodes;
     // Loop over all nodes in the Nodes object
-    Object.keys(nodes).forEach((nodeKey) => { // <-- CHANGED: Iterate over keys
+    Object.keys(nodes).forEach((nodeKey) => { 
         const node = nodes[nodeKey]; // Get the node object
         // check if node is enabled for drawing
-        if (node.draw === true || node.draw === undefined) {
-            node.data.value = evaluateExpression(json, node.data.value) ?? null;
-            
+        if (node.draw === true || node.draw === undefined) {          
             drawNode(
                 ctx, // canvas
                 [node.position_x, node.position_y], // coordinates
                 [node.dimension_x, node.dimension_y], // dimensions
                 node.style, // style
                 node.data, // data
-                nodeKey // <-- NEW: Pass the node's key
+                nodeKey // Pass the node's key
             );
+        }
+    });
+    
+    // preload the images
+    interactiveBoxes.forEach(box => {
+        if (box.hoverImage) {
+            const img = new Image();
+            img.src = box.hoverImage;
+            box.preloadedImage = img;
         }
     });
 }
 
 // LOOP THROUGH THE JSON AND DRAW THE LINKS
 function loopDrawLinks() {
-    const links = stored_config.Links; // <-- CHANGED: Use stored_config
+    const links = stored_config.Links;
     // Loop over all links in the Links object
     Object.values(links).forEach((link) => {
         // check if the link is enabled for drawing
@@ -416,28 +472,43 @@ function loopDrawLinks() {
             var node_a = link.nodes[0];
             var node_b = link.nodes[1];
     
-            var node_a_config = stored_config.Nodes[node_a.node]; // <-- CHANGED: Use stored_config
-            var node_b_config = stored_config.Nodes[node_b.node]; // <-- CHANGED: Use stored_config
+            var node_a_config = stored_config.Nodes[node_a.node]; 
+            var node_b_config = stored_config.Nodes[node_b.node]; 
             
             // check if the A end is drawn
             if (node_a_config.draw === true || node_a_config.draw === undefined) {
                 // check if the B end is drawn
                 if (node_b_config.draw === true || node_b_config.draw === undefined) {
+                    if (!link.node_style) {
+                        link.node_style = {
+                            "color": "auto",
+                            "line_width": 2,
+                            "line_color": "black",
+                            "font": "monospace",
+                            "font_size": 10,
+                            "font_color": "black",
+                            "padding": 2,
+                            "anchor": "C"
+                        };
+                    }
                     drawLinkArrow(
-                        ctx, // canvas
+                       ctx, // canvas
                         getAnchorPoint(
                             [node_a_config.position_x, node_a_config.position_y], 
-                            [node_a_config.dimension_x, node_a_config.dimension_y], // Now guaranteed to be numeric
+                            [node_a_config.dimension_x, node_a_config.dimension_y], 
                             node_a.anchor, 
                             node_a.offset
                         ), // start coordinates
                         getAnchorPoint(
                             [node_b_config.position_x, node_b_config.position_y], 
-                            [node_b_config.dimension_x, node_b_config.dimension_y], // Now guaranteed to be numeric
+                            [node_b_config.dimension_x, node_b_config.dimension_y], 
                             node_b.anchor, 
                             node_b.offset
                         ), // end coordinates
-                        link.style
+                        link.style,
+                        link.node_style,
+                        link.data,
+                        link
                     );
                 } else {
                     // debugging
@@ -620,8 +691,187 @@ function getAnchorPoint(coords = [0, 0], dimensions = [0, 0], anchor = "C", offs
     return { x: px, y: py };
 }
 
+// GET THE TOP-LEFT COORDINATE OF A BOX GIVEN AN ANCHOR POINT
+function getBoxStartFromAnchor(anchorPoint = {x:0, y:0}, dimensions = [0,0], anchor = "C", offset = [0,0]) {
+    let [w, h] = dimensions;
+
+    let x = anchorPoint.x;
+    let y = anchorPoint.y
+
+    switch(anchor) {
+        case 'N': x = x - w/2; y = y; break;          // North
+        case 'S': x = x - w/2; y = y - h; break;      // South
+        case 'E': x = x - w; y = y - h/2; break;      // East
+        case 'W': x = x; y = y - h/2; break;          // West
+        case 'NE': x = x - w; y = y; break;           // North-East
+        case 'NW': x = x; y = y; break;               // North-West
+        case 'SE': x = x - w; y = y - h; break;       // South-East
+        case 'SW': x = x; y = y - h; break;           // South-West
+        case 'C': x = x - w/2; y = y - h/2; break;    // Center
+        default: x = x - w/2; y = y - h/2;            // Center
+    }
+
+    return [ x, y ];
+}
+
+// TRANSFORM THE COORDINATES BASED ON THE ANGLE PROVIDED
+function transform(xy,angle,xy0){
+    // put x and y relative to x0 and y0 so we can rotate around that
+    const rel_x = xy[0] - xy0[0];
+    const rel_y = xy[1] - xy0[1];
+
+    // compute rotated relative points
+    const new_rel_x = Math.cos(angle) * rel_x - Math.sin(angle) * rel_y;
+    const new_rel_y = Math.sin(angle) * rel_x + Math.cos(angle) * rel_y;
+
+    return [xy0[0] + new_rel_x, xy0[1] + new_rel_y];
+}
+
 // DRAW A LINK ARROW BASED ON FROM AND TO COORDINATES AND OTHER PARAMS
-function drawLinkArrow(ctx, start, end, style) {
+function drawLinkArrow(ctx, start, end, style, node_style, data, linkKey) {
+    let width = style.width || 10;
+    let head_length = width * 2.5;
+    let head_width = width * 2.5;
+
+    // compute full length and angle
+    const dx = end.x - start.x;
+    const dy = end.y - start.y;
+    const length = Math.sqrt(dx * dx + dy * dy);
+
+    // compute midpoint
+    const mid = { x: start.x + dx / 2, y: start.y + dy / 2 };
+
+    // helper to draw a single arrow from p_start to p_end
+    function drawSingleArrow(p_start, p_end, data, linkKey) {
+        const len = Math.sqrt((p_end.x - p_start.x) ** 2 + (p_end.y - p_start.y) ** 2);
+        const ang = Math.atan2(p_end.y - p_start.y, p_end.x - p_start.x) - Math.PI / 2;
+        const p0 =  [p_start.x, p_start.y];
+        const p50 = [(p_start.x + p_end.x) / 2, (p_start.y + p_end.y) / 2];
+
+        let p1 = [p_start.x + width / 2, p_start.y];
+        let p2 = [p_start.x - width / 2, p_start.y];
+        let p3 = [p_start.x + width / 2, p_start.y + len - head_length];
+        let p4 = [p_start.x - width / 2, p_start.y + len - head_length];
+        let p5 = [p_start.x + head_width / 2, p_start.y + len - head_length];
+        let p6 = [p_start.x - head_width / 2, p_start.y + len - head_length];
+        let p7 = [p_start.x, p_start.y + len];
+
+        // transform points
+        p1 = transform(p1, ang, p0);
+        p2 = transform(p2, ang, p0);
+        p3 = transform(p3, ang, p0);
+        p4 = transform(p4, ang, p0);
+        p5 = transform(p5, ang, p0);
+        p6 = transform(p6, ang, p0);
+        p7 = transform(p7, ang, p0);
+
+        // determin the colour of the link
+        fillcolor = "white";
+        // if there is a value set
+        if (data.value) {
+            data.value = evaluateExpression(json, data.value) ?? null;
+            // store it outside of the array to stop overwriting existing data
+            data_value = data.value; 
+            
+
+            // check if there is a math calculation to do
+            if (data.value_math) {
+                // run the math
+                var mathed_data = applyMath(data_value, data.value_math);
+                // check it changed if not dont update
+                if (mathed_data !== data_value) { data_value = mathed_data; }
+                // check for any decimal places adjustments
+                if (data.value_float_num) {
+                    // adjust the float decimals 
+                    var floated_data = data_value.toFixed(data.value_float_num);
+                    // if there is change, update the value
+                    if (floated_data !== data_value) { data_value = floated_data; }
+                }
+            }
+
+            // check for the data type to set thresholds for colouring (moved here to allow fillcolor to be determined before drawing)
+            if (data.type) {
+                var thold = thresholds(data_value, data.type);
+
+                if (data_value > thold.upper) { // set color if over upper threshold
+                    fillColor = thold.upper_color;
+                } else if (data_value < thold.lower) { // set color if under lower threshold
+                    fillColor = thold.lower_color;
+                } else { // set color to the ok_color - if none define, make it grey
+                    fillColor = thold.ok_color || 'grey';
+                }
+            }
+        }
+
+        if (style.color == "auto") {
+            arrow_color = fillColor;
+        } else {
+            arrow_color = style.color;
+        }
+
+        ctx.beginPath();
+        ctx.moveTo(p1[0], p1[1]);
+        ctx.lineTo(p3[0], p3[1]);
+        ctx.lineTo(p5[0], p5[1]);
+        ctx.lineTo(p7[0], p7[1]);
+        ctx.lineTo(p6[0], p6[1]);
+        ctx.lineTo(p4[0], p4[1]);
+        ctx.lineTo(p2[0], p2[1]);
+        ctx.lineTo(p1[0], p1[1]);
+        ctx.closePath();
+        ctx.fillStyle = arrow_color || "white";
+        ctx.fill();
+        if (style.line_width > 0) {
+            ctx.lineWidth = style.line_width || 1;
+            ctx.strokeStyle = style.line_color || "black";
+            ctx.stroke();
+        }
+        canvas_counter++;
+
+        if (data && data.draw == true) {
+            if (!node_style.anchor){
+                node_style.anchor = "C";
+            }
+            drawNode(
+                ctx, 
+                p50, 
+                ["auto", "auto"], 
+                node_style,
+                data,
+                linkKey
+            );
+        }
+    }
+
+    if (style.line_two_way) {
+        if (style.line_direction === "diverge") { // away
+            // arrows point away from each other (diverging)
+            drawSingleArrow(mid, start, data[0] || null, linkKey);
+            drawSingleArrow(mid, end, data[1] || null, linkKey);
+        } else if (style.line_direction === "converge") { // towards 
+            // default: arrows point towards each other (converging)
+            drawSingleArrow(start, mid, data[0] || null, linkKey);
+            drawSingleArrow(end, mid, data[1] || null, linkKey);
+        } else if (style.line_direction === "reverse") { // swap the arrows
+            drawSingleArrow(end, mid, data[0] || null, linkKey);
+            drawSingleArrow(start, mid, data[1] || null, linkKey);
+        } else {// towards 
+            // default: arrows point towards each other (converging)
+            drawSingleArrow(start, mid, data[0] || null, linkKey);
+            drawSingleArrow(end, mid, data[1] || null, linkKey);
+        }
+    } else {
+        if (style.line_direction === "reverse") {
+            drawSingleArrow(end, start, data[0] || null, linkKey);
+        } else {
+            drawSingleArrow(start, end, data[0] || null, linkKey);
+        }
+        
+    }
+}
+
+// DRAW A LINK ARROW BASED ON FROM AND TO COORDINATES AND OTHER PARAMS
+function drawLinkArrow_old(ctx, start, end, style) {
     const headLength = style.width * 2.5; // arrowhead size proportional to line width
     const angle = Math.atan2(end.y - start.y, end.x - start.x);
 
@@ -905,31 +1155,65 @@ async function checkCanvasPopulated() {
 
 // HANDLES THE DRAWING OF OVERLIB IMAGES ON HOVER
 // THE IMAGE WILL ALWAYS BE WITHING THE CANVAS BOUNDARIES
-function drawHoverTooltip(ctx, mouse, imageSrc, canvas, width = 400, height = 200, margin = 10) {
-    const tooltip = new Image();
-    tooltip.src = imageSrc;
-    tooltip.onload = function () {
-        let drawX = mouse.x + 10; // default: right
-        let drawY = mouse.y + 10; // default: below
+function drawHoverTooltip(
+    ctx,
+    mouse,
+    imageSrc,
+    canvas,
+    width = 400,
+    height = 200,
+    margin = 10,
+    title = ""
+) {
+    // If new image, load it once and cache it
+    if (hoverCache.currentSrc !== imageSrc) {
+        hoverCache.image = new Image();
+        hoverCache.image.src = imageSrc;
+        hoverCache.currentSrc = imageSrc;
+    }
 
-        // Horizontal adjustment
-        if (drawX + width + margin > canvas.width) {
-            drawX = mouse.x - width - 10; // flip left
-        }
-        if (drawX < margin) {
-            drawX = margin; // clamp to left edge
-        }
+    const tooltip = hoverBox.preloadedImage || hoverCache.image;
+    if (!tooltip.complete) return; // image not ready yet — skip drawing
 
-        // Vertical adjustment
-        if (drawY + height + margin > canvas.height) {
-            drawY = mouse.y - height - 10; // flip above
-        }
-        if (drawY < margin) {
-            drawY = margin; // clamp to top
-        }
+    // Measure title space
+    const titleFont = "bold 14px monospace";
+    const titlePadding = 8;
+    const titleHeight = title ? 20 : 0;
+    const totalHeight = height + titleHeight + titlePadding * 2;
 
-        ctx.drawImage(tooltip, drawX, drawY, width, height);
-    };
+    // Position
+    let drawX = mouse.x + 10;
+    let drawY = mouse.y + 10;
+
+    if (drawX + width + margin > canvas.width) drawX = mouse.x - width - 20;
+    if (drawX < margin) drawX = margin;
+    if (drawY + totalHeight + margin > canvas.height)
+        drawY = mouse.y - totalHeight - 20;
+    if (drawY < margin) drawY = margin;
+
+    // ---- Background ----
+    ctx.save();
+    ctx.globalAlpha = 0.9;
+    ctx.fillStyle = "white";
+    ctx.fillRect(drawX - 5, drawY - 5, width + 10, totalHeight + 10);
+    ctx.globalAlpha = 1;
+    ctx.strokeStyle = "rgba(0,0,0,0.1)";
+    ctx.lineWidth = 1;
+    ctx.strokeRect(drawX - 5, drawY - 5, width + 10, totalHeight + 10);
+    ctx.restore();
+
+    // ---- Title ----
+    if (title) {
+        ctx.font = titleFont;
+        ctx.fillStyle = "rgba(0,0,0,0.85)";
+        ctx.textAlign = "center";
+        ctx.textBaseline = "top";
+        ctx.fillText(title, drawX + width / 2, drawY + titlePadding);
+    }
+
+    // ---- Image ----
+    const imageY = drawY + titleHeight + titlePadding * 1.5;
+    ctx.drawImage(tooltip, drawX, imageY, width, height);
 }
 
 // HANDLES THE MOVEMENT OF THE MOUSE OVER THE CANVAS
@@ -969,4 +1253,4 @@ function handleClick(event) {
 
 // EVENT LISTENERS FOR MOUSE ACTIONS
 canvas.addEventListener('mousemove', handleMouseMove);
-canvas.addEventListener('click', handleClick);
+canvas.addEventListener('click', handleClick);    
