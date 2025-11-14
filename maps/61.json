@@ -1,0 +1,1267 @@
+{
+    "Config": {
+        "page_title": "Suite 61",
+        "page_header": "Suite 61 Power",
+        "background_img": "img/61.png",
+        "background_scale": [0.625, 0.625],
+        "background_anchor": "default",
+        "data_url": "https://observe.ajrich.co.uk/api/data.php",
+        "enable_periodic_update": true,
+        "fixed_canvas_size": false,
+        "canvas_width": 1800,
+        "canvas_height": 900,
+        "show_grid": false,
+        "show_page_header": true,
+        "show_coordinates": true,
+        "show_timestamp": true,
+        "show_dimensions": true,
+        "show_config": true,
+        "image_width": 400,
+        "image_height": 200
+    },
+    "Nodes": {
+        "RACKC1-A": {
+            "name": "Rack C1 Feed A",
+            "position_x": 625,
+            "position_y": 92,
+            "dimension_x": 38,
+            "dimension_y": 25,
+            "draw": false,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "localhost.ports[0].ifInOctets_rate",
+                "value_math": "*8/1000",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "url": "localhost.ports[0].graph.graph_full_url",
+                "image": "localhost.ports[0].graph.graph_full_url"
+            }
+        },
+        "RACKC1-B": {
+            "name": "Rack C1 Feed B",
+            "position_x": 625,
+            "position_y": 134,
+            "dimension_x": 38,
+            "dimension_y": 25,
+            "draw": false,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "localhost.ports[1].ifInOctets_rate",
+                "value_math": "*8/1000",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "url": "localhost.ports[0].graph.graph_full_url",
+                "image": "localhost.ports[0].graph.graph_full_url"
+            }
+        },
+        "RACKC2-A": {
+            "name": "Rack C2 Feed A",
+            "position_x": 580,
+            "position_y": 92,
+            "dimension_x": 38,
+            "dimension_y": 25,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "localhost.ports[0].ifInOctets_rate",
+                "value_math": "*8/1000",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "url": "localhost.ports[0].graph.graph_full_url",
+                "image": "localhost.ports[0].graph.graph_full_url"
+            }
+        },
+        "RACKC2-B": {
+            "name": "Rack C2 Feed B",
+            "position_x": 580,
+            "position_y": 134,
+            "dimension_x": 38,
+            "dimension_y": 25,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "localhost.ports[1].ifInOctets_rate",
+                "value_math": "*8/1000",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "url": "localhost.ports[0].graph.graph_full_url",
+                "image": "localhost.ports[0].graph.graph_full_url"
+            }
+        },
+        "RACKC3-A": {
+            "name": "Rack C3 Feed A",
+            "position_x": 533,
+            "position_y": 92,
+            "dimension_x": 38,
+            "dimension_y": 25,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "localhost.ports[0].ifInOctets_rate",
+                "value_math": "*8/1000",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "url": "localhost.ports[0].graph.graph_full_url",
+                "image": "localhost.ports[0].graph.graph_full_url"
+            }
+        },
+        "RACKC3-B": {
+            "name": "Rack C3 Feed B",
+            "position_x": 533,
+            "position_y": 134,
+            "dimension_x": 38,
+            "dimension_y": 25,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "localhost.ports[1].ifInOctets_rate",
+                "value_math": "*8/1000",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "url": "localhost.ports[0].graph.graph_full_url",
+                "image": "localhost.ports[0].graph.graph_full_url"
+            }
+        },
+        "RACKC4-A": {
+            "name": "Rack C4 Feed A",
+            "position_x": 488,
+            "position_y": 92,
+            "dimension_x": 38,
+            "dimension_y": 25,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "localhost.ports[0].ifInOctets_rate",
+                "value_math": "*8/1000",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "url": "localhost.ports[0].graph.graph_full_url",
+                "image": "localhost.ports[0].graph.graph_full_url"
+            }
+        },
+        "RACKC4-B": {
+            "name": "Rack C4 Feed B",
+            "position_x": 488,
+            "position_y": 134,
+            "dimension_x": 38,
+            "dimension_y": 25,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "localhost.ports[1].ifInOctets_rate",
+                "value_math": "*8/1000",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "url": "localhost.ports[0].graph.graph_full_url",
+                "image": "localhost.ports[0].graph.graph_full_url"
+            }
+        },
+        "RACKC5-A": {
+            "name": "Rack C5 Feed A",
+            "position_x": 442,
+            "position_y": 92,
+            "dimension_x": 38,
+            "dimension_y": 25,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "localhost.ports[0].ifInOctets_rate",
+                "value_math": "*8/1000",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "url": "localhost.ports[0].graph.graph_full_url",
+                "image": "localhost.ports[0].graph.graph_full_url"
+            }
+        },
+        "RACKC5-B": {
+            "name": "Rack C5 Feed B",
+            "position_x": 442,
+            "position_y": 134,
+            "dimension_x": 38,
+            "dimension_y": 25,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "localhost.ports[1].ifInOctets_rate",
+                "value_math": "*8/1000",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "url": "localhost.ports[0].graph.graph_full_url",
+                "image": "localhost.ports[0].graph.graph_full_url"
+            }
+        },
+        "RACKC6-A": {
+            "name": "Rack C6 Feed A",
+            "position_x": 396,
+            "position_y": 92,
+            "dimension_x": 38,
+            "dimension_y": 25,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "localhost.ports[0].ifInOctets_rate",
+                "value_math": "*8/1000",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "url": "localhost.ports[0].graph.graph_full_url",
+                "image": "localhost.ports[0].graph.graph_full_url"
+            }
+        },
+        "RACKC6-B": {
+            "name": "Rack C6 Feed B",
+            "position_x": 396,
+            "position_y": 134,
+            "dimension_x": 38,
+            "dimension_y": 25,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "localhost.ports[1].ifInOctets_rate",
+                "value_math": "*8/1000",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "url": "localhost.ports[0].graph.graph_full_url",
+                "image": "localhost.ports[0].graph.graph_full_url"
+            }
+        },
+        "RACKC7-A": {
+            "name": "Rack C7 Feed A",
+            "position_x": 350,
+            "position_y": 92,
+            "dimension_x": 38,
+            "dimension_y": 25,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "localhost.ports[0].ifInOctets_rate",
+                "value_math": "*8/1000",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "url": "localhost.ports[0].graph.graph_full_url",
+                "image": "localhost.ports[0].graph.graph_full_url"
+            }
+        },
+        "RACKC7-B": {
+            "name": "Rack C7 Feed B",
+            "position_x": 350,
+            "position_y": 134,
+            "dimension_x": 38,
+            "dimension_y": 25,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "localhost.ports[1].ifInOctets_rate",
+                "value_math": "*8/1000",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "url": "localhost.ports[0].graph.graph_full_url",
+                "image": "localhost.ports[0].graph.graph_full_url"
+            }
+        },
+        "RACKC8-A": {
+            "name": "Rack C8 Feed A",
+            "position_x": 304,
+            "position_y": 92,
+            "dimension_x": 38,
+            "dimension_y": 25,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "localhost.ports[0].ifInOctets_rate",
+                "value_math": "*8/1000",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "url": "localhost.ports[0].graph.graph_full_url",
+                "image": "localhost.ports[0].graph.graph_full_url"
+            }
+        },
+        "RACKC8-B": {
+            "name": "Rack C8 Feed B",
+            "position_x": 304,
+            "position_y": 134,
+            "dimension_x": 38,
+            "dimension_y": 25,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "localhost.ports[1].ifInOctets_rate",
+                "value_math": "*8/1000",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "url": "localhost.ports[0].graph.graph_full_url",
+                "image": "localhost.ports[0].graph.graph_full_url"
+            }
+        },
+        "RACKC9-A": {
+            "name": "Rack C9 Feed A",
+            "position_x": 258,
+            "position_y": 92,
+            "dimension_x": 38,
+            "dimension_y": 25,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "localhost.ports[0].ifInOctets_rate",
+                "value_math": "*8/1000",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "url": "localhost.ports[0].graph.graph_full_url",
+                "image": "localhost.ports[0].graph.graph_full_url"
+            }
+        },
+        "RACKC9-B": {
+            "name": "Rack C9 Feed B",
+            "position_x": 258,
+            "position_y": 134,
+            "dimension_x": 38,
+            "dimension_y": 25,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "localhost.ports[1].ifInOctets_rate",
+                "value_math": "*8/1000",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "url": "localhost.ports[0].graph.graph_full_url",
+                "image": "localhost.ports[0].graph.graph_full_url"
+            }
+        },
+        "RACKC10-A": {
+            "name": "Rack C10 Feed A",
+            "position_x": 212,
+            "position_y": 92,
+            "dimension_x": 38,
+            "dimension_y": 25,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "localhost.ports[0].ifInOctets_rate",
+                "value_math": "*8/1000",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "url": "localhost.ports[0].graph.graph_full_url",
+                "image": "localhost.ports[0].graph.graph_full_url"
+            }
+        },
+        "RACKC10-B": {
+            "name": "Rack C10 Feed B",
+            "position_x": 212,
+            "position_y": 134,
+            "dimension_x": 38,
+            "dimension_y": 25,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "localhost.ports[1].ifInOctets_rate",
+                "value_math": "*8/1000",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "url": "localhost.ports[0].graph.graph_full_url",
+                "image": "localhost.ports[0].graph.graph_full_url"
+            }
+        },
+        "RACKC11-A": {
+            "name": "Rack C11 Feed A",
+            "position_x": 165,
+            "position_y": 92,
+            "dimension_x": 38,
+            "dimension_y": 25,
+            "draw": false,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "localhost.ports[0].ifInOctets_rate",
+                "value_math": "*8/1000",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "url": "localhost.ports[0].graph.graph_full_url",
+                "image": "localhost.ports[0].graph.graph_full_url"
+            }
+        },
+        "RACKC11-B": {
+            "name": "Rack C11 Feed B",
+            "position_x": 165,
+            "position_y": 134,
+            "dimension_x": 38,
+            "dimension_y": 25,
+            "draw": false,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "localhost.ports[1].ifInOctets_rate",
+                "value_math": "*8/1000",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "url": "localhost.ports[0].graph.graph_full_url",
+                "image": "localhost.ports[0].graph.graph_full_url"
+            }
+        },
+        "RACKC12-A": {
+            "name": "Rack C12 Feed A",
+            "position_x": 120,
+            "position_y": 92,
+            "dimension_x": 38,
+            "dimension_y": 25,
+            "draw": false,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "localhost.ports[0].ifInOctets_rate",
+                "value_math": "*8/1000",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "url": "localhost.ports[0].graph.graph_full_url",
+                "image": "localhost.ports[0].graph.graph_full_url"
+            }
+        },
+        "RACKC12-B": {
+            "name": "Rack C12 Feed B",
+            "position_x": 120,
+            "position_y": 134,
+            "dimension_x": 38,
+            "dimension_y": 25,
+            "draw": false,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "localhost.ports[1].ifInOctets_rate",
+                "value_math": "*8/1000",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "url": "localhost.ports[0].graph.graph_full_url",
+                "image": "localhost.ports[0].graph.graph_full_url"
+            }
+        },
+        "RACKB1-A": {
+            "name": "Rack B1 Feed A",
+            "position_x": 625,
+            "position_y": 229,
+            "dimension_x": 38,
+            "dimension_y": 25,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "localhost.ports[0].ifInOctets_rate",
+                "value_math": "*8/1000",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "url": "localhost.ports[0].graph.graph_full_url",
+                "image": "localhost.ports[0].graph.graph_full_url"
+            }
+        },
+        "RACKB1-B": {
+            "name": "Rack B1 Feed B",
+            "position_x": 625,
+            "position_y": 271,
+            "dimension_x": 38,
+            "dimension_y": 25,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "localhost.ports[1].ifInOctets_rate",
+                "value_math": "*8/1000",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "url": "localhost.ports[0].graph.graph_full_url",
+                "image": "localhost.ports[0].graph.graph_full_url"
+            }
+        },
+        "RACKB2-A": {
+            "name": "Rack B2 Feed A",
+            "position_x": 580,
+            "position_y": 229,
+            "dimension_x": 38,
+            "dimension_y": 25,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "localhost.ports[0].ifInOctets_rate",
+                "value_math": "*8/1000",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "url": "localhost.ports[0].graph.graph_full_url",
+                "image": "localhost.ports[0].graph.graph_full_url"
+            }
+        },
+        "RACKB2-B": {
+            "name": "Rack B2 Feed B",
+            "position_x": 580,
+            "position_y": 271,
+            "dimension_x": 38,
+            "dimension_y": 25,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "localhost.ports[1].ifInOctets_rate",
+                "value_math": "*8/1000",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "url": "localhost.ports[0].graph.graph_full_url",
+                "image": "localhost.ports[0].graph.graph_full_url"
+            }
+        },
+        "RACKB3-A": {
+            "name": "Rack B3 Feed A",
+            "position_x": 533,
+            "position_y": 229,
+            "dimension_x": 38,
+            "dimension_y": 25,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "localhost.ports[0].ifInOctets_rate",
+                "value_math": "*8/1000",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "url": "localhost.ports[0].graph.graph_full_url",
+                "image": "localhost.ports[0].graph.graph_full_url"
+            }
+        },
+        "RACKB3-B": {
+            "name": "Rack B3 Feed B",
+            "position_x": 533,
+            "position_y": 271,
+            "dimension_x": 38,
+            "dimension_y": 25,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "localhost.ports[1].ifInOctets_rate",
+                "value_math": "*8/1000",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "url": "localhost.ports[0].graph.graph_full_url",
+                "image": "localhost.ports[0].graph.graph_full_url"
+            }
+        },
+        "RACKB4-A": {
+            "name": "Rack B4 Feed A",
+            "position_x": 488,
+            "position_y": 229,
+            "dimension_x": 38,
+            "dimension_y": 25,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "localhost.ports[0].ifInOctets_rate",
+                "value_math": "*8/1000",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "url": "localhost.ports[0].graph.graph_full_url",
+                "image": "localhost.ports[0].graph.graph_full_url"
+            }
+        },
+        "RACKB4-B": {
+            "name": "Rack B4 Feed B",
+            "position_x": 488,
+            "position_y": 271,
+            "dimension_x": 38,
+            "dimension_y": 25,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "localhost.ports[1].ifInOctets_rate",
+                "value_math": "*8/1000",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "url": "localhost.ports[0].graph.graph_full_url",
+                "image": "localhost.ports[0].graph.graph_full_url"
+            }
+        },
+        "RACKB5-A": {
+            "name": "Rack B5 Feed A",
+            "position_x": 442,
+            "position_y": 229,
+            "dimension_x": 38,
+            "dimension_y": 25,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "localhost.ports[0].ifInOctets_rate",
+                "value_math": "*8/1000",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "url": "localhost.ports[0].graph.graph_full_url",
+                "image": "localhost.ports[0].graph.graph_full_url"
+            }
+        },
+        "RACKB5-B": {
+            "name": "Rack B5 Feed B",
+            "position_x": 442,
+            "position_y": 271,
+            "dimension_x": 38,
+            "dimension_y": 25,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "localhost.ports[1].ifInOctets_rate",
+                "value_math": "*8/1000",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "url": "localhost.ports[0].graph.graph_full_url",
+                "image": "localhost.ports[0].graph.graph_full_url"
+            }
+        },
+        "RACKB6-A": {
+            "name": "Rack B6 Feed A",
+            "position_x": 396,
+            "position_y": 229,
+            "dimension_x": 38,
+            "dimension_y": 25,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "localhost.ports[0].ifInOctets_rate",
+                "value_math": "*8/1000",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "url": "localhost.ports[0].graph.graph_full_url",
+                "image": "localhost.ports[0].graph.graph_full_url"
+            }
+        },
+        "RACKB6-B": {
+            "name": "Rack B6 Feed B",
+            "position_x": 396,
+            "position_y": 271,
+            "dimension_x": 38,
+            "dimension_y": 25,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "localhost.ports[1].ifInOctets_rate",
+                "value_math": "*8/1000",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "url": "localhost.ports[0].graph.graph_full_url",
+                "image": "localhost.ports[0].graph.graph_full_url"
+            }
+        },
+        "RACKB7-A": {
+            "name": "Rack B7 Feed A",
+            "position_x": 350,
+            "position_y": 229,
+            "dimension_x": 38,
+            "dimension_y": 25,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "localhost.ports[0].ifInOctets_rate",
+                "value_math": "*8/1000",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "url": "localhost.ports[0].graph.graph_full_url",
+                "image": "localhost.ports[0].graph.graph_full_url"
+            }
+        },
+        "RACKB7-B": {
+            "name": "Rack B7 Feed B",
+            "position_x": 350,
+            "position_y": 271,
+            "dimension_x": 38,
+            "dimension_y": 25,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "localhost.ports[1].ifInOctets_rate",
+                "value_math": "*8/1000",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "url": "localhost.ports[0].graph.graph_full_url",
+                "image": "localhost.ports[0].graph.graph_full_url"
+            }
+        },
+        "RACKB8-A": {
+            "name": "Rack B8 Feed A",
+            "position_x": 304,
+            "position_y": 229,
+            "dimension_x": 38,
+            "dimension_y": 25,
+            "draw": false,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "localhost.ports[0].ifInOctets_rate",
+                "value_math": "*8/1000",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "url": "localhost.ports[0].graph.graph_full_url",
+                "image": "localhost.ports[0].graph.graph_full_url"
+            }
+        },
+        "RACKB8-B": {
+            "name": "Rack B8 Feed B",
+            "position_x": 304,
+            "position_y": 271,
+            "dimension_x": 38,
+            "dimension_y": 25,
+            "draw": false,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "localhost.ports[1].ifInOctets_rate",
+                "value_math": "*8/1000",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "url": "localhost.ports[0].graph.graph_full_url",
+                "image": "localhost.ports[0].graph.graph_full_url"
+            }
+        },
+        "RACKB9-A": {
+            "name": "Rack B9 Feed A",
+            "position_x": 258,
+            "position_y": 229,
+            "dimension_x": 38,
+            "dimension_y": 25,
+            "draw": false,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "localhost.ports[0].ifInOctets_rate",
+                "value_math": "*8/1000",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "url": "localhost.ports[0].graph.graph_full_url",
+                "image": "localhost.ports[0].graph.graph_full_url"
+            }
+        },
+        "RACKB9-B": {
+            "name": "Rack B9 Feed B",
+            "position_x": 258,
+            "position_y": 271,
+            "dimension_x": 38,
+            "dimension_y": 25,
+            "draw": false,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "localhost.ports[1].ifInOctets_rate",
+                "value_math": "*8/1000",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "url": "localhost.ports[0].graph.graph_full_url",
+                "image": "localhost.ports[0].graph.graph_full_url"
+            }
+        },
+        "RACKB10-A": {
+            "name": "Rack B10 Feed A",
+            "position_x": 212,
+            "position_y": 229,
+            "dimension_x": 38,
+            "dimension_y": 25,
+            "draw": false,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "localhost.ports[0].ifInOctets_rate",
+                "value_math": "*8/1000",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "url": "localhost.ports[0].graph.graph_full_url",
+                "image": "localhost.ports[0].graph.graph_full_url"
+            }
+        },
+        "RACKB10-B": {
+            "name": "Rack B10 Feed B",
+            "position_x": 212,
+            "position_y": 271,
+            "dimension_x": 38,
+            "dimension_y": 25,
+            "draw": false,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "localhost.ports[1].ifInOctets_rate",
+                "value_math": "*8/1000",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "url": "localhost.ports[0].graph.graph_full_url",
+                "image": "localhost.ports[0].graph.graph_full_url"
+            }
+        },
+        "RACKB11-A": {
+            "name": "Rack B11 Feed A",
+            "position_x": 165,
+            "position_y": 229,
+            "dimension_x": 38,
+            "dimension_y": 25,
+            "draw": false,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "localhost.ports[0].ifInOctets_rate",
+                "value_math": "*8/1000",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "url": "localhost.ports[0].graph.graph_full_url",
+                "image": "localhost.ports[0].graph.graph_full_url"
+            }
+        },
+        "RACKB11-B": {
+            "name": "Rack B11 Feed B",
+            "position_x": 165,
+            "position_y": 271,
+            "dimension_x": 38,
+            "dimension_y": 25,
+            "draw": false,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "localhost.ports[1].ifInOctets_rate",
+                "value_math": "*8/1000",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "url": "localhost.ports[0].graph.graph_full_url",
+                "image": "localhost.ports[0].graph.graph_full_url"
+            }
+        },
+        "RACKB12-A": {
+            "name": "Rack B12 Feed A",
+            "position_x": 120,
+            "position_y": 229,
+            "dimension_x": 38,
+            "dimension_y": 25,
+            "draw": false,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "localhost.ports[0].ifInOctets_rate",
+                "value_math": "*8/1000",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "url": "localhost.ports[0].graph.graph_full_url",
+                "image": "localhost.ports[0].graph.graph_full_url"
+            }
+        },
+        "RACKB12-B": {
+            "name": "Rack B12 Feed B",
+            "position_x": 120,
+            "position_y": 271,
+            "dimension_x": 38,
+            "dimension_y": 25,
+            "draw": false,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "localhost.ports[1].ifInOctets_rate",
+                "value_math": "*8/1000",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "url": "localhost.ports[0].graph.graph_full_url",
+                "image": "localhost.ports[0].graph.graph_full_url"
+            }
+        },
+        "TEMP-C7-COLD": {
+            "name": "Rack C7 Temperature - Cold",
+            "position_x": 350,
+            "position_y": 69,
+            "dimension_x": 38,
+            "dimension_y": 15,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "proxmox.sensors[0].sensor_value",
+                "value_math": null,
+                "value_float_num": 1,
+                "unit": "°C",
+                "type": "temperature_sys",
+                "url": "proxmox.sensors[0].graph.graph_full_url",
+                "image": "proxmox.sensors[0].graph.graph_full_url"
+            }
+        },
+        "TEMP-C7-HOT": {
+            "name": "Rack C7 Temperature - Hot",
+            "position_x": 350,
+            "position_y": 168,
+            "dimension_x": 38,
+            "dimension_y": 15,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "proxmox.sensors[0].sensor_value",
+                "value_math": null,
+                "value_float_num": 1,
+                "unit": "°C",
+                "type": "temperature_sys",
+                "url": "proxmox.sensors[0].graph.graph_full_url",
+                "image": "proxmox.sensors[0].graph.graph_full_url"
+            }
+        },
+        "HUMID-C7-COLD": {
+            "name": "Rack C7 Humidity - Cold",
+            "position_x": 350,
+            "position_y": 54,
+            "dimension_x": 38,
+            "dimension_y": 15,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "proxmox.sensors[0].sensor_value",
+                "value_math": null,
+                "value_float_num": 1,
+                "unit": "%",
+                "type": "humidity_room",
+                "url": "proxmox.sensors[0].graph.graph_full_url",
+                "image": "proxmox.sensors[0].graph.graph_full_url"
+            }
+        }        
+    }, 
+    "Links": {
+
+    }
+}
