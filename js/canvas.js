@@ -383,7 +383,7 @@ function drawNode(ctx, coordinates = [0,0], dimensions = [20,10], style = {}, da
              stored_config.Nodes[nodeKey].style.font_size = actualFontSize;
         }
         // Store final color
-        stored_config.Nodes[nodeKey].data.fillColor = fillColor;
+        stored_config.Nodes[nodeKey].style.color = fillColor;
     }
 
     var hoverName = '';
@@ -411,8 +411,8 @@ function drawNode(ctx, coordinates = [0,0], dimensions = [20,10], style = {}, da
 
     // Draw border
     ctx.beginPath();
-    ctx.lineWidth = style.lineWidth || 1;
-    ctx.strokeStyle = style.lineColor || 'black';
+    ctx.lineWidth = style.line_width || 1;
+    ctx.strokeStyle = style.line_color || 'black';
     ctx.rect(coordinates[0], coordinates[1], finalWidth, finalHeight);
     ctx.stroke();
     canvas_counter ++;
@@ -899,7 +899,7 @@ function drawLinkArrow_old(ctx, start, end, style) {
             canvas_counter ++;
         } else {
             ctx.lineWidth = style.line_width || 1;
-            ctx.strokeStyle = style.line_wolor || 'black';
+            ctx.strokeStyle = style.line_color || 'black';
             ctx.stroke();
             canvas_counter ++;
         }
