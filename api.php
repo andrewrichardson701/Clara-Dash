@@ -84,7 +84,7 @@ if (isset($_GET['action'])) {
                 break;
             // List all sensors for a device
             case 'sensors':
-                 if (!$device_id) throw new Exception("Missing device id");
+                if (!$device_id) throw new Exception("Missing device id");
                 $sensors = $db->query("SELECT * FROM sensors WHERE device_id=?", [$device_id])->fetchAll();
                 if (!$sensors) throw new Exception("No sensors found");
                 
@@ -209,6 +209,14 @@ if (isset($_GET['action'])) {
     echo json_encode(['status' => 'error', 
                         'message' => 'No action set.', 
                         'usage1' => '/api.php?action=devices',
-                        'usage2' => '/api.php?action=device&device_id=1'
+                        'usage2' => '/api.php?action=device&device_id=1',
+                        'usage3' => '/api.php?action=ports&device_id=1',
+                        'usage4' => '/api.php?action=port&device_id=1&port_id=1',
+                        'usage5' => '/api.php?action=port&device_id=1&index=1',
+                        'usage6' => '/api.php?action=sensors&device_id=1',
+                        'usage7' => '/api.php?action=sensor&device_id=1&sensor_id=1',
+                        'usage8' => '/api.php?action=sensor&device_id=1&sensor_type=temperature',
+                        'usage9' => '/api.php?action=sensor&device_id=1&index=1',
+                        'usage10' => '/api.php?action=graph&device_id=1&graph_type=port&port_id=1'
                      ]);
 }
