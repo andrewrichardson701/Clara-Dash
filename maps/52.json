@@ -20,6 +20,1159 @@
         "image_height": 200
     },
     "Nodes": {
+        "RACKA1": {
+            "name": "Rack A1",
+            "position_x": 621,
+            "position_y": 88,
+            "dimension_x": 46,
+            "dimension_y": 76,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgrey"
+            },
+            "data": {
+                "header": "A1"
+            }
+        },
+        "RACKA2": {
+            "name": "Rack A2",
+            "position_x": 575,
+            "position_y": 88,
+            "dimension_x": 46,
+            "dimension_y": 76,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgrey"
+            },
+            "data": {
+                "header": "A2"
+            }
+        },
+        "RACKA3": {
+            "name": "Rack A3",
+            "position_x": 529,
+            "position_y": 88,
+            "dimension_x": 46,
+            "dimension_y": 76,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgrey"
+            },
+            "data": {
+                "header": "A3"
+            }
+        },
+        "RACKA4": {
+            "name": "Rack A4",
+            "position_x": 483,
+            "position_y": 88,
+            "dimension_x": 46,
+            "dimension_y": 76,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgrey"
+            },
+            "data": {
+                "header": "A4"
+            }
+        },
+        "RACKA5": {
+            "name": "Rack A5",
+            "position_x": 437,
+            "position_y": 88,
+            "dimension_x": 46,
+            "dimension_y": 76,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgrey"
+            },
+            "data": {
+                "header": "A5"
+            }
+        },
+        "RACKA6": {
+            "name": "Rack A6",
+            "position_x": 391,
+            "position_y": 88,
+            "dimension_x": 46,
+            "dimension_y": 76,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgrey"
+            },
+            "data": {
+                "header": "A6"
+            }
+        },
+        "RACKA7": {
+            "name": "Rack A7",
+            "position_x": 345,
+            "position_y": 88,
+            "dimension_x": 46,
+            "dimension_y": 76,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgrey"
+            },
+            "data": {
+                "header": "A7"
+            }
+        },
+        "RACKA8": {
+            "name": "Rack A8",
+            "position_x": 299,
+            "position_y": 88,
+            "dimension_x": 47,
+            "dimension_y": 76,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgrey"
+            },
+            "data": {
+                "header": "A8"
+            }
+        },
+        "RACKA9": {
+            "name": "Rack A9",
+            "position_x": 254,
+            "position_y": 88,
+            "dimension_x": 45,
+            "dimension_y": 76,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgrey"
+            },
+            "data": {
+                "header": "A9"
+            }
+        },
+        "RACKA10": {
+            "name": "Rack A10",
+            "position_x": 208,
+            "position_y": 88,
+            "dimension_x": 46,
+            "dimension_y": 76,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgrey"
+            },
+            "data": {
+                "header": "A10"
+            }
+        },
+        "RACKA11": {
+            "name": "Rack A11",
+            "position_x": 161,
+            "position_y": 88,
+            "dimension_x": 47,
+            "dimension_y": 76,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgrey"
+            },
+            "data": {
+                "header": "A11"
+            }
+        },
+        "RACKA12": {
+            "name": "Rack A12",
+            "position_x": 116,
+            "position_y": 88,
+            "dimension_x": 45,
+            "dimension_y": 76,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgrey"
+            },
+            "data": {
+                "header": "A12"
+            }
+        },
+        "RACKPFA": {
+            "name": "Rack PFA",
+            "position_x": 70,
+            "position_y": 118,
+            "dimension_x": 46,
+            "dimension_y": 46,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgrey"
+            },
+            "data": {
+                "header": "PFA"
+            }
+        },
+        "RACKB1": {
+            "name": "Rack B1",
+            "position_x": 621,
+            "position_y": 225,
+            "dimension_x": 46,
+            "dimension_y": 76,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgrey"
+            },
+            "data": {
+                "header": "B1"
+            }
+        },
+        "RACKB2": {
+            "name": "Rack B2",
+            "position_x": 575,
+            "position_y": 225,
+            "dimension_x": 46,
+            "dimension_y": 76,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgrey"
+            },
+            "data": {
+                "header": "B2"
+            }
+        },
+        "RACKB3": {
+            "name": "Rack B3",
+            "position_x": 529,
+            "position_y": 225,
+            "dimension_x": 46,
+            "dimension_y": 76,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgrey"
+            },
+            "data": {
+                "header": "B3"
+            }
+        },
+        "RACKB4": {
+            "name": "Rack B4",
+            "position_x": 483,
+            "position_y": 225,
+            "dimension_x": 46,
+            "dimension_y": 76,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgrey"
+            },
+            "data": {
+                "header": "B4"
+            }
+        },
+        "RACKB5": {
+            "name": "Rack B5",
+            "position_x": 437,
+            "position_y": 225,
+            "dimension_x": 46,
+            "dimension_y": 76,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgrey"
+            },
+            "data": {
+                "header": "B5"
+            }
+        },
+        "RACKB6": {
+            "name": "Rack B6",
+            "position_x": 391,
+            "position_y": 225,
+            "dimension_x": 46,
+            "dimension_y": 76,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgrey"
+            },
+            "data": {
+                "header": "B6"
+            }
+        },
+        "RACKB7": {
+            "name": "Rack B7",
+            "position_x": 345,
+            "position_y": 225,
+            "dimension_x": 46,
+            "dimension_y": 76,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgrey"
+            },
+            "data": {
+                "header": "B7"
+            }
+        },
+        "RACKB8": {
+            "name": "Rack B8",
+            "position_x": 299,
+            "position_y": 225,
+            "dimension_x": 47,
+            "dimension_y": 76,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgrey"
+            },
+            "data": {
+                "header": "B8"
+            }
+        },
+        "RACKB9": {
+            "name": "Rack B9",
+            "position_x": 254,
+            "position_y": 225,
+            "dimension_x": 45,
+            "dimension_y": 76,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgrey"
+            },
+            "data": {
+                "header": "B9"
+            }
+        },
+        "RACKB10": {
+            "name": "Rack B10",
+            "position_x": 208,
+            "position_y": 225,
+            "dimension_x": 46,
+            "dimension_y": 76,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgrey"
+            },
+            "data": {
+                "header": "B10"
+            }
+        },
+        "RACKB11": {
+            "name": "Rack B11",
+            "position_x": 161,
+            "position_y": 225,
+            "dimension_x": 47,
+            "dimension_y": 76,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgrey"
+            },
+            "data": {
+                "header": "B11"
+            }
+        },
+        "RACKB12": {
+            "name": "Rack B12",
+            "position_x": 116,
+            "position_y": 225,
+            "dimension_x": 45,
+            "dimension_y": 76,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgrey"
+            },
+            "data": {
+                "header": "B12"
+            }
+        },
+        "RACKPFB": {
+            "name": "Rack PFB",
+            "position_x": 70,
+            "position_y": 225,
+            "dimension_x": 46,
+            "dimension_y": 46,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgrey"
+            },
+            "data": {
+                "header": "PFB"
+            }
+        },
+        "RACKC1": {
+            "name": "Rack C1",
+            "position_x": 621,
+            "position_y": 393,
+            "dimension_x": 46,
+            "dimension_y": 76,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgrey"
+            },
+            "data": {
+                "header": "C1"
+            }
+        },
+        "RACKC2": {
+            "name": "Rack C2",
+            "position_x": 575,
+            "position_y": 393,
+            "dimension_x": 46,
+            "dimension_y": 76,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgrey"
+            },
+            "data": {
+                "header": "C2"
+            }
+        },
+        "RACKC3": {
+            "name": "Rack C3",
+            "position_x": 529,
+            "position_y": 393,
+            "dimension_x": 46,
+            "dimension_y": 76,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgrey"
+            },
+            "data": {
+                "header": "C3"
+            }
+        },
+        "RACKC4": {
+            "name": "Rack C4",
+            "position_x": 483,
+            "position_y": 393,
+            "dimension_x": 46,
+            "dimension_y": 76,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgrey"
+            },
+            "data": {
+                "header": "C4"
+            }
+        },
+        "RACKC5": {
+            "name": "Rack C5",
+            "position_x": 437,
+            "position_y": 393,
+            "dimension_x": 46,
+            "dimension_y": 76,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgrey"
+            },
+            "data": {
+                "header": "C5"
+            }
+        },
+        "RACKC6": {
+            "name": "Rack C6",
+            "position_x": 391,
+            "position_y": 393,
+            "dimension_x": 46,
+            "dimension_y": 76,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgrey"
+            },
+            "data": {
+                "header": "C6"
+            }
+        },
+        "RACKC7": {
+            "name": "Rack C7",
+            "position_x": 345,
+            "position_y": 393,
+            "dimension_x": 46,
+            "dimension_y": 76,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgrey"
+            },
+            "data": {
+                "header": "C7"
+            }
+        },
+        "RACKC8": {
+            "name": "Rack C8",
+            "position_x": 299,
+            "position_y": 393,
+            "dimension_x": 47,
+            "dimension_y": 76,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgrey"
+            },
+            "data": {
+                "header": "C8"
+            }
+        },
+        "RACKC9": {
+            "name": "Rack C9",
+            "position_x": 254,
+            "position_y": 393,
+            "dimension_x": 45,
+            "dimension_y": 76,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgrey"
+            },
+            "data": {
+                "header": "C9"
+            }
+        },
+        "RACKC10": {
+            "name": "Rack C10",
+            "position_x": 208,
+            "position_y": 393,
+            "dimension_x": 46,
+            "dimension_y": 76,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgrey"
+            },
+            "data": {
+                "header": "C10"
+            }
+        },
+        "RACKC11": {
+            "name": "Rack C11",
+            "position_x": 161,
+            "position_y": 393,
+            "dimension_x": 47,
+            "dimension_y": 76,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgrey"
+            },
+            "data": {
+                "header": "C11"
+            }
+        },
+        "RACKC12": {
+            "name": "Rack C12",
+            "position_x": 116,
+            "position_y": 393,
+            "dimension_x": 45,
+            "dimension_y": 76,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgrey"
+            },
+            "data": {
+                "header": "C12"
+            }
+        },
+        "RACKPFC": {
+            "name": "Rack PFC",
+            "position_x": 70,
+            "position_y": 423,
+            "dimension_x": 46,
+            "dimension_y": 46,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgrey"
+            },
+            "data": {
+                "header": "PFC"
+            }
+        },
+        "RACKD1": {
+            "name": "Rack D1",
+            "position_x": 621,
+            "position_y": 547,
+            "dimension_x": 46,
+            "dimension_y": 76,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgrey"
+            },
+            "data": {
+                "header": "D1"
+            }
+        },
+        "RACKD2": {
+            "name": "Rack D2",
+            "position_x": 575,
+            "position_y": 547,
+            "dimension_x": 46,
+            "dimension_y": 76,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgrey"
+            },
+            "data": {
+                "header": "D2"
+            }
+        },
+        "RACKD3": {
+            "name": "Rack D3",
+            "position_x": 529,
+            "position_y": 547,
+            "dimension_x": 46,
+            "dimension_y": 76,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgrey"
+            },
+            "data": {
+                "header": "D3"
+            }
+        },
+        "RACKD4": {
+            "name": "Rack D4",
+            "position_x": 483,
+            "position_y": 547,
+            "dimension_x": 46,
+            "dimension_y": 76,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgrey"
+            },
+            "data": {
+                "header": "D4"
+            }
+        },
+        "RACKD5": {
+            "name": "Rack D5",
+            "position_x": 437,
+            "position_y": 547,
+            "dimension_x": 46,
+            "dimension_y": 76,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgrey"
+            },
+            "data": {
+                "header": "D5"
+            }
+        },
+        "RACKD6": {
+            "name": "Rack D6",
+            "position_x": 391,
+            "position_y": 547,
+            "dimension_x": 46,
+            "dimension_y": 76,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgrey"
+            },
+            "data": {
+                "header": "D6"
+            }
+        },
+        "RACKD7": {
+            "name": "Rack D7",
+            "position_x": 345,
+            "position_y": 547,
+            "dimension_x": 46,
+            "dimension_y": 76,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgrey"
+            },
+            "data": {
+                "header": "D7"
+            }
+        },
+        "RACKD8": {
+            "name": "Rack D8",
+            "position_x": 299,
+            "position_y": 547,
+            "dimension_x": 47,
+            "dimension_y": 76,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgrey"
+            },
+            "data": {
+                "header": "D8"
+            }
+        },
+        "RACKD9": {
+            "name": "Rack D9",
+            "position_x": 254,
+            "position_y": 547,
+            "dimension_x": 45,
+            "dimension_y": 76,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgrey"
+            },
+            "data": {
+                "header": "D9"
+            }
+        },
+        "RACKD10": {
+            "name": "Rack D10",
+            "position_x": 208,
+            "position_y": 547,
+            "dimension_x": 46,
+            "dimension_y": 76,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgrey"
+            },
+            "data": {
+                "header": "D10"
+            }
+        },
+        "RACKD11": {
+            "name": "Rack D11",
+            "position_x": 161,
+            "position_y": 547,
+            "dimension_x": 47,
+            "dimension_y": 76,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgrey"
+            },
+            "data": {
+                "header": "B11"
+            }
+        },
+        "RACKD12": {
+            "name": "Rack D12",
+            "position_x": 116,
+            "position_y": 547,
+            "dimension_x": 45,
+            "dimension_y": 76,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgrey"
+            },
+            "data": {
+                "header": "D12"
+            }
+        },
+        "RACKPFD": {
+            "name": "Rack PFD",
+            "position_x": 70,
+            "position_y": 547,
+            "dimension_x": 46,
+            "dimension_y": 46,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgrey"
+            },
+            "data": {
+                "header": "PFD"
+            }
+        },
+        "RACKE1": {
+            "name": "Rack E1",
+            "position_x": 621,
+            "position_y": 715,
+            "dimension_x": 46,
+            "dimension_y": 76,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "darkred"
+            },
+            "data": {
+                "header": "E1"
+            }
+        },
+        "RACKE2": {
+            "name": "Rack E2",
+            "position_x": 575,
+            "position_y": 715,
+            "dimension_x": 46,
+            "dimension_y": 76,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "darkred"
+            },
+            "data": {
+                "header": "E2"
+            }
+        },
+        "RACKE3": {
+            "name": "Rack E3",
+            "position_x": 529,
+            "position_y": 715,
+            "dimension_x": 46,
+            "dimension_y": 76,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "darkred"
+            },
+            "data": {
+                "header": "E3"
+            }
+        },
+        "RACKE4": {
+            "name": "Rack E4",
+            "position_x": 483,
+            "position_y": 715,
+            "dimension_x": 46,
+            "dimension_y": 76,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "darkred"
+            },
+            "data": {
+                "header": "E4"
+            }
+        },
+        "RACKE5": {
+            "name": "Rack E5",
+            "position_x": 437,
+            "position_y": 715,
+            "dimension_x": 46,
+            "dimension_y": 76,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "darkred"
+            },
+            "data": {
+                "header": "E5"
+            }
+        },
+        "RACKE6": {
+            "name": "Rack E6",
+            "position_x": 391,
+            "position_y": 715,
+            "dimension_x": 46,
+            "dimension_y": 76,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "darkred"
+            },
+            "data": {
+                "header": "E6"
+            }
+        },
+        "RACKE7": {
+            "name": "Rack E7",
+            "position_x": 345,
+            "position_y": 715,
+            "dimension_x": 46,
+            "dimension_y": 76,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "darkred"
+            },
+            "data": {
+                "header": "E7"
+            }
+        },
+        "RACKE8": {
+            "name": "Rack E8",
+            "position_x": 299,
+            "position_y": 715,
+            "dimension_x": 47,
+            "dimension_y": 76,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "darkred"
+            },
+            "data": {
+                "header": "E8"
+            }
+        },
+        "RACKE9": {
+            "name": "Rack E9",
+            "position_x": 254,
+            "position_y": 715,
+            "dimension_x": 45,
+            "dimension_y": 76,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "darkred"
+            },
+            "data": {
+                "header": "E9"
+            }
+        },
+        "RACKE10": {
+            "name": "Rack E10",
+            "position_x": 208,
+            "position_y": 715,
+            "dimension_x": 46,
+            "dimension_y": 76,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "darkred"
+            },
+            "data": {
+                "header": "E10"
+            }
+        },
+        "RACKE11": {
+            "name": "Rack E11",
+            "position_x": 161,
+            "position_y": 715,
+            "dimension_x": 47,
+            "dimension_y": 76,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "darkred"
+            },
+            "data": {
+                "header": "E11"
+            }
+        },
+        "RACKE12": {
+            "name": "Rack E12",
+            "position_x": 116,
+            "position_y": 715,
+            "dimension_x": 45,
+            "dimension_y": 76,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "darkred"
+            },
+            "data": {
+                "header": "E12"
+            }
+        },
+        
         "RACKA1-A": {
             "name": "Rack A1 Feed A",
             "position_x": 625,
@@ -27,7 +1180,7 @@
             "dimension_x": 38,
             "dimension_y": 25,
             "style": {
-                "line_width": 2,
+                "line_width": 1,
                 "line_color": "black",
                 "font": "monospace",
                 "font_size": "auto",
@@ -51,7 +1204,7 @@
             "dimension_x": 38,
             "dimension_y": 25,
             "style": {
-                "line_width": 2,
+                "line_width": 1,
                 "line_color": "black",
                 "font": "monospace",
                 "font_size": "auto",
@@ -67,7 +1220,7 @@
                 "url": "localhost.ports[0].graph.graph_full_url",
                 "image": "localhost.ports[0].graph.graph_full_url"
             }
-        },
+        }, 
         "RACKA2-A": {
             "name": "Rack A2 Feed A",
             "position_x": 580,
@@ -75,7 +1228,7 @@
             "dimension_x": 38,
             "dimension_y": 25,
             "style": {
-                "line_width": 2,
+                "line_width": 1,
                 "line_color": "black",
                 "font": "monospace",
                 "font_size": "auto",
@@ -99,7 +1252,7 @@
             "dimension_x": 38,
             "dimension_y": 25,
             "style": {
-                "line_width": 2,
+                "line_width": 1,
                 "line_color": "black",
                 "font": "monospace",
                 "font_size": "auto",
@@ -123,7 +1276,7 @@
             "dimension_x": 38,
             "dimension_y": 25,
             "style": {
-                "line_width": 2,
+                "line_width": 1,
                 "line_color": "black",
                 "font": "monospace",
                 "font_size": "auto",
@@ -147,7 +1300,7 @@
             "dimension_x": 38,
             "dimension_y": 25,
             "style": {
-                "line_width": 2,
+                "line_width": 1,
                 "line_color": "black",
                 "font": "monospace",
                 "font_size": "auto",
@@ -171,7 +1324,7 @@
             "dimension_x": 38,
             "dimension_y": 25,
             "style": {
-                "line_width": 2,
+                "line_width": 1,
                 "line_color": "black",
                 "font": "monospace",
                 "font_size": "auto",
@@ -195,7 +1348,7 @@
             "dimension_x": 38,
             "dimension_y": 25,
             "style": {
-                "line_width": 2,
+                "line_width": 1,
                 "line_color": "black",
                 "font": "monospace",
                 "font_size": "auto",
@@ -219,7 +1372,7 @@
             "dimension_x": 38,
             "dimension_y": 25,
             "style": {
-                "line_width": 2,
+                "line_width": 1,
                 "line_color": "black",
                 "font": "monospace",
                 "font_size": "auto",
@@ -243,7 +1396,7 @@
             "dimension_x": 38,
             "dimension_y": 25,
             "style": {
-                "line_width": 2,
+                "line_width": 1,
                 "line_color": "black",
                 "font": "monospace",
                 "font_size": "auto",
@@ -267,7 +1420,7 @@
             "dimension_x": 38,
             "dimension_y": 25,
             "style": {
-                "line_width": 2,
+                "line_width": 1,
                 "line_color": "black",
                 "font": "monospace",
                 "font_size": "auto",
@@ -291,7 +1444,7 @@
             "dimension_x": 38,
             "dimension_y": 25,
             "style": {
-                "line_width": 2,
+                "line_width": 1,
                 "line_color": "black",
                 "font": "monospace",
                 "font_size": "auto",
@@ -315,7 +1468,7 @@
             "dimension_x": 38,
             "dimension_y": 25,
             "style": {
-                "line_width": 2,
+                "line_width": 1,
                 "line_color": "black",
                 "font": "monospace",
                 "font_size": "auto",
@@ -339,7 +1492,7 @@
             "dimension_x": 38,
             "dimension_y": 25,
             "style": {
-                "line_width": 2,
+                "line_width": 1,
                 "line_color": "black",
                 "font": "monospace",
                 "font_size": "auto",
@@ -363,7 +1516,7 @@
             "dimension_x": 38,
             "dimension_y": 25,
             "style": {
-                "line_width": 2,
+                "line_width": 1,
                 "line_color": "black",
                 "font": "monospace",
                 "font_size": "auto",
@@ -387,7 +1540,7 @@
             "dimension_x": 38,
             "dimension_y": 25,
             "style": {
-                "line_width": 2,
+                "line_width": 1,
                 "line_color": "black",
                 "font": "monospace",
                 "font_size": "auto",
@@ -411,7 +1564,7 @@
             "dimension_x": 38,
             "dimension_y": 25,
             "style": {
-                "line_width": 2,
+                "line_width": 1,
                 "line_color": "black",
                 "font": "monospace",
                 "font_size": "auto",
@@ -435,7 +1588,7 @@
             "dimension_x": 38,
             "dimension_y": 25,
             "style": {
-                "line_width": 2,
+                "line_width": 1,
                 "line_color": "black",
                 "font": "monospace",
                 "font_size": "auto",
@@ -459,7 +1612,7 @@
             "dimension_x": 38,
             "dimension_y": 25,
             "style": {
-                "line_width": 2,
+                "line_width": 1,
                 "line_color": "black",
                 "font": "monospace",
                 "font_size": "auto",
@@ -483,7 +1636,7 @@
             "dimension_x": 38,
             "dimension_y": 25,
             "style": {
-                "line_width": 2,
+                "line_width": 1,
                 "line_color": "black",
                 "font": "monospace",
                 "font_size": "auto",
@@ -507,7 +1660,7 @@
             "dimension_x": 38,
             "dimension_y": 25,
             "style": {
-                "line_width": 2,
+                "line_width": 1,
                 "line_color": "black",
                 "font": "monospace",
                 "font_size": "auto",
@@ -531,7 +1684,7 @@
             "dimension_x": 38,
             "dimension_y": 25,
             "style": {
-                "line_width": 2,
+                "line_width": 1,
                 "line_color": "black",
                 "font": "monospace",
                 "font_size": "auto",
@@ -555,7 +1708,7 @@
             "dimension_x": 38,
             "dimension_y": 25,
             "style": {
-                "line_width": 2,
+                "line_width": 1,
                 "line_color": "black",
                 "font": "monospace",
                 "font_size": "auto",
@@ -579,7 +1732,7 @@
             "dimension_x": 38,
             "dimension_y": 25,
             "style": {
-                "line_width": 2,
+                "line_width": 1,
                 "line_color": "black",
                 "font": "monospace",
                 "font_size": "auto",
@@ -602,8 +1755,9 @@
             "position_y": 122,
             "dimension_x": 38,
             "dimension_y": 18,
+            "draw": false,
             "style": {
-                "line_width": 2,
+                "line_width": 1,
                 "line_color": "black",
                 "font": "monospace",
                 "font_size": "auto",
@@ -626,8 +1780,9 @@
             "position_y": 142,
             "dimension_x": 38,
             "dimension_y": 18,
+            "draw": false,
             "style": {
-                "line_width": 2,
+                "line_width": 1,
                 "line_color": "black",
                 "font": "monospace",
                 "font_size": "auto",
@@ -651,7 +1806,7 @@
             "dimension_x": 38,
             "dimension_y": 25,
             "style": {
-                "line_width": 2,
+                "line_width": 1,
                 "line_color": "black",
                 "font": "monospace",
                 "font_size": "auto",
@@ -675,7 +1830,7 @@
             "dimension_x": 38,
             "dimension_y": 25,
             "style": {
-                "line_width": 2,
+                "line_width": 1,
                 "line_color": "black",
                 "font": "monospace",
                 "font_size": "auto",
@@ -699,7 +1854,7 @@
             "dimension_x": 38,
             "dimension_y": 25,
             "style": {
-                "line_width": 2,
+                "line_width": 1,
                 "line_color": "black",
                 "font": "monospace",
                 "font_size": "auto",
@@ -723,7 +1878,7 @@
             "dimension_x": 38,
             "dimension_y": 25,
             "style": {
-                "line_width": 2,
+                "line_width": 1,
                 "line_color": "black",
                 "font": "monospace",
                 "font_size": "auto",
@@ -747,7 +1902,7 @@
             "dimension_x": 38,
             "dimension_y": 25,
             "style": {
-                "line_width": 2,
+                "line_width": 1,
                 "line_color": "black",
                 "font": "monospace",
                 "font_size": "auto",
@@ -771,7 +1926,7 @@
             "dimension_x": 38,
             "dimension_y": 25,
             "style": {
-                "line_width": 2,
+                "line_width": 1,
                 "line_color": "black",
                 "font": "monospace",
                 "font_size": "auto",
@@ -795,7 +1950,7 @@
             "dimension_x": 38,
             "dimension_y": 25,
             "style": {
-                "line_width": 2,
+                "line_width": 1,
                 "line_color": "black",
                 "font": "monospace",
                 "font_size": "auto",
@@ -819,7 +1974,7 @@
             "dimension_x": 38,
             "dimension_y": 25,
             "style": {
-                "line_width": 2,
+                "line_width": 1,
                 "line_color": "black",
                 "font": "monospace",
                 "font_size": "auto",
@@ -843,7 +1998,7 @@
             "dimension_x": 38,
             "dimension_y": 25,
             "style": {
-                "line_width": 2,
+                "line_width": 1,
                 "line_color": "black",
                 "font": "monospace",
                 "font_size": "auto",
@@ -867,7 +2022,7 @@
             "dimension_x": 38,
             "dimension_y": 25,
             "style": {
-                "line_width": 2,
+                "line_width": 1,
                 "line_color": "black",
                 "font": "monospace",
                 "font_size": "auto",
@@ -891,7 +2046,7 @@
             "dimension_x": 38,
             "dimension_y": 25,
             "style": {
-                "line_width": 2,
+                "line_width": 1,
                 "line_color": "black",
                 "font": "monospace",
                 "font_size": "auto",
@@ -915,7 +2070,7 @@
             "dimension_x": 38,
             "dimension_y": 25,
             "style": {
-                "line_width": 2,
+                "line_width": 1,
                 "line_color": "black",
                 "font": "monospace",
                 "font_size": "auto",
@@ -939,7 +2094,7 @@
             "dimension_x": 38,
             "dimension_y": 25,
             "style": {
-                "line_width": 2,
+                "line_width": 1,
                 "line_color": "black",
                 "font": "monospace",
                 "font_size": "auto",
@@ -963,7 +2118,7 @@
             "dimension_x": 38,
             "dimension_y": 25,
             "style": {
-                "line_width": 2,
+                "line_width": 1,
                 "line_color": "black",
                 "font": "monospace",
                 "font_size": "auto",
@@ -987,7 +2142,7 @@
             "dimension_x": 38,
             "dimension_y": 25,
             "style": {
-                "line_width": 2,
+                "line_width": 1,
                 "line_color": "black",
                 "font": "monospace",
                 "font_size": "auto",
@@ -1011,7 +2166,7 @@
             "dimension_x": 38,
             "dimension_y": 25,
             "style": {
-                "line_width": 2,
+                "line_width": 1,
                 "line_color": "black",
                 "font": "monospace",
                 "font_size": "auto",
@@ -1035,7 +2190,7 @@
             "dimension_x": 38,
             "dimension_y": 25,
             "style": {
-                "line_width": 2,
+                "line_width": 1,
                 "line_color": "black",
                 "font": "monospace",
                 "font_size": "auto",
@@ -1059,7 +2214,7 @@
             "dimension_x": 38,
             "dimension_y": 25,
             "style": {
-                "line_width": 2,
+                "line_width": 1,
                 "line_color": "black",
                 "font": "monospace",
                 "font_size": "auto",
@@ -1083,7 +2238,7 @@
             "dimension_x": 38,
             "dimension_y": 25,
             "style": {
-                "line_width": 2,
+                "line_width": 1,
                 "line_color": "black",
                 "font": "monospace",
                 "font_size": "auto",
@@ -1107,7 +2262,7 @@
             "dimension_x": 38,
             "dimension_y": 25,
             "style": {
-                "line_width": 2,
+                "line_width": 1,
                 "line_color": "black",
                 "font": "monospace",
                 "font_size": "auto",
@@ -1131,7 +2286,7 @@
             "dimension_x": 38,
             "dimension_y": 25,
             "style": {
-                "line_width": 2,
+                "line_width": 1,
                 "line_color": "black",
                 "font": "monospace",
                 "font_size": "auto",
@@ -1155,7 +2310,7 @@
             "dimension_x": 38,
             "dimension_y": 25,
             "style": {
-                "line_width": 2,
+                "line_width": 1,
                 "line_color": "black",
                 "font": "monospace",
                 "font_size": "auto",
@@ -1179,7 +2334,7 @@
             "dimension_x": 38,
             "dimension_y": 25,
             "style": {
-                "line_width": 2,
+                "line_width": 1,
                 "line_color": "black",
                 "font": "monospace",
                 "font_size": "auto",
@@ -1203,7 +2358,7 @@
             "dimension_x": 38,
             "dimension_y": 25,
             "style": {
-                "line_width": 2,
+                "line_width": 1,
                 "line_color": "black",
                 "font": "monospace",
                 "font_size": "auto",
@@ -1226,8 +2381,9 @@
             "position_y": 229,
             "dimension_x": 38,
             "dimension_y": 18,
+            "draw": false,
             "style": {
-                "line_width": 2,
+                "line_width": 1,
                 "line_color": "black",
                 "font": "monospace",
                 "font_size": "auto",
@@ -1250,8 +2406,9 @@
             "position_y": 249,
             "dimension_x": 38,
             "dimension_y": 18,
+            "draw": false,
             "style": {
-                "line_width": 2,
+                "line_width": 1,
                 "line_color": "black",
                 "font": "monospace",
                 "font_size": "auto",
@@ -1275,7 +2432,7 @@
             "dimension_x": 38,
             "dimension_y": 25,
             "style": {
-                "line_width": 2,
+                "line_width": 1,
                 "line_color": "black",
                 "font": "monospace",
                 "font_size": "auto",
@@ -1299,7 +2456,7 @@
             "dimension_x": 38,
             "dimension_y": 25,
             "style": {
-                "line_width": 2,
+                "line_width": 1,
                 "line_color": "black",
                 "font": "monospace",
                 "font_size": "auto",
@@ -1323,7 +2480,7 @@
             "dimension_x": 38,
             "dimension_y": 25,
             "style": {
-                "line_width": 2,
+                "line_width": 1,
                 "line_color": "black",
                 "font": "monospace",
                 "font_size": "auto",
@@ -1347,7 +2504,7 @@
             "dimension_x": 38,
             "dimension_y": 25,
             "style": {
-                "line_width": 2,
+                "line_width": 1,
                 "line_color": "black",
                 "font": "monospace",
                 "font_size": "auto",
@@ -1371,7 +2528,7 @@
             "dimension_x": 38,
             "dimension_y": 25,
             "style": {
-                "line_width": 2,
+                "line_width": 1,
                 "line_color": "black",
                 "font": "monospace",
                 "font_size": "auto",
@@ -1395,7 +2552,7 @@
             "dimension_x": 38,
             "dimension_y": 25,
             "style": {
-                "line_width": 2,
+                "line_width": 1,
                 "line_color": "black",
                 "font": "monospace",
                 "font_size": "auto",
@@ -1419,7 +2576,7 @@
             "dimension_x": 38,
             "dimension_y": 25,
             "style": {
-                "line_width": 2,
+                "line_width": 1,
                 "line_color": "black",
                 "font": "monospace",
                 "font_size": "auto",
@@ -1443,7 +2600,7 @@
             "dimension_x": 38,
             "dimension_y": 25,
             "style": {
-                "line_width": 2,
+                "line_width": 1,
                 "line_color": "black",
                 "font": "monospace",
                 "font_size": "auto",
@@ -1467,7 +2624,7 @@
             "dimension_x": 38,
             "dimension_y": 25,
             "style": {
-                "line_width": 2,
+                "line_width": 1,
                 "line_color": "black",
                 "font": "monospace",
                 "font_size": "auto",
@@ -1491,7 +2648,7 @@
             "dimension_x": 38,
             "dimension_y": 25,
             "style": {
-                "line_width": 2,
+                "line_width": 1,
                 "line_color": "black",
                 "font": "monospace",
                 "font_size": "auto",
@@ -1515,7 +2672,7 @@
             "dimension_x": 38,
             "dimension_y": 25,
             "style": {
-                "line_width": 2,
+                "line_width": 1,
                 "line_color": "black",
                 "font": "monospace",
                 "font_size": "auto",
@@ -1539,7 +2696,7 @@
             "dimension_x": 38,
             "dimension_y": 25,
             "style": {
-                "line_width": 2,
+                "line_width": 1,
                 "line_color": "black",
                 "font": "monospace",
                 "font_size": "auto",
@@ -1563,7 +2720,7 @@
             "dimension_x": 38,
             "dimension_y": 25,
             "style": {
-                "line_width": 2,
+                "line_width": 1,
                 "line_color": "black",
                 "font": "monospace",
                 "font_size": "auto",
@@ -1587,7 +2744,7 @@
             "dimension_x": 38,
             "dimension_y": 25,
             "style": {
-                "line_width": 2,
+                "line_width": 1,
                 "line_color": "black",
                 "font": "monospace",
                 "font_size": "auto",
@@ -1611,7 +2768,7 @@
             "dimension_x": 38,
             "dimension_y": 25,
             "style": {
-                "line_width": 2,
+                "line_width": 1,
                 "line_color": "black",
                 "font": "monospace",
                 "font_size": "auto",
@@ -1635,7 +2792,7 @@
             "dimension_x": 38,
             "dimension_y": 25,
             "style": {
-                "line_width": 2,
+                "line_width": 1,
                 "line_color": "black",
                 "font": "monospace",
                 "font_size": "auto",
@@ -1659,7 +2816,7 @@
             "dimension_x": 38,
             "dimension_y": 25,
             "style": {
-                "line_width": 2,
+                "line_width": 1,
                 "line_color": "black",
                 "font": "monospace",
                 "font_size": "auto",
@@ -1683,7 +2840,7 @@
             "dimension_x": 38,
             "dimension_y": 25,
             "style": {
-                "line_width": 2,
+                "line_width": 1,
                 "line_color": "black",
                 "font": "monospace",
                 "font_size": "auto",
@@ -1707,7 +2864,7 @@
             "dimension_x": 38,
             "dimension_y": 25,
             "style": {
-                "line_width": 2,
+                "line_width": 1,
                 "line_color": "black",
                 "font": "monospace",
                 "font_size": "auto",
@@ -1731,7 +2888,7 @@
             "dimension_x": 38,
             "dimension_y": 25,
             "style": {
-                "line_width": 2,
+                "line_width": 1,
                 "line_color": "black",
                 "font": "monospace",
                 "font_size": "auto",
@@ -1755,7 +2912,7 @@
             "dimension_x": 38,
             "dimension_y": 25,
             "style": {
-                "line_width": 2,
+                "line_width": 1,
                 "line_color": "black",
                 "font": "monospace",
                 "font_size": "auto",
@@ -1779,7 +2936,7 @@
             "dimension_x": 38,
             "dimension_y": 25,
             "style": {
-                "line_width": 2,
+                "line_width": 1,
                 "line_color": "black",
                 "font": "monospace",
                 "font_size": "auto",
@@ -1803,7 +2960,7 @@
             "dimension_x": 38,
             "dimension_y": 25,
             "style": {
-                "line_width": 2,
+                "line_width": 1,
                 "line_color": "black",
                 "font": "monospace",
                 "font_size": "auto",
@@ -1827,7 +2984,7 @@
             "dimension_x": 38,
             "dimension_y": 25,
             "style": {
-                "line_width": 2,
+                "line_width": 1,
                 "line_color": "black",
                 "font": "monospace",
                 "font_size": "auto",
@@ -1850,8 +3007,9 @@
             "position_y": 428,
             "dimension_x": 38,
             "dimension_y": 18,
+            "draw": false,
             "style": {
-                "line_width": 2,
+                "line_width": 1,
                 "line_color": "black",
                 "font": "monospace",
                 "font_size": "auto",
@@ -1874,8 +3032,9 @@
             "position_y": 448,
             "dimension_x": 38,
             "dimension_y": 18,
+            "draw": false,
             "style": {
-                "line_width": 2,
+                "line_width": 1,
                 "line_color": "black",
                 "font": "monospace",
                 "font_size": "auto",
@@ -1899,7 +3058,7 @@
             "dimension_x": 38,
             "dimension_y": 25,
             "style": {
-                "line_width": 2,
+                "line_width": 1,
                 "line_color": "black",
                 "font": "monospace",
                 "font_size": "auto",
@@ -1923,7 +3082,7 @@
             "dimension_x": 38,
             "dimension_y": 25,
             "style": {
-                "line_width": 2,
+                "line_width": 1,
                 "line_color": "black",
                 "font": "monospace",
                 "font_size": "auto",
@@ -1947,7 +3106,7 @@
             "dimension_x": 38,
             "dimension_y": 25,
             "style": {
-                "line_width": 2,
+                "line_width": 1,
                 "line_color": "black",
                 "font": "monospace",
                 "font_size": "auto",
@@ -1971,7 +3130,7 @@
             "dimension_x": 38,
             "dimension_y": 25,
             "style": {
-                "line_width": 2,
+                "line_width": 1,
                 "line_color": "black",
                 "font": "monospace",
                 "font_size": "auto",
@@ -1995,7 +3154,7 @@
             "dimension_x": 38,
             "dimension_y": 25,
             "style": {
-                "line_width": 2,
+                "line_width": 1,
                 "line_color": "black",
                 "font": "monospace",
                 "font_size": "auto",
@@ -2019,7 +3178,7 @@
             "dimension_x": 38,
             "dimension_y": 25,
             "style": {
-                "line_width": 2,
+                "line_width": 1,
                 "line_color": "black",
                 "font": "monospace",
                 "font_size": "auto",
@@ -2043,7 +3202,7 @@
             "dimension_x": 38,
             "dimension_y": 25,
             "style": {
-                "line_width": 2,
+                "line_width": 1,
                 "line_color": "black",
                 "font": "monospace",
                 "font_size": "auto",
@@ -2067,7 +3226,7 @@
             "dimension_x": 38,
             "dimension_y": 25,
             "style": {
-                "line_width": 2,
+                "line_width": 1,
                 "line_color": "black",
                 "font": "monospace",
                 "font_size": "auto",
@@ -2091,7 +3250,7 @@
             "dimension_x": 38,
             "dimension_y": 25,
             "style": {
-                "line_width": 2,
+                "line_width": 1,
                 "line_color": "black",
                 "font": "monospace",
                 "font_size": "auto",
@@ -2115,7 +3274,7 @@
             "dimension_x": 38,
             "dimension_y": 25,
             "style": {
-                "line_width": 2,
+                "line_width": 1,
                 "line_color": "black",
                 "font": "monospace",
                 "font_size": "auto",
@@ -2139,7 +3298,7 @@
             "dimension_x": 38,
             "dimension_y": 25,
             "style": {
-                "line_width": 2,
+                "line_width": 1,
                 "line_color": "black",
                 "font": "monospace",
                 "font_size": "auto",
@@ -2163,7 +3322,7 @@
             "dimension_x": 38,
             "dimension_y": 25,
             "style": {
-                "line_width": 2,
+                "line_width": 1,
                 "line_color": "black",
                 "font": "monospace",
                 "font_size": "auto",
@@ -2187,7 +3346,7 @@
             "dimension_x": 38,
             "dimension_y": 25,
             "style": {
-                "line_width": 2,
+                "line_width": 1,
                 "line_color": "black",
                 "font": "monospace",
                 "font_size": "auto",
@@ -2211,7 +3370,7 @@
             "dimension_x": 38,
             "dimension_y": 25,
             "style": {
-                "line_width": 2,
+                "line_width": 1,
                 "line_color": "black",
                 "font": "monospace",
                 "font_size": "auto",
@@ -2235,7 +3394,7 @@
             "dimension_x": 38,
             "dimension_y": 25,
             "style": {
-                "line_width": 2,
+                "line_width": 1,
                 "line_color": "black",
                 "font": "monospace",
                 "font_size": "auto",
@@ -2259,7 +3418,7 @@
             "dimension_x": 38,
             "dimension_y": 25,
             "style": {
-                "line_width": 2,
+                "line_width": 1,
                 "line_color": "black",
                 "font": "monospace",
                 "font_size": "auto",
@@ -2283,7 +3442,7 @@
             "dimension_x": 38,
             "dimension_y": 25,
             "style": {
-                "line_width": 2,
+                "line_width": 1,
                 "line_color": "black",
                 "font": "monospace",
                 "font_size": "auto",
@@ -2307,7 +3466,7 @@
             "dimension_x": 38,
             "dimension_y": 25,
             "style": {
-                "line_width": 2,
+                "line_width": 1,
                 "line_color": "black",
                 "font": "monospace",
                 "font_size": "auto",
@@ -2331,7 +3490,7 @@
             "dimension_x": 38,
             "dimension_y": 25,
             "style": {
-                "line_width": 2,
+                "line_width": 1,
                 "line_color": "black",
                 "font": "monospace",
                 "font_size": "auto",
@@ -2355,7 +3514,7 @@
             "dimension_x": 38,
             "dimension_y": 25,
             "style": {
-                "line_width": 2,
+                "line_width": 1,
                 "line_color": "black",
                 "font": "monospace",
                 "font_size": "auto",
@@ -2379,7 +3538,7 @@
             "dimension_x": 38,
             "dimension_y": 25,
             "style": {
-                "line_width": 2,
+                "line_width": 1,
                 "line_color": "black",
                 "font": "monospace",
                 "font_size": "auto",
@@ -2403,7 +3562,7 @@
             "dimension_x": 38,
             "dimension_y": 25,
             "style": {
-                "line_width": 2,
+                "line_width": 1,
                 "line_color": "black",
                 "font": "monospace",
                 "font_size": "auto",
@@ -2427,7 +3586,7 @@
             "dimension_x": 38,
             "dimension_y": 25,
             "style": {
-                "line_width": 2,
+                "line_width": 1,
                 "line_color": "black",
                 "font": "monospace",
                 "font_size": "auto",
@@ -2451,7 +3610,7 @@
             "dimension_x": 38,
             "dimension_y": 25,
             "style": {
-                "line_width": 2,
+                "line_width": 1,
                 "line_color": "black",
                 "font": "monospace",
                 "font_size": "auto",
@@ -2474,8 +3633,9 @@
             "position_y": 550,
             "dimension_x": 38,
             "dimension_y": 18,
+            "draw": false,
             "style": {
-                "line_width": 2,
+                "line_width": 1,
                 "line_color": "black",
                 "font": "monospace",
                 "font_size": "auto",
@@ -2498,8 +3658,9 @@
             "position_y": 570,
             "dimension_x": 38,
             "dimension_y": 18,
+            "draw": false,
             "style": {
-                "line_width": 2,
+                "line_width": 1,
                 "line_color": "black",
                 "font": "monospace",
                 "font_size": "auto",
@@ -2523,7 +3684,7 @@
             "dimension_x": 38,
             "dimension_y": 25,
             "style": {
-                "line_width": 2,
+                "line_width": 1,
                 "line_color": "black",
                 "font": "monospace",
                 "font_size": "auto",
@@ -2547,7 +3708,7 @@
             "dimension_x": 38,
             "dimension_y": 25,
             "style": {
-                "line_width": 2,
+                "line_width": 1,
                 "line_color": "black",
                 "font": "monospace",
                 "font_size": "auto",
@@ -2571,7 +3732,7 @@
             "dimension_x": 38,
             "dimension_y": 25,
             "style": {
-                "line_width": 2,
+                "line_width": 1,
                 "line_color": "black",
                 "font": "monospace",
                 "font_size": "auto",
@@ -2595,7 +3756,7 @@
             "dimension_x": 38,
             "dimension_y": 25,
             "style": {
-                "line_width": 2,
+                "line_width": 1,
                 "line_color": "black",
                 "font": "monospace",
                 "font_size": "auto",
@@ -2619,7 +3780,7 @@
             "dimension_x": 38,
             "dimension_y": 25,
             "style": {
-                "line_width": 2,
+                "line_width": 1,
                 "line_color": "black",
                 "font": "monospace",
                 "font_size": "auto",
@@ -2643,7 +3804,7 @@
             "dimension_x": 38,
             "dimension_y": 25,
             "style": {
-                "line_width": 2,
+                "line_width": 1,
                 "line_color": "black",
                 "font": "monospace",
                 "font_size": "auto",
@@ -2667,7 +3828,7 @@
             "dimension_x": 38,
             "dimension_y": 25,
             "style": {
-                "line_width": 2,
+                "line_width": 1,
                 "line_color": "black",
                 "font": "monospace",
                 "font_size": "auto",
@@ -2691,7 +3852,7 @@
             "dimension_x": 38,
             "dimension_y": 25,
             "style": {
-                "line_width": 2,
+                "line_width": 1,
                 "line_color": "black",
                 "font": "monospace",
                 "font_size": "auto",
@@ -2715,7 +3876,7 @@
             "dimension_x": 38,
             "dimension_y": 25,
             "style": {
-                "line_width": 2,
+                "line_width": 1,
                 "line_color": "black",
                 "font": "monospace",
                 "font_size": "auto",
@@ -2739,7 +3900,7 @@
             "dimension_x": 38,
             "dimension_y": 25,
             "style": {
-                "line_width": 2,
+                "line_width": 1,
                 "line_color": "black",
                 "font": "monospace",
                 "font_size": "auto",
@@ -2763,7 +3924,7 @@
             "dimension_x": 38,
             "dimension_y": 25,
             "style": {
-                "line_width": 2,
+                "line_width": 1,
                 "line_color": "black",
                 "font": "monospace",
                 "font_size": "auto",
@@ -2787,7 +3948,7 @@
             "dimension_x": 38,
             "dimension_y": 25,
             "style": {
-                "line_width": 2,
+                "line_width": 1,
                 "line_color": "black",
                 "font": "monospace",
                 "font_size": "auto",
@@ -2811,7 +3972,7 @@
             "dimension_x": 38,
             "dimension_y": 25,
             "style": {
-                "line_width": 2,
+                "line_width": 1,
                 "line_color": "black",
                 "font": "monospace",
                 "font_size": "auto",
@@ -2835,7 +3996,7 @@
             "dimension_x": 38,
             "dimension_y": 25,
             "style": {
-                "line_width": 2,
+                "line_width": 1,
                 "line_color": "black",
                 "font": "monospace",
                 "font_size": "auto",
@@ -2859,7 +4020,7 @@
             "dimension_x": 38,
             "dimension_y": 25,
             "style": {
-                "line_width": 2,
+                "line_width": 1,
                 "line_color": "black",
                 "font": "monospace",
                 "font_size": "auto",
@@ -2883,7 +4044,7 @@
             "dimension_x": 38,
             "dimension_y": 25,
             "style": {
-                "line_width": 2,
+                "line_width": 1,
                 "line_color": "black",
                 "font": "monospace",
                 "font_size": "auto",
@@ -2907,7 +4068,7 @@
             "dimension_x": 38,
             "dimension_y": 25,
             "style": {
-                "line_width": 2,
+                "line_width": 1,
                 "line_color": "black",
                 "font": "monospace",
                 "font_size": "auto",
@@ -2931,7 +4092,7 @@
             "dimension_x": 38,
             "dimension_y": 25,
             "style": {
-                "line_width": 2,
+                "line_width": 1,
                 "line_color": "black",
                 "font": "monospace",
                 "font_size": "auto",
@@ -2955,7 +4116,7 @@
             "dimension_x": 38,
             "dimension_y": 25,
             "style": {
-                "line_width": 2,
+                "line_width": 1,
                 "line_color": "black",
                 "font": "monospace",
                 "font_size": "auto",
@@ -2979,7 +4140,7 @@
             "dimension_x": 38,
             "dimension_y": 25,
             "style": {
-                "line_width": 2,
+                "line_width": 1,
                 "line_color": "black",
                 "font": "monospace",
                 "font_size": "auto",
@@ -3003,7 +4164,7 @@
             "dimension_x": 38,
             "dimension_y": 25,
             "style": {
-                "line_width": 2,
+                "line_width": 1,
                 "line_color": "black",
                 "font": "monospace",
                 "font_size": "auto",
@@ -3027,7 +4188,7 @@
             "dimension_x": 38,
             "dimension_y": 25,
             "style": {
-                "line_width": 2,
+                "line_width": 1,
                 "line_color": "black",
                 "font": "monospace",
                 "font_size": "auto",
@@ -3051,7 +4212,7 @@
             "dimension_x": 38,
             "dimension_y": 25,
             "style": {
-                "line_width": 2,
+                "line_width": 1,
                 "line_color": "black",
                 "font": "monospace",
                 "font_size": "auto",
@@ -3075,7 +4236,7 @@
             "dimension_x": 38,
             "dimension_y": 25,
             "style": {
-                "line_width": 2,
+                "line_width": 1,
                 "line_color": "black",
                 "font": "monospace",
                 "font_size": "auto",
@@ -3099,7 +4260,7 @@
             "dimension_x": 38,
             "dimension_y": 15,
             "style": {
-                "line_width": 2,
+                "line_width": 1,
                 "line_color": "black",
                 "font": "monospace",
                 "font_size": "auto",
@@ -3123,7 +4284,7 @@
             "dimension_x": 38,
             "dimension_y": 15,
             "style": {
-                "line_width": 2,
+                "line_width": 1,
                 "line_color": "black",
                 "font": "monospace",
                 "font_size": "auto",
@@ -3147,7 +4308,7 @@
             "dimension_x": 38,
             "dimension_y": 15,
             "style": {
-                "line_width": 2,
+                "line_width": 1,
                 "line_color": "black",
                 "font": "monospace",
                 "font_size": "auto",
@@ -3171,7 +4332,7 @@
             "dimension_x": 38,
             "dimension_y": 15,
             "style": {
-                "line_width": 2,
+                "line_width": 1,
                 "line_color": "black",
                 "font": "monospace",
                 "font_size": "auto",
@@ -3195,7 +4356,7 @@
             "dimension_x": 38,
             "dimension_y": 15,
             "style": {
-                "line_width": 2,
+                "line_width": 1,
                 "line_color": "black",
                 "font": "monospace",
                 "font_size": "auto",
@@ -3219,7 +4380,7 @@
             "dimension_x": 38,
             "dimension_y": 15,
             "style": {
-                "line_width": 2,
+                "line_width": 1,
                 "line_color": "black",
                 "font": "monospace",
                 "font_size": "auto",
@@ -3243,7 +4404,7 @@
             "dimension_x": 38,
             "dimension_y": 15,
             "style": {
-                "line_width": 2,
+                "line_width": 1,
                 "line_color": "black",
                 "font": "monospace",
                 "font_size": "auto",
@@ -3267,7 +4428,7 @@
             "dimension_x": 38,
             "dimension_y": 15,
             "style": {
-                "line_width": 2,
+                "line_width": 1,
                 "line_color": "black",
                 "font": "monospace",
                 "font_size": "auto",
@@ -3291,7 +4452,7 @@
             "dimension_x": 38,
             "dimension_y": 15,
             "style": {
-                "line_width": 2,
+                "line_width": 1,
                 "line_color": "black",
                 "font": "monospace",
                 "font_size": "auto",
@@ -3315,7 +4476,7 @@
             "dimension_x": 38,
             "dimension_y": 15,
             "style": {
-                "line_width": 2,
+                "line_width": 1,
                 "line_color": "black",
                 "font": "monospace",
                 "font_size": "auto",
@@ -3339,7 +4500,7 @@
             "dimension_x": 38,
             "dimension_y": 15,
             "style": {
-                "line_width": 2,
+                "line_width": 1,
                 "line_color": "black",
                 "font": "monospace",
                 "font_size": "auto",
@@ -3363,7 +4524,7 @@
             "dimension_x": 38,
             "dimension_y": 15,
             "style": {
-                "line_width": 2,
+                "line_width": 1,
                 "line_color": "black",
                 "font": "monospace",
                 "font_size": "auto",
@@ -3387,7 +4548,7 @@
             "dimension_x": 38,
             "dimension_y": 15,
             "style": {
-                "line_width": 2,
+                "line_width": 1,
                 "line_color": "black",
                 "font": "monospace",
                 "font_size": "auto",
@@ -3411,7 +4572,7 @@
             "dimension_x": 38,
             "dimension_y": 15,
             "style": {
-                "line_width": 2,
+                "line_width": 1,
                 "line_color": "black",
                 "font": "monospace",
                 "font_size": "auto",
@@ -3435,7 +4596,7 @@
             "dimension_x": 38,
             "dimension_y": 15,
             "style": {
-                "line_width": 2,
+                "line_width": 1,
                 "line_color": "black",
                 "font": "monospace",
                 "font_size": "auto",
@@ -3459,7 +4620,7 @@
             "dimension_x": 38,
             "dimension_y": 15,
             "style": {
-                "line_width": 2,
+                "line_width": 1,
                 "line_color": "black",
                 "font": "monospace",
                 "font_size": "auto",
@@ -3483,7 +4644,7 @@
             "dimension_x": 38,
             "dimension_y": 15,
             "style": {
-                "line_width": 2,
+                "line_width": 1,
                 "line_color": "black",
                 "font": "monospace",
                 "font_size": "auto",
@@ -3507,7 +4668,7 @@
             "dimension_x": 38,
             "dimension_y": 15,
             "style": {
-                "line_width": 2,
+                "line_width": 1,
                 "line_color": "black",
                 "font": "monospace",
                 "font_size": "auto",
@@ -3531,7 +4692,7 @@
             "dimension_x": 38,
             "dimension_y": 15,
             "style": {
-                "line_width": 2,
+                "line_width": 1,
                 "line_color": "black",
                 "font": "monospace",
                 "font_size": "auto",
@@ -3555,7 +4716,7 @@
             "dimension_x": 38,
             "dimension_y": 15,
             "style": {
-                "line_width": 2,
+                "line_width": 1,
                 "line_color": "black",
                 "font": "monospace",
                 "font_size": "auto",
@@ -3579,7 +4740,7 @@
             "dimension_x": 38,
             "dimension_y": 15,
             "style": {
-                "line_width": 2,
+                "line_width": 1,
                 "line_color": "black",
                 "font": "monospace",
                 "font_size": "auto",
@@ -3603,7 +4764,7 @@
             "dimension_x": 38,
             "dimension_y": 15,
             "style": {
-                "line_width": 2,
+                "line_width": 1,
                 "line_color": "black",
                 "font": "monospace",
                 "font_size": "auto",
@@ -3627,7 +4788,7 @@
             "dimension_x": 38,
             "dimension_y": 15,
             "style": {
-                "line_width": 2,
+                "line_width": 1,
                 "line_color": "black",
                 "font": "monospace",
                 "font_size": "auto",
@@ -3651,7 +4812,7 @@
             "dimension_x": 38,
             "dimension_y": 15,
             "style": {
-                "line_width": 2,
+                "line_width": 1,
                 "line_color": "black",
                 "font": "monospace",
                 "font_size": "auto",
@@ -3675,7 +4836,7 @@
             "dimension_x": 38,
             "dimension_y": 15,
             "style": {
-                "line_width": 2,
+                "line_width": 1,
                 "line_color": "black",
                 "font": "monospace",
                 "font_size": "auto",
@@ -3699,7 +4860,7 @@
             "dimension_x": 38,
             "dimension_y": 15,
             "style": {
-                "line_width": 2,
+                "line_width": 1,
                 "line_color": "black",
                 "font": "monospace",
                 "font_size": "auto",
@@ -3723,7 +4884,7 @@
             "dimension_x": 38,
             "dimension_y": 15,
             "style": {
-                "line_width": 2,
+                "line_width": 1,
                 "line_color": "black",
                 "font": "monospace",
                 "font_size": "auto",
@@ -3747,7 +4908,7 @@
             "dimension_x": 38,
             "dimension_y": 15,
             "style": {
-                "line_width": 2,
+                "line_width": 1,
                 "line_color": "black",
                 "font": "monospace",
                 "font_size": "auto",
@@ -3771,7 +4932,7 @@
             "dimension_x": 38,
             "dimension_y": 15,
             "style": {
-                "line_width": 2,
+                "line_width": 1,
                 "line_color": "black",
                 "font": "monospace",
                 "font_size": "auto",
@@ -3795,7 +4956,7 @@
             "dimension_x": 38,
             "dimension_y": 15,
             "style": {
-                "line_width": 2,
+                "line_width": 1,
                 "line_color": "black",
                 "font": "monospace",
                 "font_size": "auto",
@@ -3819,7 +4980,7 @@
             "dimension_x": 38,
             "dimension_y": 15,
             "style": {
-                "line_width": 2,
+                "line_width": 1,
                 "line_color": "black",
                 "font": "monospace",
                 "font_size": "auto",
@@ -3843,7 +5004,7 @@
             "dimension_x": 38,
             "dimension_y": 15,
             "style": {
-                "line_width": 2,
+                "line_width": 1,
                 "line_color": "black",
                 "font": "monospace",
                 "font_size": "auto",
@@ -3867,7 +5028,7 @@
             "dimension_x": 38,
             "dimension_y": 15,
             "style": {
-                "line_width": 2,
+                "line_width": 1,
                 "line_color": "black",
                 "font": "monospace",
                 "font_size": "auto",
