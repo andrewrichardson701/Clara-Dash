@@ -40,6 +40,7 @@ These setup the canvas settings, all of the nodes and all of the links between n
 	"Config": {
 		"page_title": "Template",
 		"page_header": "Suite Template Power Usage",
+		"canvas_id": "template-map-power",
 		"background_img": "img/default.png",
 		"background_scale": [0.5, 0.5],
 		"background_anchor": "default",
@@ -203,6 +204,7 @@ These setup the canvas settings, all of the nodes and all of the links between n
 	<ul>
 		<li><strong>page_title</strong> - The title of the page to be shown on the browser tab (e.g. "Suite 1 - Temperature")</li>
 		<li><strong>page_header</strong> - The header to be shown on the page (e.g. "Suite 1 Temperature")</li>
+		<li><strong>canvas_id</strong> - The id to be used in the canvas element. This is needed to draw the canvas. (e.g. "suite-1-power" / "network-map" etc)</li>
 		<li><strong>background_img</strong> - Background image for the canvas (e.g. "/img/suite1.png" or "https://example.com/image.png")</li>
 		<li><strong>background_scale</strong> - The scale of the background image, in array [x, y] (e.g. [0.7, 0.2] which would be 0.7 * width and 0.2 * height)</li>
 		<li><strong>background_anchor</strong> - The anchor point of the background image (e.g. "top" / "bottom" / "left" / "right" / "center" / "middle")</li>
