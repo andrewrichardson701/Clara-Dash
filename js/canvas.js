@@ -79,7 +79,9 @@ if (typeof map_file === 'undefined') {
 }
 
 // SETUP THE CANVAS OBJECT
-var canvas = document.getElementById('canvas');
+if (!canvas) {
+    var canvas = document.getElementById(canvas_id || 'canvas'); // canvas_id is generated via canvas.php
+}
 var ctx = canvas.getContext("2d");
 var background = new Image();
 

@@ -2,6 +2,7 @@
     "Config": {
         "page_title": "Suite 42",
         "page_header": "Suite 42 Power",
+        "canvas_id": "suite-42-power",
         "background_img": "img/42.png",
         "background_scale": [0.75, 0.75],
         "background_anchor": "default",

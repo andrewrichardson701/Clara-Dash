@@ -2,6 +2,7 @@
     "Config": {
         "page_title": "Suite 52",
         "page_header": "Suite 52 Power",
+        "canvas_id": "suite-52-power",
         "background_img": "img/52.png",
         "background_scale": [0.625, 0.625],
         "background_anchor": "default",
@@ -15,7 +16,7 @@
         "show_coordinates": true,
         "show_timestamp": true,
         "show_dimensions": true,
-        "show_config": true,
+        "show_config": false,
         "image_width": 400,
         "image_height": 200
     },

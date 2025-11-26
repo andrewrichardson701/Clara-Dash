@@ -152,12 +152,12 @@
         }
     },
     "Links": {
-        "HOD-DS1_HOD-AS109": {
+        "HOD-DS1_HOD-AS109-OLD": {
             "nodes": [ 
                 {"node": "HOD-DS1", "anchor": "S", "offset": [0,0]},
                 {"node": "HOD-AS109", "anchor": "N", "offset": [-55,-111]}
             ],
-            "draw": true,
+            "draw": false,
             "style": {
                 "color": "orange",
                 "width": 5,
@@ -189,12 +189,12 @@
                 }
             ]
         },
-        "HOD-AS109_HOD-DS1": {
+        "HOD-AS109_HOD-DS1-OLD": {
             "nodes": [ 
                 {"node": "HOD-AS109", "anchor": "N", "offset": [0,0]},
                 {"node": "HOD-DS1", "anchor": "S", "offset": [55,111]}
             ],
-            "draw": true,
+            "draw": false,
             "style": {
                 "color": "white",
                 "width": 10,
@@ -224,12 +224,12 @@
                 }
             ]
         },
-        "HOD-DS1_HOD-AS110": {
+        "HOD-DS1_HOD-AS110-OLD": {
             "nodes": [ 
                 {"node": "HOD-DS1", "anchor": "S", "offset": [0,0]},
                 {"node": "HOD-AS110", "anchor": "N", "offset": [45,-111]}
             ],
-            "draw": true,
+            "draw": false,
             "style": {
                 "color": "white",
                 "width": 10,
@@ -259,12 +259,12 @@
                 }
             ]
         },
-        "HOD-AS110_HOD-DS1": {
+        "HOD-AS110_HOD-DS1-OLD": {
             "nodes": [ 
                 {"node": "HOD-AS110", "anchor": "N", "offset": [0,0]},
                 {"node": "HOD-DS1", "anchor": "S", "offset": [-45,111]}
             ],
-            "draw": true,
+            "draw": false,
             "style": {
                 "color": "white",
                 "width": 10,
@@ -333,6 +333,105 @@
                 {
                 "header": null,
                 "value": "localhost.ports[0].ifInOctets_rate",
+                "value_math": "*8/1000",
+                "value_float_num": 2,
+                "unit": "kbps",
+                "type": "data",
+                "url": "localhost.ports[0].graph.graph_full_url",
+                "image": "localhost.ports[0].graph.graph_full_url",
+                "draw": true
+                }
+            ]
+        },
+        "HOD-AS110_HOD-DS1": {
+            "nodes": [ 
+                {"node": "HOD-AS110", "anchor": "N", "offset": [0,0]},
+                {"node": "HOD-DS1", "anchor": "S", "offset": [0,0]}
+            ],
+            "draw": true,
+            "style": {
+                "color": "auto",
+                "width": 7,
+                "line_color": "black",
+                "line_width": 1,
+                "line_two_way": false,
+                "line_direction": "converge"
+            },
+            "node_style": {
+                "color": "auto",
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": 10,
+                "font_color": "black",
+                "padding": 2,
+                "anchor": "C"
+            },
+            "data": [
+                {
+                "header": null,
+                "value": "localhost.ports[0].ifOutOctets_rate",
+                "value_math": "*8/1000",
+                "value_float_num": 2,
+                "unit": "kbps",
+                "type": "data",
+                "url": "localhost.ports[0].graph.graph_full_url",
+                "image": "localhost.ports[0].graph.graph_full_url",
+                "draw": true
+                },
+                {
+                "header": null,
+                "value": "localhost.ports[0].ifInOctets_rate",
+                "value_math": "*8/1000",
+                "value_float_num": 2,
+                "unit": "kbps",
+                "type": "data",
+                "url": "localhost.ports[0].graph.graph_full_url",
+                "image": "localhost.ports[0].graph.graph_full_url",
+                "draw": true
+                }
+            ]
+        },
+        "HOD-AS109_HOD-DS1": {
+            "nodes": [ 
+                {"node": "HOD-DS1", "anchor": "E", "offset": [0,0]},
+                {"node": "HOD-AS109", "anchor": "N", "offset": [0,0]}
+                
+            ],
+            "draw": true,
+            "style": {
+                "color": "auto",
+                "width": 7,
+                "line_color": "black",
+                "line_width": 1,
+                "line_two_way": false,
+                "line_direction": "converge"
+            },
+            "node_style": {
+                "color": "auto",
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": 10,
+                "font_color": "black",
+                "padding": 2,
+                "anchor": "C"
+            },
+            "data": [
+                {
+                "header": null,
+                "value": "localhost.ports[0].ifInOctets_rate",
+                "value_math": "*8/1000",
+                "value_float_num": 2,
+                "unit": "kbps",
+                "type": "data",
+                "url": "localhost.ports[0].graph.graph_full_url",
+                "image": "localhost.ports[0].graph.graph_full_url",
+                "draw": true
+                },
+                {
+                "header": null,
+                "value": "localhost.ports[0].ifOutOctets_rate",
                 "value_math": "*8/1000",
                 "value_float_num": 2,
                 "unit": "kbps",
