@@ -2,6 +2,7 @@
     "Config": {
         "page_title": "Suite 21",
         "page_header": "Suite 21 Power",
+        "canvas_id": "suite-21-power",
         "background_img": "img/21.png",
         "background_scale": [1, 1],
         "background_anchor": "default",

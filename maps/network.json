@@ -2,6 +2,7 @@
     "Config": {
         "page_title": "Network Example",
         "page_header": "Network Layout Example",
+        "canvas_id": "network-example",
         "background_img": "img/default.png",
         "background_scale": [1, 1],
         "background_anchor": "default",

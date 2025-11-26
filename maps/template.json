@@ -2,6 +2,7 @@
 	"Config": {
 		"page_title": "Template",
 		"page_header": "Suite Template Power Usage",
+		"canvas_id": "template-map",
 		"background_img": "img/default.png",
 		"background_scale": [0.5, 0.5],
 		"background_anchor": "default",
