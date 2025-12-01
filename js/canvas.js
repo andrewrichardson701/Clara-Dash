@@ -13,7 +13,8 @@ function layout() {
     // loopDrawNodes(); - this will loop through the config json file.
 
     loopDrawNodes();
-    loopDrawLinks()
+    loopDrawLinks();
+    loopDrawKeys();
 }
 
 
@@ -1218,6 +1219,93 @@ function drawHoverTooltip(
     ctx.drawImage(tooltip, drawX, imageY, width, height);
 }
 
+function loopDrawKeys() {
+    const keys = map_json.Keys;
+    if (!keys) return;
+
+    // Loop through each key group
+    for (const keyName in keys) {
+        const cfg = keys[keyName];
+
+        if (!cfg.draw) continue; // Skip if not drawn
+
+        drawKey(cfg);
+    }
+}
+
+function drawKey(cfg) {
+
+    // === TEXT MEASUREMENT ===
+    ctx.font = `${cfg.title_font_size}px sans-serif`;
+    ctx.textAlign = "left";
+
+    let rowHeight = cfg.font_size + cfg.padding *2 + 12;
+
+    // Determine widest text for box width
+    let maxWidth = ctx.measureText(cfg.title).width;
+    for (const entry of cfg.entries) {
+        let w = ctx.measureText(entry.text).width + 30; // 30px color square + gap
+        if (w > maxWidth) maxWidth = w;
+    }
+
+    let boxWidth = maxWidth + cfg.box_padding * 2;
+    let boxHeight = cfg.title_font_size + cfg.padding + cfg.entries.length * rowHeight + cfg.box_padding * 2;
+
+    // === DRAW BACKGROUND BOX ===
+    ctx.fillStyle = "rgba(255,255,255,0.9)";
+    ctx.strokeStyle = "black";
+    ctx.lineWidth = 1;
+
+    ctx.fillRect(cfg.position_x, cfg.position_y, boxWidth, boxHeight);
+    ctx.strokeRect(cfg.position_x, cfg.position_y, boxWidth, boxHeight);
+
+    let cursorY = cfg.position_y + cfg.box_padding + cfg.title_font_size/2;
+    let cursorX = cfg.position_x + cfg.box_padding;
+    console.log(cursorX);
+
+    // === DRAW TITLE ===
+    ctx.font = `${cfg.title_font_size}px sans-serif`;
+    ctx.fillStyle = cfg.font_color === "auto" ? "black" : cfg.font_color;
+
+    ctx.fillText(cfg.title, cursorX, cursorY);
+    cursorY += cfg.padding;
+
+    // === DRAW ENTRIES ===
+    ctx.font = `${cfg.font_size}px sans-serif`;
+    cursorY = cursorY + cfg.title_font_size/2;
+
+    for (const entry of cfg.entries) {
+        ctx.textAlign = "left";
+        let color = entry.color;
+        let text = entry.text;
+        let text_length = ctx.measureText(text).width;
+
+        // Color square
+        let squareSizeX = cfg.font_size + text_length+ cfg.box_padding *2;
+        let squareSizeY = cfg.font_size + cfg.box_padding *2;
+        let squareX = cfg.position_x + cfg.box_padding;
+        let squareY = cursorY + 2;
+
+        ctx.fillStyle = color;
+        ctx.fillRect(squareX, squareY, squareSizeX, squareSizeY);
+        ctx.strokeRect(squareX, squareY, squareSizeX, squareSizeY);
+
+        // Text
+        let textColor = cfg.font_color === "auto"
+            ? bestTextColor(color)
+            : font_color;
+
+        ctx.fillStyle = textColor;
+        ctx.fillText(
+            text,
+            squareX + cfg.box_padding,
+            cursorY + cfg.font_size + cfg.box_padding
+        );
+
+        cursorY += rowHeight;
+    }
+}
+
 // HANDLES THE MOVEMENT OF THE MOUSE OVER THE CANVAS
 // USED TO SHOW COORDINATES AND THE HOVER IMAGES
 function handleMouseMove(event) {
@@ -1225,19 +1313,42 @@ function handleMouseMove(event) {
     mouse.x = event.clientX - rect.left;
     mouse.y = event.clientY - rect.top;
 
-    hoverBox = null;
+    var hasChanged = false;
+    var lastBox = hoverBox;
 
     for (let box of interactiveBoxes) {
         if (
-            mouse.x >= box.x && mouse.x <= box.x + box.width &&
-            mouse.y >= box.y && mouse.y <= box.y + box.height
+            mouse.x >= box.x && 
+            mouse.x <= box.x + box.width &&
+            mouse.y >= box.y && 
+            mouse.y <= box.y + box.height
         ) {
-            hoverBox = box;
+            // inside the box
+            if (lastBox != box) {
+                hasChanged = true;
+                hoverBox = box;
+            }
             break;
+        } else { // outside the box
+            if (lastBox != null) {
+                if (lastBox == box) {
+                    hasChanged = true;
+                    hoverBox = null; 
+                }
+            } else {
+                hasChanged = false;
+                hoverBox = null;
+            }
         }
     }
+
     canvas.style.cursor = hoverBox ? 'pointer' : 'default'; 
-    draw(); // Re-render canvas
+    
+    
+    if (hasChanged) {
+        draw(); // Re-render canvas
+    }
+        
 
     // show coordinates (relative to canvas)
     const coords_x = Math.floor(event.clientX - rect.left);
