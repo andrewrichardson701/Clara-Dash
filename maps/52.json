@@ -16,7 +16,7 @@
         "show_coordinates": true,
         "show_timestamp": true,
         "show_dimensions": true,
-        "show_config": false,
+        "show_config": true,
         "image_width": 400,
         "image_height": 200
     },
@@ -501,7 +501,7 @@
                 "font": "monospace",
                 "font_size": "14",
                 "font_color": "auto",
-                "color": "lightgrey"
+                "color": "black"
             },
             "data": {
                 "header": "C1"
@@ -537,7 +537,7 @@
                 "font": "monospace",
                 "font_size": "14",
                 "font_color": "auto",
-                "color": "lightgrey"
+                "color": "orange"
             },
             "data": {
                 "header": "C3"
@@ -555,7 +555,7 @@
                 "font": "monospace",
                 "font_size": "14",
                 "font_color": "auto",
-                "color": "lightgrey"
+                "color": "orange"
             },
             "data": {
                 "header": "C4"
@@ -735,7 +735,7 @@
                 "font": "monospace",
                 "font_size": "14",
                 "font_color": "auto",
-                "color": "lightgrey"
+                "color": "black"
             },
             "data": {
                 "header": "D1"
@@ -753,7 +753,7 @@
                 "font": "monospace",
                 "font_size": "14",
                 "font_color": "auto",
-                "color": "lightgrey"
+                "color": "black"
             },
             "data": {
                 "header": "D2"
@@ -771,7 +771,7 @@
                 "font": "monospace",
                 "font_size": "14",
                 "font_color": "auto",
-                "color": "lightgrey"
+                "color": "black"
             },
             "data": {
                 "header": "D3"
@@ -969,7 +969,7 @@
                 "font": "monospace",
                 "font_size": "14",
                 "font_color": "auto",
-                "color": "darkred"
+                "color": "#cc6699"
             },
             "data": {
                 "header": "E1"
@@ -987,7 +987,7 @@
                 "font": "monospace",
                 "font_size": "14",
                 "font_color": "auto",
-                "color": "darkred"
+                "color": "#cc6699"
             },
             "data": {
                 "header": "E2"
@@ -1005,7 +1005,7 @@
                 "font": "monospace",
                 "font_size": "14",
                 "font_color": "auto",
-                "color": "darkred"
+                "color": "#cc6699"
             },
             "data": {
                 "header": "E3"
@@ -1023,7 +1023,7 @@
                 "font": "monospace",
                 "font_size": "14",
                 "font_color": "auto",
-                "color": "darkred"
+                "color": "#cc6699"
             },
             "data": {
                 "header": "E4"
@@ -1041,7 +1041,7 @@
                 "font": "monospace",
                 "font_size": "14",
                 "font_color": "auto",
-                "color": "darkred"
+                "color": "#cc6699"
             },
             "data": {
                 "header": "E5"
@@ -1059,7 +1059,7 @@
                 "font": "monospace",
                 "font_size": "14",
                 "font_color": "auto",
-                "color": "darkred"
+                "color": "#cc6699"
             },
             "data": {
                 "header": "E6"
@@ -1077,7 +1077,7 @@
                 "font": "monospace",
                 "font_size": "14",
                 "font_color": "auto",
-                "color": "darkred"
+                "color": "#cc6699"
             },
             "data": {
                 "header": "E7"
@@ -1095,7 +1095,7 @@
                 "font": "monospace",
                 "font_size": "14",
                 "font_color": "auto",
-                "color": "darkred"
+                "color": "#cc6699"
             },
             "data": {
                 "header": "E8"
@@ -1113,7 +1113,7 @@
                 "font": "monospace",
                 "font_size": "14",
                 "font_color": "auto",
-                "color": "darkred"
+                "color": "#cc6699"
             },
             "data": {
                 "header": "E9"
@@ -1131,7 +1131,7 @@
                 "font": "monospace",
                 "font_size": "14",
                 "font_color": "auto",
-                "color": "darkred"
+                "color": "#cc6699"
             },
             "data": {
                 "header": "E10"
@@ -1149,7 +1149,7 @@
                 "font": "monospace",
                 "font_size": "14",
                 "font_color": "auto",
-                "color": "darkred"
+                "color": "#cc6699"
             },
             "data": {
                 "header": "E11"
@@ -1167,7 +1167,7 @@
                 "font": "monospace",
                 "font_size": "14",
                 "font_color": "auto",
-                "color": "darkred"
+                "color": "#cc6699"
             },
             "data": {
                 "header": "E12"
@@ -5050,5 +5050,41 @@
     }, 
     "Links": {
 
+    },
+    "Keys": {
+        "Racks": {
+            "title": "Rack Colours",
+            "postition_x": 100,
+            "position_y": 350,
+            "draw": false,
+            "font_color": "auto",
+            "font_size": 12,
+            "title_font_size": 18,
+            "padding": 5,
+            "entries": [
+                {"color": "black", "text": "Unused"},
+                {"color": "grey", "text": "Managed"},
+                {"color": "orange", "text": "Firewalls"},
+                {"color": "#cc6699", "text": "Redstor"}
+            ]
+        },
+        "PowerThresholds": {
+            "title": "Power Thresholds",
+            "position_x": 100,
+            "position_y": 350,
+            "draw": true,
+            "font_color": "auto",
+            "font_size": 12,
+            "title_font_size": 18,
+            "padding": 5,
+            "box_padding": 10,
+            "entries": [
+                {"color": "red", "text": "< 1A"},
+                {"color": "orange", "text": "1A ≤ x < 2A"},
+                {"color": "green", "text": "2A ≤ x < 14A"},
+                {"color": "orange", "text": "14A ≤ x ≤ 15A"},
+                {"color": "red", "text": "> 15A"}
+            ]
+        }
     }
 }
