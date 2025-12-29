@@ -283,13 +283,14 @@ function drawNode(ctx, coordinates = [0,0], dimensions = [20,10], style = {}, da
             var mathed_data = applyMath(data_value, data.value_math);
             // check it changed if not dont update
             if (mathed_data !== data_value) { data_value = mathed_data; }
-            // check for any decimal places adjustments
-            if (data.value_float_num) {
-                // adjust the float decimals 
-                var floated_data = data_value.toFixed(data.value_float_num);
-                // if there is change, update the value
-                if (floated_data !== data_value) { data_value = floated_data; }
-            }
+        }
+
+        // check for any decimal places adjustments
+        if (data.value_float_num) {
+            // adjust the float decimals 
+            var floated_data = data_value.toFixed(data.value_float_num);
+            // if there is change, update the value
+            if (floated_data !== data_value) { data_value = floated_data; }
         }
 
         // Add the header to the data as a prefix
