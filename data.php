@@ -50,7 +50,7 @@ foreach($devices as $device => $device_info) {
             // print_r($port);
             // exit();
             $graph = getApiData(['action' => 'graph', 'device_id' => $device_id, 'graph_type' => 'port', 'port_id' => $port['port_id'], 'legend' => 'yes']);
-            if (array_key_exists('graph', $graph)) {
+            if (is_array($graph) && array_key_exists('graph', $graph)) {
                 $graph = $graph['graph'];
             }
             $ports['ports'][$i]['graph'] = $graph;

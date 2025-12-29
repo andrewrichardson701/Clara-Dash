@@ -396,15 +396,17 @@ function drawNode(ctx, coordinates = [0,0], dimensions = [20,10], style = {}, da
             hoverName = stored_config.Nodes[nodeKey].name;
         }
         hoverName += ' ('+nodeKey+')';
-        interactiveBoxes.push({
-            x: coordinates[0],
-            y: coordinates[1],
-            width: dimensions[0],
-            height: dimensions[1],
-            link: resolveArrayPath(json, data.url),
-            hoverImage: resolveArrayPath(json, data.image),
-            name: hoverName || null
-        });
+        if (resolveArrayPath(json, data.image)) {
+            interactiveBoxes.push({
+                x: coordinates[0],
+                y: coordinates[1],
+                width: dimensions[0],
+                height: dimensions[1],
+                link: resolveArrayPath(json, data.url),
+                hoverImage: resolveArrayPath(json, data.image),
+                name: hoverName || null
+            }); 
+        }
     }
 
     // Fill background
@@ -456,7 +458,7 @@ function loopDrawNodes() {
     
     // preload the images
     interactiveBoxes.forEach(box => {
-        if (box.hoverImage) {
+        if (box.hoverImage && box.hoverImage !== undefined) {
             const img = new Image();
             img.src = box.hoverImage;
             box.preloadedImage = img;
@@ -626,19 +628,22 @@ async function getData($file) {
 // e.g. var value = resolveArrayPath(json, "Nodes[0].data.value");
 function resolveArrayPath(obj, path) {
     if (typeof path !== "string") {
-        // If it's not a string (e.g. already a value), just return it as-is
         return path;
     }
 
-    return path
-        .split('.')
-        .reduce((acc, key) => {
-            const match = key.match(/^(\w+)\[(\d+)\]$/);
-            if (match) {
-                return acc?.[match[1]]?.[parseInt(match[2])];
-            }
-            return acc?.[key];
-        }, obj);
+    const tokens = [];
+    const regex =
+        /\[(?:'([^']+)'|"([^"]+)")\]|([^.[]+)|\[(\d+)\]/g;
+
+    let match;
+    while ((match = regex.exec(path)) !== null) {
+        if (match[1]) tokens.push(match[1]);          // single-quoted key
+        else if (match[2]) tokens.push(match[2]);     // double-quoted key
+        else if (match[3]) tokens.push(match[3]);     // plain key
+        else if (match[4]) tokens.push(Number(match[4])); // array index
+    }
+
+    return tokens.reduce((acc, key) => acc?.[key], obj);
 }
 
 // PERIDOICALLY RE-RUN THE build() FUNCTION TO RE-LOAD THE CANVAS AND DATA
@@ -1026,7 +1031,7 @@ function evaluateExpression(json, expression) {
     }
 
     // Replace object paths (e.g. localhost.ports[0].value)
-    const pathRegex = /[A-Za-z_$][\w$]*(?:\[\d+\])?(?:\.[A-Za-z_$][\w$]*(?:\[\d+\])?)*/g;
+    const pathRegex = /(?:\[(?:'[^']+'|"[^"]+")\]|[A-Za-z_$][\w$]*)(?:\[\d+\]|\.(?:[A-Za-z_$][\w$]*|\[(?:'[^']+'|"[^"]+")\]))*/g;
 
     const replaced = workingExpression.replace(pathRegex, (match) => {
         const value = resolveArrayPath(json, match);
