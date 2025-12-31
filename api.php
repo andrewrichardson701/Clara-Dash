@@ -1,6 +1,6 @@
 <?php
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
+// ini_set('display_errors', 1);
+// ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
 if (basename(__FILE__) === basename($_SERVER['SCRIPT_FILENAME'])) {
@@ -25,6 +25,21 @@ $port_id         = $_GET['port_id'] ?? null;
 $sensor_id       = $_GET['sensor_id'] ?? null;
 $sensor_type     = $_GET['sensor_type'] ?? null;
 $index           = $_GET['index'] ?? null;
+$where           = $_GET['where'];
+$params          = $_GET['params'];
+
+$where_conditions = array();
+if ($where) {
+    $where_array = explode(',', $where);
+    if ($params) {
+        $params_array = explode(',', $params);
+        if (count($params_array) == count($where_array)) {
+            foreach ($where_array as $where_field => $where_param) {
+                $where_conditions[$where_field] = $where_param;
+            }
+        } 
+    }
+}
 
 if (isset($_GET['action'])) {
     $action = $_GET['action'] ?? '';
@@ -33,7 +48,11 @@ if (isset($_GET['action'])) {
         switch ($action) {
             // List all devices
             case 'devices':
-                $devices = $db->fetchAll("SELECT * FROM devices");
+                if ($hostname) {
+                    $devices = $db->fetchAll("SELECT * FROM devices WHERE hostname LIKE ?", [$hostname]);
+                } else {
+                    $devices = $db->fetchAll("SELECT * FROM devices");
+                }
                 echo json_encode(['status' => 'ok', 'devices' => $devices]);
                 break;
 
