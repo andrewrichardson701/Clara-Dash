@@ -31,6 +31,27 @@ class DB {
         return $stmt->fetchAll();
     }
 
+    /** Fetch all rows where... */
+    public function fetchAllWhere($sql, $params = [], $whereConditions = []) {
+        // If there are WHERE conditions, add them to the SQL query
+        if (!empty($whereConditions)) {
+            // Build the WHERE clause dynamically based on the conditions
+            $whereSql = ' WHERE ';
+            $whereClauses = [];
+            foreach ($whereConditions as $column => $value) {
+                // Assuming simple equality condition for now (could be extended)
+                $whereClauses[] = "$column = :$column";
+                $params[":$column"] = $value;  // Add the condition values to the parameters
+            }
+            $whereSql .= implode(' AND ', $whereClauses);
+            $sql .= $whereSql; // Append the WHERE clause to the SQL query
+        }
+        
+        // Prepare and execute the query with the merged parameters
+        $stmt = $this->query($sql, $params);
+        return $stmt->fetchAll();
+    }
+
     /** Insert helper (returns last insert ID) */
     public function insert($table, array $data) {
         $columns = array_keys($data);
