@@ -79,6 +79,7 @@ These setup the canvas settings, all of the nodes and all of the links between n
 				"value_float_num": 2,
 				"unit": "kbps",
 				"type": "data",
+				"threshold_value": "( localhost.ports[0].ifInOctets_rate + localhost.ports[0].ifOutOctets_rate )",
 				"url": "localhost.ports[0].graph.graph_full_url",
 				"image": "localhost.ports[0].graph.graph_full_url"
 			}
@@ -105,6 +106,7 @@ These setup the canvas settings, all of the nodes and all of the links between n
 				"value_float_num": 2,
 				"unit": "kbps",
 				"type": "data",
+				"threshold_value": "",
 				"url": "localhost.ports[0].graph.graph_full_url",
 				"image": "localhost.ports[0].graph.graph_full_url"
 			}
@@ -189,7 +191,39 @@ These setup the canvas settings, all of the nodes and all of the links between n
 				}
 			]
 		}
-	}
+	},
+	"Keys": {
+        "DataThresholds": {
+            "title": "Data Thresholds",
+            "position_x": 350,
+            "position_y": 50,
+            "draw": true,
+            "font_color": "auto",
+            "font_size": 12,
+            "title_font_size": 18,
+            "padding": 5,
+            "box_padding": 10,
+            "entries": [
+                {"color": "red", "text": "< 1"},
+                {"color": "orange", "text": "1 ≤ x < 2"},
+                {"color": "green", "text": "2 ≤ x < 10"},
+                {"color": "orange", "text": "10 ≤ x ≤ 100"},
+                {"color": "red", "text": "> 100"}
+            ]
+        }
+    },
+    "Thresholds": {
+        "data": [
+            {"lower": 0, "upper": 1, "color": "red"},
+            {"lower": 1, "upper": 2, "color": "orange"},
+            {"lower": 2, "upper": 10, "color": "#1ac44a"},
+            {"lower": 10, "upper": 100, "color": "orange"},
+            {"lower": 100, "upper": 100000000000000, "color": "red"}
+        ],
+        "default": [
+            {"lower": -999999, "upper": 9999999, "color": "grey"}
+        ]
+    }
 }
 </pre>
 </details>
@@ -251,6 +285,7 @@ These setup the canvas settings, all of the nodes and all of the links between n
 				<li><strong>value_float_num</strong> - The decimal places to be kept if the value is a floating point (e.g. 2 would be 0.01 / 3 would be 0.001 / 4 would be 0.0001 etc)</li>
 				<li><strong>unit</strong> - Text to be displayed after the value on the node. Commonly the data unit (e.g. "kbps" / "A" / "kW" etc)</li>
 				<li><strong>type</strong> - The type of data, for use when setting thresholds (e.g. "data" / "power_a" / "power_kw" / "temperature")</li>
+				<li><strong>threshold_value</strong> - The value to be used for thresholds. This will be used instead of the value field when working out thresholds, if defined. (e.g. "localhost.ports[0].ifInOctets_rate" / 25 / "{RACK1-B}" / "( {RACK1-B} + 2 - {RACK1-A} ) / 2" )</li>
 				<li><strong>url</strong> - The link URL to be opened on click. This can also be an array key path (e.g. "localhost.ports[0].graph.graph_full_url" / "https://url.example.com/")</li>
 				<li><strong>image</strong> - The image to be shown as a tooltip when hovering over the node. This can be a file path, image url, or array key path (e.g. "localhost.ports[0].graph.graph_full_url" / "https://url.example.com/" / "img/file.png")</li>
 			</ul>
@@ -300,13 +335,66 @@ These setup the canvas settings, all of the nodes and all of the links between n
 				<li><strong>value_float_num</strong> - The decimal places to be kept if the value is a floating point (e.g. 2 would be 0.01 / 3 would be 0.001 / 4 would be 0.0001 etc)</li>
 				<li><strong>unit</strong> - Text to be displayed after the value on the node. Commonly the data unit (e.g. "kbps" / "A" / "kW" etc)</li>
 				<li><strong>type</strong> - The type of data, for use when setting thresholds (e.g. "data" / "power_a" / "power_kw" / "temperature")</li>
-				<li><strong>url</strong> - The link URL to be opened on click. This can also be an array key path (e.g. "localhost.ports[0].graph.graph_full_url" / "https://url.example.com/")</li>
+				<li><strong>url</strong> - The link URL to be opened on click. This can also be an array key path (e.g. "localhost.ports[0].graph.graph_full_url" / "['host.name.local'].ports[0].graph.graph_full_url" / "https://url.example.com/")</li>
 				<li><strong>image</strong> - The image to be shown as a tooltip when hovering over the node. This can be a file path, image url, or array key path (e.g. "localhost.ports[0].graph.graph_full_url" / "https://url.example.com/" / "img/file.png")</li>
 			</ul>
 		</ul>
 	</ul>
+	<li><strong>"Keys"</strong>: { ... } - Keys / Legends to be drawn on the screen, showing data thresholds.</li>
+	<ul>
+		<li><strong>[unique name]</strong>: { ... } - Each Key needs to be an object (an array that allows arrays within it) that has a unique name before it (see <a href="#example-config">example</a>). (e.g. "PowerThresholds": { ... })</li>
+		<ul>
+			<li><strong>title</strong> - The title to be displayed on the key/legend.</li>
+			<li><strong>position_x</strong> - The X coordinate of the key location (anchored from the top left of the key) (e.g. 200)</li>
+			<li><strong>position_y</strong> - The Y coordinate of the key location (anchored from the top left of the key) (e.g. 50)</li>
+			<li><strong>draw</strong> - Toggle whether the link should be drawn on the canvas. if not included it will default to true. (true / false)</li>
+			<li><strong>font_color</strong> - The color of the text to be drawn (e.g. "black" / "#32a836" / "auto")</li>
+			<li><strong>font_size</strong> - The size of the font in pixels or "auto" to fit the text to the box dimensions (e.g. 12 / 16 / "auto")</li>
+			<li><strong>title_font_size</strong> - The size of the title font in pixels or "auto" to fit the text to the box dimensions (e.g. 12 / 16 / "auto")</li>
+			<li><strong>padding</strong> - The padding around the key in pixels (e.g. 12 / 16 / 0)</li>
+			<li><strong>box_padding</strong> - The padding around the individual entries in the key in pixels (e.g. 12 / 16 / 0)</li>
+			<li><strong>"entries"</strong>: [ {...}, {...} ] - All individual entries for the Key to display.<br>
+				Format:  <br>
+				{"<strong>color</strong>": "<strong>[color name / hex code]</strong>",<br>
+				"<strong>text</strong>": <strong>"string to be shown"</strong>}<br>
+				Example:<br>
+				<strong>{"color": "red", "text": "< 2A"},<br>
+				{"color": "green", "text": "2A ≤ x < 14A"},<br>
+				{"color": "red", "text": "> 14A"}</strong>
+			</li>
+		</ul>
+	</ul>
+	<li><strong>"Thresholds"</strong>: { ... } - Thresholds for coloring nodes.</li>
+	<ul>
+		<li><strong>[unique name]</strong>: [ {...}, {...} ] - Each Threshold needs to be an object (an array that allows arrays within it) that has a unique name before it (see <a href="#example-config">example</a>). (e.g. "power_threshold": [ {...}, {...} ])<br>
+				Format:  <br>
+				{"<strong>lower</strong>": <strong>lower threshold value</strong>,<br>
+				"<strong>uppper</strong>": <strong>upper threshold value</strong>,
+				"<strong>color</strong>": <strong>color to be displayed</strong>}<br>
+				Example:<br>
+				<strong>{"lower": 0, "upper": 0.2, "color": "red"},<br>
+				{"lower": 0.2, "upper": 2, "color": "orange"},<br>
+				{"lower": 2, "upper": 12, "color": "#1ac44a"},<br>
+				{"lower": 12, "upper": 13, "color": "orange"},<br>
+				{"lower": 13, "upper": 9999, "color": "red"}</strong>
+		</li>
+	</ul>
 </ol>
 </details>
+
+<h3>Array Keys</h3>
+Array keys can be used in some fields to pull data from the API response. These include 'value', 'image' and 'url' fields.
+
+These can be navigated in one of the below ways:
+
+<ol>
+	<li>Syntax: <strong>"hostname.Key1[sequential key].Key2.Key3"</strong> <br>
+		Example: <strong>"testhost.ports[0].graph.graph_full_url"</strong> <br>
+		This works best for simple hostnames with no domain.</li>
+	<li>Syntax: <strong>"['hostname.example.local'].Key1[sequential key].Key2.Key3"</strong> <br>
+		Example: <strong>"['testhost.domain.local'].ports[0].graph.graph_full_url"</strong> <br>
+		This works best for fully qualified domain anems (FQDNs).</li>
+</ol>
 
 <h3>Value Math</h3>
 Math equations can be performed in the value fields for data (e.g. Nodes.RACK1-B.data.value or Links.RACK1-B_RACK1-A.data.value). This is extremely useful when trying to get an average or sum together the data in a collection of racks.
