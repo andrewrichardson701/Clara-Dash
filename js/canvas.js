@@ -274,40 +274,31 @@ function drawNode(ctx, coordinates = [0,0], dimensions = [20,10], style = {}, da
     // if there is a value set
     if (data.value) {
         data.value = evaluateExpression(json, data.value) ?? null;
+
         // store it outside of the array to stop overwriting existing data
-        data_value = data.value; 
-
-        // check if there is a math calculation to do
-        if (data.value_math) {
-            // run the math
-            var mathed_data = applyMath(data_value, data.value_math);
-            // check it changed if not dont update
-            if (mathed_data !== data_value) { data_value = mathed_data; }
-        }
-
-        // check for any decimal places adjustments
-        if (data.value_float_num) {
-            // adjust the float decimals 
-            var floated_data = data_value.toFixed(data.value_float_num);
-            // if there is change, update the value
-            if (floated_data !== data_value) { data_value = floated_data; }
-        }
+        data_value = calculateValue(data.value, data.value_math, data.value_float_num);
 
         // Add the header to the data as a prefix
         fillText += data_value;
-        
-        // check for the data type to set thresholds for colouring (moved here to allow fillcolor to be determined before drawing)
-        if (data.type && fillColor == "auto") {
-            var thold = thresholds(data_value, data.type);
 
-            if (data_value > thold.upper) { // set color if over upper threshold
-                fillColor = thold.upper_color;
-            } else if (data_value < thold.lower) { // set color if under lower threshold
-                fillColor = thold.lower_color;
-            } else { // set color to the ok_color - if none define, make it grey
-                fillColor = thold.ok_color || 'grey';
+        // Check for threshold_value and replace it for threshold checking
+        if (data.threshold_value && data.threshold_value !== '' && data.threshold_value !== null) {
+            // evaluate the value to convert any array keys and do math values
+            data.threshold_value = evaluateExpression(json, data.threshold_value) ?? null;
+            // store it outside of the array to stop overwriting existing data
+            data_threshold_value = calculateValue(data.threshold_value, data.value_math, data.value_float_num);
+            
+            if (data.type && fillColor == "auto") {
+                fillColor = thresholds(data_threshold_value, data.type);
+            }
+        } else {
+            if (data.type && fillColor == "auto") {
+                fillColor = thresholds(data_value, data.type);
             }
         }
+        
+        // check for the data type to set thresholds for colouring (moved here to allow fillcolor to be determined before drawing)
+        
     }
     if (data.unit && data_value !== null) { // Only append unit if a value was processed
         fillText += data.unit;
@@ -438,6 +429,26 @@ function drawNode(ctx, coordinates = [0,0], dimensions = [20,10], style = {}, da
     canvas_counter ++;
 }
 
+function calculateValue(data_value, value_math, value_float_num) {
+    // check if there is a math calculation to do
+    if (value_math) {
+        // run the math
+        var mathed_data = applyMath(data_value, value_math);
+        // check it changed if not dont update
+        if (mathed_data !== data_value) { data_value = mathed_data; }
+    }
+
+    // check for any decimal places adjustments
+    if (value_float_num) {
+        // adjust the float decimals 
+        var floated_data = data_value.toFixed(value_float_num);
+        // if there is change, update the value
+        if (floated_data !== data_value) { data_value = floated_data; }
+    }
+
+    return data_value;
+}
+
 // LOOP THROUGH THE JSON AND DRAW THE SENSORS
 function loopDrawNodes() {
     const nodes = stored_config.Nodes;
@@ -550,67 +561,19 @@ function drawGrid(ctx, canvasHeight = null, canvasWidth = null) {
 
 // THRESHOLDS - USED TO COLOUR THE SENSORS BASED ON DATA 
 function thresholds(data_in, type) {
-    var u_thold  = 0;
-    var l_thold  = 0;
-    var ok_color = '#1ac44a';
-    var u_color  = 'red';
-    var l_color  = 'red'
-    switch (type) {
-        case 'power_amps':
-            u_thold = 32;
-            l_thold = 0.5;
-            ok_color = '#1ac44a';
-            u_color = 'red';
-            l_color = 'red';
-            break;
-        case 'power_amps_feed':
-            u_thold = 1152;
-            l_thold = 0.5;
-            ok_color = '#1ac44a';
-            u_color = 'red';
-            l_color = 'red';
-            break;
-        case 'power_amps_total':
-            u_thold = 2305;
-            l_thold = 0.5;
-            ok_color = '#1ac44a';
-            u_color = 'red';
-            l_color = 'red';
-            break;
-        case 'power_kw':
-            u_thold = 32;
-            l_thold = 0.5;
-            break;
-        case 'data':
-            u_thold = 1000000;
-            l_thold = 1;
-            break;
-        case 'temperature_room':
-            u_thold = 26;
-            l_thold = 20;
-            ok_color = "aqua";
-            break;
-        case 'temperature_sys':
-            u_thold = 70;
-            l_thold = 0;
-            ok_color = "aqua";
-            break;
-        case 'humidity_room':
-            u_thold = 50;
-            l_thold = 20;
-            ok_color = "pink";
-        default:
-            u_told = 0;
-            l_thold = 0;
+    if (type === undefined || type === null || type == '') {
+        type = 'default';
+    }
+    const tholds = map_json?.Thresholds?.[type];
+    if (!Array.isArray(tholds)) return "grey";
+
+    for (const thold of tholds) {
+        if (data_in >= thold.lower && data_in < thold.upper) {
+            return thold.color;
+        }
     }
 
-    return {
-        'upper' : u_thold, 
-        'upper_color': u_color,
-        'lower': l_thold,
-        'lower_color': l_color,
-        'ok_color': ok_color
-    };
+    return "grey"; // fallback
 }
 
 // FETCH A FILE
@@ -800,15 +763,7 @@ function drawLinkArrow(ctx, start, end, style, node_style, data, linkKey) {
 
             // check for the data type to set thresholds for colouring (moved here to allow fillcolor to be determined before drawing)
             if (data.type) {
-                var thold = thresholds(data_value, data.type);
-
-                if (data_value > thold.upper) { // set color if over upper threshold
-                    fillColor = thold.upper_color;
-                } else if (data_value < thold.lower) { // set color if under lower threshold
-                    fillColor = thold.lower_color;
-                } else { // set color to the ok_color - if none define, make it grey
-                    fillColor = thold.ok_color || 'grey';
-                }
+                fillColor = thresholds(data_value, data.type);
             }
         }
 
@@ -1046,7 +1001,6 @@ function evaluateExpression(json, expression) {
         // eslint-disable-next-line no-new-func
         return Function(`"use strict"; return (${replaced});`)();
     } catch (err) {
-
         return null;
     }
 }
@@ -1267,7 +1221,6 @@ function drawKey(cfg) {
 
     let cursorY = cfg.position_y + cfg.box_padding + cfg.title_font_size/2;
     let cursorX = cfg.position_x + cfg.box_padding;
-    console.log(cursorX);
 
     // === DRAW TITLE ===
     ctx.font = `${cfg.title_font_size}px sans-serif`;
