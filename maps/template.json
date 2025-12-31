@@ -9,7 +9,7 @@
 		"data_url": "template_data.json",
 		"enable_periodic_update": true,
 		"fixed_canvas_size": true,
-		"canvas_width": 400,
+		"canvas_width": 600,
 		"canvas_height": 300,
 		"show_grid" : false,
 		"show_page_header": true,
@@ -42,6 +42,7 @@
 				"value_float_num": 2,
 				"unit": "kbps",
 				"type": "data",
+				"threshold_value": "( localhost.ports[0].ifInOctets_rate + localhost.ports[0].ifOutOctets_rate )",
 				"url": "localhost.ports[0].graph.graph_full_url",
 				"image": "localhost.ports[0].graph.graph_full_url"
 			}
@@ -68,6 +69,7 @@
 				"value_float_num": 2,
 				"unit": "kbps",
 				"type": "data",
+				"threshold_value": "",
 				"url": "localhost.ports[0].graph.graph_full_url",
 				"image": "localhost.ports[0].graph.graph_full_url"
 			}
@@ -152,5 +154,37 @@
 				}
 			]
 		}
-	}
+	},
+	"Keys": {
+        "DataThresholds": {
+            "title": "Data Thresholds",
+            "position_x": 350,
+            "position_y": 50,
+            "draw": true,
+            "font_color": "auto",
+            "font_size": 12,
+            "title_font_size": 18,
+            "padding": 5,
+            "box_padding": 10,
+            "entries": [
+                {"color": "red", "text": "< 1"},
+                {"color": "orange", "text": "1 ≤ x < 2"},
+                {"color": "green", "text": "2 ≤ x < 10"},
+                {"color": "orange", "text": "10 ≤ x ≤ 100"},
+                {"color": "red", "text": "> 100"}
+            ]
+        }
+    },
+    "Thresholds": {
+        "data": [
+            {"lower": 0, "upper": 1, "color": "red"},
+            {"lower": 1, "upper": 2, "color": "orange"},
+            {"lower": 2, "upper": 10, "color": "#1ac44a"},
+            {"lower": 10, "upper": 100, "color": "orange"},
+            {"lower": 100, "upper": 100000000000000, "color": "red"}
+        ],
+        "default": [
+            {"lower": -999999, "upper": 9999999, "color": "grey"}
+        ]
+    }
 }
