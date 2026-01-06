@@ -2925,5 +2925,95 @@
     },
     "Links": {
 
+    },
+    "Keys": {
+        "Racks": {
+            "title": "Rack Colours",
+            "postition_x": 100,
+            "position_y": 350,
+            "draw": false,
+            "font_color": "auto",
+            "font_size": 12,
+            "title_font_size": 18,
+            "padding": 5,
+            "entries": [
+                {"color": "black", "text": "Unused"},
+                {"color": "grey", "text": "Managed"},
+                {"color": "orange", "text": "Firewalls"},
+                {"color": "#cc6699", "text": "Redstor"}
+            ]
+        },
+        "PowerThresholds": {
+            "title": "Power Thresholds",
+            "position_x": 100,
+            "position_y": 350,
+            "draw": false,
+            "font_color": "auto",
+            "font_size": 12,
+            "title_font_size": 18,
+            "padding": 5,
+            "box_padding": 10,
+            "entries": [
+                {"color": "red", "text": "< 1A"},
+                {"color": "orange", "text": "1A ≤ x < 2A"},
+                {"color": "green", "text": "2A ≤ x < 14A"},
+                {"color": "orange", "text": "14A ≤ x ≤ 15A"},
+                {"color": "red", "text": "> 15A"}
+            ]
+        }
+    },
+    "Thresholds": {
+        "power_amps": [
+            {"lower": 0, "upper": 0.2, "color": "red"},
+            {"lower": 0.2, "upper": 2, "color": "orange"},
+            {"lower": 2, "upper": 12, "color": "#1ac44a"},
+            {"lower": 12, "upper": 13, "color": "orange"},
+            {"lower": 13, "upper": 9999, "color": "red"}
+        ],
+        "power_amps_feed": [
+            {"lower": 0, "upper": 0.5, "color": "red"},
+            {"lower": 0.5, "upper": 2, "color": "orange"},
+            {"lower": 2, "upper": 12, "color": "#1ac44a"},
+            {"lower": 12, "upper": 1152, "color": "orange"},
+            {"lower": 1152, "upper": 9999, "color": "red"}
+        ],
+        "power_kw": [
+            {"lower": 0, "upper": 0.2, "color": "red"},
+            {"lower": 0.2, "upper": 2, "color": "orange"},
+            {"lower": 2, "upper": 12, "color": "#1ac44a"},
+            {"lower": 12, "upper": 13, "color": "orange"},
+            {"lower": 13, "upper": 9999, "color": "red"}
+        ],
+        "temperature_room": [
+            {"lower": -99999, "upper": 17, "color": "red"},
+            {"lower": 17, "upper": 20, "color": "orange"},
+            {"lower": 20, "upper": 25, "color": "aqua"},
+            {"lower": 25, "upper": 27, "color": "orange"},
+            {"lower": 27, "upper": 9999, "color": "red"}
+        ],
+        "temperature_sys": [
+            {"lower": -99999, "upper": 17, "color": "red"},
+            {"lower": 17, "upper": 20, "color": "orange"},
+            {"lower": 20, "upper": 50, "color": "aqua"},
+            {"lower": 50, "upper": 70, "color": "orange"},
+            {"lower": 70, "upper": 9999, "color": "red"}
+        ],
+        "humidity_room": [
+            {"lower": -99999, "upper": 20, "color": "red"},
+            {"lower": 20, "upper": 30, "color": "orange"},
+            {"lower": 30, "upper": 50, "color": "pink"},
+            {"lower": 50, "upper": 70, "color": "orange"},
+            {"lower": 70, "upper": 9999, "color": "red"}
+        ],
+        "data": [
+            {"lower": 0, "upper": 50, "color": "red"},
+            {"lower": 50, "upper": 100, "color": "orange"},
+            {"lower": 100, "upper": 10000, "color": "#1ac44a"},
+            {"lower": 10000, "upper": 1000000, "color": "orange"},
+            {"lower": 1000000, "upper": 100000000000000, "color": "red"}
+        ],
+        "default": [
+            {"lower": -999999, "upper": 9999999, "color": "grey"}
+        ]
     }
 }
