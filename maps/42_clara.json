@@ -6,7 +6,7 @@
         "background_img": "img/42.png",
         "background_scale": [0.75, 0.75],
         "background_anchor": "default",
-        "data_url": "http://89.206.193.110/api/42.php",
+        "data_url": "http://89.206.193.110/api/data.php?hostname=%42%&sensors=1&ports=0",
         "enable_periodic_update": true,
         "fixed_canvas_size": false,
         "canvas_width": 1800,
