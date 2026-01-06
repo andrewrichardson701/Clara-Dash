@@ -5091,7 +5091,7 @@
                 "value": "['hod-s52-e08-a.ippdu.uk.clara.net'].sensors[9].sensor_value",
                 "value_math": null,
                 "value_float_num": 1,
-                "unit": "°C",
+                "unit": "%",
                 "type": "temperature_room",
                 "url": "['hod-s52-e08-a.ippdu.uk.clara.net'].sensors[9].graph.graph_full_url",
                 "image": "['hod-s52-e08-a.ippdu.uk.clara.net'].sensors[9].graph.graph_full_url"
