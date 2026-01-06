@@ -46,6 +46,11 @@ if (isset($_GET['action'])) {
 
     try {
         switch ($action) {
+            // Get all devices with ports sensors and graphs
+            case 'all':
+                include_once 'data.php';
+                break;
+
             // List all devices
             case 'devices':
                 if ($hostname) {
@@ -227,15 +232,20 @@ if (isset($_GET['action'])) {
 } else {
     echo json_encode(['status' => 'error', 
                         'message' => 'No action set.', 
-                        'usage1' => '/api.php?action=devices',
-                        'usage2' => '/api.php?action=device&device_id=1',
-                        'usage3' => '/api.php?action=ports&device_id=1',
-                        'usage4' => '/api.php?action=port&device_id=1&port_id=1',
-                        'usage5' => '/api.php?action=port&device_id=1&index=1',
-                        'usage6' => '/api.php?action=sensors&device_id=1',
-                        'usage7' => '/api.php?action=sensor&device_id=1&sensor_id=1',
-                        'usage8' => '/api.php?action=sensor&device_id=1&sensor_type=temperature',
-                        'usage9' => '/api.php?action=sensor&device_id=1&index=1',
-                        'usage10' => '/api.php?action=graph&device_id=1&graph_type=port&port_id=1'
+                        'usage' => [
+                            '/api.php?action=all',
+                            '/api.php?action=devices',
+                            '/api.php?action=devices&hostname=%sw%',
+                            '/api.php?action=device&device_id=1',
+                            '/api.php?action=ports&device_id=1',
+                            '/api.php?action=port&device_id=1&port_id=1',
+                            '/api.php?action=port&device_id=1&index=1',
+                            '/api.php?action=sensors&device_id=1',
+                            '/api.php?action=sensor&device_id=1&sensor_id=1',
+                            '/api.php?action=sensor&device_id=1&sensor_type=temperature',
+                            '/api.php?action=sensor&device_id=1&index=1',
+                            '/api.php?action=graph&device_id=1&graph_type=port&port_id=1'
+                        ]
+
                      ]);
 }
