@@ -21,6 +21,836 @@
         "image_height": 200
     },
     "Nodes": {
+        "RACKF1": {
+            "name": "Rack F1",
+            "position_x": 699,
+            "position_y": 145,
+            "dimension_x": 55,
+            "dimension_y": 91,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgrey"
+            },
+            "data": {
+                "header": "F1"
+            }
+        },
+        "RACKF2": {
+            "name": "Rack F2",
+            "position_x": 644,
+            "position_y": 145,
+            "dimension_x": 55,
+            "dimension_y": 91,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgrey"
+            },
+            "data": {
+                "header": "F2"
+            }
+        },
+        "RACKF3": {
+            "name": "Rack F3",
+            "position_x": 589,
+            "position_y": 145,
+            "dimension_x": 55,
+            "dimension_y": 91,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgrey"
+            },
+            "data": {
+                "header": "F3"
+            }
+        },
+        "RACKF4": {
+            "name": "Rack F4",
+            "position_x": 534,
+            "position_y": 145,
+            "dimension_x": 55,
+            "dimension_y": 91,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgrey"
+            },
+            "data": {
+                "header": "F4"
+            }
+        },
+        "RACKF5": {
+            "name": "Rack F5",
+            "position_x": 479,
+            "position_y": 145,
+            "dimension_x": 55,
+            "dimension_y": 91,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgrey"
+            },
+            "data": {
+                "header": "F5"
+            }
+        },
+        "RACKF6": {
+            "name": "Rack F6",
+            "position_x": 424,
+            "position_y": 145,
+            "dimension_x": 55,
+            "dimension_y": 91,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgrey"
+            },
+            "data": {
+                "header": "F6"
+            }
+        },
+        "RACKF7": {
+            "name": "Rack F7",
+            "position_x": 369,
+            "position_y": 145,
+            "dimension_x": 55,
+            "dimension_y": 91,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgrey"
+            },
+            "data": {
+                "header": "F7"
+            }
+        },
+        "RACKF8": {
+            "name": "Rack F8",
+            "position_x": 314,
+            "position_y": 145,
+            "dimension_x": 55,
+            "dimension_y": 91,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgrey"
+            },
+            "data": {
+                "header": "F8"
+            }
+        },
+        "RACKF9": {
+            "name": "Rack F9",
+            "position_x": 259,
+            "position_y": 145,
+            "dimension_x": 55,
+            "dimension_y": 91,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgrey"
+            },
+            "data": {
+                "header": "F9"
+            }
+        },
+        "RACKF10": {
+            "name": "Rack F10",
+            "position_x": 204,
+            "position_y": 145,
+            "dimension_x": 55,
+            "dimension_y": 91,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgrey"
+            },
+            "data": {
+                "header": "F10"
+            }
+        },
+        "RACKF11": {
+            "name": "Rack F11",
+            "position_x": 148,
+            "position_y": 145,
+            "dimension_x": 55,
+            "dimension_y": 91,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgrey"
+            },
+            "data": {
+                "header": "F11"
+            }
+        },
+        "RACKPFF": {
+            "name": "Rack PFF",
+            "position_x": 93,
+            "position_y": 145,
+            "dimension_x": 55,
+            "dimension_y": 55,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgrey"
+            },
+            "data": {
+                "header": "PFF"
+            }
+        },
+
+        "RACKG1": {
+            "name": "Rack G1",
+            "position_x": 699,
+            "position_y": 328,
+            "dimension_x": 55,
+            "dimension_y": 91,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgrey"
+            },
+            "data": {
+                "header": "G1"
+            }
+        },
+        "RACKG2": {
+            "name": "Rack G2",
+            "position_x": 644,
+            "position_y": 328,
+            "dimension_x": 55,
+            "dimension_y": 91,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgrey"
+            },
+            "data": {
+                "header": "G2"
+            }
+        },
+        "RACKG3": {
+            "name": "Rack G3",
+            "position_x": 589,
+            "position_y": 328,
+            "dimension_x": 55,
+            "dimension_y": 91,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgrey"
+            },
+            "data": {
+                "header": "G3"
+            }
+        },
+        "RACKG4": {
+            "name": "Rack G4",
+            "position_x": 534,
+            "position_y": 328,
+            "dimension_x": 55,
+            "dimension_y": 91,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgrey"
+            },
+            "data": {
+                "header": "G4"
+            }
+        },
+        "RACKG5": {
+            "name": "Rack G5",
+            "position_x": 479,
+            "position_y": 328,
+            "dimension_x": 55,
+            "dimension_y": 91,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgrey"
+            },
+            "data": {
+                "header": "G5"
+            }
+        },
+        "RACKG6": {
+            "name": "Rack G6",
+            "position_x": 424,
+            "position_y": 328,
+            "dimension_x": 55,
+            "dimension_y": 91,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgrey"
+            },
+            "data": {
+                "header": "G6"
+            }
+        },
+        "RACKG7": {
+            "name": "Rack G7",
+            "position_x": 369,
+            "position_y": 328,
+            "dimension_x": 55,
+            "dimension_y": 91,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgrey"
+            },
+            "data": {
+                "header": "G7"
+            }
+        },
+        "RACKG8": {
+            "name": "Rack G8",
+            "position_x": 314,
+            "position_y": 328,
+            "dimension_x": 55,
+            "dimension_y": 91,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgrey"
+            },
+            "data": {
+                "header": "G8"
+            }
+        },
+        "RACKG9": {
+            "name": "Rack G9",
+            "position_x": 259,
+            "position_y": 328,
+            "dimension_x": 55,
+            "dimension_y": 91,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgrey"
+            },
+            "data": {
+                "header": "G9"
+            }
+        },
+        "RACKG10": {
+            "name": "Rack G10",
+            "position_x": 204,
+            "position_y": 328,
+            "dimension_x": 55,
+            "dimension_y": 91,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgrey"
+            },
+            "data": {
+                "header": "G10"
+            }
+        },
+        "RACKG11": {
+            "name": "Rack G11",
+            "position_x": 148,
+            "position_y": 328,
+            "dimension_x": 55,
+            "dimension_y": 91,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgrey"
+            },
+            "data": {
+                "header": "G11"
+            }
+        },
+        "RACKPFG": {
+            "name": "Rack PFG",
+            "position_x": 93,
+            "position_y": 365,
+            "dimension_x": 55,
+            "dimension_y": 55,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgrey"
+            },
+            "data": {
+                "header": "PFG"
+            }
+        },
+        "RACKH1": {
+            "name": "Rack H1",
+            "position_x": 699,
+            "position_y": 531,
+            "dimension_x": 55,
+            "dimension_y": 91,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgrey"
+            },
+            "data": {
+                "header": "H1"
+            }
+        },
+        "RACKH2": {
+            "name": "Rack H2",
+            "position_x": 644,
+            "position_y": 531,
+            "dimension_x": 55,
+            "dimension_y": 91,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgrey"
+            },
+            "data": {
+                "header": "H2"
+            }
+        },
+        "RACKH3": {
+            "name": "Rack H3",
+            "position_x": 589,
+            "position_y": 531,
+            "dimension_x": 55,
+            "dimension_y": 91,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgrey"
+            },
+            "data": {
+                "header": "H3"
+            }
+        },
+        "RACKH4": {
+            "name": "Rack H4",
+            "position_x": 534,
+            "position_y": 531,
+            "dimension_x": 55,
+            "dimension_y": 91,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgrey"
+            },
+            "data": {
+                "header": "H4"
+            }
+        },
+        "RACKH5": {
+            "name": "Rack H5",
+            "position_x": 479,
+            "position_y": 531,
+            "dimension_x": 55,
+            "dimension_y": 91,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgrey"
+            },
+            "data": {
+                "header": "H5"
+            }
+        },
+        "RACKH6": {
+            "name": "Rack H6",
+            "position_x": 424,
+            "position_y": 531,
+            "dimension_x": 55,
+            "dimension_y": 91,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgrey"
+            },
+            "data": {
+                "header": "H6"
+            }
+        },
+        "RACKH7": {
+            "name": "Rack H7",
+            "position_x": 369,
+            "position_y": 531,
+            "dimension_x": 55,
+            "dimension_y": 91,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgrey"
+            },
+            "data": {
+                "header": "H7"
+            }
+        },
+        "RACKH8": {
+            "name": "Rack H8",
+            "position_x": 314,
+            "position_y": 531,
+            "dimension_x": 55,
+            "dimension_y": 91,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgrey"
+            },
+            "data": {
+                "header": "H8"
+            }
+        },
+        "RACKH9": {
+            "name": "Rack H9",
+            "position_x": 259,
+            "position_y": 531,
+            "dimension_x": 55,
+            "dimension_y": 91,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgrey"
+            },
+            "data": {
+                "header": "H9"
+            }
+        },
+        "RACKH10": {
+            "name": "Rack H10",
+            "position_x": 204,
+            "position_y": 531,
+            "dimension_x": 55,
+            "dimension_y": 91,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgrey"
+            },
+            "data": {
+                "header": "H10"
+            }
+        },
+        "RACKH11": {
+            "name": "Rack H11",
+            "position_x": 140,
+            "position_y": 531,
+            "dimension_x": 63,
+            "dimension_y": 91,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgrey"
+            },
+            "data": {
+                "header": "H11"
+            }
+        },
+        "RACKI1": {
+            "name": "Rack I1",
+            "position_x": 699,
+            "position_y": 698,
+            "dimension_x": 55,
+            "dimension_y": 91,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgrey"
+            },
+            "data": {
+                "header": "I1"
+            }
+        },
+        "RACKI2": {
+            "name": "Rack I2",
+            "position_x": 644,
+            "position_y": 698,
+            "dimension_x": 55,
+            "dimension_y": 91,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgrey"
+            },
+            "data": {
+                "header": "I2"
+            }
+        },
+        "RACKI3": {
+            "name": "Rack I3",
+            "position_x": 589,
+            "position_y": 698,
+            "dimension_x": 55,
+            "dimension_y": 91,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgrey"
+            },
+            "data": {
+                "header": "I3"
+            }
+        },
+        "RACKI4": {
+            "name": "Rack I4",
+            "position_x": 534,
+            "position_y": 698,
+            "dimension_x": 55,
+            "dimension_y": 91,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgrey"
+            },
+            "data": {
+                "header": "I4"
+            }
+        },
+        "RACKI5": {
+            "name": "Rack I5",
+            "position_x": 479,
+            "position_y": 698,
+            "dimension_x": 55,
+            "dimension_y": 91,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgrey"
+            },
+            "data": {
+                "header": "I5"
+            }
+        },
+        "RACKI6": {
+            "name": "Rack I6",
+            "position_x": 424,
+            "position_y": 698,
+            "dimension_x": 55,
+            "dimension_y": 91,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgrey"
+            },
+            "data": {
+                "header": "I6"
+            }
+        },
+        "RACKI7": {
+            "name": "Rack I7",
+            "position_x": 369,
+            "position_y": 698,
+            "dimension_x": 55,
+            "dimension_y": 91,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgrey"
+            },
+            "data": {
+                "header": "I7"
+            }
+        },
+        "RACKI8": {
+            "name": "Rack I8",
+            "position_x": 314,
+            "position_y": 698,
+            "dimension_x": 55,
+            "dimension_y": 91,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgrey"
+            },
+            "data": {
+                "header": "I8"
+            }
+        },
+        "RACKI9": {
+            "name": "Rack I9",
+            "position_x": 259,
+            "position_y": 698,
+            "dimension_x": 55,
+            "dimension_y": 91,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgrey"
+            },
+            "data": {
+                "header": "I9"
+            }
+        },
+        "RACKI10": {
+            "name": "Rack I10",
+            "position_x": 204,
+            "position_y": 698,
+            "dimension_x": 55,
+            "dimension_y": 91,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgrey"
+            },
+            "data": {
+                "header": "I10"
+            }
+        },
+        "RACKI11": {
+            "name": "Rack I11",
+            "position_x": 140,
+            "position_y": 698,
+            "dimension_x": 63,
+            "dimension_y": 91,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgrey"
+            },
+            "data": {
+                "header": "I11"
+            }
+        },
+
         "RACKF1-A": {
             "name": "Rack F1 Feed A",
             "position_x": 705,
