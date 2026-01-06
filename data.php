@@ -8,7 +8,7 @@ $db     = new DB($config['db']);
 
 $devices = [];
 
-$q_hostname = $_GET['hostname'] ?? null;
+$q_hostname = '%'.$_GET['hostname'].'%' ?? null;
 $q_ports    = $_GET['ports']    ?? 1;
 $q_sensors  = $_GET['sensors']  ?? 1;
 
