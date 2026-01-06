@@ -242,7 +242,7 @@ These setup the canvas settings, all of the nodes and all of the links between n
 		<li><strong>background_img</strong> - Background image for the canvas (e.g. "/img/suite1.png" or "https://example.com/image.png")</li>
 		<li><strong>background_scale</strong> - The scale of the background image, in array [x, y] (e.g. [0.7, 0.2] which would be 0.7 * width and 0.2 * height)</li>
 		<li><strong>background_anchor</strong> - The anchor point of the background image (e.g. "top" / "bottom" / "left" / "right" / "center" / "middle")</li>
-		<li><strong>data_url</strong> - The URL (or file location) of the input / API data to be used for values in JSON format (e.g. "https://example.com/api.php?query=devices" or "json/data.json")</li>
+		<li><strong>data_url</strong> - The URL (or file location) of the input / API data to be used for values in JSON format (e.g. "https://example.com/api.php?query=devices" or "json/data.json" or "http://example.com/api/data.php?hostname=s52&ports=0&sensors=1")</li>
 		<li><strong>enable_periodic_update</strong> - Refreshes the canvas every 1 minute with new data. The page doesnt reload, but the content of the canvas is re-drawn (true / false)</li>
 		<li><strong>fixed_canvas_size</strong> - Make the canvas size the same as the <strong> canvas_width </strong> and <strong>  canvas_height</strong>, otherwise the canvas will auto-size to the background image (true / false)</li>
 		<li><strong>show_grid</strong> - Show a grid on the canvas, set 10 pixels apart. (true / false)</li>
