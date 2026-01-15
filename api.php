@@ -54,7 +54,7 @@ if (isset($_GET['action'])) {
             // List all devices
             case 'devices':
                 if ($hostname) {
-                    $devices = $db->fetchAll("SELECT * FROM devices WHERE hostname LIKE ?", [$hostname]);
+                    $devices = $db->fetchAll("SELECT * FROM devices WHERE hostname LIKE ?", ['%'.$hostname.'%']);
                 } else {
                     $devices = $db->fetchAll("SELECT * FROM devices");
                 }
