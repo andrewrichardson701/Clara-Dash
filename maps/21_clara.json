@@ -3133,12 +3133,12 @@
     "Keys": {
         "Racks": {
             "title": "Rack Colours",
-            "position_x": 870,
+            "position_x": 1650,
             "position_y": 40,
             "draw": true,
             "font_color": "auto",
-            "font_size": 12,
-            "title_font_size": 18,
+            "font_size": 11,
+            "title_font_size": 16,
             "padding": 5,
             "box_padding": 10,
             "entries": [
@@ -3152,12 +3152,12 @@
         },
         "PowerThresholds": {
             "title": "Power Thresholds",
-            "position_x": 870,
-            "position_y": 300,
+            "position_x": 1650,
+            "position_y": 281,
             "draw": true,
             "font_color": "auto",
-            "font_size": 12,
-            "title_font_size": 18,
+            "font_size": 11,
+            "title_font_size": 16,
             "padding": 5,
             "box_padding": 10,
             "entries": [
@@ -3170,12 +3170,12 @@
         },
         "TemperatureThresholds": {
             "title": "Cold Aisle Thresholds",
-            "position_x": 870,
-            "position_y": 550,
+            "position_x": 1650,
+            "position_y": 489,
             "draw": true,
             "font_color": "auto",
-            "font_size": 12,
-            "title_font_size": 18,
+            "font_size": 11,
+            "title_font_size": 16,
             "padding": 5,
             "box_padding": 10,
             "entries": [
