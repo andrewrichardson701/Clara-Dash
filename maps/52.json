@@ -5054,7 +5054,7 @@
     "Keys": {
         "Racks": {
             "title": "Rack Colours",
-            "postition_x": 100,
+            "position_x": 100,
             "position_y": 350,
             "draw": false,
             "font_color": "auto",

@@ -3130,6 +3130,7 @@
             "position_y": 551,
             "dimension_x": 38,
             "dimension_y": 25,
+            "draw": false,
             "style": {
                 "line_width": 1,
                 "line_color": "black",
@@ -3155,6 +3156,7 @@
             "position_y": 594,
             "dimension_x": 38,
             "dimension_y": 25,
+            "draw": false,
             "style": {
                 "line_width": 1,
                 "line_color": "black",
@@ -3180,6 +3182,7 @@
             "position_y": 551,
             "dimension_x": 38,
             "dimension_y": 25,
+            "draw": false,
             "style": {
                 "line_width": 1,
                 "line_color": "black",
@@ -3205,6 +3208,7 @@
             "position_y": 594,
             "dimension_x": 38,
             "dimension_y": 25,
+            "draw": false,
             "style": {
                 "line_width": 1,
                 "line_color": "black",
@@ -5177,13 +5181,14 @@
     "Keys": {
         "Racks": {
             "title": "Rack Colours",
-            "postition_x": 832,
+            "position_x": 832,
             "position_y": 40,
             "draw": true,
             "font_color": "auto",
             "font_size": 12,
             "title_font_size": 18,
             "padding": 5,
+            "box_padding": 10,
             "entries": [
                 {"color": "black", "text": "Unused"},
                 {"color": "grey", "text": "Managed"},
@@ -5196,7 +5201,7 @@
             "title": "Power Thresholds",
             "position_x": 832,
             "position_y": 400,
-            "draw": false,
+            "draw": true,
             "font_color": "auto",
             "font_size": 12,
             "title_font_size": 18,
