@@ -520,7 +520,7 @@
                 "font": "monospace",
                 "font_size": "14",
                 "font_color": "auto",
-                "color": "lightgreen"
+                "color": "lightgrey"
             },
             "data": {
                 "header": ""
