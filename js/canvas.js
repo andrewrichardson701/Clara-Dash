@@ -273,7 +273,7 @@ function drawNode(ctx, coordinates = [0,0], dimensions = [20,10], style = {}, da
     }
     // if there is a value set
     if (data.value) {
-        data.value = evaluateExpression(json, data.value) ?? null;
+        data.value = evaluateExpression(json, data.value) ?? 0;
 
         // store it outside of the array to stop overwriting existing data
         data_value = calculateValue(data.value, data.value_math, data.value_float_num);
