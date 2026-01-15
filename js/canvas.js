@@ -272,11 +272,11 @@ function drawNode(ctx, coordinates = [0,0], dimensions = [20,10], style = {}, da
         fillText += data.header;
     }
     // if there is a value set
-    if (data.value) {
+    if (data.value || data.value == 0) {
         data.value = evaluateExpression(json, data.value) ?? 0;
 
         // store it outside of the array to stop overwriting existing data
-        data_value = calculateValue(data.value, data.value_math, data.value_float_num);
+        data_value = calculateValue(data.value, data.value_math, data.value_float_num) ?? 0;
 
         // Add the header to the data as a prefix
         fillText += data_value;
@@ -298,10 +298,8 @@ function drawNode(ctx, coordinates = [0,0], dimensions = [20,10], style = {}, da
         }
         
         // check for the data type to set thresholds for colouring (moved here to allow fillcolor to be determined before drawing)
-        
-    } else {
-        data.value = 0;
     }
+
     if (data.unit && data_value !== null) { // Only append unit if a value was processed
         fillText += data.unit;
     }
