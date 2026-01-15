@@ -485,7 +485,7 @@ function loopDrawLinks() {
     Object.values(links).forEach((link) => {
         // check if the link is enabled for drawing
         if (link.draw === true || link.draw === undefined) {
-            link.data.value = evaluateExpression(json, link.data.value) ?? null;
+            link.data.value = evaluateExpression(json, link.data.value) ?? 0;
             var node_a = link.nodes[0];
             var node_b = link.nodes[1];
     
@@ -741,7 +741,7 @@ function drawLinkArrow(ctx, start, end, style, node_style, data, linkKey) {
         fillcolor = "white";
         // if there is a value set
         if (data.value) {
-            data.value = evaluateExpression(json, data.value) ?? null;
+            data.value = evaluateExpression(json, data.value) ?? 0;
             // store it outside of the array to stop overwriting existing data
             data_value = data.value; 
             

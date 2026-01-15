@@ -501,7 +501,7 @@
                 "font": "monospace",
                 "font_size": "14",
                 "font_color": "auto",
-                "color": "black"
+                "color": "orange"
             },
             "data": {
                 "header": "C1"
