@@ -299,6 +299,8 @@ function drawNode(ctx, coordinates = [0,0], dimensions = [20,10], style = {}, da
         
         // check for the data type to set thresholds for colouring (moved here to allow fillcolor to be determined before drawing)
         
+    } else {
+        data.value = 0;
     }
     if (data.unit && data_value !== null) { // Only append unit if a value was processed
         fillText += data.unit;
