@@ -5181,7 +5181,7 @@
     "Keys": {
         "Racks": {
             "title": "Rack Colours",
-            "position_x": 832,
+            "position_x": 875,
             "position_y": 40,
             "draw": true,
             "font_color": "auto",
@@ -5192,6 +5192,7 @@
             "entries": [
                 {"color": "black", "text": "Unused"},
                 {"color": "grey", "text": "Managed"},
+                {"color": "lightgreen", "text": "Colocation"},
                 {"color": "orange", "text": "Firewalls"},
                 {"color": "#4287f5", "text": "Servers"},
                 {"color": "#cc6699", "text": "Redstor"}
@@ -5199,8 +5200,8 @@
         },
         "PowerThresholds": {
             "title": "Power Thresholds",
-            "position_x": 832,
-            "position_y": 400,
+            "position_x": 875,
+            "position_y": 300,
             "draw": true,
             "font_color": "auto",
             "font_size": 12,
@@ -5213,6 +5214,24 @@
                 {"color": "green", "text": "2A ≤ x < 14A"},
                 {"color": "orange", "text": "14A ≤ x ≤ 15A"},
                 {"color": "red", "text": "> 15A"}
+            ]
+        },
+        "TemperatureThresholds": {
+            "title": "Cold Aisle Thresholds",
+            "position_x": 875,
+            "position_y": 550,
+            "draw": true,
+            "font_color": "auto",
+            "font_size": 12,
+            "title_font_size": 18,
+            "padding": 5,
+            "box_padding": 10,
+            "entries": [
+                {"color": "red", "text": "< 17°C"},
+                {"color": "orange", "text": "17°C ≤ x < 20°C"},
+                {"color": "aqua", "text": "20°C ≤ x < 25°C"},
+                {"color": "orange", "text": "25°C ≤ x ≤ 27°C"},
+                {"color": "red", "text": "> 27°C"}
             ]
         }
     },

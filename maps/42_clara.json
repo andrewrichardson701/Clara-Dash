@@ -8,9 +8,9 @@
         "background_anchor": "default",
         "data_url": "http://89.206.193.110/api/data.php?hostname=s42&sensors=1&ports=0",
         "enable_periodic_update": true,
-        "fixed_canvas_size": false,
-        "canvas_width": 1800,
-        "canvas_height": 900,
+        "fixed_canvas_size": true,
+        "canvas_width": 1100,
+        "canvas_height": 890,
         "show_grid": false,
         "show_page_header": true,
         "show_coordinates": true,
@@ -3759,25 +3759,28 @@
     "Keys": {
         "Racks": {
             "title": "Rack Colours",
-            "position_x": 100,
-            "position_y": 350,
-            "draw": false,
+            "position_x": 870,
+            "position_y": 40,
+            "draw": true,
             "font_color": "auto",
             "font_size": 12,
             "title_font_size": 18,
             "padding": 5,
+            "box_padding": 10,
             "entries": [
                 {"color": "black", "text": "Unused"},
-                {"color": "grey", "text": "Managed"},
+                {"color": "lightgrey", "text": "Managed"},
+                {"color": "lightgreen", "text": "Colocation"},
                 {"color": "orange", "text": "Firewalls"},
+                {"color": "#4287f5", "text": "Servers"},
                 {"color": "#cc6699", "text": "Redstor"}
             ]
         },
         "PowerThresholds": {
             "title": "Power Thresholds",
-            "position_x": 100,
-            "position_y": 350,
-            "draw": false,
+            "position_x": 870,
+            "position_y": 300,
+            "draw": true,
             "font_color": "auto",
             "font_size": 12,
             "title_font_size": 18,
@@ -3789,6 +3792,24 @@
                 {"color": "green", "text": "2A ≤ x < 14A"},
                 {"color": "orange", "text": "14A ≤ x ≤ 15A"},
                 {"color": "red", "text": "> 15A"}
+            ]
+        },
+        "TemperatureThresholds": {
+            "title": "Cold Aisle Thresholds",
+            "position_x": 870,
+            "position_y": 550,
+            "draw": true,
+            "font_color": "auto",
+            "font_size": 12,
+            "title_font_size": 18,
+            "padding": 5,
+            "box_padding": 10,
+            "entries": [
+                {"color": "red", "text": "< 17°C"},
+                {"color": "orange", "text": "17°C ≤ x < 20°C"},
+                {"color": "aqua", "text": "20°C ≤ x < 25°C"},
+                {"color": "orange", "text": "25°C ≤ x ≤ 27°C"},
+                {"color": "red", "text": "> 27°C"}
             ]
         }
     },
