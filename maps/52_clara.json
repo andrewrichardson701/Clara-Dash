@@ -8,9 +8,9 @@
         "background_anchor": "default",
         "data_url": "http://89.206.193.110/api/data.php?hostname=s52&sensors=1&ports=0",
         "enable_periodic_update": true,
-        "fixed_canvas_size": false,
-        "canvas_width": 1800,
-        "canvas_height": 900,
+        "fixed_canvas_size": true,
+        "canvas_width": 1100,
+        "canvas_height": 860,
         "show_grid": false,
         "show_page_header": true,
         "show_coordinates": true,
@@ -771,7 +771,7 @@
                 "font": "monospace",
                 "font_size": "14",
                 "font_color": "auto",
-                "color": "black"
+                "color": "#4287f5"
             },
             "data": {
                 "header": "D3"
@@ -5177,9 +5177,9 @@
     "Keys": {
         "Racks": {
             "title": "Rack Colours",
-            "postition_x": 100,
-            "position_y": 350,
-            "draw": false,
+            "postition_x": 832,
+            "position_y": 40,
+            "draw": true,
             "font_color": "auto",
             "font_size": 12,
             "title_font_size": 18,
@@ -5188,13 +5188,14 @@
                 {"color": "black", "text": "Unused"},
                 {"color": "grey", "text": "Managed"},
                 {"color": "orange", "text": "Firewalls"},
+                {"color": "#4287f5", "text": "Servers"},
                 {"color": "#cc6699", "text": "Redstor"}
             ]
         },
         "PowerThresholds": {
             "title": "Power Thresholds",
-            "position_x": 100,
-            "position_y": 350,
+            "position_x": 832,
+            "position_y": 400,
             "draw": false,
             "font_color": "auto",
             "font_size": 12,
