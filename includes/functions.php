@@ -274,7 +274,6 @@ function rrd_max_observium(string $rrd, ?int $ds_index = null, string $start = '
 {
     if (!file_exists($rrd)) return null;
 
-    // Get DS indexes if not provided
     if ($ds_index === null) {
         $ds_info = rrd_ds_indexes($rrd);
         if (empty($ds_info)) return null;
@@ -290,13 +289,15 @@ function rrd_max_observium(string $rrd, ?int $ds_index = null, string $start = '
             $vals = preg_split('/\s+/', trim(substr($line, strpos($line, ':') + 1)));
             if (!isset($vals[$ds_index])) continue;
 
-            $v = $vals[$ds_index];
+            $v = trim($vals[$ds_index]);
             if ($v === 'nan') continue;
+            if (!is_numeric($v) && !preg_match('/^[+-]?\d+(\.\d+)?(e[+-]?\d+)?$/i', $v)) continue;
 
-            $v = (float)$v;
+            $v = floatval($v);
             if ($max === null || $v > $max) $max = $v;
         }
     }
 
     return $max;
 }
+
