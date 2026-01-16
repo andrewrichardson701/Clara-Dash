@@ -280,19 +280,25 @@ function rrd_max_any(string $rrd, ?int $ds_index = null, string $start = '-7d', 
  * @param string $start     Start time for manual fetch (default: '-7d')
  * @return float|null       Max value or null if unavailable
  */
-function rrd_max_smart(string $rrd, ?int $ds_index = null, string $start = '-7d'): ?float {
+/**
+ * Get the maximum value from an Observium RRD (ports or sensors)
+ * Works for DERIVE (counters) and GAUGE (temperatures, currents, PDU values)
+ *
+ * @param string $rrd       Full path to the RRD
+ * @param int|null $ds_index Optional DS index (0 if null)
+ * @param string $start     Start time for manual scan / xport (default -7d)
+ * @param string $end       End time for scan (default now)
+ * @return float|null       Max value or null if unavailable
+ */
+function rrd_max_smart(string $rrd, ?int $ds_index = null, string $start='-7d', string $end='now'): ?float {
     if (!file_exists($rrd)) return null;
 
     // Get DS info
     $ds_info = rrd_ds_indexes($rrd);
     if (empty($ds_info)) return null;
+    $ds_index = $ds_index ?? reset($ds_info);
 
-    // Use first DS if none provided
-    if ($ds_index === null) {
-        $ds_index = reset($ds_info);
-    }
-
-    // Try DS max from rrd_info
+    // 1️⃣ Try DS max from rrdtool info
     $ds_max = null;
     exec("rrdtool info " . escapeshellarg($rrd), $info, $rc);
     if ($rc === 0 && !empty($info)) {
@@ -301,36 +307,43 @@ function rrd_max_smart(string $rrd, ?int $ds_index = null, string $start = '-7d'
                 $v = trim($matches[1]);
                 if (is_numeric($v)) {
                     $ds_max = floatval($v);
-                    break; // use the first numeric max
+                    break;
                 }
             }
         }
     }
 
-    if ($ds_max !== null) {
-        return $ds_max;
-    }
+    if ($ds_max !== null) return $ds_max;
 
-    // Fall back to manual scan
-    exec("rrdtool fetch " . escapeshellarg($rrd) . " AVERAGE --start " . escapeshellarg($start), $out, $rc);
-    if ($rc !== 0 || empty($out)) return null;
+    // 2️⃣ Fall back to scanning data with xport (works for sparse GAUGE)
+    $cmd = sprintf(
+        'rrdtool xport --start %s --end %s DEF:ds=%s:ds:AVERAGE XPORT:ds:"val"',
+        escapeshellarg($start),
+        escapeshellarg($end),
+        escapeshellarg($rrd)
+    );
+
+    exec($cmd, $output, $rc);
+    if ($rc !== 0 || empty($output)) return null;
 
     $max = null;
-    foreach ($out as $line) {
-        if (!preg_match('/^\d+:/', $line)) continue;
 
-        $vals = preg_split('/\s+/', trim(substr($line, strpos($line, ':') + 1)));
-        if (!isset($vals[$ds_index])) continue;
+    foreach ($output as $line) {
+        if (strpos($line, '|') === false) continue; // skip headers
 
-        $v = trim($vals[$ds_index]);
-        if ($v === 'nan') continue;
-        if (!is_numeric($v) && !preg_match('/^[+-]?\d+(\.\d+)?(e[+-]?\d+)?$/i', $v)) continue;
+        list($ts, $val) = explode('|', $line);
+        $val = trim($val);
+        if ($val === 'nan') continue;
 
-        $v = floatval($v);
+        // handle scientific notation
+        if (!is_numeric($val) && !preg_match('/^[+-]?\d+(\.\d+)?(e[+-]?\d+)?$/i', $val)) continue;
+
+        $v = floatval($val);
         if ($max === null || $v > $max) $max = $v;
     }
 
     return $max;
 }
+
 
 
