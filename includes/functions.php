@@ -298,7 +298,7 @@ function rrd_max_smart(string $rrd, ?int $ds_index = null, string $start='-7d', 
     if (empty($ds_info)) return null;
     $ds_index = $ds_index ?? reset($ds_info);
 
-    // 1️⃣ Try DS max from rrdtool info
+    // Try DS max from rrdtool info
     $ds_max = null;
     exec("rrdtool info " . escapeshellarg($rrd), $info, $rc);
     if ($rc === 0 && !empty($info)) {
@@ -315,7 +315,7 @@ function rrd_max_smart(string $rrd, ?int $ds_index = null, string $start='-7d', 
 
     if ($ds_max !== null) return $ds_max;
 
-    // 2️⃣ Fall back to scanning data with xport (works for sparse GAUGE)
+    // Fall back to scanning data with xport (works for sparse GAUGE)
     $cmd = sprintf(
         'rrdtool xport --start %s --end %s DEF:ds=%s:ds:AVERAGE XPORT:ds:"val"',
         escapeshellarg($start),
