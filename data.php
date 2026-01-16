@@ -87,10 +87,10 @@ foreach($devices as $device => $device_info) {
                     $device_info['device']['hostname'],
                     $sensor['sensor_class'],
                     $sensor['sensor_type'],
-                    $sensor['sensor_index'] // keep dots as in DB
+                    $sensor['sensor_index']
                 );
 
-                $sensors['sensors'][$i]['max_value'] = rrd_max_observium($rrd);
+                $sensors['sensors'][$i]['max_value'] = rrd_max_smart($rrd);
             }
         }
         

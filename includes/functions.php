@@ -270,34 +270,67 @@ function rrd_max_any(string $rrd, ?int $ds_index = null, string $start = '-7d', 
     return $max;
 }
 
-function rrd_max_observium(string $rrd, ?int $ds_index = null, string $start = '-7d'): ?float
-{
+/**
+ * Get the max value from an Observium RRD (ports or sensors)
+ * 
+ * Tries to use DS max first; falls back to scanning the data manually.
+ *
+ * @param string $rrd       Full path to RRD file
+ * @param int|null $ds_index Optional DS index (0 if null)
+ * @param string $start     Start time for manual fetch (default: '-7d')
+ * @return float|null       Max value or null if unavailable
+ */
+function rrd_max_smart(string $rrd, ?int $ds_index = null, string $start = '-7d'): ?float {
     if (!file_exists($rrd)) return null;
 
+    // Get DS info
+    $ds_info = rrd_ds_indexes($rrd);
+    if (empty($ds_info)) return null;
+
+    // Use first DS if none provided
     if ($ds_index === null) {
-        $ds_info = rrd_ds_indexes($rrd);
-        if (empty($ds_info)) return null;
         $ds_index = reset($ds_info);
     }
 
+    // Try DS max from rrd_info
+    $ds_max = null;
+    exec("rrdtool info " . escapeshellarg($rrd), $info, $rc);
+    if ($rc === 0 && !empty($info)) {
+        foreach ($info as $line) {
+            if (preg_match('/ds\[[^\]]+\]\.max\s*=\s*(.*)/', $line, $matches)) {
+                $v = trim($matches[1]);
+                if (is_numeric($v)) {
+                    $ds_max = floatval($v);
+                    break; // use the first numeric max
+                }
+            }
+        }
+    }
+
+    if ($ds_max !== null) {
+        return $ds_max;
+    }
+
+    // Fall back to manual scan
     exec("rrdtool fetch " . escapeshellarg($rrd) . " AVERAGE --start " . escapeshellarg($start), $out, $rc);
     if ($rc !== 0 || empty($out)) return null;
 
     $max = null;
     foreach ($out as $line) {
-        if (preg_match('/^\d+:/', $line)) {
-            $vals = preg_split('/\s+/', trim(substr($line, strpos($line, ':') + 1)));
-            if (!isset($vals[$ds_index])) continue;
+        if (!preg_match('/^\d+:/', $line)) continue;
 
-            $v = trim($vals[$ds_index]);
-            if ($v === 'nan') continue;
-            if (!is_numeric($v) && !preg_match('/^[+-]?\d+(\.\d+)?(e[+-]?\d+)?$/i', $v)) continue;
+        $vals = preg_split('/\s+/', trim(substr($line, strpos($line, ':') + 1)));
+        if (!isset($vals[$ds_index])) continue;
 
-            $v = floatval($v);
-            if ($max === null || $v > $max) $max = $v;
-        }
+        $v = trim($vals[$ds_index]);
+        if ($v === 'nan') continue;
+        if (!is_numeric($v) && !preg_match('/^[+-]?\d+(\.\d+)?(e[+-]?\d+)?$/i', $v)) continue;
+
+        $v = floatval($v);
+        if ($max === null || $v > $max) $max = $v;
     }
 
     return $max;
 }
+
 
