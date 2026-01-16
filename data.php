@@ -84,13 +84,13 @@ foreach($devices as $device => $device_info) {
             if ($q_with_max) {
                 $rrd = sprintf(
                     '/opt/observium/rrd/%s/sensor-%s-%s-%s.rrd',
-                    $device_info['device']['hostname'],       // hostname
-                    $sensor['sensor_class'],                  // e.g., temperature, current
-                    $sensor['sensor_type'],                   // e.g., ATEN-IPMI-MIB-sensorReading
-                    $sensor['sensor_index']                   // numeric or dotted index
+                    $device_info['device']['hostname'],
+                    $sensor['sensor_class'],
+                    $sensor['sensor_type'],
+                    $sensor['sensor_index'] // keep as string for dot indexes
                 );
 
-                $sensors['sensors'][$i]['max_value'] = rrd_max_any($rrd, null, '-1y', 'AVERAGE');
+                $sensors['sensors'][$i]['max_value'] = rrd_max_observium($rrd, null, '-7d');
             }
         }
         

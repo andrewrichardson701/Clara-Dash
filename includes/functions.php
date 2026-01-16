@@ -269,3 +269,34 @@ function rrd_max_any(string $rrd, ?int $ds_index = null, string $start = '-7d', 
 
     return $max;
 }
+
+function rrd_max_observium(string $rrd, ?int $ds_index = null, string $start = '-7d'): ?float
+{
+    if (!file_exists($rrd)) return null;
+
+    // Get DS indexes if not provided
+    if ($ds_index === null) {
+        $ds_info = rrd_ds_indexes($rrd);
+        if (empty($ds_info)) return null;
+        $ds_index = reset($ds_info);
+    }
+
+    exec("rrdtool fetch " . escapeshellarg($rrd) . " AVERAGE --start " . escapeshellarg($start), $out, $rc);
+    if ($rc !== 0 || empty($out)) return null;
+
+    $max = null;
+    foreach ($out as $line) {
+        if (preg_match('/^\d+:/', $line)) {
+            $vals = preg_split('/\s+/', trim(substr($line, strpos($line, ':') + 1)));
+            if (!isset($vals[$ds_index])) continue;
+
+            $v = $vals[$ds_index];
+            if ($v === 'nan') continue;
+
+            $v = (float)$v;
+            if ($max === null || $v > $max) $max = $v;
+        }
+    }
+
+    return $max;
+}
