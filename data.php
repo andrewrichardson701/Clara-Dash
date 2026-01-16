@@ -90,7 +90,7 @@ foreach($devices as $device => $device_info) {
                     $sensor['sensor_index']                   // numeric or dotted index
                 );
 
-                $sensors['sensors'][$i]['max_value'] = rrd_max_any($rrd, null, '-7d', 'AVERAGE');
+                $sensors['sensors'][$i]['max_value'] = rrd_max_any($rrd, null, '-1y', 'AVERAGE');
             }
         }
         
