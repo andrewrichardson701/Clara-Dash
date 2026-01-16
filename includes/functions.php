@@ -226,3 +226,46 @@ function rrd_max_port(string $rrd, int $ds_index, string $start = '-7d'): ?float
 
     return $max;
 }
+
+/**
+ * Get the max value from any Observium RRD (GAUGE or DERIVE)
+ *
+ * @param string $rrd      Full path to RRD file
+ * @param int|null $ds_index Optional DS index (0 if null)
+ * @param string $start    RRD fetch start time (default: '-7d')
+ * @param string $cf       Consolidation function: 'AVERAGE' or 'MAX' (default: 'AVERAGE')
+ *
+ * @return float|null      Max value or null if unavailable
+ */
+function rrd_max_any(string $rrd, ?int $ds_index = null, string $start = '-7d', string $cf = 'AVERAGE'): ?float
+{
+    if (!is_file($rrd)) return null;
+
+    // If DS index not provided, get first DS
+    if ($ds_index === null) {
+        $ds_info = rrd_ds_indexes($rrd);
+        if (empty($ds_info)) return null;
+        $ds_index = reset($ds_info); // first DS index
+    }
+
+    // Fetch RRD data
+    exec("rrdtool fetch " . escapeshellarg($rrd) . " " . escapeshellarg($cf) . " --start " . escapeshellarg($start), $output, $rc);
+    if ($rc !== 0 || empty($output)) return null;
+
+    $max = null;
+
+    foreach ($output as $line) {
+        if (preg_match('/^\d+:/', $line)) {
+            $vals = preg_split('/\s+/', trim(substr($line, strpos($line, ':') + 1)));
+            if (!isset($vals[$ds_index])) continue;
+
+            $v = $vals[$ds_index];
+            if ($v === 'nan') continue;
+
+            $v = (float)$v;
+            if ($max === null || $v > $max) $max = $v;
+        }
+    }
+
+    return $max;
+}
