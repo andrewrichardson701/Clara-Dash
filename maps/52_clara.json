@@ -4708,13 +4708,13 @@
             },
             "data": {
                 "header": null,
-                "value": "proxmox.sensors[0].sensor_value",
+                "value": "['hod-s52-c01-b.ippdu.uk.clara.net'].sensors[8].sensor_value",
                 "value_math": null,
                 "value_float_num": 1,
                 "unit": "°C",
-                "type": "temperature_room",
-                "url": "proxmox.sensors[0].graph.graph_full_url",
-                "image": "proxmox.sensors[0].graph.graph_full_url"
+                "type": "temperature_room_hot",
+                "url": "https://iss.eu.clara.net/device/device=3518/tab=health/metric=temperature/",
+                "image": "['hod-s52-c01-b.ippdu.uk.clara.net'].sensors[8].graph.graph_full_url"
             }
         },
         "TEMP-C6-COLD": {
@@ -4732,13 +4732,13 @@
             },
             "data": {
                 "header": null,
-                "value": "proxmox.sensors[0].sensor_value",
+                "value": "['hod-s52-c06-a.ippdu.uk.clara.net'].sensors[8].sensor_value",
                 "value_math": null,
                 "value_float_num": 1,
                 "unit": "°C",
                 "type": "temperature_room",
-                "url": "proxmox.sensors[0].graph.graph_full_url",
-                "image": "proxmox.sensors[0].graph.graph_full_url"
+                "url": "https://iss.eu.clara.net/device/device=3562/tab=health/metric=temperature/",
+                "image": "['hod-s52-c06-a.ippdu.uk.clara.net'].sensors[8].graph.graph_full_url"
             }
         },
         "TEMP-C6-HOT": {
@@ -4756,13 +4756,13 @@
             },
             "data": {
                 "header": null,
-                "value": "proxmox.sensors[0].sensor_value",
+                "value": "['hod-s52-c06-b.ippdu.uk.clara.net'].sensors[8].sensor_value",
                 "value_math": null,
                 "value_float_num": 1,
                 "unit": "°C",
-                "type": "temperature_room",
-                "url": "proxmox.sensors[0].graph.graph_full_url",
-                "image": "proxmox.sensors[0].graph.graph_full_url"
+                "type": "temperature_room_hot",
+                "url": "https://iss.eu.clara.net/device/device=3563/tab=health/metric=temperature/",
+                "image": "['hod-s52-c06-b.ippdu.uk.clara.net'].sensors[8].graph.graph_full_url"
             }
         },
         "TEMP-C12-COLD": {
@@ -4804,13 +4804,13 @@
             },
             "data": {
                 "header": null,
-                "value": "proxmox.sensors[0].sensor_value",
+                "value": "['hod-s52-c12-b.ippdu.uk.clara.net'].sensors[8].sensor_value",
                 "value_math": null,
                 "value_float_num": 1,
                 "unit": "°C",
-                "type": "temperature_room",
-                "url": "proxmox.sensors[0].graph.graph_full_url",
-                "image": "proxmox.sensors[0].graph.graph_full_url"
+                "type": "temperature_room_hot",
+                "url": "https://iss.eu.clara.net/device/device=3568/tab=health/metric=temperature/",
+                "image": "['hod-s52-c12-b.ippdu.uk.clara.net'].sensors[8].graph.graph_full_url"
             }
         },
         "TEMP-D1-COLD": {
@@ -4828,13 +4828,13 @@
             },
             "data": {
                 "header": null,
-                "value": "proxmox.sensors[0].sensor_value",
+                "value": "['hod-s52-d04-a.ippdu.uk.clara.net'].sensors[9].sensor_value",
                 "value_math": null,
                 "value_float_num": 1,
                 "unit": "°C",
                 "type": "temperature_room",
-                "url": "proxmox.sensors[0].graph.graph_full_url",
-                "image": "proxmox.sensors[0].graph.graph_full_url"
+                "url": "https://iss.eu.clara.net/device/device=3569/tab=health/metric=temperature/",
+                "image": "['hod-s52-d04-a.ippdu.uk.clara.net'].sensors[9].graph.graph_full_url"
             }
         },
         "TEMP-D1-HOT": {
@@ -4852,13 +4852,13 @@
             },
             "data": {
                 "header": null,
-                "value": "proxmox.sensors[0].sensor_value",
+                "value": "['hod-s52-d04-a.ippdu.uk.clara.net'].sensors[8].sensor_value",
                 "value_math": null,
                 "value_float_num": 1,
                 "unit": "°C",
-                "type": "temperature_room",
-                "url": "proxmox.sensors[0].graph.graph_full_url",
-                "image": "proxmox.sensors[0].graph.graph_full_url"
+                "type": "temperature_room_hot",
+                "url": "https://iss.eu.clara.net/device/device=3569/tab=health/metric=temperature/",
+                "image": "['hod-s52-d04-a.ippdu.uk.clara.net'].sensors[8].graph.graph_full_url"
             }
         },
         "TEMP-D6-COLD": {
@@ -4876,13 +4876,13 @@
             },
             "data": {
                 "header": null,
-                "value": "proxmox.sensors[0].sensor_value",
+                "value": "['hod-s52-d06-a.ippdu.uk.clara.net'].sensors[8].sensor_value",
                 "value_math": null,
                 "value_float_num": 1,
                 "unit": "°C",
                 "type": "temperature_room",
-                "url": "proxmox.sensors[0].graph.graph_full_url",
-                "image": "proxmox.sensors[0].graph.graph_full_url"
+                "url": "https://iss.eu.clara.net/device/device=3573/tab=health/metric=temperature/",
+                "image": "['hod-s52-d06-a.ippdu.uk.clara.net'].sensors[8].graph.graph_full_url"
             }
         },
         "TEMP-D6-HOT": {
@@ -4900,13 +4900,13 @@
             },
             "data": {
                 "header": null,
-                "value": "proxmox.sensors[0].sensor_value",
+                "value": "['hod-s52-d06-b.ippdu.uk.clara.net'].sensors[8].sensor_value",
                 "value_math": null,
                 "value_float_num": 1,
                 "unit": "°C",
-                "type": "temperature_room",
-                "url": "proxmox.sensors[0].graph.graph_full_url",
-                "image": "proxmox.sensors[0].graph.graph_full_url"
+                "type": "temperature_room_hot",
+                "url": "https://iss.eu.clara.net/device/device=3574/tab=health/metric=temperature/",
+                "image": "['hod-s52-d06-b.ippdu.uk.clara.net'].sensors[8].graph.graph_full_url"
             }
         },
         "TEMP-D12-COLD": {
@@ -4924,13 +4924,13 @@
             },
             "data": {
                 "header": null,
-                "value": "proxmox.sensors[0].sensor_value",
+                "value": "['hod-s52-d12-a.ippdu.uk.clara.net'].sensors[8].sensor_value",
                 "value_math": null,
                 "value_float_num": 1,
                 "unit": "°C",
                 "type": "temperature_room",
-                "url": "proxmox.sensors[0].graph.graph_full_url",
-                "image": "proxmox.sensors[0].graph.graph_full_url"
+                "url": "https://iss.eu.clara.net/device/device=3583/tab=health/metric=temperature/",
+                "image": "['hod-s52-d12-a.ippdu.uk.clara.net'].sensors[8].graph.graph_full_url"
             }
         },
         "TEMP-D12-HOT": {
@@ -4948,13 +4948,13 @@
             },
             "data": {
                 "header": null,
-                "value": "proxmox.sensors[0].sensor_value",
+                "value": "['hod-s52-d12-b.ippdu.uk.clara.net'].sensors[8].sensor_value",
                 "value_math": null,
                 "value_float_num": 1,
                 "unit": "°C",
-                "type": "temperature_room",
-                "url": "proxmox.sensors[0].graph.graph_full_url",
-                "image": "proxmox.sensors[0].graph.graph_full_url"
+                "type": "temperature_room_hot",
+                "url": "https://iss.eu.clara.net/device/device=3584/tab=health/metric=temperature/",
+                "image": "['hod-s52-d12-b.ippdu.uk.clara.net'].sensors[8].graph.graph_full_url"
             }
         },
         "TEMP-E1-COLD": {
@@ -5000,7 +5000,7 @@
                 "value_math": null,
                 "value_float_num": 1,
                 "unit": "°C",
-                "type": "temperature_room",
+                "type": "temperature_room_hot",
                 "url": "['hod-s52-e02-b.ippdu.uk.clara.net'].sensors[8].graph.graph_full_url",
                 "image": "['hod-s52-e02-b.ippdu.uk.clara.net'].sensors[8].graph.graph_full_url"
             }
@@ -5048,7 +5048,7 @@
                 "value_math": null,
                 "value_float_num": 1,
                 "unit": "°C",
-                "type": "temperature_room",
+                "type": "temperature_room_hot",
                 "url": "['hod-s52-e04-b.ippdu.uk.clara.net'].sensors[8].graph.graph_full_url",
                 "image": "['hod-s52-e04-b.ippdu.uk.clara.net'].sensors[8].graph.graph_full_url"
             }
@@ -5120,7 +5120,7 @@
                 "value_math": null,
                 "value_float_num": 1,
                 "unit": "°C",
-                "type": "temperature_room",
+                "type": "temperature_room_hot",
                 "url": "['hod-s52-e08-b.ippdu.uk.clara.net'].sensors[8].graph.graph_full_url",
                 "image": "['hod-s52-e08-b.ippdu.uk.clara.net'].sensors[8].graph.graph_full_url"
             }
@@ -5168,7 +5168,7 @@
                 "value_math": null,
                 "value_float_num": 1,
                 "unit": "°C",
-                "type": "temperature_room",
+                "type": "temperature_room_hot",
                 "url": "['hod-s52-e12-b.ippdu.uk.clara.net'].sensors[8].graph.graph_full_url",
                 "image": "['hod-s52-e12-b.ippdu.uk.clara.net'].sensors[8].graph.graph_full_url"
             }
@@ -5263,6 +5263,13 @@
             {"lower": 20, "upper": 25, "color": "aqua"},
             {"lower": 25, "upper": 27, "color": "orange"},
             {"lower": 27, "upper": 9999, "color": "red"}
+        ],
+        "temperature_room_hot": [
+            {"lower": -99999, "upper": 15, "color": "red"},
+            {"lower": 15, "upper": 20, "color": "orange"},
+            {"lower": 20, "upper": 37, "color": "aqua"},
+            {"lower": 37, "upper": 40, "color": "orange"},
+            {"lower": 40, "upper": 9999, "color": "red"}
         ],
         "temperature_sys": [
             {"lower": -99999, "upper": 17, "color": "red"},
