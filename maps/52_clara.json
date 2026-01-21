@@ -1174,6 +1174,91 @@
             }
         },
 
+        "CONTAINMENT-A12-B12": {
+            "name": "Containment A12-B12",
+            "position_x": 114,
+            "position_y": 166,
+            "dimension_x": 2,
+            "dimension_y": 57,
+            "style": {
+                "line_width": 2,
+                "line_color": "#262626",
+                "color": "#262626"
+            }
+        },
+        "CONTAINMENT-A1-B1": {
+            "name": "Containment A1-B1",
+            "position_x": 667,
+            "position_y": 165,
+            "dimension_x": 2,
+            "dimension_y": 60,
+            "style": {
+                "line_width": 2,
+                "line_color": "#262626",
+                "color": "#262626"
+            }
+        },
+        "CONTAINMENT-C12-D12": {
+            "name": "Containment C12-D12",
+            "position_x": 114,
+            "position_y": 471,
+            "dimension_x": 2,
+            "dimension_y": 74,
+            "style": {
+                "line_width": 2,
+                "line_color": "#262626",
+                "color": "#262626"
+            }
+        },
+        "CONTAINMENT-C1-D1": {
+            "name": "Containment C1-D1",
+            "position_x": 667,
+            "position_y": 471,
+            "dimension_x": 2,
+            "dimension_y": 74,
+            "style": {
+                "line_width": 2,
+                "line_color": "#262626",
+                "color": "#262626"
+            }
+        },
+        "CONTAINMENT-E12": {
+            "name": "Containment E12",
+            "position_x": 114,
+            "position_y": 792,
+            "dimension_x": 2,
+            "dimension_y": 65,
+            "style": {
+                "line_width": 2,
+                "line_color": "#262626",
+                "color": "#262626"
+            }
+        },
+        "CONTAINMENT-E1": {
+            "name": "Containment E1",
+            "position_x": 667,
+            "position_y": 792,
+            "dimension_x": 2,
+            "dimension_y": 65,
+            "style": {
+                "line_width": 2,
+                "line_color": "#262626",
+                "color": "#262626"
+            }
+        },
+        "ROOM-BORDER": {
+            "name": "ROOM BORDER",
+            "position_x": 0,
+            "position_y": 0,
+            "dimension_x": 826,
+            "dimension_y": 858,
+            "style": {
+                "line_width": 2,
+                "line_color": "#262626",
+                "color": "transparent"
+            }
+        },
+
         "RACKA1-A": {
             "name": "Rack A1 Feed A",
             "position_x": 625,
