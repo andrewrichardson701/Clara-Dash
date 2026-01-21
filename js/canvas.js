@@ -591,7 +591,7 @@ async function getData($file) {
 // TRANSLATE STRING TO ARRAY PATH
 // e.g. var value = resolveArrayPath(json, "Nodes[0].data.value");
 function resolveArrayPath(obj, path) {
-    if (typeof path !== "string" || path.contains('http')) {
+    if (typeof path !== "string" || path.includes('http')) {
         return path;
     }
 
