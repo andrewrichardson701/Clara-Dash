@@ -402,9 +402,13 @@ function drawNode(ctx, coordinates = [0,0], dimensions = [20,10], style = {}, da
     }
 
     // Fill background
-    ctx.fillStyle = fillColor;
-    ctx.fillRect(coordinates[0], coordinates[1], finalWidth, finalHeight);
-    canvas_counter ++;
+    if (fillColor !== 'null' && fillColor !== 'transparent') {
+        ctx.fillStyle = fillColor;
+        ctx.fillRect(coordinates[0], coordinates[1], finalWidth, finalHeight);
+        canvas_counter ++;
+    } else {
+        fillColor = "white";
+    }
 
     // Draw border
     ctx.beginPath();
