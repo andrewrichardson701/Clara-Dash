@@ -4977,7 +4977,7 @@
                 "value_float_num": 1,
                 "unit": "°C",
                 "type": "temperature_room",
-                "url": "['hod-s52-e02-a.ippdu.uk.clara.net'].sensors[8].graph.graph_full_url",
+                "url": "https://iss.eu.clara.net/device/device=3399/tab=health/metric=temperature/",
                 "image": "['hod-s52-e02-a.ippdu.uk.clara.net'].sensors[8].graph.graph_full_url"
             }
         },
@@ -5001,7 +5001,7 @@
                 "value_float_num": 1,
                 "unit": "°C",
                 "type": "temperature_room_hot",
-                "url": "['hod-s52-e02-b.ippdu.uk.clara.net'].sensors[8].graph.graph_full_url",
+                "url": "https://iss.eu.clara.net/device/device=3400/tab=health/metric=temperature/",
                 "image": "['hod-s52-e02-b.ippdu.uk.clara.net'].sensors[8].graph.graph_full_url"
             }
         },
@@ -5025,7 +5025,7 @@
                 "value_float_num": 1,
                 "unit": "°C",
                 "type": "temperature_room",
-                "url": "['hod-s52-e04-a.ippdu.uk.clara.net'].sensors[8].graph.graph_full_url",
+                "url": "https://iss.eu.clara.net/device/device=3398/tab=health/metric=temperature/",
                 "image": "['hod-s52-e04-a.ippdu.uk.clara.net'].sensors[8].graph.graph_full_url"
             }
         },
@@ -5049,7 +5049,7 @@
                 "value_float_num": 1,
                 "unit": "°C",
                 "type": "temperature_room_hot",
-                "url": "['hod-s52-e04-b.ippdu.uk.clara.net'].sensors[8].graph.graph_full_url",
+                "url": "https://iss.eu.clara.net/device/device=3403/tab=health/metric=temperature/",
                 "image": "['hod-s52-e04-b.ippdu.uk.clara.net'].sensors[8].graph.graph_full_url"
             }
         },
@@ -5073,7 +5073,7 @@
                 "value_float_num": 1,
                 "unit": "°C",
                 "type": "temperature_room",
-                "url": "['hod-s52-e08-a.ippdu.uk.clara.net'].sensors[8].graph.graph_full_url",
+                "url": "https://iss.eu.clara.net/device/device=3410/tab=health/metric=temperature/",
                 "image": "['hod-s52-e08-a.ippdu.uk.clara.net'].sensors[8].graph.graph_full_url"
             }
         },
@@ -5097,7 +5097,7 @@
                 "value_float_num": 1,
                 "unit": "%",
                 "type": "humidity_room",
-                "url": "['hod-s52-e08-a.ippdu.uk.clara.net'].sensors[9].graph.graph_full_url",
+                "url": "https://iss.eu.clara.net/device/device=3410/tab=health/metric=humidity/",
                 "image": "['hod-s52-e08-a.ippdu.uk.clara.net'].sensors[9].graph.graph_full_url"
             }
         },
@@ -5121,7 +5121,7 @@
                 "value_float_num": 1,
                 "unit": "°C",
                 "type": "temperature_room_hot",
-                "url": "['hod-s52-e08-b.ippdu.uk.clara.net'].sensors[8].graph.graph_full_url",
+                "url": "https://iss.eu.clara.net/device/device=3411/tab=health/metric=temperature/",
                 "image": "['hod-s52-e08-b.ippdu.uk.clara.net'].sensors[8].graph.graph_full_url"
             }
         },
@@ -5145,7 +5145,7 @@
                 "value_float_num": 1,
                 "unit": "°C",
                 "type": "temperature_room",
-                "url": "['hod-s52-e12-a.ippdu.uk.clara.net'].sensors[8].graph.graph_full_url",
+                "url": "https://iss.eu.clara.net/device/device=3417/tab=health/metric=temperature/",
                 "image": "['hod-s52-e12-a.ippdu.uk.clara.net'].sensors[8].graph.graph_full_url"
             }
         },
@@ -5169,7 +5169,7 @@
                 "value_float_num": 1,
                 "unit": "°C",
                 "type": "temperature_room_hot",
-                "url": "['hod-s52-e12-b.ippdu.uk.clara.net'].sensors[8].graph.graph_full_url",
+                "url": "https://iss.eu.clara.net/device/device=3419/tab=health/metric=temperature/",
                 "image": "['hod-s52-e12-b.ippdu.uk.clara.net'].sensors[8].graph.graph_full_url"
             }
         }
