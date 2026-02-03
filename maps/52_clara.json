@@ -3384,7 +3384,7 @@
                 "unit": "A",
                 "type": "power_amps",
                 "threshold_value": "( ['hod-s52-d04-a.ippdu.uk.clara.net'].sensors[6].sensor_value + ['hod-s52-d04-b.ippdu.uk.clara.net'].sensors[6].sensor_value )",
-                "url": "['hod-s52-d04-a.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url",
+                "url": "https://iss.eu.clara.net/device/device=3569/tab=health/metric=current/",
                 "image": "['hod-s52-d04-a.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
             }
         },
@@ -3409,7 +3409,7 @@
                 "unit": "A",
                 "type": "power_amps",
                 "threshold_value": "( ['hod-s52-d04-a.ippdu.uk.clara.net'].sensors[7].sensor_value + ['hod-s52-d04-b.ippdu.uk.clara.net'].sensors[7].sensor_value )",
-                "url": "['hod-s52-d04-b.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url",
+                "url": "https://iss.eu.clara.net/device/device=3570/tab=health/metric=current/",
                 "image": "['hod-s52-d04-b.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
             }
         },
@@ -3434,7 +3434,7 @@
                 "unit": "A",
                 "type": "power_amps",
                 "threshold_value": "( ['hod-s52-d05-a.ippdu.uk.clara.net'].sensors[6].sensor_value + ['hod-s52-d05-b.ippdu.uk.clara.net'].sensors[6].sensor_value )",
-                "url": "['hod-s52-d05-a.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url",
+                "url": "https://iss.eu.clara.net/device/device=3571/tab=health/metric=current/",
                 "image": "['hod-s52-d05-a.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
             }
         },
@@ -3459,7 +3459,7 @@
                 "unit": "A",
                 "type": "power_amps",
                 "threshold_value": "( ['hod-s52-d05-a.ippdu.uk.clara.net'].sensors[7].sensor_value + ['hod-s52-d05-b.ippdu.uk.clara.net'].sensors[7].sensor_value )",
-                "url": "['hod-s52-d05-b.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url",
+                "url": "https://iss.eu.clara.net/device/device=3572/tab=health/metric=current/",
                 "image": "['hod-s52-d05-b.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
             }
         },
@@ -3484,7 +3484,7 @@
                 "unit": "A",
                 "type": "power_amps",
                 "threshold_value": "( ['hod-s52-d06-a.ippdu.uk.clara.net'].sensors[6].sensor_value + ['hod-s52-d06-b.ippdu.uk.clara.net'].sensors[6].sensor_value )",
-                "url": "['hod-s52-d06-a.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url",
+                "url": "https://iss.eu.clara.net/device/device=3573/tab=health/metric=current/",
                 "image": "['hod-s52-d06-a.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
             }
         },
@@ -3509,7 +3509,7 @@
                 "unit": "A",
                 "type": "power_amps",
                 "threshold_value": "( ['hod-s52-d06-a.ippdu.uk.clara.net'].sensors[7].sensor_value + ['hod-s52-d06-b.ippdu.uk.clara.net'].sensors[7].sensor_value )",
-                "url": "['hod-s52-d06-b.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url",
+                "url": "https://iss.eu.clara.net/device/device=3574/tab=health/metric=current/",
                 "image": "['hod-s52-d06-b.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
             }
         },
@@ -3534,7 +3534,7 @@
                 "unit": "A",
                 "type": "power_amps",
                 "threshold_value": "( ['hod-s52-d07-a.ippdu.uk.clara.net'].sensors[6].sensor_value + ['hod-s52-d07-b.ippdu.uk.clara.net'].sensors[6].sensor_value )",
-                "url": "['hod-s52-d07-a.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url",
+                "url": "https://iss.eu.clara.net/device/device=3575/tab=health/metric=current/",
                 "image": "['hod-s52-d07-a.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
             }
         },
@@ -3559,7 +3559,7 @@
                 "unit": "A",
                 "type": "power_amps",
                 "threshold_value": "( ['hod-s52-d07-a.ippdu.uk.clara.net'].sensors[7].sensor_value + ['hod-s52-d07-b.ippdu.uk.clara.net'].sensors[7].sensor_value )",
-                "url": "['hod-s52-d07-b.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url",
+                "url": "https://iss.eu.clara.net/device/device=3576/tab=health/metric=current/",
                 "image": "['hod-s52-d07-b.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
             }
         },
@@ -3584,7 +3584,7 @@
                 "unit": "A",
                 "type": "power_amps",
                 "threshold_value": "( ['hod-s52-d08-a.ippdu.uk.clara.net'].sensors[6].sensor_value + ['hod-s52-d08-b.ippdu.uk.clara.net'].sensors[6].sensor_value )",
-                "url": "['hod-s52-d08-a.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url",
+                "url": "https://iss.eu.clara.net/device/device=3577/tab=health/metric=current/",
                 "image": "['hod-s52-d08-a.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
             }
         },
@@ -3609,7 +3609,7 @@
                 "unit": "A",
                 "type": "power_amps",
                 "threshold_value": "( ['hod-s52-d08-a.ippdu.uk.clara.net'].sensors[7].sensor_value + ['hod-s52-d08-b.ippdu.uk.clara.net'].sensors[7].sensor_value )",
-                "url": "['hod-s52-d08-b.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url",
+                "url": "https://iss.eu.clara.net/device/device=3578/tab=health/metric=current/",
                 "image": "['hod-s52-d08-b.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
             }
         },
@@ -3634,7 +3634,7 @@
                 "unit": "A",
                 "type": "power_amps",
                 "threshold_value": "( ['hod-s52-d09-a.ippdu.uk.clara.net'].sensors[6].sensor_value + ['hod-s52-d09-b.ippdu.uk.clara.net'].sensors[6].sensor_value )",
-                "url": "['hod-s52-d09-a.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url",
+                "url": "https://iss.eu.clara.net/device/device=3579/tab=health/metric=current/",
                 "image": "['hod-s52-d09-a.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
             }
         },
@@ -3659,7 +3659,7 @@
                 "unit": "A",
                 "type": "power_amps",
                 "threshold_value": "( ['hod-s52-d09-a.ippdu.uk.clara.net'].sensors[7].sensor_value + ['hod-s52-d09-b.ippdu.uk.clara.net'].sensors[7].sensor_value )",
-                "url": "['hod-s52-d09-b.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url",
+                "url": "https://iss.eu.clara.net/device/device=3580/tab=health/metric=current/",
                 "image": "['hod-s52-d09-b.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
             }
         },
@@ -3734,7 +3734,7 @@
                 "unit": "A",
                 "type": "power_amps",
                 "threshold_value": "( ['hod-s52-d11-a.ippdu.uk.clara.net'].sensors[6].sensor_value + ['hod-s52-d11-b.ippdu.uk.clara.net'].sensors[6].sensor_value )",
-                "url": "['hod-s52-d11-a.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url",
+                "url": "https://iss.eu.clara.net/device/device=3581/tab=health/metric=current/",
                 "image": "['hod-s52-d11-a.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
             }
         },
@@ -3759,7 +3759,7 @@
                 "unit": "A",
                 "type": "power_amps",
                 "threshold_value": "( ['hod-s52-d11-a.ippdu.uk.clara.net'].sensors[7].sensor_value + ['hod-s52-d11-b.ippdu.uk.clara.net'].sensors[7].sensor_value )",
-                "url": "['hod-s52-d11-b.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url",
+                "url": "https://iss.eu.clara.net/device/device=3582/tab=health/metric=current/",
                 "image": "['hod-s52-d11-b.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
             }
         },
@@ -3784,7 +3784,7 @@
                 "unit": "A",
                 "type": "power_amps",
                 "threshold_value": "( ['hod-s52-d12-a.ippdu.uk.clara.net'].sensors[6].sensor_value + ['hod-s52-d12-b.ippdu.uk.clara.net'].sensors[6].sensor_value )",
-                "url": "['hod-s52-d12-a.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url",
+                "url": "https://iss.eu.clara.net/device/device=3583/tab=health/metric=current/",
                 "image": "['hod-s52-d12-a.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
             }
         },
@@ -3809,7 +3809,7 @@
                 "unit": "A",
                 "type": "power_amps",
                 "threshold_value": "( ['hod-s52-d12-a.ippdu.uk.clara.net'].sensors[7].sensor_value + ['hod-s52-d12-b.ippdu.uk.clara.net'].sensors[7].sensor_value )",
-                "url": "['hod-s52-d12-b.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url",
+                "url": "https://iss.eu.clara.net/device/device=3584/tab=health/metric=current/",
                 "image": "['hod-s52-d12-b.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
             }
         },
