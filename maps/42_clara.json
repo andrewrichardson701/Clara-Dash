@@ -3796,7 +3796,7 @@
                 {"color": "lightgreen", "text": "Colocation"},
                 {"color": "orange", "text": "Firewalls"},
                 {"color": "#4287f5", "text": "Servers"},
-                {"color": "#cc6699", "text": "Redstor"}
+                {"color": "#cc6699", "text": "Redstor", "draw": false}
             ]
         },
         "PowerThresholds": {

@@ -1208,8 +1208,10 @@ function drawKey(cfg) {
     // Determine widest text for box width
     let maxWidth = ctx.measureText(cfg.title).width;
     for (const entry of cfg.entries) {
-        let w = ctx.measureText(entry.text).width + 30; // 30px color square + gap
-        if (w > maxWidth) maxWidth = w;
+        if (!entry.draw) { // check if draw is defined and false, if undefined or true, draw the entry
+           let w = ctx.measureText(entry.text).width + 30; // 30px color square + gap
+            if (w > maxWidth) maxWidth = w; 
+        }
     }
 
     let boxWidth = maxWidth + cfg.box_padding * 2;
