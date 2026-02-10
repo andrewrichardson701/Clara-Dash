@@ -347,7 +347,7 @@ These setup the canvas settings, all of the nodes and all of the links between n
 			<li><strong>title</strong> - The title to be displayed on the key/legend.</li>
 			<li><strong>position_x</strong> - The X coordinate of the key location (anchored from the top left of the key) (e.g. 200)</li>
 			<li><strong>position_y</strong> - The Y coordinate of the key location (anchored from the top left of the key) (e.g. 50)</li>
-			<li><strong>draw</strong> - Toggle whether the link should be drawn on the canvas. if not included it will default to true. (true / false)</li>
+			<li><strong>draw</strong> - Toggle whether the link should be drawn on the canvas. if not included it will default to true. (true / false) (optional)</li>
 			<li><strong>font_color</strong> - The color of the text to be drawn (e.g. "black" / "#32a836" / "auto")</li>
 			<li><strong>font_size</strong> - The size of the font in pixels or "auto" to fit the text to the box dimensions (e.g. 12 / 16 / "auto")</li>
 			<li><strong>title_font_size</strong> - The size of the title font in pixels or "auto" to fit the text to the box dimensions (e.g. 12 / 16 / "auto")</li>
@@ -356,11 +356,12 @@ These setup the canvas settings, all of the nodes and all of the links between n
 			<li><strong>"entries"</strong>: [ {...}, {...} ] - All individual entries for the Key to display.<br>
 				Format:  <br>
 				{"<strong>color</strong>": "<strong>[color name / hex code]</strong>",<br>
-				"<strong>text</strong>": <strong>"string to be shown"</strong>}<br>
+				"<strong>text</strong>": "<strong>string to be shown</strong>",<br>
+				"<strong>draw</strong>": <strong>true/false (optional)</strong>}<br>
 				Example:<br>
 				<strong>{"color": "red", "text": "< 2A"},<br>
 				{"color": "green", "text": "2A ≤ x < 14A"},<br>
-				{"color": "red", "text": "> 14A"}</strong>
+				{"color": "red", "text": "> 14A", "draw": false}</strong>
 			</li>
 		</ul>
 	</ul>
