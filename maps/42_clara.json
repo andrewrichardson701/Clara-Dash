@@ -3865,6 +3865,13 @@
             {"lower": 25, "upper": 27, "color": "orange"},
             {"lower": 27, "upper": 9999, "color": "red"}
         ],
+        "temperature_room_hot": [
+            {"lower": -99999, "upper": 15, "color": "red"},
+            {"lower": 15, "upper": 20, "color": "orange"},
+            {"lower": 20, "upper": 37, "color": "aqua"},
+            {"lower": 37, "upper": 40, "color": "orange"},
+            {"lower": 40, "upper": 9999, "color": "red"}
+        ],
         "temperature_sys": [
             {"lower": -99999, "upper": 17, "color": "red"},
             {"lower": 17, "upper": 20, "color": "orange"},
