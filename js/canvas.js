@@ -1191,9 +1191,9 @@ function loopDrawKeys() {
     for (const keyName in keys) {
         const cfg = keys[keyName];
 
-        if (!cfg.draw) continue; // Skip if not drawn
-
-        drawKey(cfg);
+        if (cfg.draw !== false) { // Skip if not drawn
+            drawKey(cfg);
+        }
     }
 }
 
@@ -1204,19 +1204,20 @@ function drawKey(cfg) {
     ctx.textAlign = "left";
 
     let rowHeight = cfg.font_size + cfg.padding *2 + 12;
+    let height_count = 0; // used to determine the height of the box based on how many entries are drawn (some may be hidden based on their draw property)
 
     // Determine widest text for box width
     let maxWidth = ctx.measureText(cfg.title).width;
     for (const entry of cfg.entries) {
-        if (!entry.draw) { // check if draw is defined and false, if undefined or true, skip
-            console.log()
-           let w = ctx.measureText(entry.text).width + 30; // 30px color square + gap
+        if (entry.draw !== false) { // check if draw is defined and false, if undefined or true, skip
+            let w = ctx.measureText(entry.text).width + 30; // 30px color square + gap
             if (w > maxWidth) maxWidth = w; 
+            height_count ++;
         }
     }
 
     let boxWidth = maxWidth + cfg.box_padding * 2;
-    let boxHeight = cfg.title_font_size + cfg.padding + cfg.entries.length * rowHeight + cfg.box_padding * 2;
+    let boxHeight = cfg.title_font_size + cfg.padding + height_count * rowHeight + cfg.box_padding * 2;
 
     // === DRAW BACKGROUND BOX ===
     ctx.fillStyle = "rgba(255,255,255,0.9)";
@@ -1241,9 +1242,8 @@ function drawKey(cfg) {
     cursorY = cursorY + cfg.title_font_size/2;
 
     for (const entry of cfg.entries) {
-        if (!entry.draw) { // check if draw is defined and false, if undefined or true, draw the entry
-            continue;
-        }
+        if (entry.draw !== false) { // check if draw is defined and false, if undefined or true, draw the entry
+            console.log(entry.text + ' - ' +entry.draw);
             ctx.textAlign = "left";
             let color = entry.color;
             let text = entry.text;
@@ -1270,7 +1270,7 @@ function drawKey(cfg) {
                 squareX + cfg.box_padding,
                 cursorY + cfg.font_size + cfg.box_padding
             );
-        
+        }
 
         cursorY += rowHeight;
     }
