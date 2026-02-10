@@ -1857,7 +1857,6 @@
             "position_y": 334,
             "dimension_x": 45,
             "dimension_y": 30,
-            "draw": false,
             "style": {
                 "line_width": 2,
                 "line_color": "black",
@@ -1883,7 +1882,6 @@
             "position_y": 384,
             "dimension_x": 45,
             "dimension_y": 30,
-            "draw": false,
             "style": {
                 "line_width": 2,
                 "line_color": "black",
