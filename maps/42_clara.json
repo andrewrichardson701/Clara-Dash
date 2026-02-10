@@ -267,7 +267,7 @@
                 "font": "monospace",
                 "font_size": "14",
                 "font_color": "auto",
-                "color": "lightgrey"
+                "color": "black"
             },
             "data": {
                 "header": "G2"
@@ -285,7 +285,7 @@
                 "font": "monospace",
                 "font_size": "14",
                 "font_color": "auto",
-                "color": "lightgrey"
+                "color": "black"
             },
             "data": {
                 "header": "G3"
@@ -303,7 +303,7 @@
                 "font": "monospace",
                 "font_size": "14",
                 "font_color": "auto",
-                "color": "lightgrey"
+                "color": "black"
             },
             "data": {
                 "header": "G4"
@@ -357,7 +357,7 @@
                 "font": "monospace",
                 "font_size": "14",
                 "font_color": "auto",
-                "color": "lightgrey"
+                "color": "black"
             },
             "data": {
                 "header": "G7"
@@ -1867,14 +1867,14 @@
             },
             "data": {
                 "header": null,
-                "value": "['hod-s42-g09-a.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value": "( ['hod-s42-g09-a1.ippdu.uk.clara.net'].sensors[0].sensor_value + ['hod-s42-g09-a2.ippdu.uk.clara.net'].sensors[0].sensor_value )",
                 "value_math": "",
                 "value_float_num": 1,
                 "unit": "A",
                 "type": "power_amps",
-                "threshold_value": "( ['hod-s42-g09-a.ippdu.uk.clara.net'].sensors[6].sensor_value + ['hod-s42-g09-b.ippdu.uk.clara.net'].sensors[6].sensor_value )",
-                "url": "['hod-s42-g09-a.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url",
-                "image": "['hod-s42-g09-a.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+                "threshold_value": "( ['hod-s42-g09-a1.ippdu.uk.clara.net'].sensors[6].sensor_value + ['hod-s42-g09-a2.ippdu.uk.clara.net'].sensors[6].sensor_value + ['hod-s42-g09-b1.ippdu.uk.clara.net'].sensors[6].sensor_value + ['hod-s42-g09-b2.ippdu.uk.clara.net'].sensors[6].sensor_value )",
+                "url": "https://iss.eu.clara.net/devices/format=graphs/hostname=s42-g09-a/type=power/sort=hostname/disabled=0/graph=current/",
+                "image": "['hod-s42-g09-a1.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
             }
         },
         "RACKG9-B": {
@@ -1893,14 +1893,14 @@
             },
             "data": {
                 "header": null,
-                "value": "['hod-s42-g09-b.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value": "( ['hod-s42-g09-b1.ippdu.uk.clara.net'].sensors[0].sensor_value + ['hod-s42-g09-b2.ippdu.uk.clara.net'].sensors[0].sensor_value )",
                 "value_math": "",
                 "value_float_num": 1,
                 "unit": "A",
                 "type": "power_amps",
-                "threshold_value": "( ['hod-s42-g09-a.ippdu.uk.clara.net'].sensors[7].sensor_value + ['hod-s42-g09-b.ippdu.uk.clara.net'].sensors[7].sensor_value )",
-                "url": "['hod-s42-g09-b.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url",
-                "image": "['hod-s42-g09-b.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+                "threshold_value": "( ['hod-s42-g09-b1.ippdu.uk.clara.net'].sensors[6].sensor_value + ['hod-s42-g09-b2.ippdu.uk.clara.net'].sensors[6].sensor_value + ['hod-s42-g09-a1.ippdu.uk.clara.net'].sensors[6].sensor_value + ['hod-s42-g09-a2.ippdu.uk.clara.net'].sensors[6].sensor_value )",
+                "url": "https://iss.eu.clara.net/devices/format=graphs/hostname=s42-g09-b/type=power/sort=hostname/disabled=0/graph=current/",
+                "image": "['hod-s42-g09-b1.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
             }
         },
         "RACKG10-A": {
