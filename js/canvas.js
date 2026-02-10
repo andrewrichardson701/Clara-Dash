@@ -1242,6 +1242,8 @@ function drawKey(cfg) {
 
     for (const entry of cfg.entries) {
         if (!entry.draw) { // check if draw is defined and false, if undefined or true, draw the entry
+            continue;
+        }
             ctx.textAlign = "left";
             let color = entry.color;
             let text = entry.text;
@@ -1268,7 +1270,7 @@ function drawKey(cfg) {
                 squareX + cfg.box_padding,
                 cursorY + cfg.font_size + cfg.box_padding
             );
-        }
+        
 
         cursorY += rowHeight;
     }
