@@ -556,7 +556,7 @@
                 "font": "monospace",
                 "font_size": "14",
                 "font_color": "auto",
-                "color": "lightgreen"
+                "color": "black"
             },
             "data": {
                 "header": "H6"
@@ -574,7 +574,7 @@
                 "font": "monospace",
                 "font_size": "14",
                 "font_color": "auto",
-                "color": "lightgreen"
+                "color": "black"
             },
             "data": {
                 "header": "H7"
@@ -592,7 +592,7 @@
                 "font": "monospace",
                 "font_size": "14",
                 "font_color": "auto",
-                "color": "lightgreen"
+                "color": "black"
             },
             "data": {
                 "header": "H8"
@@ -610,7 +610,7 @@
                 "font": "monospace",
                 "font_size": "14",
                 "font_color": "auto",
-                "color": "lightgreen"
+                "color": "black"
             },
             "data": {
                 "header": "H9"
@@ -628,7 +628,7 @@
                 "font": "monospace",
                 "font_size": "14",
                 "font_color": "auto",
-                "color": "lightgreen"
+                "color": "black"
             },
             "data": {
                 "header": "H10"
@@ -646,7 +646,7 @@
                 "font": "monospace",
                 "font_size": "14",
                 "font_color": "auto",
-                "color": "lightgreen"
+                "color": "black"
             },
             "data": {
                 "header": "H11"
@@ -736,7 +736,7 @@
                 "font": "monospace",
                 "font_size": "14",
                 "font_color": "auto",
-                "color": "lightgreen"
+                "color": "black"
             },
             "data": {
                 "header": "I5"
@@ -754,7 +754,7 @@
                 "font": "monospace",
                 "font_size": "14",
                 "font_color": "auto",
-                "color": "lightgreen"
+                "color": "black"
             },
             "data": {
                 "header": "I6"
@@ -772,7 +772,7 @@
                 "font": "monospace",
                 "font_size": "14",
                 "font_color": "auto",
-                "color": "lightgreen"
+                "color": "black"
             },
             "data": {
                 "header": "I7"
@@ -790,7 +790,7 @@
                 "font": "monospace",
                 "font_size": "14",
                 "font_color": "auto",
-                "color": "lightgreen"
+                "color": "black"
             },
             "data": {
                 "header": "I8"
@@ -808,7 +808,7 @@
                 "font": "monospace",
                 "font_size": "14",
                 "font_color": "auto",
-                "color": "lightgreen"
+                "color": "black"
             },
             "data": {
                 "header": "I9"
@@ -826,7 +826,7 @@
                 "font": "monospace",
                 "font_size": "14",
                 "font_color": "auto",
-                "color": "lightgreen"
+                "color": "black"
             },
             "data": {
                 "header": "I10"
@@ -844,7 +844,7 @@
                 "font": "monospace",
                 "font_size": "14",
                 "font_color": "auto",
-                "color": "lightgreen"
+                "color": "black"
             },
             "data": {
                 "header": "I11"
