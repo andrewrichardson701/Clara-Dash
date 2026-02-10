@@ -1208,7 +1208,8 @@ function drawKey(cfg) {
     // Determine widest text for box width
     let maxWidth = ctx.measureText(cfg.title).width;
     for (const entry of cfg.entries) {
-        if (!entry.draw) { // check if draw is defined and false, if undefined or true, draw the entry
+        if (!entry.draw) { // check if draw is defined and false, if undefined or true, skip
+            console.log()
            let w = ctx.measureText(entry.text).width + 30; // 30px color square + gap
             if (w > maxWidth) maxWidth = w; 
         }
@@ -1240,32 +1241,34 @@ function drawKey(cfg) {
     cursorY = cursorY + cfg.title_font_size/2;
 
     for (const entry of cfg.entries) {
-        ctx.textAlign = "left";
-        let color = entry.color;
-        let text = entry.text;
-        let text_length = ctx.measureText(text).width;
+        if (!entry.draw) { // check if draw is defined and false, if undefined or true, draw the entry
+            ctx.textAlign = "left";
+            let color = entry.color;
+            let text = entry.text;
+            let text_length = ctx.measureText(text).width;
 
-        // Color square
-        let squareSizeX = cfg.font_size + text_length+ cfg.box_padding *2;
-        let squareSizeY = cfg.font_size + cfg.box_padding *2;
-        let squareX = cfg.position_x + cfg.box_padding;
-        let squareY = cursorY + 2;
+            // Color square
+            let squareSizeX = cfg.font_size + text_length+ cfg.box_padding *2;
+            let squareSizeY = cfg.font_size + cfg.box_padding *2;
+            let squareX = cfg.position_x + cfg.box_padding;
+            let squareY = cursorY + 2;
 
-        ctx.fillStyle = color;
-        ctx.fillRect(squareX, squareY, squareSizeX, squareSizeY);
-        ctx.strokeRect(squareX, squareY, squareSizeX, squareSizeY);
+            ctx.fillStyle = color;
+            ctx.fillRect(squareX, squareY, squareSizeX, squareSizeY);
+            ctx.strokeRect(squareX, squareY, squareSizeX, squareSizeY);
 
-        // Text
-        let textColor = cfg.font_color === "auto"
-            ? bestTextColor(color)
-            : font_color;
+            // Text
+            let textColor = cfg.font_color === "auto"
+                ? bestTextColor(color)
+                : font_color;
 
-        ctx.fillStyle = textColor;
-        ctx.fillText(
-            text,
-            squareX + cfg.box_padding,
-            cursorY + cfg.font_size + cfg.box_padding
-        );
+            ctx.fillStyle = textColor;
+            ctx.fillText(
+                text,
+                squareX + cfg.box_padding,
+                cursorY + cfg.font_size + cfg.box_padding
+            );
+        }
 
         cursorY += rowHeight;
     }
