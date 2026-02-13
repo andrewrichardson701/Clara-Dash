@@ -1097,6 +1097,7 @@ function updatePageConfigSettings() {
         var pre = document.createElement('pre');
         pre.innerText = JSON.stringify(map_json, undefined, 2);
         pre.setAttribute("style", "max-width:min-content");
+        pre.setAttribute("class", "well-nopad bg-dark text-light");
 
         document.getElementById('config').innerHTML = "Config file: '"+map_file+"'";
         document.getElementById('config').appendChild(pre);
