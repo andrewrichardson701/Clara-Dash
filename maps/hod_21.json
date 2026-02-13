@@ -1,0 +1,3244 @@
+{
+    "Config": {
+        "page_title": "Hoddesdon Suite 21",
+        "page_header": "Hoddesdon Suite 21 Power",
+        "canvas_id": "suite-21-power",
+        "background_img": "img/21.png",
+        "background_scale": [1, 1],
+        "background_anchor": "default",
+        "data_url": "http://89.206.193.110/api/data.php?hostname=s21&sensors=1&ports=0",
+        "enable_periodic_update": true,
+        "fixed_canvas_size": true,
+        "canvas_width": 1850,
+        "canvas_height": 700,
+        "show_grid": false,
+        "show_page_header": true,
+        "show_coordinates": true,
+        "show_timestamp": true,
+        "show_dimensions": true,
+        "show_config": true,
+        "image_width": 400,
+        "image_height": 200
+    },
+    "Nodes": {
+        "RACK1": {
+            "name": "Rack 1",
+            "position_x": 81,
+            "position_y": 352,
+            "dimension_x": 72,
+            "dimension_y": 120,
+            "style": {
+                "line_width": 3,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgreen"
+            },
+            "data": {
+                "header": "1"
+            }
+        },
+        "RACK2": {
+            "name": "Rack 2",
+            "position_x": 154,
+            "position_y": 352,
+            "dimension_x": 72,
+            "dimension_y": 120,
+            "style": {
+                "line_width": 3,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgreen"
+            },
+            "data": {
+                "header": "2"
+            }
+        },
+        "RACK3": {
+            "name": "Rack 3",
+            "position_x": 227,
+            "position_y": 352,
+            "dimension_x": 72,
+            "dimension_y": 120,
+            "style": {
+                "line_width": 3,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgreen"
+            },
+            "data": {
+                "header": "3"
+            }
+        },
+        "RACK4": {
+            "name": "Rack 4",
+            "position_x": 301,
+            "position_y": 352,
+            "dimension_x": 72,
+            "dimension_y": 120,
+            "style": {
+                "line_width": 3,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgreen"
+            },
+            "data": {
+                "header": "4"
+            }
+        },
+        "RACK5": {
+            "name": "Rack 5",
+            "position_x": 374,
+            "position_y": 352,
+            "dimension_x": 72,
+            "dimension_y": 120,
+            "style": {
+                "line_width": 3,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgreen"
+            },
+            "data": {
+                "header": "5"
+            }
+        },
+        "RACK6": {
+            "name": "Rack 6",
+            "position_x": 448,
+            "position_y": 352,
+            "dimension_x": 72,
+            "dimension_y": 120,
+            "style": {
+                "line_width": 3,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgreen"
+            },
+            "data": {
+                "header": "6"
+            }
+        },
+        "RACK7": {
+            "name": "Rack 7",
+            "position_x": 521,
+            "position_y": 352,
+            "dimension_x": 72,
+            "dimension_y": 120,
+            "style": {
+                "line_width": 3,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgreen"
+            },
+            "data": {
+                "header": "7"
+            }
+        },
+        "RACK8": {
+            "name": "Rack 8",
+            "position_x": 595,
+            "position_y": 352,
+            "dimension_x": 72,
+            "dimension_y": 120,
+            "style": {
+                "line_width": 3,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgreen"
+            },
+            "data": {
+                "header": "8"
+            }
+        },
+        "RACK9": {
+            "name": "Rack 9",
+            "position_x": 669,
+            "position_y": 352,
+            "dimension_x": 72,
+            "dimension_y": 120,
+            "style": {
+                "line_width": 3,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgreen"
+            },
+            "data": {
+                "header": "9"
+            }
+        },
+        "RACK10": {
+            "name": "Rack 10",
+            "position_x": 888,
+            "position_y": 352,
+            "dimension_x": 72,
+            "dimension_y": 120,
+            "style": {
+                "line_width": 3,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgreen"
+            },
+            "data": {
+                "header": "10"
+            }
+        },
+        "RACK11": {
+            "name": "Rack 11",
+            "position_x": 962,
+            "position_y": 352,
+            "dimension_x": 72,
+            "dimension_y": 120,
+            "style": {
+                "line_width": 3,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgreen"
+            },
+            "data": {
+                "header": "11"
+            }
+        },
+        "RACK12": {
+            "name": "Rack 12",
+            "position_x": 1035,
+            "position_y": 352,
+            "dimension_x": 72,
+            "dimension_y": 120,
+            "style": {
+                "line_width": 3,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgreen"
+            },
+            "data": {
+                "header": "12"
+            }
+        },
+        "RACK13": {
+            "name": "Rack 13",
+            "position_x": 1109,
+            "position_y": 352,
+            "dimension_x": 72,
+            "dimension_y": 120,
+            "style": {
+                "line_width": 3,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgreen"
+            },
+            "data": {
+                "header": "13"
+            }
+        },
+        "RACK14": {
+            "name": "Rack 14",
+            "position_x": 1182,
+            "position_y": 352,
+            "dimension_x": 72,
+            "dimension_y": 120,
+            "style": {
+                "line_width": 3,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgreen"
+            },
+            "data": {
+                "header": "14"
+            }
+        },
+        "RACK15": {
+            "name": "Rack 15",
+            "position_x": 1256,
+            "position_y": 352,
+            "dimension_x": 72,
+            "dimension_y": 120,
+            "style": {
+                "line_width": 3,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgreen"
+            },
+            "data": {
+                "header": "15"
+            }
+        },
+        "RACK16": {
+            "name": "Rack 16",
+            "position_x": 1329,
+            "position_y": 352,
+            "dimension_x": 72,
+            "dimension_y": 120,
+            "style": {
+                "line_width": 3,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgreen"
+            },
+            "data": {
+                "header": "16"
+            }
+        },
+        "RACK17": {
+            "name": "Rack 17",
+            "position_x": 1403,
+            "position_y": 352,
+            "dimension_x": 72,
+            "dimension_y": 120,
+            "style": {
+                "line_width": 3,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgreen"
+            },
+            "data": {
+                "header": "17"
+            }
+        },
+        "RACK18": {
+            "name": "Rack 18",
+            "position_x": 1477,
+            "position_y": 352,
+            "dimension_x": 72,
+            "dimension_y": 120,
+            "style": {
+                "line_width": 3,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgreen"
+            },
+            "data": {
+                "header": "18"
+            }
+        },
+
+        "RACK19": {
+            "name": "Rack 19",
+            "position_x": 81,
+            "position_y": 105,
+            "dimension_x": 72,
+            "dimension_y": 120,
+            "style": {
+                "line_width": 3,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgreen"
+            },
+            "data": {
+                "header": "19"
+            }
+        },
+        "RACK20": {
+            "name": "Rack 20",
+            "position_x": 154,
+            "position_y": 105,
+            "dimension_x": 72,
+            "dimension_y": 120,
+            "style": {
+                "line_width": 3,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgreen"
+            },
+            "data": {
+                "header": "20"
+            }
+        },
+        "RACK21": {
+            "name": "Rack 21",
+            "position_x": 227,
+            "position_y": 105,
+            "dimension_x": 72,
+            "dimension_y": 120,
+            "style": {
+                "line_width": 3,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgreen"
+            },
+            "data": {
+                "header": "21"
+            }
+        },
+        "RACK22": {
+            "name": "Rack 22",
+            "position_x": 301,
+            "position_y": 105,
+            "dimension_x": 72,
+            "dimension_y": 120,
+            "style": {
+                "line_width": 3,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgreen"
+            },
+            "data": {
+                "header": "22"
+            }
+        },
+        "RACK23": {
+            "name": "Rack 23",
+            "position_x": 374,
+            "position_y": 105,
+            "dimension_x": 72,
+            "dimension_y": 120,
+            "style": {
+                "line_width": 3,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgreen"
+            },
+            "data": {
+                "header": "23"
+            }
+        },
+        "RACK24": {
+            "name": "Rack 24",
+            "position_x": 448,
+            "position_y": 105,
+            "dimension_x": 72,
+            "dimension_y": 120,
+            "style": {
+                "line_width": 3,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgreen"
+            },
+            "data": {
+                "header": "24"
+            }
+        },
+        "RACK25": {
+            "name": "Rack 25",
+            "position_x": 521,
+            "position_y": 105,
+            "dimension_x": 72,
+            "dimension_y": 120,
+            "style": {
+                "line_width": 3,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgreen"
+            },
+            "data": {
+                "header": "25"
+            }
+        },
+        "RACK26": {
+            "name": "Rack 26",
+            "position_x": 595,
+            "position_y": 105,
+            "dimension_x": 72,
+            "dimension_y": 120,
+            "style": {
+                "line_width": 3,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgreen"
+            },
+            "data": {
+                "header": "26"
+            }
+        },
+        "RACK27": {
+            "name": "Rack 27",
+            "position_x": 669,
+            "position_y": 105,
+            "dimension_x": 72,
+            "dimension_y": 120,
+            "style": {
+                "line_width": 3,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgreen"
+            },
+            "data": {
+                "header": "27"
+            }
+        },
+        "RACKWIRING": {
+            "name": "WIRING RACK",
+            "position_x": 888,
+            "position_y": 105,
+            "dimension_x": 72,
+            "dimension_y": 72,
+            "style": {
+                "line_width": 3,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgrey"
+            },
+            "data": {
+                "header": ""
+            }
+        },
+        "RACK28": {
+            "name": "Rack 28",
+            "position_x": 962,
+            "position_y": 105,
+            "dimension_x": 72,
+            "dimension_y": 120,
+            "style": {
+                "line_width": 3,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgreen"
+            },
+            "data": {
+                "header": "28"
+            }
+        },
+        "RACK29": {
+            "name": "Rack 29",
+            "position_x": 1035,
+            "position_y": 105,
+            "dimension_x": 72,
+            "dimension_y": 120,
+            "style": {
+                "line_width": 3,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgreen"
+            },
+            "data": {
+                "header": "29"
+            }
+        },
+        "RACK30": {
+            "name": "Rack 30",
+            "position_x": 1109,
+            "position_y": 105,
+            "dimension_x": 72,
+            "dimension_y": 120,
+            "style": {
+                "line_width": 3,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgreen"
+            },
+            "data": {
+                "header": "30"
+            }
+        },
+        "RACK31": {
+            "name": "Rack 31",
+            "position_x": 1182,
+            "position_y": 105,
+            "dimension_x": 72,
+            "dimension_y": 120,
+            "style": {
+                "line_width": 3,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgreen"
+            },
+            "data": {
+                "header": "31"
+            }
+        },
+        "RACK32": {
+            "name": "Rack 32",
+            "position_x": 1256,
+            "position_y": 105,
+            "dimension_x": 72,
+            "dimension_y": 120,
+            "style": {
+                "line_width": 3,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgreen"
+            },
+            "data": {
+                "header": "32"
+            }
+        },
+        "RACK33": {
+            "name": "Rack 33",
+            "position_x": 1329,
+            "position_y": 105,
+            "dimension_x": 72,
+            "dimension_y": 120,
+            "style": {
+                "line_width": 3,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgreen"
+            },
+            "data": {
+                "header": "33"
+            }
+        },
+        "RACK34": {
+            "name": "Rack 34",
+            "position_x": 1403,
+            "position_y": 105,
+            "dimension_x": 72,
+            "dimension_y": 120,
+            "style": {
+                "line_width": 3,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgreen"
+            },
+            "data": {
+                "header": "34"
+            }
+        },
+        "RACK35": {
+            "name": "Rack 35",
+            "position_x": 1477,
+            "position_y": 105,
+            "dimension_x": 72,
+            "dimension_y": 120,
+            "style": {
+                "line_width": 3,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgreen"
+            },
+            "data": {
+                "header": "35"
+            }
+        },
+
+        "RACK1-A": {
+            "name": "Rack 1 Feed A",
+            "position_x": 92,
+            "position_y": 370,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['hod-s21-1-a.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "default",
+                "threshold_value": "( ['hod-s21-1-a.ippdu.uk.clara.net'].sensors[6].sensor_value + ['hod-s21-1-b.ippdu.uk.clara.net'].sensors[6].sensor_value )",
+                "url": "['hod-s21-1-a.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url",
+                "image": "['hod-s21-1-a.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACK1-B": {
+            "name": "Rack 1 Feed B",
+            "position_x": 92,
+            "position_y": 420,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['hod-s21-1-b.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "default",
+                "threshold_value": "( ['hod-s21-1-a.ippdu.uk.clara.net'].sensors[7].sensor_value + ['hod-s21-1-b.ippdu.uk.clara.net'].sensors[7].sensor_value )",
+                "url": "['hod-s21-1-b.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url",
+                "image": "['hod-s21-1-b.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACK2-A": {
+            "name": "Rack 2 Feed A",
+            "position_x": 166,
+            "position_y": 370,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['hod-s21-2-a.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "default",
+                "threshold_value": "( ['hod-s21-2-a.ippdu.uk.clara.net'].sensors[6].sensor_value + ['hod-s21-2-b.ippdu.uk.clara.net'].sensors[6].sensor_value )",
+                "url": "['hod-s21-2-a.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url",
+                "image": "['hod-s21-2-a.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACK2-B": {
+            "name": "Rack 2 Feed B",
+            "position_x": 166,
+            "position_y": 420,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['hod-s21-2-b.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "default",
+                "threshold_value": "( ['hod-s21-2-a.ippdu.uk.clara.net'].sensors[7].sensor_value + ['hod-s21-2-b.ippdu.uk.clara.net'].sensors[7].sensor_value )",
+                "url": "['hod-s21-2-b.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url",
+                "image": "['hod-s21-2-b.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACK3-A": {
+            "name": "Rack 3 Feed A",
+            "position_x": 240,
+            "position_y": 370,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['hod-s21-3-a.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "default",
+                "threshold_value": "( ['hod-s21-3-a.ippdu.uk.clara.net'].sensors[6].sensor_value + ['hod-s21-3-b.ippdu.uk.clara.net'].sensors[6].sensor_value )",
+                "url": "['hod-s21-3-a.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url",
+                "image": "['hod-s21-3-a.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACK3-B": {
+            "name": "Rack 3 Feed B",
+            "position_x": 240,
+            "position_y": 420,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['hod-s21-3-b.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "default",
+                "threshold_value": "( ['hod-s21-3-a.ippdu.uk.clara.net'].sensors[7].sensor_value + ['hod-s21-3-b.ippdu.uk.clara.net'].sensors[7].sensor_value )",
+                "url": "['hod-s21-3-b.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url",
+                "image": "['hod-s21-3-b.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACK4-A": {
+            "name": "Rack 4 Feed A",
+            "position_x": 313,
+            "position_y": 370,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['hod-s21-4-a.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "default",
+                "threshold_value": "( ['hod-s21-4-a.ippdu.uk.clara.net'].sensors[6].sensor_value + ['hod-s21-4-b.ippdu.uk.clara.net'].sensors[6].sensor_value )",
+                "url": "['hod-s21-4-a.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url",
+                "image": "['hod-s21-4-a.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACK4-B": {
+            "name": "Rack 4 Feed B",
+            "position_x": 313,
+            "position_y": 420,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['hod-s21-4-b.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "default",
+                "threshold_value": "( ['hod-s21-4-a.ippdu.uk.clara.net'].sensors[7].sensor_value + ['hod-s21-4-b.ippdu.uk.clara.net'].sensors[7].sensor_value )",
+                "url": "['hod-s21-4-b.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url",
+                "image": "['hod-s21-4-b.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACK5-A": {
+            "name": "Rack 5 Feed A",
+            "position_x": 387,
+            "position_y": 370,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['hod-s21-5-a.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "threshold_value": "( ['hod-s21-5-a.ippdu.uk.clara.net'].sensors[6].sensor_value + ['hod-s21-5-b.ippdu.uk.clara.net'].sensors[6].sensor_value )",
+                "url": "['hod-s21-5-a.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url",
+                "image": "['hod-s21-5-a.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACK5-B": {
+            "name": "Rack 5 Feed B",
+            "position_x": 387,
+            "position_y": 420,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['hod-s21-5-b.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "threshold_value": "( ['hod-s21-5-a.ippdu.uk.clara.net'].sensors[7].sensor_value + ['hod-s21-5-b.ippdu.uk.clara.net'].sensors[7].sensor_value )",
+                "url": "['hod-s21-5-b.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url",
+                "image": "['hod-s21-5-b.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACK6-A": {
+            "name": "Rack 6 Feed A",
+            "position_x": 460,
+            "position_y": 370,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['hod-s21-6-a.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "default",
+                "threshold_value": "( ['hod-s21-6-a.ippdu.uk.clara.net'].sensors[6].sensor_value + ['hod-s21-6-b.ippdu.uk.clara.net'].sensors[6].sensor_value )",
+                "url": "['hod-s21-6-a.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url",
+                "image": "['hod-s21-6-a.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACK6-B": {
+            "name": "Rack 6 Feed B",
+            "position_x": 460,
+            "position_y": 420,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['hod-s21-6-b.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "default",
+                "threshold_value": "( ['hod-s21-6-a.ippdu.uk.clara.net'].sensors[7].sensor_value + ['hod-s21-6-b.ippdu.uk.clara.net'].sensors[7].sensor_value )",
+                "url": "['hod-s21-6-b.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url",
+                "image": "['hod-s21-6-b.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACK7-A": {
+            "name": "Rack 7 Feed A",
+            "position_x": 534,
+            "position_y": 370,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['hod-s21-7-a.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "default",
+                "threshold_value": "( ['hod-s21-7-a.ippdu.uk.clara.net'].sensors[6].sensor_value + ['hod-s21-7-b.ippdu.uk.clara.net'].sensors[6].sensor_value )",
+                "url": "['hod-s21-7-a.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url",
+                "image": "['hod-s21-7-a.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACK7-B": {
+            "name": "Rack 7 Feed B",
+            "position_x": 534,
+            "position_y": 420,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['hod-s21-7-b.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "default",
+                "threshold_value": "( ['hod-s21-7-a.ippdu.uk.clara.net'].sensors[7].sensor_value + ['hod-s21-7-b.ippdu.uk.clara.net'].sensors[7].sensor_value )",
+                "url": "['hod-s21-7-b.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url",
+                "image": "['hod-s21-7-b.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACK8-A": {
+            "name": "Rack 8 Feed A",
+            "position_x": 608,
+            "position_y": 370,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['hod-s21-8-a.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "default",
+                "threshold_value": "( ['hod-s21-8-a.ippdu.uk.clara.net'].sensors[6].sensor_value + ['hod-s21-8-b.ippdu.uk.clara.net'].sensors[6].sensor_value )",
+                "url": "['hod-s21-8-a.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url",
+                "image": "['hod-s21-8-a.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACK8-B": {
+            "name": "Rack 8 Feed B",
+            "position_x": 608,
+            "position_y": 420,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['hod-s21-8-b.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "default",
+                "threshold_value": "( ['hod-s21-8-a.ippdu.uk.clara.net'].sensors[7].sensor_value + ['hod-s21-8-b.ippdu.uk.clara.net'].sensors[7].sensor_value )",
+                "url": "['hod-s21-8-b.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url",
+                "image": "['hod-s21-8-b.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACK9-A": {
+            "name": "Rack 9 Feed A",
+            "position_x": 681,
+            "position_y": 370,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['hod-s21-9-a.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "default",
+                "threshold_value": "( ['hod-s21-9-a.ippdu.uk.clara.net'].sensors[6].sensor_value + ['hod-s21-9-b.ippdu.uk.clara.net'].sensors[6].sensor_value )",
+                "url": "['hod-s21-9-a.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url",
+                "image": "['hod-s21-9-a.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACK9-B": {
+            "name": "Rack 9 Feed B",
+            "position_x": 681,
+            "position_y": 420,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['hod-s21-9-b.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "default",
+                "threshold_value": "( ['hod-s21-9-a.ippdu.uk.clara.net'].sensors[7].sensor_value + ['hod-s21-9-b.ippdu.uk.clara.net'].sensors[7].sensor_value )",
+                "url": "['hod-s21-9-b.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url",
+                "image": "['hod-s21-9-b.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACK10-A": {
+            "name": "Rack 10 Feed A",
+            "position_x": 900,
+            "position_y": 370,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['hod-s21-10-a.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "default",
+                "threshold_value": "( ['hod-s21-10-a.ippdu.uk.clara.net'].sensors[6].sensor_value + ['hod-s21-10-b.ippdu.uk.clara.net'].sensors[6].sensor_value )",
+                "url": "['hod-s21-10-a.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url",
+                "image": "['hod-s21-10-a.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACK10-B": {
+            "name": "Rack 10 Feed B",
+            "position_x": 900,
+            "position_y": 420,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['hod-s21-10-b.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "default",
+                "threshold_value": "( ['hod-s21-10-a.ippdu.uk.clara.net'].sensors[7].sensor_value + ['hod-s21-10-b.ippdu.uk.clara.net'].sensors[7].sensor_value )",
+                "url": "['hod-s21-10-b.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url",
+                "image": "['hod-s21-10-b.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACK11-A": {
+            "name": "Rack 11 Feed A",
+            "position_x": 974,
+            "position_y": 370,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['hod-s21-11-a.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "default",
+                "threshold_value": "( ['hod-s21-11-a.ippdu.uk.clara.net'].sensors[6].sensor_value + ['hod-s21-11-b.ippdu.uk.clara.net'].sensors[6].sensor_value )",
+                "url": "['hod-s21-11-a.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url",
+                "image": "['hod-s21-11-a.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACK11-B": {
+            "name": "Rack 11 Feed B",
+            "position_x": 974,
+            "position_y": 420,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['hod-s21-11-b.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "default",
+                "threshold_value": "( ['hod-s21-11-a.ippdu.uk.clara.net'].sensors[7].sensor_value + ['hod-s21-11-b.ippdu.uk.clara.net'].sensors[7].sensor_value )",
+                "url": "['hod-s21-11-b.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url",
+                "image": "['hod-s21-11-b.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACK12-A": {
+            "name": "Rack 12 Feed A",
+            "position_x": 1048,
+            "position_y": 370,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['hod-s21-12-a.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "default",
+                "threshold_value": "( ['hod-s21-12-a.ippdu.uk.clara.net'].sensors[6].sensor_value + ['hod-s21-12-b.ippdu.uk.clara.net'].sensors[6].sensor_value )",
+                "url": "['hod-s21-12-a.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url",
+                "image": "['hod-s21-12-a.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACK12-B": {
+            "name": "Rack 12 Feed B",
+            "position_x": 1048,
+            "position_y": 420,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['hod-s21-12-b.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "default",
+                "threshold_value": "( ['hod-s21-12-a.ippdu.uk.clara.net'].sensors[7].sensor_value + ['hod-s21-12-b.ippdu.uk.clara.net'].sensors[7].sensor_value )",
+                "url": "['hod-s21-12-b.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url",
+                "image": "['hod-s21-12-b.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACK13-A": {
+            "name": "Rack 13 Feed A",
+            "position_x": 1120,
+            "position_y": 370,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['hod-s21-12-a.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "default",
+                "threshold_value": "( ['hod-s21-12-a.ippdu.uk.clara.net'].sensors[6].sensor_value + ['hod-s21-12-b.ippdu.uk.clara.net'].sensors[6].sensor_value )",
+                "url": "['hod-s21-12-a.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url",
+                "image": "['hod-s21-12-a.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACK13-B": {
+            "name": "Rack 13 Feed B",
+            "position_x": 1120,
+            "position_y": 420,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['hod-s21-13-b.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "default",
+                "threshold_value": "( ['hod-s21-13-a.ippdu.uk.clara.net'].sensors[7].sensor_value + ['hod-s21-13-b.ippdu.uk.clara.net'].sensors[7].sensor_value )",
+                "url": "['hod-s21-13-b.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url",
+                "image": "['hod-s21-13-b.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACK14-A": {
+            "name": "Rack 14 Feed A",
+            "position_x": 1193,
+            "position_y": 370,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['hod-s21-14-a.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "default",
+                "threshold_value": "( ['hod-s21-14-a.ippdu.uk.clara.net'].sensors[6].sensor_value + ['hod-s21-14-b.ippdu.uk.clara.net'].sensors[6].sensor_value )",
+                "url": "['hod-s21-14-a.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url",
+                "image": "['hod-s21-14-a.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACK14-B": {
+            "name": "Rack 14 Feed B",
+            "position_x": 1193,
+            "position_y": 420,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['hod-s21-14-b.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "default",
+                "threshold_value": "( ['hod-s21-14-a.ippdu.uk.clara.net'].sensors[7].sensor_value + ['hod-s21-14-b.ippdu.uk.clara.net'].sensors[7].sensor_value )",
+                "url": "['hod-s21-14-b.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url",
+                "image": "['hod-s21-14-b.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACK15-A": {
+            "name": "Rack 15 Feed A",
+            "position_x": 1268,
+            "position_y": 370,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['hod-s21-15-a.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "threshold_value": "( ['hod-s21-15-a.ippdu.uk.clara.net'].sensors[6].sensor_value + ['hod-s21-15-b.ippdu.uk.clara.net'].sensors[6].sensor_value )",
+                "url": "['hod-s21-15-a.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url",
+                "image": "['hod-s21-15-a.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACK15-B": {
+            "name": "Rack 15 Feed B",
+            "position_x": 1268,
+            "position_y": 420,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['hod-s21-15-b.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "threshold_value": "( ['hod-s21-15-a.ippdu.uk.clara.net'].sensors[7].sensor_value + ['hod-s21-15-b.ippdu.uk.clara.net'].sensors[7].sensor_value )",
+                "url": "['hod-s21-15-b.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url",
+                "image": "['hod-s21-15-b.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACK16-A": {
+            "name": "Rack 16 Feed A",
+            "position_x": 1341,
+            "position_y": 370,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['hod-s21-16-a.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "threshold_value": "( ['hod-s21-16-a.ippdu.uk.clara.net'].sensors[6].sensor_value + ['hod-s21-16-b.ippdu.uk.clara.net'].sensors[6].sensor_value )",
+                "url": "['hod-s21-16-a.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url",
+                "image": "['hod-s21-16-a.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACK16-B": {
+            "name": "Rack 16 Feed B",
+            "position_x": 1341,
+            "position_y": 420,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['hod-s21-16-b.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "threshold_value": "( ['hod-s21-16-a.ippdu.uk.clara.net'].sensors[7].sensor_value + ['hod-s21-16-b.ippdu.uk.clara.net'].sensors[7].sensor_value )",
+                "url": "['hod-s21-16-b.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url",
+                "image": "['hod-s21-16-b.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACK17-A": {
+            "name": "Rack 17 Feed A",
+            "position_x": 1415,
+            "position_y": 370,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['hod-s21-17-a.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "threshold_value": "( ['hod-s21-17-a.ippdu.uk.clara.net'].sensors[6].sensor_value + ['hod-s21-17-b.ippdu.uk.clara.net'].sensors[6].sensor_value )",
+                "url": "['hod-s21-17-a.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url",
+                "image": "['hod-s21-17-a.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACK17-B": {
+            "name": "Rack 17 Feed B",
+            "position_x": 1415,
+            "position_y": 420,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['hod-s21-17-b.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "threshold_value": "( ['hod-s21-17-a.ippdu.uk.clara.net'].sensors[7].sensor_value + ['hod-s21-17-b.ippdu.uk.clara.net'].sensors[7].sensor_value )",
+                "url": "['hod-s21-17-b.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url",
+                "image": "['hod-s21-17-b.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACK18-A": {
+            "name": "Rack 18 Feed A",
+            "position_x": 1488,
+            "position_y": 370,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['hod-s21-18-a.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "threshold_value": "( ['hod-s21-18-a.ippdu.uk.clara.net'].sensors[6].sensor_value + ['hod-s21-18-b.ippdu.uk.clara.net'].sensors[6].sensor_value )",
+                "url": "['hod-s21-18-a.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url",
+                "image": "['hod-s21-18-a.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACK18-B": {
+            "name": "Rack 18 Feed B",
+            "position_x": 1488,
+            "position_y": 420,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['hod-s21-18-b.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "threshold_value": "( ['hod-s21-18-a.ippdu.uk.clara.net'].sensors[7].sensor_value + ['hod-s21-18-b.ippdu.uk.clara.net'].sensors[7].sensor_value )",
+                "url": "['hod-s21-18-b.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url",
+                "image": "['hod-s21-18-b.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACK19-A": {
+            "name": "Rack 19 Feed A",
+            "position_x": 92,
+            "position_y": 125,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['hod-s21-19-a.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "default",
+                "threshold_value": "( ['hod-s21-19-a.ippdu.uk.clara.net'].sensors[6].sensor_value + ['hod-s21-19-b.ippdu.uk.clara.net'].sensors[6].sensor_value )",
+                "url": "['hod-s21-19-a.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url",
+                "image": "['hod-s21-19-a.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACK19-B": {
+            "name": "Rack 19 Feed B",
+            "position_x": 92,
+            "position_y": 175,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['hod-s21-19-b.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "default",
+                "threshold_value": "( ['hod-s21-19-a.ippdu.uk.clara.net'].sensors[7].sensor_value + ['hod-s21-19-b.ippdu.uk.clara.net'].sensors[7].sensor_value )",
+                "url": "['hod-s21-19-b.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url",
+                "image": "['hod-s21-19-b.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACK20-A": {
+            "name": "Rack 20 Feed A",
+            "position_x": 166,
+            "position_y": 125,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['hod-s21-20-a.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "default",
+                "threshold_value": "( ['hod-s21-20-a.ippdu.uk.clara.net'].sensors[6].sensor_value + ['hod-s21-20-b.ippdu.uk.clara.net'].sensors[6].sensor_value )",
+                "url": "['hod-s21-20-a.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url",
+                "image": "['hod-s21-20-a.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACK20-B": {
+            "name": "Rack 20 Feed B",
+            "position_x": 166,
+            "position_y": 175,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['hod-s21-20-b.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "default",
+                "threshold_value": "( ['hod-s21-20-a.ippdu.uk.clara.net'].sensors[7].sensor_value + ['hod-s21-20-b.ippdu.uk.clara.net'].sensors[7].sensor_value )",
+                "url": "['hod-s21-20-b.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url",
+                "image": "['hod-s21-20-b.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACK21-A": {
+            "name": "Rack 21 Feed A",
+            "position_x": 240,
+            "position_y": 125,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['hod-s21-21-a.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "default",
+                "threshold_value": "( ['hod-s21-21-a.ippdu.uk.clara.net'].sensors[6].sensor_value + ['hod-s21-21-b.ippdu.uk.clara.net'].sensors[6].sensor_value )",
+                "url": "['hod-s21-21-a.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url",
+                "image": "['hod-s21-21-a.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACK21-B": {
+            "name": "Rack 21 Feed B",
+            "position_x": 240,
+            "position_y": 175,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['hod-s21-21-b.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "default",
+                "threshold_value": "( ['hod-s21-21-a.ippdu.uk.clara.net'].sensors[7].sensor_value + ['hod-s21-21-b.ippdu.uk.clara.net'].sensors[7].sensor_value )",
+                "url": "['hod-s21-21-b.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url",
+                "image": "['hod-s21-21-b.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACK22-A": {
+            "name": "Rack 22 Feed A",
+            "position_x": 313,
+            "position_y": 125,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['hod-s21-22-a.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "threshold_value": "( ['hod-s21-22-a.ippdu.uk.clara.net'].sensors[6].sensor_value + ['hod-s21-22-b.ippdu.uk.clara.net'].sensors[6].sensor_value )",
+                "url": "['hod-s21-22-a.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url",
+                "image": "['hod-s21-22-a.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACK22-B": {
+            "name": "Rack 22 Feed B",
+            "position_x": 313,
+            "position_y": 175,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['hod-s21-22-b.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "threshold_value": "( ['hod-s21-22-a.ippdu.uk.clara.net'].sensors[7].sensor_value + ['hod-s21-22-b.ippdu.uk.clara.net'].sensors[7].sensor_value )",
+                "url": "['hod-s21-22-b.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url",
+                "image": "['hod-s21-22-b.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACK23-A": {
+            "name": "Rack 23 Feed A",
+            "position_x": 387,
+            "position_y": 125,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['hod-s21-23-a.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "threshold_value": "( ['hod-s21-23-a.ippdu.uk.clara.net'].sensors[6].sensor_value + ['hod-s21-23-b.ippdu.uk.clara.net'].sensors[6].sensor_value )",
+                "url": "['hod-s21-23-a.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url",
+                "image": "['hod-s21-23-a.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACK23-B": {
+            "name": "Rack 23 Feed B",
+            "position_x": 387,
+            "position_y": 175,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['hod-s21-23-b.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "threshold_value": "( ['hod-s21-23-a.ippdu.uk.clara.net'].sensors[7].sensor_value + ['hod-s21-23-b.ippdu.uk.clara.net'].sensors[7].sensor_value )",
+                "url": "['hod-s21-23-b.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url",
+                "image": "['hod-s21-23-b.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACK24-A": {
+            "name": "Rack 24 Feed A",
+            "position_x": 460,
+            "position_y": 125,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['hod-s21-24-a.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "default",
+                "threshold_value": "( ['hod-s21-24-a.ippdu.uk.clara.net'].sensors[6].sensor_value + ['hod-s21-24-b.ippdu.uk.clara.net'].sensors[6].sensor_value )",
+                "url": "['hod-s21-24-a.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url",
+                "image": "['hod-s21-24-a.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACK24-B": {
+            "name": "Rack 24 Feed B",
+            "position_x": 460,
+            "position_y": 175,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['hod-s21-24-b.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "default",
+                "threshold_value": "( ['hod-s21-24-a.ippdu.uk.clara.net'].sensors[7].sensor_value + ['hod-s21-24-b.ippdu.uk.clara.net'].sensors[7].sensor_value )",
+                "url": "['hod-s21-24-b.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url",
+                "image": "['hod-s21-24-b.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACK25-A": {
+            "name": "Rack 25 Feed A",
+            "position_x": 534,
+            "position_y": 125,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['hod-s21-25-a.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "threshold_value": "( ['hod-s21-25-a.ippdu.uk.clara.net'].sensors[6].sensor_value + ['hod-s21-25-b.ippdu.uk.clara.net'].sensors[6].sensor_value )",
+                "url": "['hod-s21-25-a.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url",
+                "image": "['hod-s21-25-a.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACK25-B": {
+            "name": "Rack 25 Feed B",
+            "position_x": 534,
+            "position_y": 175,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['hod-s21-25-b.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "threshold_value": "( ['hod-s21-25-a.ippdu.uk.clara.net'].sensors[7].sensor_value + ['hod-s21-25-b.ippdu.uk.clara.net'].sensors[7].sensor_value )",
+                "url": "['hod-s21-25-b.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url",
+                "image": "['hod-s21-25-b.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACK26-A": {
+            "name": "Rack 26 Feed A",
+            "position_x": 608,
+            "position_y": 125,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['hod-s21-26-a.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "default",
+                "threshold_value": "( ['hod-s21-26-a.ippdu.uk.clara.net'].sensors[6].sensor_value + ['hod-s21-26-b.ippdu.uk.clara.net'].sensors[6].sensor_value )",
+                "url": "['hod-s21-26-a.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url",
+                "image": "['hod-s21-26-a.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACK26-B": {
+            "name": "Rack 26 Feed B",
+            "position_x": 608,
+            "position_y": 175,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['hod-s21-26-b.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "default",
+                "threshold_value": "( ['hod-s21-26-a.ippdu.uk.clara.net'].sensors[7].sensor_value + ['hod-s21-26-b.ippdu.uk.clara.net'].sensors[7].sensor_value )",
+                "url": "['hod-s21-26-b.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url",
+                "image": "['hod-s21-26-b.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACK27-A": {
+            "name": "Rack 27 Feed A",
+            "position_x": 681,
+            "position_y": 125,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['hod-s21-27-a.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "default",
+                "threshold_value": "( ['hod-s21-27-a.ippdu.uk.clara.net'].sensors[6].sensor_value + ['hod-s21-27-b.ippdu.uk.clara.net'].sensors[6].sensor_value )",
+                "url": "['hod-s21-27-a.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url",
+                "image": "['hod-s21-27-a.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACK27-B": {
+            "name": "Rack 27 Feed B",
+            "position_x": 681,
+            "position_y": 175,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['hod-s21-27-b.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "default",
+                "threshold_value": "( ['hod-s21-27-a.ippdu.uk.clara.net'].sensors[7].sensor_value + ['hod-s21-27-b.ippdu.uk.clara.net'].sensors[7].sensor_value )",
+                "url": "['hod-s21-27-b.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url",
+                "image": "['hod-s21-27-b.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACK28-A": {
+            "name": "Rack 28 Feed A",
+            "position_x": 974,
+            "position_y": 125,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['hod-s21-28-a.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "threshold_value": "( ['hod-s21-28-a.ippdu.uk.clara.net'].sensors[6].sensor_value + ['hod-s21-28-b.ippdu.uk.clara.net'].sensors[6].sensor_value )",
+                "url": "['hod-s21-28-a.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url",
+                "image": "['hod-s21-28-a.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACK28-B": {
+            "name": "Rack 28 Feed B",
+            "position_x": 974,
+            "position_y": 175,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['hod-s21-28-b.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "threshold_value": "( ['hod-s21-28-a.ippdu.uk.clara.net'].sensors[7].sensor_value + ['hod-s21-28-b.ippdu.uk.clara.net'].sensors[7].sensor_value )",
+                "url": "['hod-s21-28-b.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url",
+                "image": "['hod-s21-28-b.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACK29-A": {
+            "name": "Rack 29 Feed A",
+            "position_x": 1048,
+            "position_y": 125,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['hod-s21-29-a.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "threshold_value": "( ['hod-s21-29-a.ippdu.uk.clara.net'].sensors[6].sensor_value + ['hod-s21-29-b.ippdu.uk.clara.net'].sensors[6].sensor_value )",
+                "url": "['hod-s21-29-a.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url",
+                "image": "['hod-s21-29-a.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACK29-B": {
+            "name": "Rack 29 Feed B",
+            "position_x": 1048,
+            "position_y": 175,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['hod-s21-29-b.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "threshold_value": "( ['hod-s21-29-a.ippdu.uk.clara.net'].sensors[7].sensor_value + ['hod-s21-29-b.ippdu.uk.clara.net'].sensors[7].sensor_value )",
+                "url": "['hod-s21-29-b.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url",
+                "image": "['hod-s21-29-b.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACK30-A": {
+            "name": "Rack 30 Feed A",
+            "position_x": 1120,
+            "position_y": 125,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['hod-s21-30-a.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "threshold_value": "( ['hod-s21-30-a.ippdu.uk.clara.net'].sensors[6].sensor_value + ['hod-s21-30-b.ippdu.uk.clara.net'].sensors[6].sensor_value )",
+                "url": "['hod-s21-30-a.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url",
+                "image": "['hod-s21-30-a.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACK30-B": {
+            "name": "Rack 30 Feed B",
+            "position_x": 1120,
+            "position_y": 175,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['hod-s21-30-b.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "threshold_value": "( ['hod-s21-30-a.ippdu.uk.clara.net'].sensors[7].sensor_value + ['hod-s21-30-b.ippdu.uk.clara.net'].sensors[7].sensor_value )",
+                "url": "['hod-s21-30-b.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url",
+                "image": "['hod-s21-30-b.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACK31-A": {
+            "name": "Rack 31 Feed A",
+            "position_x": 1193,
+            "position_y": 125,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['hod-s21-31-a.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "threshold_value": "( ['hod-s21-31-a.ippdu.uk.clara.net'].sensors[6].sensor_value + ['hod-s21-31-b.ippdu.uk.clara.net'].sensors[6].sensor_value )",
+                "url": "['hod-s21-31-a.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url",
+                "image": "['hod-s21-31-a.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACK31-B": {
+            "name": "Rack 31 Feed B",
+            "position_x": 1193,
+            "position_y": 175,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['hod-s21-31-b.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "threshold_value": "( ['hod-s21-31-a.ippdu.uk.clara.net'].sensors[7].sensor_value + ['hod-s21-31-b.ippdu.uk.clara.net'].sensors[7].sensor_value )",
+                "url": "['hod-s21-31-b.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url",
+                "image": "['hod-s21-31-b.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACK32-A": {
+            "name": "Rack 32 Feed A",
+            "position_x": 1268,
+            "position_y": 125,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['hod-s21-32-a.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "threshold_value": "( ['hod-s21-32-a.ippdu.uk.clara.net'].sensors[6].sensor_value + ['hod-s21-32-b.ippdu.uk.clara.net'].sensors[6].sensor_value )",
+                "url": "['hod-s21-32-a.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url",
+                "image": "['hod-s21-32-a.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACK32-B": {
+            "name": "Rack 32 Feed B",
+            "position_x": 1268,
+            "position_y": 175,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['hod-s21-32-b.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "threshold_value": "( ['hod-s21-32-a.ippdu.uk.clara.net'].sensors[7].sensor_value + ['hod-s21-32-b.ippdu.uk.clara.net'].sensors[7].sensor_value )",
+                "url": "['hod-s21-32-b.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url",
+                "image": "['hod-s21-32-b.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACK33-A": {
+            "name": "Rack 33 Feed A",
+            "position_x": 1341,
+            "position_y": 125,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['hod-s21-33-a.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "default",
+                "threshold_value": "( ['hod-s21-33-a.ippdu.uk.clara.net'].sensors[6].sensor_value + ['hod-s21-33-b.ippdu.uk.clara.net'].sensors[6].sensor_value )",
+                "url": "['hod-s21-33-a.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url",
+                "image": "['hod-s21-33-a.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACK33-B": {
+            "name": "Rack 33 Feed B",
+            "position_x": 1341,
+            "position_y": 175,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['hod-s21-33-b.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "default",
+                "threshold_value": "( ['hod-s21-33-a.ippdu.uk.clara.net'].sensors[7].sensor_value + ['hod-s21-33-b.ippdu.uk.clara.net'].sensors[7].sensor_value )",
+                "url": "['hod-s21-33-b.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url",
+                "image": "['hod-s21-33-b.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACK34-A": {
+            "name": "Rack 34 Feed A",
+            "position_x": 1415,
+            "position_y": 125,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['hod-s21-34-a.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "threshold_value": "( ['hod-s21-34-a.ippdu.uk.clara.net'].sensors[6].sensor_value + ['hod-s21-34-b.ippdu.uk.clara.net'].sensors[6].sensor_value )",
+                "url": "['hod-s21-34-a.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url",
+                "image": "['hod-s21-34-a.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACK34-B": {
+            "name": "Rack 34 Feed B",
+            "position_x": 1415,
+            "position_y": 175,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['hod-s21-34-b.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "threshold_value": "( ['hod-s21-34-a.ippdu.uk.clara.net'].sensors[7].sensor_value + ['hod-s21-34-b.ippdu.uk.clara.net'].sensors[7].sensor_value )",
+                "url": "['hod-s21-34-b.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url",
+                "image": "['hod-s21-34-b.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACK35-A": {
+            "name": "Rack 35 Feed A",
+            "position_x": 1488,
+            "position_y": 125,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['hod-s21-35-a.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "threshold_value": "( ['hod-s21-35-a.ippdu.uk.clara.net'].sensors[6].sensor_value + ['hod-s21-35-b.ippdu.uk.clara.net'].sensors[6].sensor_value )",
+                "url": "['hod-s21-35-a.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url",
+                "image": "['hod-s21-35-a.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACK35-B": {
+            "name": "Rack 35 Feed B",
+            "position_x": 1488,
+            "position_y": 175,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['hod-s21-35-b.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "threshold_value": "( ['hod-s21-35-a.ippdu.uk.clara.net'].sensors[7].sensor_value + ['hod-s21-35-b.ippdu.uk.clara.net'].sensors[7].sensor_value )",
+                "url": "['hod-s21-35-b.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url",
+                "image": "['hod-s21-35-b.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "WIRING-RACK-A": {
+            "name": "Wiring Rack Feed A",
+            "position_x": 900,
+            "position_y": 110,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "0",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "url": "",
+                "image": ""
+            }
+        },
+        "WIRING-RACK-B": {
+            "name": "Wiring Rack Feed B",
+            "position_x": 900,
+            "position_y": 143,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "0",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "url": "",
+                "image": ""
+            }
+        },
+        "TEMP-1-COLD": {
+            "name": "Rack 1 Temperature - Cold",
+            "position_x": 92,
+            "position_y": 478,
+            "dimension_x": 50,
+            "dimension_y": 20,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "proxmox.sensors[0].sensor_value",
+                "value_math": null,
+                "value_float_num": 1,
+                "unit": "°C",
+                "type": "temperature_sys",
+                "url": "proxmox.sensors[0].graph.graph_full_url",
+                "image": "proxmox.sensors[0].graph.graph_full_url"
+            }
+        },
+        "TEMP-1-HOT": {
+            "name": "Rack 1 Temperature - Hot",
+            "position_x": 92,
+            "position_y": 326,
+            "dimension_x": 50,
+            "dimension_y": 20,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "proxmox.sensors[0].sensor_value",
+                "value_math": null,
+                "value_float_num": 1,
+                "unit": "°C",
+                "type": "temperature_sys",
+                "url": "proxmox.sensors[0].graph.graph_full_url",
+                "image": "proxmox.sensors[0].graph.graph_full_url"
+            }
+        },
+        "TEMP-6-COLD": {
+            "name": "Rack 6 Temperature - Cold",
+            "position_x": 460,
+            "position_y": 478,
+            "dimension_x": 50,
+            "dimension_y": 20,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "proxmox.sensors[0].sensor_value",
+                "value_math": null,
+                "value_float_num": 1,
+                "unit": "°C",
+                "type": "temperature_sys",
+                "url": "proxmox.sensors[0].graph.graph_full_url",
+                "image": "proxmox.sensors[0].graph.graph_full_url"
+            }
+        },
+        "HUMID-6-COLD": {
+            "name": "Rack 6 Humidity - Cold",
+            "position_x": 460,
+            "position_y": 498,
+            "dimension_x": 50,
+            "dimension_y": 20,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "proxmox.sensors[0].sensor_value",
+                "value_math": null,
+                "value_float_num": 1,
+                "unit": "%",
+                "type": "humidity_room",
+                "url": "proxmox.sensors[0].graph.graph_full_url",
+                "image": "proxmox.sensors[0].graph.graph_full_url"
+            }
+        },
+        "TEMP-6-HOT": {
+            "name": "Rack 6 Temperature - Hot",
+            "position_x": 460,
+            "position_y": 326,
+            "dimension_x": 50,
+            "dimension_y": 20,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "proxmox.sensors[0].sensor_value",
+                "value_math": null,
+                "value_float_num": 1,
+                "unit": "°C",
+                "type": "temperature_sys",
+                "url": "proxmox.sensors[0].graph.graph_full_url",
+                "image": "proxmox.sensors[0].graph.graph_full_url"
+            }
+        },
+        "TEMP-13-COLD": {
+            "name": "Rack 13 Temperature - Cold",
+            "position_x": 1120,
+            "position_y": 478,
+            "dimension_x": 50,
+            "dimension_y": 20,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "proxmox.sensors[0].sensor_value",
+                "value_math": null,
+                "value_float_num": 1,
+                "unit": "°C",
+                "type": "temperature_sys",
+                "url": "proxmox.sensors[0].graph.graph_full_url",
+                "image": "proxmox.sensors[0].graph.graph_full_url"
+            }
+        },
+        "TEMP-13-HOT": {
+            "name": "Rack 13 Temperature - Hot",
+            "position_x": 1120,
+            "position_y": 326,
+            "dimension_x": 50,
+            "dimension_y": 20,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "proxmox.sensors[0].sensor_value",
+                "value_math": null,
+                "value_float_num": 1,
+                "unit": "°C",
+                "type": "temperature_sys",
+                "url": "proxmox.sensors[0].graph.graph_full_url",
+                "image": "proxmox.sensors[0].graph.graph_full_url"
+            }
+        },
+        "TEMP-18-COLD": {
+            "name": "Rack 13 Temperature - Cold",
+            "position_x": 1488,
+            "position_y": 478,
+            "dimension_x": 50,
+            "dimension_y": 20,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "proxmox.sensors[0].sensor_value",
+                "value_math": null,
+                "value_float_num": 1,
+                "unit": "°C",
+                "type": "temperature_sys",
+                "url": "proxmox.sensors[0].graph.graph_full_url",
+                "image": "proxmox.sensors[0].graph.graph_full_url"
+            }
+        },
+        "TEMP-18-HOT": {
+            "name": "Rack 18 Temperature - Hot",
+            "position_x": 1488,
+            "position_y": 326,
+            "dimension_x": 50,
+            "dimension_y": 20,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "proxmox.sensors[0].sensor_value",
+                "value_math": null,
+                "value_float_num": 1,
+                "unit": "°C",
+                "type": "temperature_sys",
+                "url": "proxmox.sensors[0].graph.graph_full_url",
+                "image": "proxmox.sensors[0].graph.graph_full_url"
+            }
+        },
+        "TEMP-19-COLD": {
+            "name": "Rack 19 Temperature - Cold",
+            "position_x": 92,
+            "position_y": 231,
+            "dimension_x": 50,
+            "dimension_y": 20,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "proxmox.sensors[0].sensor_value",
+                "value_math": null,
+                "value_float_num": 1,
+                "unit": "°C",
+                "type": "temperature_sys",
+                "url": "proxmox.sensors[0].graph.graph_full_url",
+                "image": "proxmox.sensors[0].graph.graph_full_url"
+            }
+        },
+        "TEMP-19-HOT": {
+            "name": "Rack 19 Temperature - Hot",
+            "position_x": 92,
+            "position_y": 80,
+            "dimension_x": 50,
+            "dimension_y": 20,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "proxmox.sensors[0].sensor_value",
+                "value_math": null,
+                "value_float_num": 1,
+                "unit": "°C",
+                "type": "temperature_sys",
+                "url": "proxmox.sensors[0].graph.graph_full_url",
+                "image": "proxmox.sensors[0].graph.graph_full_url"
+            }
+        },
+        "TEMP-24-COLD": {
+            "name": "Rack 24 Temperature - Cold",
+            "position_x": 460,
+            "position_y": 231,
+            "dimension_x": 50,
+            "dimension_y": 20,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "proxmox.sensors[0].sensor_value",
+                "value_math": null,
+                "value_float_num": 1,
+                "unit": "°C",
+                "type": "temperature_sys",
+                "url": "proxmox.sensors[0].graph.graph_full_url",
+                "image": "proxmox.sensors[0].graph.graph_full_url"
+            }
+        },
+        "TEMP-24-HOT": {
+            "name": "Rack 24 Temperature - Hot",
+            "position_x": 460,
+            "position_y": 80,
+            "dimension_x": 50,
+            "dimension_y": 20,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "proxmox.sensors[0].sensor_value",
+                "value_math": null,
+                "value_float_num": 1,
+                "unit": "°C",
+                "type": "temperature_sys",
+                "url": "proxmox.sensors[0].graph.graph_full_url",
+                "image": "proxmox.sensors[0].graph.graph_full_url"
+            }
+        },
+        "TEMP-30-COLD": {
+            "name": "Rack 30 Temperature - Cold",
+            "position_x": 1120,
+            "position_y": 231,
+            "dimension_x": 50,
+            "dimension_y": 20,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "proxmox.sensors[0].sensor_value",
+                "value_math": null,
+                "value_float_num": 1,
+                "unit": "°C",
+                "type": "temperature_sys",
+                "url": "proxmox.sensors[0].graph.graph_full_url",
+                "image": "proxmox.sensors[0].graph.graph_full_url"
+            }
+        },
+        "TEMP-30-HOT": {
+            "name": "Rack 30 Temperature - Hot",
+            "position_x": 1120,
+            "position_y": 80,
+            "dimension_x": 50,
+            "dimension_y": 20,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "proxmox.sensors[0].sensor_value",
+                "value_math": null,
+                "value_float_num": 1,
+                "unit": "°C",
+                "type": "temperature_sys",
+                "url": "proxmox.sensors[0].graph.graph_full_url",
+                "image": "proxmox.sensors[0].graph.graph_full_url"
+            }
+        },
+        "TEMP-35-COLD": {
+            "name": "Rack 35 Temperature - Cold",
+            "position_x": 1488,
+            "position_y": 231,
+            "dimension_x": 50,
+            "dimension_y": 20,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "proxmox.sensors[0].sensor_value",
+                "value_math": null,
+                "value_float_num": 1,
+                "unit": "°C",
+                "type": "temperature_sys",
+                "url": "proxmox.sensors[0].graph.graph_full_url",
+                "image": "proxmox.sensors[0].graph.graph_full_url"
+            }
+        },
+        "TEMP-35-HOT": {
+            "name": "Rack 35 Temperature - Hot",
+            "position_x": 1488,
+            "position_y": 80,
+            "dimension_x": 50,
+            "dimension_y": 20,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "proxmox.sensors[0].sensor_value",
+                "value_math": null,
+                "value_float_num": 1,
+                "unit": "°C",
+                "type": "temperature_sys",
+                "url": "proxmox.sensors[0].graph.graph_full_url",
+                "image": "proxmox.sensors[0].graph.graph_full_url"
+            }
+        },
+        "TEMP-AVERAGE-COLD": {
+            "name": "Cold Aisle Average Temperature",
+            "position_x": 80,
+            "position_y": 620,
+            "dimension_x": 200,
+            "dimension_y": 20,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": "Cold Aisle Average: ",
+                "value": "( proxmox.sensors[0].sensor_value + proxmox.sensors[0].sensor_value + proxmox.sensors[0].sensor_value + proxmox.sensors[0].sensor_value + proxmox.sensors[0].sensor_value + proxmox.sensors[0].sensor_value + proxmox.sensors[0].sensor_value + proxmox.sensors[0].sensor_value ) / 8",
+                "value_math": null,
+                "value_float_num": 1,
+                "unit": "°C",
+                "type": "temperature_sys",
+                "url": "proxmox.sensors[0].graph.graph_full_url",
+                "image": "proxmox.sensors[0].graph.graph_full_url"
+            }
+        },
+        "TEMP-AVERAGE-HOT": {
+            "name": "Hot Aisle Average Temperature",
+            "position_x": 80,
+            "position_y": 670,
+            "dimension_x": 200,
+            "dimension_y": 20,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": "Hot Aisle Average: ",
+                "value": "( proxmox.sensors[0].sensor_value + proxmox.sensors[0].sensor_value + proxmox.sensors[0].sensor_value + proxmox.sensors[0].sensor_value + proxmox.sensors[0].sensor_value + proxmox.sensors[0].sensor_value + proxmox.sensors[0].sensor_value + proxmox.sensors[0].sensor_value ) / 8",
+                "value_math": null,
+                "value_float_num": 1,
+                "unit": "°C",
+                "type": "temperature_sys",
+                "url": "proxmox.sensors[0].graph.graph_full_url",
+                "image": "proxmox.sensors[0].graph.graph_full_url"
+            }
+        },
+        "TOTAL-POWER-DRAW-A": {
+            "name": "A Feed Total Power Draw",
+            "position_x": 1330,
+            "position_y": 620,
+            "dimension_x": 200,
+            "dimension_y": 20,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": "Total A Feed Power: ",
+                "value": "( localhost.ports[0].ifInOctets_rate + localhost.ports[0].ifInOctets_rate + localhost.ports[0].ifInOctets_rate + localhost.ports[0].ifInOctets_rate + localhost.ports[0].ifInOctets_rate + localhost.ports[0].ifInOctets_rate + localhost.ports[0].ifInOctets_rate + localhost.ports[0].ifInOctets_rate + localhost.ports[0].ifInOctets_rate + localhost.ports[0].ifInOctets_rate + localhost.ports[0].ifInOctets_rate + localhost.ports[0].ifInOctets_rate + localhost.ports[0].ifInOctets_rate + localhost.ports[0].ifInOctets_rate + localhost.ports[0].ifInOctets_rate + localhost.ports[0].ifInOctets_rate + localhost.ports[0].ifInOctets_rate + localhost.ports[0].ifInOctets_rate + localhost.ports[0].ifInOctets_rate + localhost.ports[0].ifInOctets_rate + localhost.ports[0].ifInOctets_rate + localhost.ports[0].ifInOctets_rate + localhost.ports[0].ifInOctets_rate + localhost.ports[0].ifInOctets_rate + localhost.ports[0].ifInOctets_rate + localhost.ports[0].ifInOctets_rate + localhost.ports[0].ifInOctets_rate + localhost.ports[0].ifInOctets_rate + localhost.ports[0].ifInOctets_rate + localhost.ports[0].ifInOctets_rate + localhost.ports[0].ifInOctets_rate + localhost.ports[0].ifInOctets_rate + localhost.ports[0].ifInOctets_rate + localhost.ports[0].ifInOctets_rate + localhost.ports[0].ifInOctets_rate + localhost.ports[0].ifInOctets_rate )",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps_feed",
+                "url": "proxmox.sensors[0].graph.graph_full_url",
+                "image": "proxmox.sensors[0].graph.graph_full_url"
+            }
+        },
+        "TOTAL-POWER-DRAW-B": {
+            "name": "B Feed Total Power Draw",
+            "position_x": 1330,
+            "position_y": 645,
+            "dimension_x": 200,
+            "dimension_y": 20,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": "Total B Feed Power: ",
+                "value": "( localhost.ports[1].ifInOctets_rate + localhost.ports[1].ifInOctets_rate + localhost.ports[1].ifInOctets_rate + localhost.ports[1].ifInOctets_rate + localhost.ports[1].ifInOctets_rate + localhost.ports[1].ifInOctets_rate + localhost.ports[1].ifInOctets_rate + localhost.ports[1].ifInOctets_rate + localhost.ports[1].ifInOctets_rate + localhost.ports[1].ifInOctets_rate + localhost.ports[1].ifInOctets_rate + localhost.ports[1].ifInOctets_rate + localhost.ports[1].ifInOctets_rate + localhost.ports[1].ifInOctets_rate + localhost.ports[1].ifInOctets_rate + localhost.ports[1].ifInOctets_rate + localhost.ports[1].ifInOctets_rate + localhost.ports[1].ifInOctets_rate + localhost.ports[1].ifInOctets_rate + localhost.ports[1].ifInOctets_rate + localhost.ports[1].ifInOctets_rate + localhost.ports[1].ifInOctets_rate + localhost.ports[1].ifInOctets_rate + localhost.ports[1].ifInOctets_rate + localhost.ports[1].ifInOctets_rate + localhost.ports[1].ifInOctets_rate + localhost.ports[1].ifInOctets_rate + localhost.ports[1].ifInOctets_rate + localhost.ports[1].ifInOctets_rate + localhost.ports[1].ifInOctets_rate + localhost.ports[1].ifInOctets_rate + localhost.ports[1].ifInOctets_rate + localhost.ports[1].ifInOctets_rate + localhost.ports[1].ifInOctets_rate + localhost.ports[1].ifInOctets_rate + localhost.ports[1].ifInOctets_rate )",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps_feed",
+                "url": "proxmox.sensors[0].graph.graph_full_url",
+                "image": "proxmox.sensors[0].graph.graph_full_url"
+            }
+        },
+        "TOTAL-POWER-DRAW": {
+            "name": "Total Power Draw",
+            "position_x": 1330,
+            "position_y": 670,
+            "dimension_x": 200,
+            "dimension_y": 20,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": "Total Power: ",
+                "value": "( localhost.ports[0].ifInOctets_rate + localhost.ports[0].ifInOctets_rate + localhost.ports[0].ifInOctets_rate + localhost.ports[0].ifInOctets_rate + localhost.ports[0].ifInOctets_rate + localhost.ports[0].ifInOctets_rate + localhost.ports[0].ifInOctets_rate + localhost.ports[0].ifInOctets_rate + localhost.ports[0].ifInOctets_rate + localhost.ports[0].ifInOctets_rate + localhost.ports[0].ifInOctets_rate + localhost.ports[0].ifInOctets_rate + localhost.ports[0].ifInOctets_rate + localhost.ports[0].ifInOctets_rate + localhost.ports[0].ifInOctets_rate + localhost.ports[0].ifInOctets_rate + localhost.ports[0].ifInOctets_rate + localhost.ports[0].ifInOctets_rate + localhost.ports[0].ifInOctets_rate + localhost.ports[0].ifInOctets_rate + localhost.ports[0].ifInOctets_rate + localhost.ports[0].ifInOctets_rate + localhost.ports[0].ifInOctets_rate + localhost.ports[0].ifInOctets_rate + localhost.ports[0].ifInOctets_rate + localhost.ports[0].ifInOctets_rate + localhost.ports[0].ifInOctets_rate + localhost.ports[0].ifInOctets_rate + localhost.ports[0].ifInOctets_rate + localhost.ports[0].ifInOctets_rate + localhost.ports[0].ifInOctets_rate + localhost.ports[0].ifInOctets_rate + localhost.ports[0].ifInOctets_rate + localhost.ports[0].ifInOctets_rate + localhost.ports[0].ifInOctets_rate + localhost.ports[0].ifInOctets_rate + localhost.ports[1].ifInOctets_rate + localhost.ports[1].ifInOctets_rate + localhost.ports[1].ifInOctets_rate + localhost.ports[1].ifInOctets_rate + localhost.ports[1].ifInOctets_rate + localhost.ports[1].ifInOctets_rate + localhost.ports[1].ifInOctets_rate + localhost.ports[1].ifInOctets_rate + localhost.ports[1].ifInOctets_rate + localhost.ports[1].ifInOctets_rate + localhost.ports[1].ifInOctets_rate + localhost.ports[1].ifInOctets_rate + localhost.ports[1].ifInOctets_rate + localhost.ports[1].ifInOctets_rate + localhost.ports[1].ifInOctets_rate + localhost.ports[1].ifInOctets_rate + localhost.ports[1].ifInOctets_rate + localhost.ports[1].ifInOctets_rate + localhost.ports[1].ifInOctets_rate + localhost.ports[1].ifInOctets_rate + localhost.ports[1].ifInOctets_rate + localhost.ports[1].ifInOctets_rate + localhost.ports[1].ifInOctets_rate + localhost.ports[1].ifInOctets_rate + localhost.ports[1].ifInOctets_rate + localhost.ports[1].ifInOctets_rate + localhost.ports[1].ifInOctets_rate + localhost.ports[1].ifInOctets_rate + localhost.ports[1].ifInOctets_rate + localhost.ports[1].ifInOctets_rate + localhost.ports[1].ifInOctets_rate + localhost.ports[1].ifInOctets_rate + localhost.ports[1].ifInOctets_rate + localhost.ports[1].ifInOctets_rate + localhost.ports[1].ifInOctets_rate + localhost.ports[1].ifInOctets_rate )",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps_total",
+                "url": "proxmox.sensors[0].graph.graph_full_url",
+                "image": "proxmox.sensors[0].graph.graph_full_url"
+            }
+        },
+        "TEST": {
+            "name": "Test",
+            "draw": false,
+            "position_x": 800,
+            "position_y": 600,
+            "dimension_x": 200,
+            "dimension_y": 20,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": "Test: ",
+                "value": "( {TEMP-35-COLD} + {TEMP-35-HOT} )",
+                "value_math": null,
+                "value_float_num": 1,
+                "unit": " TEST",
+                "type": "power_amps_total",
+                "url": "proxmox.sensors[0].graph.graph_full_url",
+                "image": "proxmox.sensors[0].graph.graph_full_url"
+            }
+        }
+    },
+    "Links": {
+        "RACK1-A_RACK19-B": {
+            "nodes": [ 
+                {"node": "RACK1-A", "anchor": "N", "offset": [0,0]},
+                {"node": "RACK19-B", "anchor": "S", "offset": [0,0]}
+            ],
+            "draw": false,
+            "style": {
+                "color": "red",
+                "width": 3,
+                "line_color": "black",
+                "line_width": 1
+            },
+            "data": [
+                {
+                "header": null,
+                "value": "localhost.ports[0].ifInOctets_rate",
+                "value_math": "",
+                "value_float_num": 2,
+                "unit": "kbps",
+                "type": "data",
+                "url": "localhost.ports[0].graph.graph_full_url",
+                "image": "localhost.ports[0].graph.graph_full_url"
+                },
+                {
+                "header": null,
+                "value": "localhost.ports[0].ifInOctets_rate",
+                "value_math": "",
+                "value_float_num": 2,
+                "unit": "kbps",
+                "type": "data",
+                "url": "localhost.ports[0].graph.graph_full_url",
+                "image": "localhost.ports[0].graph.graph_full_url"
+                }
+            ]
+        },
+        "RACK1-A_RACK20-B": {
+            "nodes": [ 
+                {"node": "RACK1-A", "anchor": "NE", "offset": [0,0]},
+                {"node": "RACK20-B", "anchor": "S", "offset": [0,0]}
+            ],
+            "draw": false,
+            "style": {
+                "color": "red",
+                "width": 3,
+                "line_color": "black",
+                "line_width": 0
+            },
+            "data": [
+                {
+                "header": null,
+                "value": "localhost.ports[0].ifInOctets_rate",
+                "value_math": "",
+                "value_float_num": 2,
+                "unit": "kbps",
+                "type": "data",
+                "url": "localhost.ports[0].graph.graph_full_url",
+                "image": "localhost.ports[0].graph.graph_full_url"
+                },
+                {
+                "header": null,
+                "value": "localhost.ports[0].ifInOctets_rate",
+                "value_math": "",
+                "value_float_num": 2,
+                "unit": "kbps",
+                "type": "data",
+                "url": "localhost.ports[0].graph.graph_full_url",
+                "image": "localhost.ports[0].graph.graph_full_url"
+                }
+            ]
+        },
+        "RACK1-A_RACK21-B": {
+            "nodes": [ 
+                {"node": "RACK1-A", "anchor": "E", "offset": [0,0]},
+                {"node": "RACK21-B", "anchor": "S", "offset": [0,0]}
+            ],
+            "draw": false,
+            "style": {
+                "color": "red",
+                "width": 3,
+                "line_color": "black",
+                "line_width": 0
+            },
+            "data": [
+                {
+                "header": null,
+                "value": "localhost.ports[0].ifInOctets_rate",
+                "value_math": "",
+                "value_float_num": 2,
+                "unit": "kbps",
+                "type": "data",
+                "url": "localhost.ports[0].graph.graph_full_url",
+                "image": "localhost.ports[0].graph.graph_full_url"
+                },
+                {
+                "header": null,
+                "value": "localhost.ports[0].ifInOctets_rate",
+                "value_math": "",
+                "value_float_num": 2,
+                "unit": "kbps",
+                "type": "data",
+                "url": "localhost.ports[0].graph.graph_full_url",
+                "image": "localhost.ports[0].graph.graph_full_url"
+                }
+            ]
+        }
+    },
+    "Keys": {
+        "Racks": {
+            "title": "Rack Colours",
+            "position_x": 1650,
+            "position_y": 40,
+            "draw": true,
+            "font_color": "auto",
+            "font_size": 11,
+            "title_font_size": 16,
+            "padding": 5,
+            "box_padding": 10,
+            "entries": [
+                {"color": "black", "text": "Unused"},
+                {"color": "lightgrey", "text": "Managed"},
+                {"color": "lightgreen", "text": "Colocation"},
+                {"color": "orange", "text": "Firewalls"},
+                {"color": "#4287f5", "text": "Servers"},
+                {"color": "#cc6699", "text": "Redstor"}
+            ]
+        },
+        "PowerThresholds": {
+            "title": "Power Thresholds",
+            "position_x": 1650,
+            "position_y": 281,
+            "draw": true,
+            "font_color": "auto",
+            "font_size": 11,
+            "title_font_size": 16,
+            "padding": 5,
+            "box_padding": 10,
+            "entries": [
+                {"color": "red", "text": "< 1A"},
+                {"color": "orange", "text": "1A ≤ x < 2A"},
+                {"color": "green", "text": "2A ≤ x < 14A"},
+                {"color": "orange", "text": "14A ≤ x ≤ 15A"},
+                {"color": "red", "text": "> 15A"}
+            ]
+        },
+        "TemperatureThresholds": {
+            "title": "Cold Aisle Thresholds",
+            "position_x": 1650,
+            "position_y": 489,
+            "draw": true,
+            "font_color": "auto",
+            "font_size": 11,
+            "title_font_size": 16,
+            "padding": 5,
+            "box_padding": 10,
+            "entries": [
+                {"color": "red", "text": "< 17°C"},
+                {"color": "orange", "text": "17°C ≤ x < 20°C"},
+                {"color": "aqua", "text": "20°C ≤ x < 25°C"},
+                {"color": "orange", "text": "25°C ≤ x ≤ 27°C"},
+                {"color": "red", "text": "> 27°C"}
+            ]
+        }
+    },
+    "Thresholds": {
+        "power_amps": [
+            {"lower": 0, "upper": 0.2, "color": "red"},
+            {"lower": 0.2, "upper": 2, "color": "orange"},
+            {"lower": 2, "upper": 12, "color": "#1ac44a"},
+            {"lower": 12, "upper": 13, "color": "orange"},
+            {"lower": 13, "upper": 9999, "color": "red"}
+        ],
+        "power_amps_feed": [
+            {"lower": 0, "upper": 0.5, "color": "red"},
+            {"lower": 0.5, "upper": 2, "color": "orange"},
+            {"lower": 2, "upper": 12, "color": "#1ac44a"},
+            {"lower": 12, "upper": 1152, "color": "orange"},
+            {"lower": 1152, "upper": 9999, "color": "red"}
+        ],
+        "power_kw": [
+            {"lower": 0, "upper": 0.2, "color": "red"},
+            {"lower": 0.2, "upper": 2, "color": "orange"},
+            {"lower": 2, "upper": 12, "color": "#1ac44a"},
+            {"lower": 12, "upper": 13, "color": "orange"},
+            {"lower": 13, "upper": 9999, "color": "red"}
+        ],
+        "temperature_room": [
+            {"lower": -99999, "upper": 17, "color": "red"},
+            {"lower": 17, "upper": 20, "color": "orange"},
+            {"lower": 20, "upper": 25, "color": "aqua"},
+            {"lower": 25, "upper": 27, "color": "orange"},
+            {"lower": 27, "upper": 9999, "color": "red"}
+        ],
+        "temperature_sys": [
+            {"lower": -99999, "upper": 17, "color": "red"},
+            {"lower": 17, "upper": 20, "color": "orange"},
+            {"lower": 20, "upper": 50, "color": "aqua"},
+            {"lower": 50, "upper": 70, "color": "orange"},
+            {"lower": 70, "upper": 9999, "color": "red"}
+        ],
+        "humidity_room": [
+            {"lower": -99999, "upper": 20, "color": "red"},
+            {"lower": 20, "upper": 30, "color": "orange"},
+            {"lower": 30, "upper": 50, "color": "pink"},
+            {"lower": 50, "upper": 70, "color": "orange"},
+            {"lower": 70, "upper": 9999, "color": "red"}
+        ],
+        "data": [
+            {"lower": 0, "upper": 50, "color": "red"},
+            {"lower": 50, "upper": 100, "color": "orange"},
+            {"lower": 100, "upper": 10000, "color": "#1ac44a"},
+            {"lower": 10000, "upper": 1000000, "color": "orange"},
+            {"lower": 1000000, "upper": 100000000000000, "color": "red"}
+        ],
+        "default": [
+            {"lower": -999999, "upper": 9999999, "color": "grey"}
+        ]
+    }
+}
