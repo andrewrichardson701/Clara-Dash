@@ -6,7 +6,7 @@
         "background_img": "img/52.png",
         "background_scale": [0.625, 0.625],
         "background_anchor": "default",
-        "data_url": "http://pdu.dcops.uk.clara.net/data.php?hostname=s52&sensors=1&ports=0",
+        "data_url": "https://pdu.dcops.uk.clara.net/data.php?hostname=s52&sensors=1&ports=0",
         "enable_periodic_update": true,
         "fixed_canvas_size": true,
         "canvas_width": 1100,
