@@ -1244,7 +1244,6 @@ function drawKey(cfg) {
 
     for (const entry of cfg.entries) {
         if (entry.draw !== false) { // check if draw is defined and false, if undefined or true, draw the entry
-            console.log(entry.text + ' - ' +entry.draw);
             ctx.textAlign = "left";
             let color = entry.color;
             let text = entry.text;
