@@ -1,5 +1,6 @@
 <div class="container" style="margin-top: 20px">
     <h1>Hoddesdon - nLighten</h1>
+    <hr style="border-color: lightgrey; background-color: lightgrey">
     <p>Hoddesdon is the primary site for Clara's infrastructure, hosting the majority of our servers and network equipment. It is located in the UK and serves as the main hub for our operations.</p>
 </div>
 <div class="container">
