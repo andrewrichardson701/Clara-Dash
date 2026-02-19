@@ -1,7 +1,11 @@
 <div id="canvas-wrapper-outer">
-    <div class="container">
-        <h1 id="page-header"></h1>
+    <div class="container" style="padding-top:20px">
+        <div class="container">
+            <h1 id="page-header"></h1>
+        </div>
+        <hr style="border-color: lightgrey; background-color: lightgrey">
     </div>
+    
     <div id="canvas-wrapper" style="position: relative; max-width:min-content; margin-right:auto; margin-left:auto; display:flex" class="well-nopad bg-dark">
         <div style="display: inline-block; position: relative;">
             <canvas id="<?php echo($canvas_id); ?>" width="1800" height="900" style="border:1px solid black; background-color:white">Your browser does not support HTML canvases.</canvas>
