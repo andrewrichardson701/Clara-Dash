@@ -15,9 +15,9 @@
 <body>
 
     <?php
-    ini_set('display_errors', 1);
-    ini_set('display_startup_errors', 1);
-    error_reporting(E_ALL);
+    // ini_set('display_errors', 1);
+    // ini_set('display_startup_errors', 1);
+    // error_reporting(E_ALL);
 
     include_once 'includes/functions.php';
 
@@ -41,7 +41,19 @@
 
     // error output.
     if (!$continue) {
-        ?><strong>Unable to find map <?php if($map_dir && $map_file) { echo('at: '.getcwd().DIRECTORY_SEPARATOR.$map_dir.$map_file); } ?></strong>
+        ?>
+        <br><strong>Unable to find map <?php if($map_dir && $map_file) { echo('at: '.getcwd().DIRECTORY_SEPARATOR.$map_dir.$map_file); } ?></strong><br><br>
+        <p>Available maps:</p>
+        <ul>
+        <?php
+            foreach (scandir(getcwd().DIRECTORY_SEPARATOR.'maps') as $file) {
+                if (!is_dir(getcwd().DIRECTORY_SEPARATOR.'maps'.DIRECTORY_SEPARATOR.$file) && pathinfo($file, PATHINFO_EXTENSION) === 'json') {
+                    $file = pathinfo($file, PATHINFO_FILENAME);
+                    echo('<li><a href="weathermap.php?map='.$file.'">'.$file.'</a></li>');
+                }
+            }
+        ?>
+        </ul>
         <?php
         exit();
     }
