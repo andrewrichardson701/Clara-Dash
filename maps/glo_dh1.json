@@ -1,0 +1,3748 @@
+{
+    "Config": {
+        "page_title": "Indectron Suite DH1",
+        "page_header": "Indectron Gloucester Suite DH1 Power",
+        "canvas_id": "dh1-power",
+        "background_img": "img/dh1.png",
+        "background_scale": [0.85, 0.85],
+        "background_anchor": "default",
+        "data_url": "https://pdu.dcops.uk.clara.net/api/data.php?hostname=glo&sensors=1&ports=0",
+        "enable_periodic_update": true,
+        "fixed_canvas_size": true,
+        "canvas_width": 1600,
+        "canvas_height": 805,
+        "show_grid": false,
+        "show_page_header": true,
+        "show_coordinates": true,
+        "show_timestamp": true,
+        "show_dimensions": true,
+        "show_config": true,
+        "image_width": 400,
+        "image_height": 200
+    },
+    "Nodes": {
+        "RACKE01": {
+            "name": "Rack E01",
+            "position_x": 84,
+            "position_y": 94,
+            "dimension_x": 63,
+            "dimension_y": 126,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgrey"
+            },
+            "data": {
+                "header": "E01"
+            }
+        },
+        "RACKE02": {
+            "name": "Rack E02",
+            "position_x": 147,
+            "position_y": 94,
+            "dimension_x": 63,
+            "dimension_y": 126,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgrey"
+            },
+            "data": {
+                "header": "E02"
+            }
+        },
+        "RACKE03": {
+            "name": "Rack E03",
+            "position_x": 209,
+            "position_y": 94,
+            "dimension_x": 63,
+            "dimension_y": 126,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgrey"
+            },
+            "data": {
+                "header": "E03"
+            }
+        },
+        "RACKE04": {
+            "name": "Rack E04",
+            "position_x": 272,
+            "position_y": 94,
+            "dimension_x": 63,
+            "dimension_y": 126,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgrey"
+            },
+            "data": {
+                "header": "E04"
+            }
+        },
+        "RACKE05": {
+            "name": "Rack E05",
+            "position_x": 335,
+            "position_y": 94,
+            "dimension_x": 63,
+            "dimension_y": 126,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgrey"
+            },
+            "data": {
+                "header": "E05"
+            }
+        },
+        "RACKE06": {
+            "name": "Rack E06",
+            "position_x": 397,
+            "position_y": 94,
+            "dimension_x": 63,
+            "dimension_y": 126,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgrey"
+            },
+            "data": {
+                "header": "E06"
+            }
+        },
+        "RACKE07": {
+            "name": "Rack E07",
+            "position_x": 460,
+            "position_y": 94,
+            "dimension_x": 63,
+            "dimension_y": 126,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "black"
+            },
+            "data": {
+                "header": "E07"
+            }
+        },
+        "RACKE08": {
+            "name": "Rack E08",
+            "position_x": 522,
+            "position_y": 94,
+            "dimension_x": 63,
+            "dimension_y": 126,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "black"
+            },
+            "data": {
+                "header": "E08"
+            }
+        },
+        "RACKE09": {
+            "name": "Rack E09",
+            "position_x": 584,
+            "position_y": 94,
+            "dimension_x": 63,
+            "dimension_y": 126,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "black"
+            },
+            "data": {
+                "header": "E09"
+            }
+        },
+        "RACKE10": {
+            "name": "Rack E10",
+            "position_x": 647,
+            "position_y": 94,
+            "dimension_x": 63,
+            "dimension_y": 126,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "black"
+            },
+            "data": {
+                "header": "E10"
+            }
+        },
+        "RACKE11": {
+            "name": "Rack E11",
+            "position_x": 709,
+            "position_y": 94,
+            "dimension_x": 63,
+            "dimension_y": 126,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "black"
+            },
+            "data": {
+                "header": "E11"
+            }
+        },
+        "RACKE12": {
+            "name": "Rack E12",
+            "position_x": 772,
+            "position_y": 94,
+            "dimension_x": 63,
+            "dimension_y": 126,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgrey"
+            },
+            "data": {
+                "header": "E12"
+            }
+        },
+        "RACKE13": {
+            "name": "Rack E13",
+            "position_x": 835,
+            "position_y": 94,
+            "dimension_x": 63,
+            "dimension_y": 126,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgrey"
+            },
+            "data": {
+                "header": "E13"
+            }
+        },
+        "RACKE14": {
+            "name": "Rack E14",
+            "position_x": 897,
+            "position_y": 94,
+            "dimension_x": 63,
+            "dimension_y": 126,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgrey"
+            },
+            "data": {
+                "header": "E14"
+            }
+        },
+        "RACKE15": {
+            "name": "Rack E15",
+            "position_x": 959,
+            "position_y": 94,
+            "dimension_x": 63,
+            "dimension_y": 126,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgrey"
+            },
+            "data": {
+                "header": "E15"
+            }
+        },
+        "RACKE16": {
+            "name": "Rack E16",
+            "position_x": 1022,
+            "position_y": 94,
+            "dimension_x": 63,
+            "dimension_y": 126,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "black"
+            },
+            "data": {
+                "header": "E16"
+            }
+        },
+        "RACKE17": {
+            "name": "Rack E17",
+            "position_x": 1084,
+            "position_y": 94,
+            "dimension_x": 63,
+            "dimension_y": 126,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "black"
+            },
+            "data": {
+                "header": "E17"
+            }
+        },
+        "RACKF01": {
+            "name": "Rack F01",
+            "position_x": 84,
+            "position_y": 344,
+            "dimension_x": 63,
+            "dimension_y": 126,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgrey"
+            },
+            "data": {
+                "header": "F01"
+            }
+        },
+        "RACKF02": {
+            "name": "Rack F02",
+            "position_x": 147,
+            "position_y": 344,
+            "dimension_x": 63,
+            "dimension_y": 126,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgrey"
+            },
+            "data": {
+                "header": "F02"
+            }
+        },
+        "RACKF03": {
+            "name": "Rack F03",
+            "position_x": 209,
+            "position_y": 344,
+            "dimension_x": 63,
+            "dimension_y": 126,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgrey"
+            },
+            "data": {
+                "header": "F03"
+            }
+        },
+        "RACKF04": {
+            "name": "Rack F04",
+            "position_x": 272,
+            "position_y": 344,
+            "dimension_x": 63,
+            "dimension_y": 126,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgrey"
+            },
+            "data": {
+                "header": "F04"
+            }
+        },
+        "RACKF05": {
+            "name": "Rack F05",
+            "position_x": 335,
+            "position_y": 344,
+            "dimension_x": 63,
+            "dimension_y": 126,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgrey"
+            },
+            "data": {
+                "header": "F05"
+            }
+        },
+        "RACKF06": {
+            "name": "Rack F06",
+            "position_x": 397,
+            "position_y": 344,
+            "dimension_x": 63,
+            "dimension_y": 126,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgrey"
+            },
+            "data": {
+                "header": "F06"
+            }
+        },
+        "RACKF07": {
+            "name": "Rack F07",
+            "position_x": 460,
+            "position_y": 344,
+            "dimension_x": 63,
+            "dimension_y": 126,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgrey"
+            },
+            "data": {
+                "header": "F07"
+            }
+        },
+        "RACKF08": {
+            "name": "Rack F08",
+            "position_x": 522,
+            "position_y": 344,
+            "dimension_x": 63,
+            "dimension_y": 126,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgrey"
+            },
+            "data": {
+                "header": "F08"
+            }
+        },
+        "RACKF09": {
+            "name": "Rack F09",
+            "position_x": 584,
+            "position_y": 344,
+            "dimension_x": 63,
+            "dimension_y": 126,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgrey"
+            },
+            "data": {
+                "header": "F09"
+            }
+        },
+        "RACKF10": {
+            "name": "Rack F10",
+            "position_x": 647,
+            "position_y": 344,
+            "dimension_x": 63,
+            "dimension_y": 126,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgrey"
+            },
+            "data": {
+                "header": "F10"
+            }
+        },
+        "RACKF11": {
+            "name": "Rack F11",
+            "position_x": 709,
+            "position_y": 344,
+            "dimension_x": 63,
+            "dimension_y": 126,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgrey"
+            },
+            "data": {
+                "header": "F11"
+            }
+        },
+        "RACKF12": {
+            "name": "Rack F12",
+            "position_x": 772,
+            "position_y": 344,
+            "dimension_x": 63,
+            "dimension_y": 126,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgrey"
+            },
+            "data": {
+                "header": "F12"
+            }
+        },
+        "RACKF13": {
+            "name": "Rack F13",
+            "position_x": 835,
+            "position_y": 344,
+            "dimension_x": 63,
+            "dimension_y": 126,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgrey"
+            },
+            "data": {
+                "header": "F13"
+            }
+        },
+        "RACKF14": {
+            "name": "Rack F14",
+            "position_x": 897,
+            "position_y": 344,
+            "dimension_x": 63,
+            "dimension_y": 126,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgrey"
+            },
+            "data": {
+                "header": "F14"
+            }
+        },
+        "RACKF15": {
+            "name": "Rack F15",
+            "position_x": 959,
+            "position_y": 344,
+            "dimension_x": 63,
+            "dimension_y": 126,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgrey"
+            },
+            "data": {
+                "header": "F15"
+            }
+        },
+        "RACKF16": {
+            "name": "Rack F16",
+            "position_x": 1022,
+            "position_y": 344,
+            "dimension_x": 63,
+            "dimension_y": 126,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgrey"
+            },
+            "data": {
+                "header": "F16"
+            }
+        },
+        "RACKF17": {
+            "name": "Rack F17",
+            "position_x": 1084,
+            "position_y": 344,
+            "dimension_x": 63,
+            "dimension_y": 126,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgrey"
+            },
+            "data": {
+                "header": "F17"
+            }
+        },
+        "RACKG01": {
+            "name": "Rack G01",
+            "position_x": 84,
+            "position_y": 594,
+            "dimension_x": 63,
+            "dimension_y": 126,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgrey"
+            },
+            "data": {
+                "header": "G01"
+            }
+        },
+        "RACKG02": {
+            "name": "Rack G02",
+            "position_x": 147,
+            "position_y": 594,
+            "dimension_x": 63,
+            "dimension_y": 126,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgrey"
+            },
+            "data": {
+                "header": "G02"
+            }
+        },
+        "RACKG03": {
+            "name": "Rack G03",
+            "position_x": 209,
+            "position_y": 594,
+            "dimension_x": 63,
+            "dimension_y": 126,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgrey"
+            },
+            "data": {
+                "header": "G03"
+            }
+        },
+        "RACKG04": {
+            "name": "Rack G04",
+            "position_x": 272,
+            "position_y": 594,
+            "dimension_x": 63,
+            "dimension_y": 126,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgrey"
+            },
+            "data": {
+                "header": "G04"
+            }
+        },
+        "RACKG05": {
+            "name": "Rack G05",
+            "position_x": 335,
+            "position_y": 594,
+            "dimension_x": 63,
+            "dimension_y": 126,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgrey"
+            },
+            "data": {
+                "header": "G05"
+            }
+        },
+        "RACKG06": {
+            "name": "Rack G06",
+            "position_x": 397,
+            "position_y": 594,
+            "dimension_x": 63,
+            "dimension_y": 126,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgrey"
+            },
+            "data": {
+                "header": "G06"
+            }
+        },
+        "RACKG07": {
+            "name": "Rack G07",
+            "position_x": 460,
+            "position_y": 594,
+            "dimension_x": 63,
+            "dimension_y": 126,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgrey"
+            },
+            "data": {
+                "header": "G07"
+            }
+        },
+        "RACKG08": {
+            "name": "Rack G08",
+            "position_x": 522,
+            "position_y": 594,
+            "dimension_x": 63,
+            "dimension_y": 126,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgrey"
+            },
+            "data": {
+                "header": "G08"
+            }
+        },
+        "RACKG09": {
+            "name": "Rack G09",
+            "position_x": 584,
+            "position_y": 594,
+            "dimension_x": 63,
+            "dimension_y": 126,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgrey"
+            },
+            "data": {
+                "header": "G09"
+            }
+        },
+        "RACKG10": {
+            "name": "Rack G10",
+            "position_x": 647,
+            "position_y": 594,
+            "dimension_x": 63,
+            "dimension_y": 126,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgrey"
+            },
+            "data": {
+                "header": "G10"
+            }
+        },
+        "RACKG11": {
+            "name": "Rack G11",
+            "position_x": 709,
+            "position_y": 594,
+            "dimension_x": 63,
+            "dimension_y": 126,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgrey"
+            },
+            "data": {
+                "header": "G11"
+            }
+        },
+        "RACKG12": {
+            "name": "Rack G12",
+            "position_x": 772,
+            "position_y": 594,
+            "dimension_x": 63,
+            "dimension_y": 126,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgrey"
+            },
+            "data": {
+                "header": "G12"
+            }
+        },
+        "RACKG13": {
+            "name": "Rack G13",
+            "position_x": 835,
+            "position_y": 594,
+            "dimension_x": 63,
+            "dimension_y": 126,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgrey"
+            },
+            "data": {
+                "header": "G13"
+            }
+        },
+        "RACKG14": {
+            "name": "Rack G14",
+            "position_x": 897,
+            "position_y": 594,
+            "dimension_x": 63,
+            "dimension_y": 126,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgrey"
+            },
+            "data": {
+                "header": "G14"
+            }
+        },
+        "RACKG15": {
+            "name": "Rack G15",
+            "position_x": 959,
+            "position_y": 594,
+            "dimension_x": 63,
+            "dimension_y": 126,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgrey"
+            },
+            "data": {
+                "header": "G15"
+            }
+        },
+        "RACKG16": {
+            "name": "Rack G16",
+            "position_x": 1022,
+            "position_y": 594,
+            "dimension_x": 63,
+            "dimension_y": 126,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgrey"
+            },
+            "data": {
+                "header": "G16"
+            }
+        },
+        "RACKG17": {
+            "name": "Rack G17",
+            "position_x": 1084,
+            "position_y": 594,
+            "dimension_x": 63,
+            "dimension_y": 126,
+            "style": {
+                "line_width": 2,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "14",
+                "font_color": "auto",
+                "color": "lightgrey"
+            },
+            "data": {
+                "header": "G17"
+            }
+        },
+        
+        
+
+        "DOOR-F01": {
+            "name": "Door F01",
+            "position_x": 0,
+            "position_y": 341,
+            "dimension_x": 82,
+            "dimension_y": 4,
+            "style": {
+                "line_width": 2,
+                "line_color": "#262626",
+                "color": "#262626"
+            }
+        },
+        "DOOR-F17": {
+            "name": "Door F17",
+            "position_x": 1149,
+            "position_y": 341,
+            "dimension_x": 89,
+            "dimension_y": 4,
+            "style": {
+                "line_width": 2,
+                "line_color": "#262626",
+                "color": "#262626"
+            }
+        },
+        "ROOM-BORDER": {
+            "name": "ROOM BORDER",
+            "position_x": 0,
+            "position_y": 0,
+            "dimension_x": 1239,
+            "dimension_y": 805,
+            "style": {
+                "line_width": 2,
+                "line_color": "#262626",
+                "color": "transparent"
+            }
+        },
+
+        
+
+        "RACKG01-A": {
+            "name": "Rack G01 Feed A",
+            "position_x": 91,
+            "position_y": 602,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 1,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['glo-g01-a.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "threshold_value": "( ['glo-g01-a.ippdu.uk.clara.net'].sensors[6].sensor_value + ['glo-g01-b.ippdu.uk.clara.net'].sensors[6].sensor_value )",
+                "url": "https://iss.eu.clara.net/device/device=3139/tab=health/metric=current/",
+                "image": "['glo-g01-a.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACKG01-B": {
+            "name": "Rack G01 Feed B",
+            "position_x": 91,
+            "position_y": 682,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 1,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['glo-g01-b.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "threshold_value": "( ['glo-g01-a.ippdu.uk.clara.net'].sensors[7].sensor_value + ['glo-g01-b.ippdu.uk.clara.net'].sensors[7].sensor_value )",
+                "url": "https://iss.eu.clara.net/device/device=3419/tab=health/metric=current/",
+                "image": "['glo-g01-b.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACKG02-A": {
+            "name": "Rack G02 Feed A",
+            "position_x": 154,
+            "position_y": 602,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 1,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['glo-g02-a.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "threshold_value": "( ['glo-g02-a.ippdu.uk.clara.net'].sensors[6].sensor_value + ['glo-g02-b.ippdu.uk.clara.net'].sensors[6].sensor_value )",
+                "url": "https://iss.eu.clara.net/device/device=3140/tab=health/metric=current/",
+                "image": "['glo-g02-a.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACKG02-B": {
+            "name": "Rack G02 Feed B",
+            "position_x": 154,
+            "position_y": 682,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 1,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['glo-g02-b.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "threshold_value": "( ['glo-g02-a.ippdu.uk.clara.net'].sensors[7].sensor_value + ['glo-g02-b.ippdu.uk.clara.net'].sensors[7].sensor_value )",
+                "url": "https://iss.eu.clara.net/device/device=3141/tab=health/metric=current/",
+                "image": "['glo-g02-b.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACAKG03-A": {
+            "name": "Rack G03 Feed A",
+            "position_x": 216,
+            "position_y": 602,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 1,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['glo-g03-a.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "threshold_value": "( ['glo-g03-a.ippdu.uk.clara.net'].sensors[6].sensor_value + ['glo-g03-b.ippdu.uk.clara.net'].sensors[6].sensor_value )",
+                "url": "https://iss.eu.clara.net/device/device=3142/tab=health/metric/current/",
+                "image": "['glo-g03-a.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACKG03-B": {
+            "name": "Rack G03 Feed B",
+            "position_x": 216,
+            "position_y": 682,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 1,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['glo-g03-b.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "threshold_value": "( ['glo-g03-a.ippdu.uk.clara.net'].sensors[7].sensor_value + ['glo-g03-b.ippdu.uk.clara.net'].sensors[7].sensor_value )",
+                "url": "https://iss.eu.clara.net/device/device=3143/tab=health/metric/current/",
+                "image": "['glo-g03-b.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACKG04-A": {
+            "name": "Rack G04 Feed A",
+            "position_x": 279,
+            "position_y": 602,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 1,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['glo-g04-a.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "threshold_value": "( ['glo-g04-a.ippdu.uk.clara.net'].sensors[6].sensor_value + ['glo-g04-b.ippdu.uk.clara.net'].sensors[6].sensor_value )",
+                "url": "https://iss.eu.clara.net/device/device=3144/tab=health/metric/current/",
+                "image": "['glo-g04-a.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACKG04-B": {
+            "name": "Rack G04 Feed B",
+            "position_x": 279,
+            "position_y": 682,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 1,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['glo-g04-b.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "threshold_value": "( ['glo-g04-a.ippdu.uk.clara.net'].sensors[7].sensor_value + ['glo-g04-b.ippdu.uk.clara.net'].sensors[7].sensor_value )",
+                "url": "https://iss.eu.clara.net/device/device=3145/tab=health/metric/current/",
+                "image": "['glo-g04-b.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACKG05-A": {
+            "name": "Rack G05 Feed A",
+            "position_x": 341,
+            "position_y": 602,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 1,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['glo-g05-a.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "threshold_value": "( ['glo-g05-a.ippdu.uk.clara.net'].sensors[6].sensor_value + ['glo-g05-b.ippdu.uk.clara.net'].sensors[6].sensor_value )",
+                "url": "https://iss.eu.clara.net/device/device=3146/tab=health/metric/current/",
+                "image": "['glo-g05-a.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACKG05-B": {
+            "name": "Rack G05 Feed B",
+            "position_x": 341,
+            "position_y": 682,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 1,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['glo-g05-b.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "threshold_value": "( ['glo-g05-a.ippdu.uk.clara.net'].sensors[7].sensor_value + ['glo-g05-b.ippdu.uk.clara.net'].sensors[7].sensor_value )",
+                "url": "https://iss.eu.clara.net/device/device=3147/tab=health/metric/current/",
+                "image": "['glo-g05-b.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACKG06-A": {
+            "name": "Rack G06 Feed A",
+            "position_x": 403,
+            "position_y": 602,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 1,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['glo-g06-a.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "threshold_value": "( ['glo-g06-a.ippdu.uk.clara.net'].sensors[6].sensor_value + ['glo-g06-b.ippdu.uk.clara.net'].sensors[6].sensor_value )",
+                "url": "https://iss.eu.clara.net/device/device=3148/tab=health/metric/current/",
+                "image": "['glo-g06-a.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACKG06-B": {
+            "name": "Rack G06 Feed B",
+            "position_x": 403,
+            "position_y": 682,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 1,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['glo-g06-b.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "threshold_value": "( ['glo-g06-a.ippdu.uk.clara.net'].sensors[7].sensor_value + ['glo-g06-b.ippdu.uk.clara.net'].sensors[7].sensor_value )",
+                "url": "https://iss.eu.clara.net/device/device=3149/tab=health/metric/current/",
+                "image": "['glo-g06-b.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACKG07-A": {
+            "name": "Rack G07 Feed A",
+            "position_x": 466,
+            "position_y": 602,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 1,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['glo-g07-a.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "threshold_value": "( ['glo-g07-a.ippdu.uk.clara.net'].sensors[6].sensor_value + ['glo-g07-b.ippdu.uk.clara.net'].sensors[6].sensor_value )",
+                "url": "https://iss.eu.clara.net/device/device=3150/tab=health/metric/current/",
+                "image": "['glo-g07-a.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACKG07-B": {
+            "name": "Rack G07 Feed B",
+            "position_x": 466,
+            "position_y": 682,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 1,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['glo-g07-b.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "threshold_value": "( ['glo-g07-a.ippdu.uk.clara.net'].sensors[7].sensor_value + ['glo-g07-b.ippdu.uk.clara.net'].sensors[7].sensor_value )",
+                "url": "https://iss.eu.clara.net/device/device=3151/tab=health/metric/current/",
+                "image": "['glo-g07-b.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACKG08-A": {
+            "name": "Rack G08 Feed A",
+            "position_x": 528,
+            "position_y": 602,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 1,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['glo-g08-a.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "threshold_value": "( ['glo-g08-a.ippdu.uk.clara.net'].sensors[6].sensor_value + ['glo-g08-b.ippdu.uk.clara.net'].sensors[6].sensor_value )",
+                "url": "https://iss.eu.clara.net/device/device=3152/tab=health/metric/current/",
+                "image": "['glo-g08-a.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACKG08-B": {
+            "name": "Rack G08 Feed B",
+            "position_x": 528,
+            "position_y": 682,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 1,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['glo-g08-b.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "threshold_value": "( ['glo-g08-a.ippdu.uk.clara.net'].sensors[7].sensor_value + ['glo-g08-b.ippdu.uk.clara.net'].sensors[7].sensor_value )",
+                "url": "https://iss.eu.clara.net/device/device=3153/tab=health/metric/current/",
+                "image": "['glo-g08-b.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACKG09-A": {
+            "name": "Rack G09 Feed A",
+            "position_x": 591,
+            "position_y": 602,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 1,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['glo-g09-a.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "threshold_value": "( ['glo-g09-a.ippdu.uk.clara.net'].sensors[6].sensor_value + ['glo-g09-b.ippdu.uk.clara.net'].sensors[6].sensor_value )",
+                "url": "https://iss.eu.clara.net/device/device=3154/tab=health/metric/current/",
+                "image": "['glo-g09-a.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACKG09-B": {
+            "name": "Rack G09 Feed B",
+            "position_x": 591,
+            "position_y": 682,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 1,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['glo-g09-b.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "threshold_value": "( ['glo-g09-a.ippdu.uk.clara.net'].sensors[7].sensor_value + ['glo-g09-b.ippdu.uk.clara.net'].sensors[7].sensor_value )",
+                "url": "https://iss.eu.clara.net/device/device=3155/tab=health/metric/current/",
+                "image": "['glo-g09-b.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACKG10-A": {
+            "name": "Rack G10 Feed A",
+            "position_x": 653,
+            "position_y": 602,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 1,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['glo-g10-a.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "threshold_value": "( ['glo-g10-a.ippdu.uk.clara.net'].sensors[6].sensor_value + ['glo-g10-b.ippdu.uk.clara.net'].sensors[6].sensor_value )",
+                "url": "https://iss.eu.clara.net/device/device=3156/tab=health/metric/current/",
+                "image": "['glo-g10-a.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACKG10-B": {
+            "name": "Rack G10 Feed B",
+            "position_x": 653,
+            "position_y": 682,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 1,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['glo-g10-b.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "threshold_value": "( ['glo-g10-a.ippdu.uk.clara.net'].sensors[7].sensor_value + ['glo-g10-b.ippdu.uk.clara.net'].sensors[7].sensor_value )",
+                "url": "https://iss.eu.clara.net/device/device=3157/tab=health/metric/current/",
+                "image": "['glo-g10-b.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACKG11-A": {
+            "name": "Rack G11 Feed A",
+            "position_x": 716,
+            "position_y": 602,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 1,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['glo-g11-a.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "threshold_value": "( ['glo-g11-a.ippdu.uk.clara.net'].sensors[6].sensor_value + ['glo-g11-b.ippdu.uk.clara.net'].sensors[6].sensor_value )",
+                "url": "https://iss.eu.clara.net/device/device=3158/tab=health/metric/current/",
+                "image": "['glo-g11-a.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACKG11-B": {
+            "name": "Rack G11 Feed B",
+            "position_x": 716,
+            "position_y": 682,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 1,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['glo-g11-b.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "threshold_value": "( ['glo-g11-a.ippdu.uk.clara.net'].sensors[7].sensor_value + ['glo-g11-b.ippdu.uk.clara.net'].sensors[7].sensor_value )",
+                "url": "https://iss.eu.clara.net/device/device=3159/tab=health/metric/current/",
+                "image": "['glo-g11-b.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACKG12-A": {
+            "name": "Rack G12 Feed A",
+            "position_x": 779,
+            "position_y": 602,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 1,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['glo-g12-a.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "threshold_value": "( ['glo-g12-a.ippdu.uk.clara.net'].sensors[6].sensor_value + ['glo-g12-b.ippdu.uk.clara.net'].sensors[6].sensor_value )",
+                "url": "https://iss.eu.clara.net/device/device=3160/tab=health/metric/current/",
+                "image": "['glo-g12-a.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACKG12-B": {
+            "name": "Rack G12 Feed B",
+            "position_x": 779,
+            "position_y": 682,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 1,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['glo-g12-b.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "threshold_value": "( ['glo-g12-a.ippdu.uk.clara.net'].sensors[7].sensor_value + ['glo-g12-b.ippdu.uk.clara.net'].sensors[7].sensor_value )",
+                "url": "https://iss.eu.clara.net/device/device=3161/tab=health/metric/current/",
+                "image": "['glo-g12-b.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACKG13-A": {
+            "name": "Rack G13 Feed A",
+            "position_x": 841,
+            "position_y": 602,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 1,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['glo-g13-a.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "threshold_value": "( ['glo-g13-a.ippdu.uk.clara.net'].sensors[6].sensor_value + ['glo-g13-b.ippdu.uk.clara.net'].sensors[6].sensor_value )",
+                "url": "https://iss.eu.clara.net/device/device=3162/tab=health/metric/current/",
+                "image": "['glo-g13-a.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACKG13-B": {
+            "name": "Rack G13 Feed B",
+            "position_x": 841,
+            "position_y": 682,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 1,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['glo-g13-b.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "threshold_value": "( ['glo-g13-a.ippdu.uk.clara.net'].sensors[7].sensor_value + ['glo-g13-b.ippdu.uk.clara.net'].sensors[7].sensor_value )",
+                "url": "https://iss.eu.clara.net/device/device=3163/tab=health/metric/current/",
+                "image": "['glo-g13-b.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACKG14-A": {
+            "name": "Rack G14 Feed A",
+            "position_x": 903,
+            "position_y": 602,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 1,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['glo-g14-a.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "threshold_value": "( ['glo-g14-a.ippdu.uk.clara.net'].sensors[6].sensor_value + ['glo-g14-b.ippdu.uk.clara.net'].sensors[6].sensor_value )",
+                "url": "https://iss.eu.clara.net/device/device=3164/tab=health/metric/current/",
+                "image": "['glo-g14-a.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RAKG14-B": {
+            "name": "Rack G14 Feed B",
+            "position_x": 903,
+            "position_y": 682,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 1,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['glo-g14-b.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "threshold_value": "( ['glo-g14-a.ippdu.uk.clara.net'].sensors[7].sensor_value + ['glo-g14-b.ippdu.uk.clara.net'].sensors[7].sensor_value )",
+                "url": "https://iss.eu.clara.net/device/device=3165/tab=health/metric/current/",
+                "image": "['glo-g14-b.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACKG15-A": {
+            "name": "Rack G15 Feed A",
+            "position_x": 966,
+            "position_y": 602,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 1,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['glo-g15-a.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "threshold_value": "( ['glo-g15-a.ippdu.uk.clara.net'].sensors[6].sensor_value + ['glo-g15-b.ippdu.uk.clara.net'].sensors[6].sensor_value )",
+                "url": "https://iss.eu.clara.net/device/device=3166/tab=health/metric/current/",
+                "image": "['glo-g15-a.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACKG15-B": {
+            "name": "Rack G15 Feed B",
+            "position_x": 966,
+            "position_y": 682,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 1,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['glo-g15-b.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "threshold_value": "( ['glo-g15-a.ippdu.uk.clara.net'].sensors[7].sensor_value + ['glo-g15-b.ippdu.uk.clara.net'].sensors[7].sensor_value )",
+                "url": "https://iss.eu.clara.net/device/device=3167/tab=health/metric/current/",
+                "image": "['glo-g15-b.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACKG16-A": {
+            "name": "Rack G16 Feed A",
+            "position_x": 1028,
+            "position_y": 602,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 1,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['glo-g16-a.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "threshold_value": "( ['glo-g16-a.ippdu.uk.clara.net'].sensors[6].sensor_value + ['glo-g16-b.ippdu.uk.clara.net'].sensors[6].sensor_value )",
+                "url": "https://iss.eu.clara.net/device/device=3168/tab=health/metric/current/",
+                "image": "['glo-g16-a.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACKG16-B": {
+            "name": "Rack G16 Feed B",
+            "position_x": 1028,
+            "position_y": 682,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 1,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['glo-g16-b.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "threshold_value": "( ['glo-g16-a.ippdu.uk.clara.net'].sensors[7].sensor_value + ['glo-g16-b.ippdu.uk.clara.net'].sensors[7].sensor_value )",
+                "url": "https://iss.eu.clara.net/device/device=3169/tab=health/metric/current/",
+                "image": "['glo-g16-b.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACKG17-A": {
+            "name": "Rack G17 Feed A",
+            "position_x": 1091,
+            "position_y": 602,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 1,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['glo-g17-a.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "threshold_value": "( ['glo-g17-a.ippdu.uk.clara.net'].sensors[6].sensor_value + ['glo-g17-b.ippdu.uk.clara.net'].sensors[6].sensor_value )",
+                "url": "https://iss.eu.clara.net/device/device=3170/tab=health/metric/current/",
+                "image": "['glo-g17-a.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACKG17-B": {
+            "name": "Rack G17 Feed B",
+            "position_x": 1091,
+            "position_y": 682,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 1,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['glo-g17-b.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "threshold_value": "( ['glo-g17-a.ippdu.uk.clara.net'].sensors[7].sensor_value + ['glo-g17-b.ippdu.uk.clara.net'].sensors[7].sensor_value )",
+                "url": "https://iss.eu.clara.net/device/device=3171/tab=health/metric/current/",
+                "image": "['glo-g17-b.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACKF01-A": {
+            "name": "Rack F01 Feed A",
+            "position_x": 91,
+            "position_y": 351,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 1,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['glo-f01-a.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "threshold_value": "( ['glo-f01-a.ippdu.uk.clara.net'].sensors[6].sensor_value + ['glo-f01-b.ippdu.uk.clara.net'].sensors[6].sensor_value )",
+                "url": "https://iss.eu.clara.net/device/device=3146/tab=health/metric/current/",
+                "image": "['glo-f01-a.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACKF01-B": {
+            "name": "Rack F01 Feed B",
+            "position_x": 91,
+            "position_y": 431,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 1,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['glo-f01-b.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "threshold_value": "( ['glo-f01-a.ippdu.uk.clara.net'].sensors[7].sensor_value + ['glo-f01-b.ippdu.uk.clara.net'].sensors[7].sensor_value )",
+                "url": "https://iss.eu.clara.net/device/device=3147/tab=health/metric/current/",
+                "image": "['glo-f01-b.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACKF02-A": {
+            "name": "Rack F02 Feed A",
+            "position_x": 153,
+            "position_y": 351,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 1,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['glo-f02-a.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "threshold_value": "( ['glo-f02-a.ippdu.uk.clara.net'].sensors[6].sensor_value + ['glo-f02-b.ippdu.uk.clara.net'].sensors[6].sensor_value )",
+                "url": "https://iss.eu.clara.net/device/device=3148/tab=health/metric/current/",
+                "image": "['glo-f02-a.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACKF02-B": {
+            "name": "Rack F02 Feed B",
+            "position_x": 153,
+            "position_y": 431,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 1,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['glo-f02-b.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "threshold_value": "( ['glo-f02-a.ippdu.uk.clara.net'].sensors[7].sensor_value + ['glo-f02-b.ippdu.uk.clara.net'].sensors[7].sensor_value )",
+                "url": "https://iss.eu.clara.net/device/device=3149/tab=health/metric/current/",
+                "image": "['glo-f02-b.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACKF03-A": {
+            "name": "Rack F03 Feed A",
+            "position_x": 216,
+            "position_y": 351,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 1,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['glo-f03-a.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "threshold_value": "( ['glo-f03-a.ippdu.uk.clara.net'].sensors[6].sensor_value + ['glo-f03-b.ippdu.uk.clara.net'].sensors[6].sensor_value )",
+                "url": "https://iss.eu.clara.net/device/device=3150/tab=health/metric/current/",
+                "image": "['glo-f03-a.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACKF03-B": {
+            "name": "Rack F03 Feed B",
+            "position_x": 216,
+            "position_y": 431,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 1,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['glo-f03-b.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "threshold_value": "( ['glo-f03-a.ippdu.uk.clara.net'].sensors[7].sensor_value + ['glo-f03-b.ippdu.uk.clara.net'].sensors[7].sensor_value )",
+                "url": "https://iss.eu.clara.net/device/device=3151/tab=health/metric/current/",
+                "image": "['glo-f03-b.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACKF04-A": {
+            "name": "Rack F04 Feed A",
+            "position_x": 279,
+            "position_y": 351,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 1,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['glo-f04-a.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "threshold_value": "( ['glo-f04-a.ippdu.uk.clara.net'].sensors[6].sensor_value + ['glo-f04-b.ippdu.uk.clara.net'].sensors[6].sensor_value )",
+                "url": "https://iss.eu.clara.net/device/device=3152/tab=health/metric/current/",
+                "image": "['glo-f04-a.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACKF04-B": {
+            "name": "Rack F04 Feed B",
+            "position_x": 279,
+            "position_y": 431,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 1,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['glo-f04-b.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "threshold_value": "( ['glo-f04-a.ippdu.uk.clara.net'].sensors[7].sensor_value + ['glo-f04-b.ippdu.uk.clara.net'].sensors[7].sensor_value )",
+                "url": "https://iss.eu.clara.net/device/device=3153/tab=health/metric/current/",
+                "image": "['glo-f04-b.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACKF05-A": {
+            "name": "Rack F05 Feed A",
+            "position_x": 341,
+            "position_y": 351,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 1,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['glo-f05-a.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "threshold_value": "( ['glo-f05-a.ippdu.uk.clara.net'].sensors[6].sensor_value + ['glo-f05-b.ippdu.uk.clara.net'].sensors[6].sensor_value )",
+                "url": "https://iss.eu.clara.net/device/device=3154/tab=health/metric/current/",
+                "image": "['glo-f05-a.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACKF05-B": {
+            "name": "Rack F05 Feed B",
+            "position_x": 341,
+            "position_y": 431,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 1,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['glo-f05-b.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "threshold_value": "( ['glo-f05-a.ippdu.uk.clara.net'].sensors[7].sensor_value + ['glo-f05-b.ippdu.uk.clara.net'].sensors[7].sensor_value )",
+                "url": "https://iss.eu.clara.net/device/device=3155/tab=health/metric/current/",
+                "image": "['glo-f05-b.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACKF06-A": {
+            "name": "Rack F06 Feed A",
+            "position_x": 404,
+            "position_y": 351,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 1,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['glo-f06-a.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "threshold_value": "( ['glo-f06-a.ippdu.uk.clara.net'].sensors[6].sensor_value + ['glo-f06-b.ippdu.uk.clara.net'].sensors[6].sensor_value )",
+                "url": "https://iss.eu.clara.net/device/device=3156/tab=health/metric/current/",
+                "image": "['glo-f06-a.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACKF06-B": {
+            "name": "Rack F06 Feed B",
+            "position_x": 404,
+            "position_y": 431,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 1,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['glo-f06-b.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "threshold_value": "( ['glo-f06-a.ippdu.uk.clara.net'].sensors[7].sensor_value + ['glo-f06-b.ippdu.uk.clara.net'].sensors[7].sensor_value )",
+                "url": "https://iss.eu.clara.net/device/device=3157/tab=health/metric/current/",
+                "image": "['glo-f06-b.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACKF07-A": {
+            "name": "Rack F07 Feed A",
+            "position_x": 467,
+            "position_y": 351,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 1,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['glo-f07-a.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "threshold_value": "( ['glo-f07-a.ippdu.uk.clara.net'].sensors[6].sensor_value + ['glo-f07-b.ippdu.uk.clara.net'].sensors[6].sensor_value )",
+                "url": "https://iss.eu.clara.net/device/device=3158/tab=health/metric/current/",
+                "image": "['glo-f07-a.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACKF07-B": {
+            "name": "Rack F07 Feed B",
+            "position_x": 467,
+            "position_y": 431,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 1,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['glo-f07-b.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "threshold_value": "( ['glo-f07-a.ippdu.uk.clara.net'].sensors[7].sensor_value + ['glo-f07-b.ippdu.uk.clara.net'].sensors[7].sensor_value )",
+                "url": "https://iss.eu.clara.net/device/device=3159/tab=health/metric/current/",
+                "image": "['glo-f07-b.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACKF08-A": {
+            "name": "Rack F08 Feed A",
+            "position_x": 528,
+            "position_y": 351,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 1,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['glo-f08-a.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "threshold_value": "( ['glo-f08-a.ippdu.uk.clara.net'].sensors[6].sensor_value + ['glo-f08-b.ippdu.uk.clara.net'].sensors[6].sensor_value )",
+                "url": "https://iss.eu.clara.net/device/device=3160/tab=health/metric/current/",
+                "image": "['glo-f08-a.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACKF08-B": {
+            "name": "Rack F08 Feed B",
+            "position_x": 528,
+            "position_y": 431,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 1,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['glo-f08-b.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "threshold_value": "( ['glo-f08-a.ippdu.uk.clara.net'].sensors[7].sensor_value + ['glo-f08-b.ippdu.uk.clara.net'].sensors[7].sensor_value )",
+                "url": "https://iss.eu.clara.net/device/device=3161/tab=health/metric/current/",
+                "image": "['glo-f08-b.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACKF09-A": {
+            "name": "Rack F09 Feed A",
+            "position_x": 591,
+            "position_y": 351,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 1,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['glo-f09-a.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "threshold_value": "( ['glo-f09-a.ippdu.uk.clara.net'].sensors[6].sensor_value + ['glo-f09-b.ippdu.uk.clara.net'].sensors[6].sensor_value )",
+                "url": "https://iss.eu.clara.net/device/device=3162/tab=health/metric/current/",
+                "image": "['glo-f09-a.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACKF09-B": {
+            "name": "Rack F09 Feed B",
+            "position_x": 591,
+            "position_y": 431,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 1,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['glo-f09-b.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "threshold_value": "( ['glo-f09-a.ippdu.uk.clara.net'].sensors[7].sensor_value + ['glo-f09-b.ippdu.uk.clara.net'].sensors[7].sensor_value )",
+                "url": "https://iss.eu.clara.net/device/device=3163/tab=health/metric/current/",
+                "image": "['glo-f09-b.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACKF10-A": {
+            "name": "Rack F10 Feed A",
+            "position_x": 654,
+            "position_y": 351,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 1,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['glo-f10-a.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "threshold_value": "( ['glo-f10-a.ippdu.uk.clara.net'].sensors[6].sensor_value + ['glo-f10-b.ippdu.uk.clara.net'].sensors[6].sensor_value )",
+                "url": "https://iss.eu.clara.net/device/device=3164/tab=health/metric/current/",
+                "image": "['glo-f10-a.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACKF10-B": {
+            "name": "Rack F10 Feed B",
+            "position_x": 654,
+            "position_y": 431,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 1,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['glo-f10-b.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "threshold_value": "( ['glo-f10-a.ippdu.uk.clara.net'].sensors[7].sensor_value + ['glo-f10-b.ippdu.uk.clara.net'].sensors[7].sensor_value )",
+                "url": "https://iss.eu.clara.net/device/device=3165/tab=health/metric/current/",
+                "image": "['glo-f10-b.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACKF11-A": {
+            "name": "Rack F11 Feed A",
+            "position_x": 716,
+            "position_y": 351,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 1,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['glo-f11-a.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "threshold_value": "( ['glo-f11-a.ippdu.uk.clara.net'].sensors[6].sensor_value + ['glo-f11-b.ippdu.uk.clara.net'].sensors[6].sensor_value )",
+                "url": "https://iss.eu.clara.net/device/device=3166/tab=health/metric/current/",
+                "image": "['glo-f11-a.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACKF11-B": {
+            "name": "Rack F11 Feed B",
+            "position_x": 716,
+            "position_y": 431,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 1,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['glo-f11-b.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "threshold_value": "( ['glo-f11-a.ippdu.uk.clara.net'].sensors[7].sensor_value + ['glo-f11-b.ippdu.uk.clara.net'].sensors[7].sensor_value )",
+                "url": "https://iss.eu.clara.net/device/device=3167/tab=health/metric/current/",
+                "image": "['glo-f11-b.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACKF12-A": {
+            "name": "Rack F12 Feed A",
+            "position_x": 779,
+            "position_y": 351,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 1,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['glo-f12-a.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "threshold_value": "( ['glo-f12-a.ippdu.uk.clara.net'].sensors[6].sensor_value + ['glo-f12-b.ippdu.uk.clara.net'].sensors[6].sensor_value )",
+                "url": "https://iss.eu.clara.net/device/device=3168/tab=health/metric/current/",
+                "image": "['glo-f12-a.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACKF12-B": {
+            "name": "Rack F12 Feed B",
+            "position_x": 779,
+            "position_y": 431,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 1,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['glo-f12-b.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "threshold_value": "( ['glo-f12-a.ippdu.uk.clara.net'].sensors[7].sensor_value + ['glo-f12-b.ippdu.uk.clara.net'].sensors[7].sensor_value )",
+                "url": "https://iss.eu.clara.net/device/device=3169/tab=health/metric/current/",
+                "image": "['glo-f12-b.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACKF13-A": {
+            "name": "Rack F13 Feed A",
+            "position_x": 842,
+            "position_y": 351,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 1,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['glo-f13-a.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "threshold_value": "( ['glo-f13-a.ippdu.uk.clara.net'].sensors[6].sensor_value + ['glo-f13-b.ippdu.uk.clara.net'].sensors[6].sensor_value )",
+                "url": "https://iss.eu.clara.net/device/device=3170/tab=health/metric/current/",
+                "image": "['glo-f13-a.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACKF13-B": {
+            "name": "Rack F13 Feed B",
+            "position_x": 842,
+            "position_y": 431,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 1,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['glo-f13-b.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "threshold_value": "( ['glo-f13-a.ippdu.uk.clara.net'].sensors[7].sensor_value + ['glo-f13-b.ippdu.uk.clara.net'].sensors[7].sensor_value )",
+                "url": "https://iss.eu.clara.net/device/device=3171/tab=health/metric/current/",
+                "image": "['glo-f13-b.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACKF14-A": {
+            "name": "Rack F14 Feed A",
+            "position_x": 903,
+            "position_y": 351,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 1,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['glo-f14-a.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "threshold_value": "( ['glo-f14-a.ippdu.uk.clara.net'].sensors[6].sensor_value + ['glo-f14-b.ippdu.uk.clara.net'].sensors[6].sensor_value )",
+                "url": "https://iss.eu.clara.net/device/device=3172/tab=health/metric/current/",
+                "image": "['glo-f14-a.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACKF14-B": {
+            "name": "Rack F14 Feed B",
+            "position_x": 903,
+            "position_y": 431,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 1,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['glo-f14-b.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "threshold_value": "( ['glo-f14-a.ippdu.uk.clara.net'].sensors[7].sensor_value + ['glo-f14-b.ippdu.uk.clara.net'].sensors[7].sensor_value )",
+                "url": "https://iss.eu.clara.net/device/device=3173/tab=health/metric/current/",
+                "image": "['glo-f14-b.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACKF15-A": {
+            "name": "Rack F15 Feed A",
+            "position_x": 966,
+            "position_y": 351,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 1,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['glo-f15-a.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "threshold_value": "( ['glo-f15-a.ippdu.uk.clara.net'].sensors[6].sensor_value + ['glo-f15-b.ippdu.uk.clara.net'].sensors[6].sensor_value )",
+                "url": "https://iss.eu.clara.net/device/device=3174/tab=health/metric/current/",
+                "image": "['glo-f15-a.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACKF15-B": {
+            "name": "Rack F15 Feed B",
+            "position_x": 966,
+            "position_y": 431,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 1,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['glo-f15-b.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "threshold_value": "( ['glo-f15-a.ippdu.uk.clara.net'].sensors[7].sensor_value + ['glo-f15-b.ippdu.uk.clara.net'].sensors[7].sensor_value )",
+                "url": "https://iss.eu.clara.net/device/device=3175/tab=health/metric/current/",
+                "image": "['glo-f15-b.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACKF16-A": {
+            "name": "Rack F16 Feed A",
+            "position_x": 1028,
+            "position_y": 351,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 1,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['glo-f16-a.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "threshold_value": "( ['glo-f16-a.ippdu.uk.clara.net'].sensors[6].sensor_value + ['glo-f16-b.ippdu.uk.clara.net'].sensors[6].sensor_value )",
+                "url": "https://iss.eu.clara.net/device/device=3176/tab=health/metric/current/",
+                "image": "['glo-f16-a.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACKF16-B": {
+            "name": "Rack F16 Feed B",
+            "position_x": 1028,
+            "position_y": 431,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 1,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['glo-f16-b.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "threshold_value": "( ['glo-f16-a.ippdu.uk.clara.net'].sensors[7].sensor_value + ['glo-f16-b.ippdu.uk.clara.net'].sensors[7].sensor_value )",
+                "url": "https://iss.eu.clara.net/device/device=3177/tab=health/metric/current/",
+                "image": "['glo-f16-b.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACKF17-A": {
+            "name": "Rack F17 Feed A",
+            "position_x": 1091,
+            "position_y": 351,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 1,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['glo-f17-a.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "threshold_value": "( ['glo-f17-a.ippdu.uk.clara.net'].sensors[6].sensor_value + ['glo-f17-b.ippdu.uk.clara.net'].sensors[6].sensor_value )",
+                "url": "https://iss.eu.clara.net/device/device=3178/tab=health/metric/current/",
+                "image": "['glo-f17-a.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACKF17-B": {
+            "name": "Rack F17 Feed B",
+            "position_x": 1091,
+            "position_y": 431,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 1,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['glo-f17-b.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "threshold_value": "( ['glo-f17-a.ippdu.uk.clara.net'].sensors[7].sensor_value + ['glo-f17-b.ippdu.uk.clara.net'].sensors[7].sensor_value )",
+                "url": "https://iss.eu.clara.net/device/device=3179/tab=health/metric/current/",
+                "image": "['glo-f17-b.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACKE01-A": {
+            "name": "Rack E01 Feed A",
+            "position_x": 91,
+            "position_y": 101,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 1,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['glo-e01-a.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "threshold_value": "( ['glo-e01-a.ippdu.uk.clara.net'].sensors[6].sensor_value + ['glo-e01-b.ippdu.uk.clara.net'].sensors[6].sensor_value )",
+                "url": "https://iss.eu.clara.net/device/device=3152/tab=health/metric/current/",
+                "image": "['glo-e01-a.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACKE01-B": {
+            "name": "Rack E01 Feed B",
+            "position_x": 91,
+            "position_y": 181,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 1,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['glo-e01-b.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "threshold_value": "( ['glo-e01-a.ippdu.uk.clara.net'].sensors[7].sensor_value + ['glo-e01-b.ippdu.uk.clara.net'].sensors[7].sensor_value )",
+                "url": "https://iss.eu.clara.net/device/device=3153/tab=health/metric/current/",
+                "image": "['glo-e01-b.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACKE02-A": {
+            "name": "Rack E02 Feed A",
+            "position_x": 154,
+            "position_y": 101,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 1,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['glo-e02-a.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "threshold_value": "( ['glo-e02-a.ippdu.uk.clara.net'].sensors[6].sensor_value + ['glo-e02-b.ippdu.uk.clara.net'].sensors[6].sensor_value )",
+                "url": "https://iss.eu.clara.net/device/device=3154/tab=health/metric/current/",
+                "image": "['glo-e02-a.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+
+        "RACKE02-B": {
+            "name": "Rack E02 Feed B",
+            "position_x": 154,
+            "position_y": 181,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 1,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['glo-e02-b.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "threshold_value": "( ['glo-e02-a.ippdu.uk.clara.net'].sensors[7].sensor_value + ['glo-e02-b.ippdu.uk.clara.net'].sensors[7].sensor_value )",
+                "url": "https://iss.eu.clara.net/device/device=3155/tab=health/metric/current/",
+                "image": "['glo-e02-b.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACKE03-A": {
+            "name": "Rack E03 Feed A",
+            "position_x": 216,
+            "position_y": 101,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 1,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['glo-e03-a.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "threshold_value": "( ['glo-e03-a.ippdu.uk.clara.net'].sensors[6].sensor_value + ['glo-e03-b.ippdu.uk.clara.net'].sensors[6].sensor_value )",
+                "url": "https://iss.eu.clara.net/device/device=3156/tab=health/metric/current/",
+                "image": "['glo-e03-a.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACKE03-B": {
+            "name": "Rack E03 Feed B",
+            "position_x": 216,
+            "position_y": 181,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 1,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['glo-e03-b.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "threshold_value": "( ['glo-e03-a.ippdu.uk.clara.net'].sensors[7].sensor_value + ['glo-e03-b.ippdu.uk.clara.net'].sensors[7].sensor_value )",
+                "url": "https://iss.eu.clara.net/device/device=3157/tab=health/metric/current/",
+                "image": "['glo-e03-b.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACKE04-A": {
+            "name": "Rack E04 Feed A",
+            "position_x": 279,
+            "position_y": 101,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 1,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['glo-e04-a.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "threshold_value": "( ['glo-e04-a.ippdu.uk.clara.net'].sensors[6].sensor_value + ['glo-e04-b.ippdu.uk.clara.net'].sensors[6].sensor_value )",
+                "url": "https://iss.eu.clara.net/device/device=3158/tab=health/metric/current/",
+                "image": "['glo-e04-a.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACKE04-B": {
+            "name": "Rack E04 Feed B",
+            "position_x": 279,
+            "position_y": 181,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 1,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['glo-e04-b.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "threshold_value": "( ['glo-e04-a.ippdu.uk.clara.net'].sensors[7].sensor_value + ['glo-e04-b.ippdu.uk.clara.net'].sensors[7].sensor_value )",
+                "url": "https://iss.eu.clara.net/device/device=3159/tab=health/metric/current/",
+                "image": "['glo-e04-b.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACKE05-A": {
+            "name": "Rack E05 Feed A",
+            "position_x": 341,
+            "position_y": 101,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 1,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['glo-e05-a.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "threshold_value": "( ['glo-e05-a.ippdu.uk.clara.net'].sensors[6].sensor_value + ['glo-e05-b.ippdu.uk.clara.net'].sensors[6].sensor_value )",
+                "url": "https://iss.eu.clara.net/device/device=3160/tab=health/metric/current/",
+                "image": "['glo-e05-a.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACKE05-B": {
+            "name": "Rack E05 Feed B",
+            "position_x": 341,
+            "position_y": 181,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 1,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['glo-e05-b.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "threshold_value": "( ['glo-e05-a.ippdu.uk.clara.net'].sensors[7].sensor_value + ['glo-e05-b.ippdu.uk.clara.net'].sensors[7].sensor_value )",
+                "url": "https://iss.eu.clara.net/device/device=3161/tab=health/metric/current/",
+                "image": "['glo-e05-b.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACKE06-A": {
+            "name": "Rack E06 Feed A",
+            "position_x": 404,
+            "position_y": 101,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 1,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['glo-e06-a.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "threshold_value": "( ['glo-e06-a.ippdu.uk.clara.net'].sensors[6].sensor_value + ['glo-e06-b.ippdu.uk.clara.net'].sensors[6].sensor_value )",
+                "url": "https://iss.eu.clara.net/device/device=3162/tab=health/metric/current/",
+                "image": "['glo-e06-a.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACKE06-B": {
+            "name": "Rack E06 Feed B",
+            "position_x": 404,
+            "position_y": 181,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 1,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['glo-e06-b.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "threshold_value": "( ['glo-e06-a.ippdu.uk.clara.net'].sensors[7].sensor_value + ['glo-e06-b.ippdu.uk.clara.net'].sensors[7].sensor_value )",
+                "url": "https://iss.eu.clara.net/device/device=3163/tab=health/metric/current/",
+                "image": "['glo-e06-b.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACKE07-A": {
+            "name": "Rack E07 Feed A",
+            "position_x": 466,
+            "position_y": 101,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "draw": false,
+            "style": {
+                "line_width": 1,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['glo-e07-a.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "threshold_value": "( ['glo-e07-a.ippdu.uk.clara.net'].sensors[6].sensor_value + ['glo-e07-b.ippdu.uk.clara.net'].sensors[6].sensor_value )",
+                "url": "https://iss.eu.clara.net/device/device=3164/tab=health/metric/current/",
+                "image": "['glo-e07-a.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACKE07-B": {
+            "name": "Rack E07 Feed B",
+            "position_x": 466,
+            "position_y": 181,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "draw": false,
+            "style": {
+                "line_width": 1,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['glo-e07-b.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "threshold_value": "( ['glo-e07-a.ippdu.uk.clara.net'].sensors[7].sensor_value + ['glo-e07-b.ippdu.uk.clara.net'].sensors[7].sensor_value )",
+                "url": "https://iss.eu.clara.net/device/device=3165/tab=health/metric/current/",
+                "image": "['glo-e07-b.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACKE08-A": {
+            "name": "Rack E08 Feed A",
+            "position_x": 528,
+            "position_y": 101,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "draw": false,
+            "style": {
+                "line_width": 1,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['glo-e08-a.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "threshold_value": "( ['glo-e08-a.ippdu.uk.clara.net'].sensors[6].sensor_value + ['glo-e08-b.ippdu.uk.clara.net'].sensors[6].sensor_value )",
+                "url": "https://iss.eu.clara.net/device/device=3166/tab=health/metric/current/",
+                "image": "['glo-e08-a.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACKE08-B": {
+            "name": "Rack E08 Feed B",
+            "position_x": 528,
+            "position_y": 181,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "draw": false,
+            "style": {
+                "line_width": 1,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['glo-e08-b.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "threshold_value": "( ['glo-e08-a.ippdu.uk.clara.net'].sensors[7].sensor_value + ['glo-e08-b.ippdu.uk.clara.net'].sensors[7].sensor_value )",
+                "url": "https://iss.eu.clara.net/device/device=3167/tab=health/metric/current/",
+                "image": "['glo-e08-b.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACKE09-A": {
+            "name": "Rack E09 Feed A",
+            "position_x": 591,
+            "position_y": 101,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "draw": false,
+            "style": {
+                "line_width": 1,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['glo-e09-a.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "threshold_value": "( ['glo-e09-a.ippdu.uk.clara.net'].sensors[6].sensor_value + ['glo-e09-b.ippdu.uk.clara.net'].sensors[6].sensor_value )",
+                "url": "https://iss.eu.clara.net/device/device=3168/tab=health/metric/current/",
+                "image": "['glo-e09-a.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACKE09-B": {
+            "name": "Rack E09 Feed B",
+            "position_x": 591,
+            "position_y": 181,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "draw": false,
+            "style": {
+                "line_width": 1,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['glo-e09-b.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "threshold_value": "( ['glo-e09-a.ippdu.uk.clara.net'].sensors[7].sensor_value + ['glo-e09-b.ippdu.uk.clara.net'].sensors[7].sensor_value )",
+                "url": "https://iss.eu.clara.net/device/device=3169/tab=health/metric/current/",
+                "image": "['glo-e09-b.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACKE10-A": {
+            "name": "Rack E10 Feed A",
+            "position_x": 653,
+            "position_y": 101,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "draw": false,
+            "style": {
+                "line_width": 1,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['glo-e10-a.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "threshold_value": "( ['glo-e10-a.ippdu.uk.clara.net'].sensors[6].sensor_value + ['glo-e10-b.ippdu.uk.clara.net'].sensors[6].sensor_value )",
+                "url": "https://iss.eu.clara.net/device/device=3170/tab=health/metric/current/",
+                "image": "['glo-e10-a.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACKE10-B": {
+            "name": "Rack E10 Feed B",
+            "position_x": 653,
+            "position_y": 181,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "draw": false,
+            "style": {
+                "line_width": 1,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['glo-e10-b.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "threshold_value": "( ['glo-e10-a.ippdu.uk.clara.net'].sensors[7].sensor_value + ['glo-e10-b.ippdu.uk.clara.net'].sensors[7].sensor_value )",
+                "url": "https://iss.eu.clara.net/device/device=3171/tab=health/metric/current/",
+                "image": "['glo-e10-b.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACKE11-A": {
+            "name": "Rack E11 Feed A",
+            "position_x": 716,
+            "position_y": 101,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "draw": false,
+            "style": {
+                "line_width": 1,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['glo-e11-a.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "threshold_value": "( ['glo-e11-a.ippdu.uk.clara.net'].sensors[6].sensor_value + ['glo-e11-b.ippdu.uk.clara.net'].sensors[6].sensor_value )",
+                "url": "https://iss.eu.clara.net/device/device=3172/tab=health/metric/current/",
+                "image": "['glo-e11-a.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACKE11-B": {
+            "name": "Rack E11 Feed B",
+            "position_x": 716,
+            "position_y": 181,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "draw": false,
+            "style": {
+                "line_width": 1,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['glo-e11-b.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "threshold_value": "( ['glo-e11-a.ippdu.uk.clara.net'].sensors[7].sensor_value + ['glo-e11-b.ippdu.uk.clara.net'].sensors[7].sensor_value )",
+                "url": "https://iss.eu.clara.net/device/device=3173/tab=health/metric/current/",
+                "image": "['glo-e11-b.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACKE12-A": {
+            "name": "Rack E12 Feed A",
+            "position_x": 779,
+            "position_y": 101,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 1,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['glo-e12-a.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "threshold_value": "( ['glo-e12-a.ippdu.uk.clara.net'].sensors[6].sensor_value + ['glo-e12-b.ippdu.uk.clara.net'].sensors[6].sensor_value )",
+                "url": "https://iss.eu.clara.net/device/device=3174/tab=health/metric/current/",
+                "image": "['glo-e12-a.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACKE12-B": {
+            "name": "Rack E12 Feed B",
+            "position_x": 779,
+            "position_y": 181,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 1,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['glo-e12-b.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "threshold_value": "( ['glo-e12-a.ippdu.uk.clara.net'].sensors[7].sensor_value + ['glo-e12-b.ippdu.uk.clara.net'].sensors[7].sensor_value )",
+                "url": "https://iss.eu.clara.net/device/device=3174/tab=health/metric/current/",
+                "image": "['glo-e12-b.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACKE13-A": {
+            "name": "Rack E13 Feed A",
+            "position_x": 841,
+            "position_y": 101,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 1,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['glo-e13-a.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "threshold_value": "( ['glo-e13-a.ippdu.uk.clara.net'].sensors[6].sensor_value + ['glo-e13-b.ippdu.uk.clara.net'].sensors[6].sensor_value )",
+                "url": "https://iss.eu.clara.net/device/device=3176/tab=health/metric/current/",
+                "image": "['glo-e13-a.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACKE13-B": {
+            "name": "Rack E13 Feed B",
+            "position_x": 841,
+            "position_y": 181,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 1,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['glo-e13-b.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "threshold_value": "( ['glo-e13-a.ippdu.uk.clara.net'].sensors[7].sensor_value + ['glo-e13-b.ippdu.uk.clara.net'].sensors[7].sensor_value )",
+                "url": "https://iss.eu.clara.net/device/device=3177/tab=health/metric/current/",
+                "image": "['glo-e13-b.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACKE14-A": {
+            "name": "Rack E14 Feed A",
+            "position_x": 903,
+            "position_y": 101,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 1,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['glo-e14-a.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "threshold_value": "( ['glo-e14-a.ippdu.uk.clara.net'].sensors[6].sensor_value + ['glo-e14-b.ippdu.uk.clara.net'].sensors[6].sensor_value )",
+                "url": "https://iss.eu.clara.net/device/device=3178/tab=health/metric/current/",
+                "image": "['glo-e14-a.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACKE14-B": {
+            "name": "Rack E14 Feed B",
+            "position_x": 903,
+            "position_y": 181,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 1,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['glo-e14-b.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "threshold_value": "( ['glo-e14-a.ippdu.uk.clara.net'].sensors[7].sensor_value + ['glo-e14-b.ippdu.uk.clara.net'].sensors[7].sensor_value )",
+                "url": "https://iss.eu.clara.net/device/device=3179/tab=health/metric/current/",
+                "image": "['glo-e14-b.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACKE15-A": {
+            "name": "Rack E15 Feed A",
+            "position_x": 966,
+            "position_y": 101,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 1,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['glo-e15-a.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "threshold_value": "( ['glo-e15-a.ippdu.uk.clara.net'].sensors[6].sensor_value + ['glo-e15-b.ippdu.uk.clara.net'].sensors[6].sensor_value )",
+                "url": "https://iss.eu.clara.net/device/device=3180/tab=health/metric/current/",
+                "image": "['glo-e15-a.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACKE15-B": {
+            "name": "Rack E15 Feed B",
+            "position_x": 966,
+            "position_y": 181,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "style": {
+                "line_width": 1,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['glo-e15-b.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "threshold_value": "( ['glo-e15-a.ippdu.uk.clara.net'].sensors[7].sensor_value + ['glo-e15-b.ippdu.uk.clara.net'].sensors[7].sensor_value )",
+                "url": "https://iss.eu.clara.net/device/device=3181/tab=health/metric/current/",
+                "image": "['glo-e15-b.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACKE16-A": {
+            "name": "Rack E16 Feed A",
+            "position_x": 1028,
+            "position_y": 101,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "draw": false,
+            "style": {
+                "line_width": 1,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['glo-e16-a.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "threshold_value": "( ['glo-e16-a.ippdu.uk.clara.net'].sensors[6].sensor_value + ['glo-e16-b.ippdu.uk.clara.net'].sensors[6].sensor_value )",
+                "url": "https://iss.eu.clara.net/device/device=3182/tab=health/metric/current/",
+                "image": "['glo-e16-a.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACKE16-B": {
+            "name": "Rack E16 Feed B",
+            "position_x": 1028,
+            "position_y": 181,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "draw": false,
+            "style": {
+                "line_width": 1,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['glo-e16-b.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "threshold_value": "( ['glo-e16-a.ippdu.uk.clara.net'].sensors[7].sensor_value + ['glo-e16-b.ippdu.uk.clara.net'].sensors[7].sensor_value )",
+                "url": "https://iss.eu.clara.net/device/device=3182/tab=health/metric/current/",
+                "image": "['glo-e16-b.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACKE17-A": {
+            "name": "Rack E17 Feed A",
+            "position_x": 1091,
+            "position_y": 101,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "draw": false,
+            "style": {
+                "line_width": 1,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['glo-e17-a.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "threshold_value": "( ['glo-e17-a.ippdu.uk.clara.net'].sensors[6].sensor_value + ['glo-e17-b.ippdu.uk.clara.net'].sensors[6].sensor_value )",
+                "url": "https://iss.eu.clara.net/device/device=3183/tab=health/metric/current/",
+                "image": "['glo-e17-a.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+        "RACKE17-B": {
+            "name": "Rack E17 Feed B",
+            "position_x": 1091,
+            "position_y": 181,
+            "dimension_x": 50,
+            "dimension_y": 30,
+            "draw": false,
+            "style": {
+                "line_width": 1,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['glo-e17-b.ippdu.uk.clara.net'].sensors[0].sensor_value",
+                "value_math": "",
+                "value_float_num": 1,
+                "unit": "A",
+                "type": "power_amps",
+                "threshold_value": "( ['glo-e17-a.ippdu.uk.clara.net'].sensors[7].sensor_value + ['glo-e17-b.ippdu.uk.clara.net'].sensors[7].sensor_value )",
+                "url": "https://iss.eu.clara.net/device/device=3184/tab=health/metric/current/",
+                "image": "['glo-e17-b.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
+            }
+        },
+
+        "TEMP-E8-COLD": {
+            "name": "Rack E8 Temperature - Cold",
+            "position_x": 304,
+            "position_y": 696,
+            "dimension_x": 38,
+            "dimension_y": 15,
+            "draw": false,
+            "style": {
+                "line_width": 1,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['hod-s52-e08-a.ippdu.uk.clara.net'].sensors[8].sensor_value",
+                "value_math": null,
+                "value_float_num": 1,
+                "unit": "°C",
+                "type": "temperature_room",
+                "url": "https://iss.eu.clara.net/device/device=3410/tab=health/metric=temperature/",
+                "image": "['hod-s52-e08-a.ippdu.uk.clara.net'].sensors[8].graph.graph_full_url"
+            }
+        },
+        "HUMID-E8-COLD": {
+            "name": "Rack E8 Humidity - Cold",
+            "position_x": 304,
+            "position_y": 681,
+            "dimension_x": 38,
+            "dimension_y": 15,
+            "draw": false,
+            "style": {
+                "line_width": 1,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['hod-s52-e08-a.ippdu.uk.clara.net'].sensors[9].sensor_value",
+                "value_math": null,
+                "value_float_num": 1,
+                "unit": "%",
+                "type": "humidity_room",
+                "url": "https://iss.eu.clara.net/device/device=3410/tab=health/metric=humidity/",
+                "image": "['hod-s52-e08-a.ippdu.uk.clara.net'].sensors[9].graph.graph_full_url"
+            }
+        },
+        "TEMP-E8-HOT": {
+            "name": "Rack E8 Temperature - Hot",
+            "position_x": 304,
+            "position_y": 794,
+            "dimension_x": 38,
+            "dimension_y": 15,
+            "draw": false,
+            "style": {
+                "line_width": 1,
+                "line_color": "black",
+                "font": "monospace",
+                "font_size": "auto",
+                "font_color": "auto"
+            },
+            "data": {
+                "header": null,
+                "value": "['hod-s52-e08-b.ippdu.uk.clara.net'].sensors[8].sensor_value",
+                "value_math": null,
+                "value_float_num": 1,
+                "unit": "°C",
+                "type": "temperature_room_hot",
+                "url": "https://iss.eu.clara.net/device/device=3411/tab=health/metric=temperature/",
+                "image": "['hod-s52-e08-b.ippdu.uk.clara.net'].sensors[8].graph.graph_full_url"
+            }
+        }
+        
+    }, 
+    "Links": {
+
+    },
+    "Keys": {
+        "Racks": {
+            "title": "Rack Colours",
+            "position_x": 1275,
+            "position_y": 50,
+            "draw": true,
+            "font_color": "auto",
+            "font_size": 12,
+            "title_font_size": 18,
+            "padding": 5,
+            "box_padding": 10,
+            "entries": [
+                {"color": "black", "text": "Unused"},
+                {"color": "lightgrey", "text": "Managed"},
+                {"color": "lightgreen", "text": "Colocation"},
+                {"color": "orange", "text": "Firewalls"},
+                {"color": "#4287f5", "text": "Servers"},
+                {"color": "#cc6699", "text": "Redstor"}
+            ]
+        },
+        "PowerThresholds": {
+            "title": "Power Thresholds",
+            "position_x": 1275,
+            "position_y": 310,
+            "draw": true,
+            "font_color": "auto",
+            "font_size": 12,
+            "title_font_size": 18,
+            "padding": 5,
+            "box_padding": 10,
+            "entries": [
+                {"color": "red", "text": "< 1A"},
+                {"color": "orange", "text": "1A ≤ x < 2A"},
+                {"color": "green", "text": "2A ≤ x < 14A"},
+                {"color": "orange", "text": "14A ≤ x ≤ 15A"},
+                {"color": "red", "text": "> 15A"}
+            ]
+        },
+        "TemperatureThresholds": {
+            "title": "Cold Aisle Thresholds",
+            "position_x": 1275,
+            "position_y": 560,
+            "draw": true,
+            "font_color": "auto",
+            "font_size": 12,
+            "title_font_size": 18,
+            "padding": 5,
+            "box_padding": 10,
+            "entries": [
+                {"color": "red", "text": "< 17°C"},
+                {"color": "orange", "text": "17°C ≤ x < 20°C"},
+                {"color": "aqua", "text": "20°C ≤ x < 25°C"},
+                {"color": "orange", "text": "25°C ≤ x ≤ 27°C"},
+                {"color": "red", "text": "> 27°C"}
+            ]
+        }
+    },
+    "Thresholds": {
+        "power_amps": [
+            {"lower": 0, "upper": 0.2, "color": "red"},
+            {"lower": 0.2, "upper": 2, "color": "orange"},
+            {"lower": 2, "upper": 12, "color": "#1ac44a"},
+            {"lower": 12, "upper": 13, "color": "orange"},
+            {"lower": 13, "upper": 9999, "color": "red"}
+        ],
+        "power_amps_feed": [
+            {"lower": 0, "upper": 0.5, "color": "red"},
+            {"lower": 0.5, "upper": 2, "color": "orange"},
+            {"lower": 2, "upper": 12, "color": "#1ac44a"},
+            {"lower": 12, "upper": 1152, "color": "orange"},
+            {"lower": 1152, "upper": 9999, "color": "red"}
+        ],
+        "power_kw": [
+            {"lower": 0, "upper": 0.2, "color": "red"},
+            {"lower": 0.2, "upper": 2, "color": "orange"},
+            {"lower": 2, "upper": 12, "color": "#1ac44a"},
+            {"lower": 12, "upper": 13, "color": "orange"},
+            {"lower": 13, "upper": 9999, "color": "red"}
+        ],
+        "temperature_room": [
+            {"lower": -99999, "upper": 17, "color": "red"},
+            {"lower": 17, "upper": 20, "color": "orange"},
+            {"lower": 20, "upper": 25, "color": "aqua"},
+            {"lower": 25, "upper": 27, "color": "orange"},
+            {"lower": 27, "upper": 9999, "color": "red"}
+        ],
+        "temperature_room_hot": [
+            {"lower": -99999, "upper": 15, "color": "red"},
+            {"lower": 15, "upper": 20, "color": "orange"},
+            {"lower": 20, "upper": 37, "color": "aqua"},
+            {"lower": 37, "upper": 40, "color": "orange"},
+            {"lower": 40, "upper": 9999, "color": "red"}
+        ],
+        "temperature_sys": [
+            {"lower": -99999, "upper": 17, "color": "red"},
+            {"lower": 17, "upper": 20, "color": "orange"},
+            {"lower": 20, "upper": 50, "color": "aqua"},
+            {"lower": 50, "upper": 70, "color": "orange"},
+            {"lower": 70, "upper": 9999, "color": "red"}
+        ],
+        "humidity_room": [
+            {"lower": -99999, "upper": 20, "color": "red"},
+            {"lower": 20, "upper": 30, "color": "orange"},
+            {"lower": 30, "upper": 50, "color": "pink"},
+            {"lower": 50, "upper": 70, "color": "orange"},
+            {"lower": 70, "upper": 9999, "color": "red"}
+        ],
+        "data": [
+            {"lower": 0, "upper": 50, "color": "red"},
+            {"lower": 50, "upper": 100, "color": "orange"},
+            {"lower": 100, "upper": 10000, "color": "#1ac44a"},
+            {"lower": 10000, "upper": 1000000, "color": "orange"},
+            {"lower": 1000000, "upper": 100000000000000, "color": "red"}
+        ],
+        "default": [
+            {"lower": -999999, "upper": 9999999, "color": "grey"}
+        ]
+    }
+}
