@@ -41,7 +41,7 @@
                             Telehouse London, Coriander Avenue, London, E14 2AA
                         </p>
                     </div>
-                    <div class="col well-nopad bg-dark clickable" style="margin: 5px" onclick="(window.location.href='sites.php?site=gloucester')">
+                    <div class="col well-nopad bg-dark clickable" style="margin: 5px" onclick="(window.location.href='sites.php?site=indectron')">
                         <h4><strong>Gloucester - Indectron</strong></h4>
                         <p>Indectron is the primary data centre in Gloucester, covered by the <strong>Gloucester DC team</strong>.
                         <br><br>
@@ -49,7 +49,7 @@
                         Indectron, Shield House, 2 Crest Way, Barnwood, Gloucester, GL4 3DH
                         </p>
                     </div>
-                    <div class="col well-nopad bg-dark clickable" style="margin: 5px" onclick="(window.location.href='sites.php?site=equnix')">
+                    <div class="col well-nopad bg-dark clickable" style="margin: 5px" onclick="(window.location.href='sites.php?site=ld5')">
                         <h4><strong>Equinix - LD5</strong></h4>
                         <p>Equinix in Slough, LD5, is covered primarily by the Gloucester team.</p>
                             <br><br>

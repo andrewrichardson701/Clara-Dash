@@ -1,7 +1,7 @@
 <div class="container" style="margin-top: 20px">
     <h1>Telehouse - London</h1>
     <hr style="border-color: lightgrey; background-color: lightgrey">
-    <p>Telehouse is a key site for Clara's infrastructure, hosting a large amount of connectivity for third party suppliers and customer cross-connects.</p>
+    <p>Telehouse is a key site for Claranet's infrastructure, hosting a large amount of connectivity for third party suppliers and customer cross-connects.</p>
 </div>
 
 <div class="container">
