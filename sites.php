@@ -18,10 +18,10 @@
         <?php
         if (isset($_GET['site'])) {
             $site = $_GET['site'];
-            if (in_array($site, ['hoddesdon', 'telehouse', 'gloucester', 'equnix'])) {
+            if (in_array($site, ['hoddesdon', 'telehouse', 'gloucester', 'ld5'])) {
                 include('includes/' . $site . '.php');
             } else {
-                echo '<div class="container"><h2>Invalid site specified.</h2></div>';
+                echo '<div class="container" style="padding-top:20px"><h2>Invalid site specified.</h2></div>';
             }
         } else {
             header("Location: index.php");
