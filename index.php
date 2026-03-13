@@ -93,17 +93,17 @@
                             <td>Suite 61</td>
                             <td><a href="weathermap.php?map=hod_61">View Weathermap</a></td>
                         </tr>
-                        <tr>
+                        <tr style="background-color: red">
                             <td>Hoddesdon</td>
                             <td>All</td>
                             <td><a href="weathermap.php?map=hod_all">View Weathermap</a></td>
                         </tr>
-                        <tr>
+                        <tr style="background-color: red">
                             <td>Hoddesdon</td>
                             <td>Redstor</td>
                             <td><a href="weathermap.php?map=hod_redstor">View Weathermap</a></td>
                         </tr>
-                        <tr>
+                        <tr style="background-color: red">
                             <td>Hoddesdon</td>
                             <td>Colocation</td>
                             <td><a href="weathermap.php?map=hod_colocation">View Weathermap</a></td>
@@ -113,7 +113,7 @@
                             <td>DFM6</td>
                             <td><a href="weathermap.php?map=th_dfm6">View Weathermap</a></td>
                         </tr>
-                        <tr>
+                        <tr style="background-color: red">
                             <td>Telehouse</td>
                             <td>Other</td>
                             <td><a href="weathermap.php?map=th_other">View Weathermap</a></td>
@@ -125,6 +125,16 @@
                             <td>Gloucester</td>
                             <td>DH1</td>
                             <td><a href="weathermap.php?map=glo_dh1">View Weathermap</a></td>
+                        </tr>
+                        <tr style="background-color: red">
+                            <td>Gloucester</td>
+                            <td>Redstor</td>
+                            <td><a href="weathermap.php?map=glo_redstor">View Weathermap</a></td>
+                        </tr>
+                        <tr style="background-color: red">
+                            <td>Gloucester</td>
+                            <td>Colocation</td>
+                            <td><a href="weathermap.php?map=glo_colocation">View Weathermap</a></td>
                         </tr>
                         <tr>
                             <td>LD5</td>
