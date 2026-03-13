@@ -41,7 +41,7 @@
                             Telehouse London, Coriander Avenue, London, E14 2AA
                         </p>
                     </div>
-                    <div class="col well-nopad bg-dark clickable" style="margin: 5px" onclick="(window.location.href='sites.php?site=indectron')">
+                    <div class="col well-nopad bg-dark clickable" style="margin: 5px" onclick="(window.location.href='sites.php?site=gloucester')">
                         <h4><strong>Gloucester - Indectron</strong></h4>
                         <p>Indectron is the primary data centre in Gloucester, covered by the <strong>Gloucester DC team</strong>.
                         <br><br>

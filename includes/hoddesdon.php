@@ -33,7 +33,7 @@
             <h4><strong>All Redstor Racks (Combined)</strong></h4>
             <p>View the weathermap for all Redstor racks in Hoddesdon.</p>
         </div>
-        <div class="col well-nopad bg-dark clickable" style="margin: 5px; background-color:rgb(4, 189, 66) !important" onclick="(window.location.href='weathermap.php?map=hod_redstor')">
+        <div class="col well-nopad bg-dark clickable" style="margin: 5px; background-color:rgb(4 155 54) !important" onclick="(window.location.href='weathermap.php?map=hod_redstor')">
             <h4><strong>All Colocation</strong></h4>
             <p>View the weathermap for all Colocation racks in Hoddesdon.</p>
         </div>
