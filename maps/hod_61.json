@@ -1456,9 +1456,9 @@
             "entries": [
                 {"color": "red", "text": "< 1A"},
                 {"color": "orange", "text": "1A ≤ x < 2A"},
-                {"color": "green", "text": "2A ≤ x < 14A"},
-                {"color": "orange", "text": "14A ≤ x ≤ 15A"},
-                {"color": "red", "text": "> 15A"}
+                {"color": "green", "text": "2A ≤ x < 12A"},
+                {"color": "orange", "text": "12A ≤ x ≤ 14.5A"},
+                {"color": "red", "text": "> 14.5A"}
             ]
         },
         "TemperatureThresholds": {
