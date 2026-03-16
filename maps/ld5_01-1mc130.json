@@ -673,8 +673,8 @@
             {"lower": 0, "upper": 0.2, "color": "red"},
             {"lower": 0.2, "upper": 2, "color": "orange"},
             {"lower": 2, "upper": 12, "color": "#1ac44a"},
-            {"lower": 12, "upper": 13, "color": "orange"},
-            {"lower": 13, "upper": 9999, "color": "red"}
+            {"lower": 12, "upper": 14.5, "color": "orange"},
+            {"lower": 14.5, "upper": 9999, "color": "red"}
         ],
         "power_amps_feed": [
             {"lower": 0, "upper": 0.5, "color": "red"},
