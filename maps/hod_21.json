@@ -22,7 +22,7 @@
     },
     "Nodes": {
         "RACK1": {
-            "name": "Rack 1",
+            "name": "Rack 1 (Staff Rack)",
             "position_x": 81,
             "position_y": 352,
             "dimension_x": 72,
@@ -33,7 +33,7 @@
                 "font": "monospace",
                 "font_size": "14",
                 "font_color": "auto",
-                "color": "lightgreen"
+                "color": "lightgrey"
             },
             "data": {
                 "header": "1"
@@ -690,7 +690,7 @@
                 "value_math": "",
                 "value_float_num": 1,
                 "unit": "A",
-                "type": "default",
+                "type": "power_amps",
                 "threshold_value": "( ['hod-s21-1-a.ippdu.uk.clara.net'].sensors[6].sensor_value + ['hod-s21-1-b.ippdu.uk.clara.net'].sensors[6].sensor_value )",
                 "url": "['hod-s21-1-a.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url",
                 "image": "['hod-s21-1-a.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
@@ -715,7 +715,7 @@
                 "value_math": "",
                 "value_float_num": 1,
                 "unit": "A",
-                "type": "default",
+                "type": "power_amps",
                 "threshold_value": "( ['hod-s21-1-a.ippdu.uk.clara.net'].sensors[7].sensor_value + ['hod-s21-1-b.ippdu.uk.clara.net'].sensors[7].sensor_value )",
                 "url": "['hod-s21-1-b.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url",
                 "image": "['hod-s21-1-b.ippdu.uk.clara.net'].sensors[0].graph.graph_full_url"
