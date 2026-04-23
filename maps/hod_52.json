@@ -735,7 +735,7 @@
                 "font": "monospace",
                 "font_size": "14",
                 "font_color": "auto",
-                "color": "black"
+                "color": "#4287f5"
             },
             "data": {
                 "header": "D1"
@@ -753,7 +753,7 @@
                 "font": "monospace",
                 "font_size": "14",
                 "font_color": "auto",
-                "color": "black"
+                "color": "#4287f5"
             },
             "data": {
                 "header": "D2"
@@ -789,7 +789,7 @@
                 "font": "monospace",
                 "font_size": "14",
                 "font_color": "auto",
-                "color": "lightgrey"
+                "color": "#4287f5"
             },
             "data": {
                 "header": "D4"
@@ -807,7 +807,7 @@
                 "font": "monospace",
                 "font_size": "14",
                 "font_color": "auto",
-                "color": "lightgrey"
+                "color": "orange"
             },
             "data": {
                 "header": "D5"
@@ -825,7 +825,7 @@
                 "font": "monospace",
                 "font_size": "14",
                 "font_color": "auto",
-                "color": "lightgrey"
+                "color": "orange"
             },
             "data": {
                 "header": "D6"
@@ -843,7 +843,7 @@
                 "font": "monospace",
                 "font_size": "14",
                 "font_color": "auto",
-                "color": "lightgrey"
+                "color": "orange"
             },
             "data": {
                 "header": "D7"
@@ -861,7 +861,7 @@
                 "font": "monospace",
                 "font_size": "14",
                 "font_color": "auto",
-                "color": "lightgrey"
+                "color": "orange"
             },
             "data": {
                 "header": "D8"
