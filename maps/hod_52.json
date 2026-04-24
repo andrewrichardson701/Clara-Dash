@@ -501,7 +501,7 @@
                 "font": "monospace",
                 "font_size": "14",
                 "font_color": "auto",
-                "color": "orange"
+                "color": "#ffdd00"
             },
             "data": {
                 "header": "C1"
@@ -519,7 +519,7 @@
                 "font": "monospace",
                 "font_size": "14",
                 "font_color": "auto",
-                "color": "lightgrey"
+                "color": "#ffdd00"
             },
             "data": {
                 "header": "C2"
@@ -537,7 +537,7 @@
                 "font": "monospace",
                 "font_size": "14",
                 "font_color": "auto",
-                "color": "orange"
+                "color": "#ffdd00"
             },
             "data": {
                 "header": "C3"
@@ -555,7 +555,7 @@
                 "font": "monospace",
                 "font_size": "14",
                 "font_color": "auto",
-                "color": "orange"
+                "color": "#ffdd00"
             },
             "data": {
                 "header": "C4"
@@ -573,7 +573,7 @@
                 "font": "monospace",
                 "font_size": "14",
                 "font_color": "auto",
-                "color": "lightgrey"
+                "color": "#4287f5"
             },
             "data": {
                 "header": "C5"
@@ -591,7 +591,7 @@
                 "font": "monospace",
                 "font_size": "14",
                 "font_color": "auto",
-                "color": "lightgrey"
+                "color": "#4287f5"
             },
             "data": {
                 "header": "C6"
@@ -609,7 +609,7 @@
                 "font": "monospace",
                 "font_size": "14",
                 "font_color": "auto",
-                "color": "lightgrey"
+                "color": "#4287f5"
             },
             "data": {
                 "header": "C7"
@@ -627,7 +627,7 @@
                 "font": "monospace",
                 "font_size": "14",
                 "font_color": "auto",
-                "color": "lightgrey"
+                "color": "#4287f5"
             },
             "data": {
                 "header": "C8"
@@ -645,7 +645,7 @@
                 "font": "monospace",
                 "font_size": "14",
                 "font_color": "auto",
-                "color": "lightgrey"
+                "color": "#ffdd00"
             },
             "data": {
                 "header": "C9"
@@ -663,7 +663,7 @@
                 "font": "monospace",
                 "font_size": "14",
                 "font_color": "auto",
-                "color": "lightgrey"
+                "color": "#ffdd00"
             },
             "data": {
                 "header": "C10"
@@ -681,7 +681,7 @@
                 "font": "monospace",
                 "font_size": "14",
                 "font_color": "auto",
-                "color": "lightgrey"
+                "color": "#ffdd00"
             },
             "data": {
                 "header": "C11"
@@ -699,7 +699,7 @@
                 "font": "monospace",
                 "font_size": "14",
                 "font_color": "auto",
-                "color": "lightgrey"
+                "color": "#ffdd00"
             },
             "data": {
                 "header": "C12"
@@ -807,7 +807,7 @@
                 "font": "monospace",
                 "font_size": "14",
                 "font_color": "auto",
-                "color": "orange"
+                "color": "#ffdd00"
             },
             "data": {
                 "header": "D5"
@@ -825,7 +825,7 @@
                 "font": "monospace",
                 "font_size": "14",
                 "font_color": "auto",
-                "color": "orange"
+                "color": "#ffdd00"
             },
             "data": {
                 "header": "D6"
@@ -843,7 +843,7 @@
                 "font": "monospace",
                 "font_size": "14",
                 "font_color": "auto",
-                "color": "orange"
+                "color": "#ffdd00"
             },
             "data": {
                 "header": "D7"
@@ -861,7 +861,7 @@
                 "font": "monospace",
                 "font_size": "14",
                 "font_color": "auto",
-                "color": "orange"
+                "color": "#ffdd00"
             },
             "data": {
                 "header": "D8"
@@ -879,7 +879,7 @@
                 "font": "monospace",
                 "font_size": "14",
                 "font_color": "auto",
-                "color": "lightgrey"
+                "color": "#4287f5"
             },
             "data": {
                 "header": "D9"
@@ -897,7 +897,7 @@
                 "font": "monospace",
                 "font_size": "14",
                 "font_color": "auto",
-                "color": "lightgrey"
+                "color": "#4287f5"
             },
             "data": {
                 "header": "D10"
@@ -915,7 +915,7 @@
                 "font": "monospace",
                 "font_size": "14",
                 "font_color": "auto",
-                "color": "lightgrey"
+                "color": "#4287f5"
             },
             "data": {
                 "header": "D11"
@@ -933,7 +933,7 @@
                 "font": "monospace",
                 "font_size": "14",
                 "font_color": "auto",
-                "color": "lightgrey"
+                "color": "#4287f5"
             },
             "data": {
                 "header": "D12"
@@ -3215,7 +3215,7 @@
             "position_y": 551,
             "dimension_x": 38,
             "dimension_y": 25,
-            "draw": false,
+            "draw": true,
             "style": {
                 "line_width": 1,
                 "line_color": "black",
@@ -3241,7 +3241,7 @@
             "position_y": 594,
             "dimension_x": 38,
             "dimension_y": 25,
-            "draw": false,
+            "draw": true,
             "style": {
                 "line_width": 1,
                 "line_color": "black",
@@ -3267,7 +3267,7 @@
             "position_y": 551,
             "dimension_x": 38,
             "dimension_y": 25,
-            "draw": false,
+            "draw": true,
             "style": {
                 "line_width": 1,
                 "line_color": "black",
@@ -3293,7 +3293,7 @@
             "position_y": 594,
             "dimension_x": 38,
             "dimension_y": 25,
-            "draw": false,
+            "draw": true,
             "style": {
                 "line_width": 1,
                 "line_color": "black",
@@ -5278,7 +5278,7 @@
                 {"color": "black", "text": "Unused"},
                 {"color": "lightgrey", "text": "Managed"},
                 {"color": "lightgreen", "text": "Colocation"},
-                {"color": "orange", "text": "Firewalls"},
+                {"color": "#ffdd00", "text": "Firewalls"},
                 {"color": "#4287f5", "text": "Servers"},
                 {"color": "#cc6699", "text": "Redstor"}
             ]
